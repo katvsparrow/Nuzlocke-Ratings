@@ -1,0 +1,48 @@
+{
+    "Rules": [
+      {
+        "Name": "Dupes Clause",
+        "Difficulty": 0
+      },
+      {
+        "Name": "Set Mode",
+        "Difficulty": 2
+      },
+      {
+        "Name": "Monotype",
+        "Difficulty": 3
+      },
+      {
+        "Name": "No items in battle",
+        "Difficulty": 3
+      },
+      {
+        "Name": "Wedlocke",
+        "Difficulty": 4
+      },
+      {
+        "Name": "Level limit",
+        "Difficulty": 1
+      },
+      {
+        "Name": "Superless",
+        "Difficulty": 4
+      },
+      {
+        "Name": "STABless",
+        "Difficulty": 4
+      },
+      {
+        "Name": "Notepad",
+        "Difficulty": 3
+      },
+      {
+        "Name": "Teamlocke",
+        "Difficulty": 2
+      },
+      {
+        "Name": "No evolution",
+        "Difficulty": 4
+      }
+    ]
+  }

@@ -1,0 +1,184 @@
+{
+  "Games": [
+    {
+      "Name": "Red",
+      "Generation": 1,
+      "Region": "Kanto",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Blue",
+      "Generation": 1,
+      "Region": "Kanto",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Yellow",
+      "Generation": 1,
+      "Region": "Kanto",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Gold",
+      "Generation": 2,
+      "Region": "Johto",
+      "Difficulty": 1
+    },
+    {
+      "Name": "Silver",
+      "Generation": 2,
+      "Region": "Johto",
+      "Difficulty": 1
+    },
+    {
+      "Name": "Crystal",
+      "Generation": 2,
+      "Region": "Johto",
+      "Difficulty": 1
+    },
+    {
+      "Name": "Ruby",
+      "Generation": 3,
+      "Region": "Hoenn",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Sapphire",
+      "Generation": 3,
+      "Region": "Hoenn",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Emerald",
+      "Generation": 3,
+      "Region": "Hoenn",
+      "Difficulty": 3
+    },
+    {
+      "Name": "FireRed",
+      "Generation": 3,
+      "Region": "Kanto",
+      "Difficulty": 2
+    },
+    {
+      "Name": "LeafGreen",
+      "Generation": 3,
+      "Region": "Kanto",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Diamond",
+      "Generation": 4,
+      "Region": "Sinnoh",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Pearl",
+      "Generation": 4,
+      "Region": "Sinnoh",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Platinum",
+      "Generation": 4,
+      "Region": "Sinnoh",
+      "Difficulty": 4
+    },
+    {
+      "Name": "HeartGold",
+      "Generation": 4,
+      "Region": "Johto",
+      "Difficulty": 3
+    },
+    {
+      "Name": "SoulSilver",
+      "Generation": 4,
+      "Region": "Johto",
+      "Difficulty": 3
+    },
+    {
+      "Name": "Black",
+      "Generation": 5,
+      "Region": "Unova",
+      "Difficulty": 3
+    },
+    {
+      "Name": "White",
+      "Generation": 5,
+      "Region": "Unova",
+      "Difficulty": 3
+    },
+    {
+      "Name": "Black 2",
+      "Generation": 5,
+      "Region": "Unova",
+      "Difficulty": 4
+    },
+    {
+      "Name": "White 2",
+      "Generation": 5,
+      "Region": "Unova",
+      "Difficulty": 4
+    },
+    {
+      "Name": "X",
+      "Generation": 6,
+      "Region": "Kalos",
+      "Difficulty": 1
+    },
+    {
+      "Name": "Y",
+      "Generation": 6,
+      "Region": "Kalos",
+      "Difficulty": 1
+    },
+    {
+      "Name": "Omega Ruby",
+      "Generation": 6,
+      "Region": "Hoenn",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Alpha Sapphire",
+      "Generation": 6,
+      "Region": "Hoenn",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Sun",
+      "Generation": 7,
+      "Region": "Alola",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Moon",
+      "Generation": 7,
+      "Region": "Alola",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Ultra Sun",
+      "Generation": 7,
+      "Region": "Alola",
+      "Difficulty": 4
+    },
+    {
+      "Name": "Ultra Moon",
+      "Generation": 7,
+      "Region": "Alola",
+      "Difficulty": 4
+    },
+    {
+      "Name": "Let's Go Pikachu",
+      "Generation": 7,
+      "Region": "Kanto",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Let's Go Eevee",
+      "Generation": 7,
+      "Region": "Kanto",
+      "Difficulty": 2
+    }
+  ]
+}
