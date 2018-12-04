@@ -1,24 +1,41 @@
 import json
+from math import floor
 
 def getExpectedScoreA(A, B):
     return 1.0 / (1 + 10 ** ((B - A) / 400.0))
 
 def adjustRating(rating, expectedScore, score, k = 32):
-    return rating + k * (score - expectedScore)
+    return floor(rating + k * (score - expectedScore))
 
 class Player(object):
-    def __init__(self, name, rating):
+    def __init__(self, name, rating = 1000, matchesPlayed = 0, tournamentRound = 1):
         self.rating = rating
         self.name = name
+        self.matchesPlayed = matchesPlayed
+        self.tournamentRound = tournamentRound
+
+    def calculateK(self):
+        return 800 / (self.matchesPlayed + self.tournamentRound)
+
+    def startTournament(self):
+        self.tournamentRound = 1
     
-    def match(self, game, result):
+    def match(self, game, numDeaths):
         expectedScoreA = getExpectedScoreA(self.rating, game.rating)
-        if result == 'Win':
-            self.rating = adjustRating(self.rating, expectedScoreA, 1)
-        elif result == 'Loss':
-            self.rating = adjustRating(self.rating, expectedScoreA, 0)
-        elif result == 'Draw':
-            self.rating = adjustRating(self.rating, expectedScoreA, 0.5)
+        k = self.calculateK()
+        print(self.rating, game.rating)
+        if 0 <= numDeaths < 6:
+            self.rating = adjustRating(self.rating, expectedScoreA, 1, k)
+        elif 6 <= numDeaths < 12:
+            self.rating = adjustRating(self.rating, expectedScoreA, 0, k)
+        else:
+            self.rating = adjustRating(self.rating, expectedScoreA, 0.5, k)
+        
+        if self.rating < 100:
+            self.rating = 100
+
+        self.matchesPlayed += 1
+        self.tournamentRound += 1
 
 
 
@@ -36,7 +53,7 @@ class Game(object):
     def getBaseRating(self):
         # Four tiers of difficulty
         # 1: 1200, 2: 1400, 3: 1600, 4: 1800
-        return 1000 + 2 * self.difficulty
+        return 1000 + 200 * self.difficulty
 
     def setRuleset(self, ruleset):
         self.ruleset = ruleset
@@ -112,37 +129,64 @@ class Pokemon(object):
         print('----------------------------------')
 
 
+class Main(object):
+    def __init__(self):
+        self.getGames()
+        self.getRules()
+        self.getPokemon()
 
+        self.testMatch()
 
-def getGames():
-    gamesList = []
-    with open('data/games.json', 'r') as fp:
-        gamesData = json.load(fp)
-    gamesData = gamesData['Games']
-    for game in gamesData:
-        gamesList.append(Game(game['Name'], game['Generation'], game['Region'], game['Difficulty']))
-    return gamesList
+    def getGames(self):
+        self.gamesList = []
+        with open('data/games.json', 'r') as fp:
+            gamesData = json.load(fp)
+        gamesData = gamesData['Games']
+        for game in gamesData:
+            self.gamesList.append(Game(game['Name'], game['Generation'], game['Region'], game['Difficulty']))
 
-def getRules():
-    rulesList = []
-    with open('data/rules.json', 'r') as fp:
-        rulesData = json.load(fp)
-    rulesData = rulesData['Rules']
-    for rule in rulesData:
-        rulesList.append(Rule(rule['Name'], rule['Difficulty']))
-    return rulesList
+    def getRules(self):
+        self.rulesList = []
+        with open('data/rules.json', 'r') as fp:
+            rulesData = json.load(fp)
+        rulesData = rulesData['Rules']
+        for rule in rulesData:
+            self.rulesList.append(Rule(rule['Name'], rule['Difficulty']))
 
-def getPokemon():
-    pokemonList = []
-    with open('data/pokemon-ranks.json', 'r') as fp:
-        pokemonData = json.load(fp)
-    for pokemon, ranks in pokemonData.items():
-        pokemonList.append(Pokemon(pokemon, ranks))
-    return pokemonList
+    def getPokemon(self):
+        self.pokemonList = []
+        with open('data/pokemon-ranks.json', 'r') as fp:
+            pokemonData = json.load(fp)
+        for pokemon, ranks in pokemonData.items():
+            self.pokemonList.append(Pokemon(pokemon, ranks))
 
-gamesList = getGames()
-rulesList = getRules()
-pokemonList = getPokemon()
+    def findGame(self, gameName):
+        for game in self.gamesList:
+            if game.name == gameName:
+                return game
+        return None
 
-for pokemon in pokemonList:
-    pokemon.printPokemon()
+    def findRule(self, ruleName):
+        for rule in self.rulesList:
+            if rule.name == ruleName:
+                return rule
+        return None
+
+    def findPokemon(self, pokemonName):
+        for pokemon in self.pokemonList:
+            if pokemon.name == pokemonName:
+                return pokemon
+        return None
+
+    def testMatch(self):
+        xerxos = Player('Xerxos', 1000)
+        xerxos.match(self.findGame('Crystal'), 0)
+        xerxos.match(self.findGame('Crystal'), 0)
+        xerxos.match(self.findGame('Crystal'), 0)
+        xerxos.match(self.findGame('Crystal'), 0)
+        xerxos.match(self.findGame('Crystal'), 0)
+        print(xerxos.rating)
+        print(xerxos.matchesPlayed)
+        print(xerxos.tournamentRound)
+
+main = Main()
