@@ -1,18 +1,18 @@
 import json
 from math import floor
 
-def getExpectedScoreA(A, B):
-    return 1.0 / (1 + 10 ** ((B - A) / 400.0))
-
-def adjustRating(rating, expectedScore, score, k = 32):
-    return floor(rating + k * (score - expectedScore))
-
 class Player(object):
     def __init__(self, name, rating = 1000, matchesPlayed = 0, tournamentRound = 1):
         self.rating = rating
         self.name = name
         self.matchesPlayed = matchesPlayed
         self.tournamentRound = tournamentRound
+
+    def getExpectedScore(self, gameRating):
+        return 1.0 / (1 + 10 ** ((gameRating - self.rating) / 400.0))
+
+    def adjustRating(self, score):
+        return floor(self.rating + self.k * (score - self.expectedScore))
 
     def calculateK(self):
         return 800 / (self.matchesPlayed + self.tournamentRound)
@@ -21,15 +21,15 @@ class Player(object):
         self.tournamentRound = 1
     
     def match(self, game, numDeaths):
-        expectedScoreA = getExpectedScoreA(self.rating, game.rating)
-        k = self.calculateK()
+        self.expectedScore = self.getExpectedScore(game.rating)
+        self.k = self.calculateK()
         print(self.rating, game.rating)
         if 0 <= numDeaths < 6:
-            self.rating = adjustRating(self.rating, expectedScoreA, 1, k)
+            self.rating = self.adjustRating(1)
         elif 6 <= numDeaths < 12:
-            self.rating = adjustRating(self.rating, expectedScoreA, 0, k)
+            self.rating = self.adjustRating(0.5)
         else:
-            self.rating = adjustRating(self.rating, expectedScoreA, 0.5, k)
+            self.rating = self.adjustRating(0)
         
         if self.rating < 100:
             self.rating = 100
