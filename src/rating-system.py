@@ -65,6 +65,35 @@ class Rule(object):
 
 
 
+class Pokemon(object):
+    def __init__(self, name, ranks):
+        self.name = name
+        self.ranks = ranks
+        self.convertRanks()
+
+    def convertRanks(self):
+        mapRanks = {
+            "S" : -2,
+            "A+": 0,
+            "A" : 2,
+            "A-": 4,
+            "B+": 6,
+            "B" : 8,
+            "B-": 10,
+            "C+": 12,
+            "C" : 14,
+            "C-": 16,
+            "D" : 18,
+            "E" : 20
+        }
+        print(self.name)
+        for game, rank in self.ranks.items():
+            rank = mapRanks.get(rank)
+            print(game, rank, sep=': ')
+        print('\n\n')
+
+
+
 def getGames():
     gamesList = []
     with open('data/games.json', 'r') as fp:
@@ -83,5 +112,13 @@ def getRules():
         rulesList.append(Rule(rule['Name'], rule['Difficulty']))
     return rulesList
 
+def getPokemon():
+    pokemonList = []
+    with open('data/pokemon-ranks.json', 'r') as fp:
+        pokemonData = json.load(fp)
+    for pokemon, ranks in pokemonData.items():
+        pokemonList.append(Pokemon(pokemon, ranks))
+
 gamesList = getGames()
 rulesList = getRules()
+getPokemon()
