@@ -23,6 +23,9 @@ class Player(object):
 
 
 class Game(object):
+    # The ruleset and team variables are set outside __init__ because they're optional user inputs.
+    # This format should make it a bit easier, as we won't have to create Game objects
+    # with rulesets and teams and can instead add them after creation.
     def __init__(self, name, generation, region, difficulty):
         self.name = name
         self.generation = generation
@@ -35,20 +38,33 @@ class Game(object):
         # 1: 1200, 2: 1400, 3: 1600, 4: 1800
         return 1000 + 2 * self.difficulty
 
-    def addRulesetModifiers(self):
-        for rule in self.ruleset:
-            self.rating += 50 * rule.difficulty
-
-    def printGame(self):
-        print(self.name, self.generation, self.region, self.difficulty, self.ruleset, sep=' | ')
-
-    def addRule(self, rule):
-        self.ruleset.append(rule)
-
     def setRuleset(self, ruleset):
         self.ruleset = ruleset
         self.addRulesetModifiers()
 
+    def addRulesetModifiers(self):
+        for rule in self.ruleset:
+            self.rating += 50 * rule.difficulty
+
+
+    def setTeam(self, team):
+        self.team = team
+        self.addTeamModifiers()
+
+    def addTeamModifiers(self):
+        for pokemon in self.team:
+            self.rating += pokemon.ranks[self.name]
+
+
+    def addRule(self, rule):
+        self.ruleset.append(rule)
+
+    def addPokemon(self, pokemon):
+        self.team.append(pokemon)
+
+
+    def printGame(self):
+        print(self.name, self.generation, self.region, self.difficulty, self.ruleset, sep=' | ')
 
 
 class Rule(object):
@@ -67,12 +83,7 @@ class Rule(object):
 
 class Pokemon(object):
     def __init__(self, name, ranks):
-        self.name = name
-        self.ranks = ranks
-        self.convertRanks()
-
-    def convertRanks(self):
-        mapRanks = {
+        self.mapRanks = {
             "S" : -2,
             "A+": 0,
             "A" : 2,
@@ -86,11 +97,20 @@ class Pokemon(object):
             "D" : 18,
             "E" : 20
         }
-        print(self.name)
+        self.name = name
+        self.ranks = ranks
+        self.convertRanks()
+
+    def convertRanks(self):
         for game, rank in self.ranks.items():
-            rank = mapRanks.get(rank)
+            self.ranks[game] = self.mapRanks.get(rank)
+
+    def printPokemon(self):
+        print(self.name + ":")
+        for game, rank in self.ranks.items():
             print(game, rank, sep=': ')
-        print('\n\n')
+        print('----------------------------------')
+
 
 
 
@@ -118,7 +138,11 @@ def getPokemon():
         pokemonData = json.load(fp)
     for pokemon, ranks in pokemonData.items():
         pokemonList.append(Pokemon(pokemon, ranks))
+    return pokemonList
 
 gamesList = getGames()
 rulesList = getRules()
-getPokemon()
+pokemonList = getPokemon()
+
+for pokemon in pokemonList:
+    pokemon.printPokemon()
