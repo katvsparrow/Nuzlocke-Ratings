@@ -3,8 +3,8 @@ from math import floor
 
 class Player(object):
     def __init__(self, name, rating = 1000, matchesPlayed = 0, tournamentRound = 1):
-        self.rating = rating
         self.name = name
+        self.rating = rating
         self.matchesPlayed = matchesPlayed
         self.tournamentRound = tournamentRound
 
@@ -36,6 +36,13 @@ class Player(object):
 
         self.matchesPlayed += 1
         self.tournamentRound += 1
+
+    def printPlayer(self):
+        print('Name: ', self.name)
+        print('Rating: ', self.rating)
+        print('Matches Played: ', self.matchesPlayed)
+        print('Current Tournament Round: ', self.tournamentRound)
+        print('----------------------------------')
 
 
 
@@ -134,8 +141,11 @@ class Main(object):
         self.getGames()
         self.getRules()
         self.getPokemon()
+        self.getPlayers()
 
-        self.testMatch()
+        self.testPrint(self.playerList)
+        # self.testMatch()
+        # self.testDump()
 
     def getGames(self):
         self.gamesList = []
@@ -159,6 +169,22 @@ class Main(object):
             pokemonData = json.load(fp)
         for pokemon, ranks in pokemonData.items():
             self.pokemonList.append(Pokemon(pokemon, ranks))
+
+    def getPlayers(self):
+        self.playerList = []
+        with open('data/players.json', 'r') as fp:
+            playerData = json.load(fp)
+        for player, vals in playerData.items():
+            self.playerList.append(Player(player, vals['rating'], vals['matchesPlayed'], vals['tournamentRound']))
+
+    def dumpPlayers(self):
+        with open('data/players.json', 'w') as fp:
+            fp.write('{\n')
+            for player in self.playerList:
+                fp.write('\t' + '\"' + player.name + '\": ' +  json.dumps(player.__dict__))
+                if player != self.playerList[-1]:
+                    fp.write(',\n')
+            fp.write('\n}')
 
     def findGame(self, gameName):
         for game in self.gamesList:
@@ -188,5 +214,22 @@ class Main(object):
         print(xerxos.rating)
         print(xerxos.matchesPlayed)
         print(xerxos.tournamentRound)
+    
+    def testDump(self):
+        self.playerList = []
+        for i in range(10):
+            self.playerList.append(Player(str(i)))
+        self.dumpPlayers()
+
+    def testPrint(self, objList):
+        for obj in objList:
+            if type(obj) == Player:
+                obj.printPlayer()
+            elif type(obj) == Game:
+                obj.printGame()
+            elif type(obj) == Rule:
+                obj.printRule
+            elif type(obj) == Pokemon:
+                obj.printPokemon
 
 main = Main()
