@@ -20,16 +20,31 @@ class Player(object):
     def startTournament(self):
         self.tournamentRound = 1
     
-    def match(self, game, numDeaths):
+    def completeRun(self, game, numDeaths, ruleset = None, team = None):
+        try:
+            game.deaths
+        except AttributeError:
+            game.setDeaths(numDeaths)
+        
+        try: 
+            game.ruleset
+        except AttributeError:
+            if ruleset:
+                game.setRuleset(ruleset)
+        
+        try:
+            game.team
+        except AttributeError:
+            if team:
+                game.setTeam(team)
+        
+        if game.rating < 100:
+            game.rating = 100
+
         self.expectedScore = self.getExpectedScore(game.rating)
         self.k = self.calculateK()
         print(self.rating, game.rating)
-        if 0 <= numDeaths < 6:
-            self.rating = self.adjustRating(1)
-        elif 6 <= numDeaths < 12:
-            self.rating = self.adjustRating(0.5)
-        else:
-            self.rating = self.adjustRating(0)
+        self.rating = self.adjustRating(1)
         
         if self.rating < 100:
             self.rating = 100
@@ -67,17 +82,42 @@ class Game(object):
         self.addRulesetModifiers()
 
     def addRulesetModifiers(self):
-        for rule in self.ruleset:
-            self.rating += 50 * rule.difficulty
+        if type(self.ruleset) == Rule:
+            self.rating += 50 * self.ruleset.difficulty
+        else:
+            for rule in self.ruleset:
+                self.rating += 50 * rule.difficulty
 
+    
+    def setDeaths(self, deaths):
+        self.deaths = deaths
+        self.addDeathModifiers()
+
+    def addDeathModifiers(self):
+        self.rating += self.translateDeathCount(self.deaths)
+
+    def translateDeathCount(self, x): 
+        if x == 5:
+            return 0
+        elif x == 4:
+            return 25
+        elif x == 6:
+            return -25
+        elif x < 4:
+            return 2 * self.translateDeathCount(x + 1)
+        elif x > 6:
+            return 2 * self.translateDeathCount(x - 1)
 
     def setTeam(self, team):
         self.team = team
         self.addTeamModifiers()
 
     def addTeamModifiers(self):
-        for pokemon in self.team:
-            self.rating += pokemon.ranks[self.name]
+        if type(self.team) == Pokemon:
+            self.rating += self.team.ranks[self.name]
+        else:
+            for pokemon in self.team:
+                self.rating += pokemon.ranks[self.name]
 
 
     def addRule(self, rule):
@@ -143,8 +183,8 @@ class Main(object):
         self.getPokemon()
         self.getPlayers()
 
-        self.testPrint(self.playerList)
-        # self.testMatch()
+        # self.testPrint(self.playerList)
+        self.testMatch()
         # self.testDump()
 
     def getGames(self):
@@ -206,14 +246,11 @@ class Main(object):
 
     def testMatch(self):
         xerxos = Player('Xerxos', 1000)
-        xerxos.match(self.findGame('Crystal'), 0)
-        xerxos.match(self.findGame('Crystal'), 0)
-        xerxos.match(self.findGame('Crystal'), 0)
-        xerxos.match(self.findGame('Crystal'), 0)
-        xerxos.match(self.findGame('Crystal'), 0)
-        print(xerxos.rating)
-        print(xerxos.matchesPlayed)
-        print(xerxos.tournamentRound)
+        run = self.findGame('Platinum')
+        xerxos.completeRun(run, 0, self.findRule('Superless'), self.findPokemon('Combee'))
+        print('Final rating: ', xerxos.rating)
+        print('Matches played: ', xerxos.matchesPlayed)
+        print('Current tournament round: ', xerxos.tournamentRound)
     
     def testDump(self):
         self.playerList = []
