@@ -1,4 +1,4 @@
-USE `nuzlocke_ratings`;
+USE `nrs`;
 
 INSERT INTO `Pokemon`(`name`) VALUES ('Venusaur');
 INSERT INTO `Pokemon`(`name`) VALUES ('Charizard');

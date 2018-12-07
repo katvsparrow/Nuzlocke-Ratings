@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS `nuzlocke_ratings`;
+CREATE DATABASE IF NOT EXISTS `nrs`;
 
 -- --------------- --
 -- Create tables   --
@@ -10,10 +10,10 @@ CREATE TABLE IF NOT EXISTS `Player` (
     `rating` int NOT NULL DEFAULT 1000,
     `matches_played` int NOT NULL DEFAULT 0,
     `tournament_round` int DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE IF NOT EXISTS `Game` (
-    `game_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS `BaseGame` (
+    `basegame_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `name` varchar(255) NOT NULL,
     `generation` tinyint(1) NOT NULL,
     `region` enum('Kanto', 'Johto', 'Hoenn', 'Sinnoh', 'Unova', 'Kalos', 'Alola') NOT NULL,
@@ -43,29 +43,35 @@ CREATE TABLE IF NOT EXISTS `Party` (
     `pkmn3` int,
     `pkmn4` int,
     `pkmn5` int,
-    `pkmn6` int
+    `pkmn6` int,
+    `runid` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE IF NOT EXISTS `Player_Game` (
-    `player_game_id` int AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS `Ruleset` (
+    `ruleset_id` int AUTO_INCREMENT PRIMARY KEY,
+    `ruleid` int NOT NULL,
+    `runid` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `Run` (
+    `run_id` int AUTO_INCREMENT PRIMARY KEY,
     `pid` int NOT NULL,
-    `gid` int NOT NULL,
+    `bid` int NOT NULL,
     `link` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE IF NOT EXISTS `Game_Pokemon` (
-    `game_pokemon_id` int AUTO_INCREMENT PRIMARY KEY,
-    `gid` int NOT NULL,
+CREATE TABLE IF NOT EXISTS `Basegame_Pokemon` (
+    `basegame_pokemon_id` int AUTO_INCREMENT PRIMARY KEY,
+    `bid` int NOT NULL,
     `pkmn` int,
-    `party_id` int,
     `rank` enum('S', 'A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D', 'E')
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE IF NOT EXISTS `Game_Rule` (
-    `game_rule_id` int AUTO_INCREMENT PRIMARY KEY,
-    `gid` int NOT NULL,
-    `rid` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+-- CREATE TABLE IF NOT EXISTS `Game_Rule` (
+--     `game_rule_id` int AUTO_INCREMENT PRIMARY KEY,
+--     `gid` int NOT NULL,
+--     `rid` int NOT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 -- ------------- --
@@ -79,20 +85,25 @@ ADD CONSTRAINT `fk_party_pkmn2` FOREIGN KEY (`pkmn2`) REFERENCES `Pokemon`(`poke
 ADD CONSTRAINT `fk_party_pkmn3` FOREIGN KEY (`pkmn3`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
 ADD CONSTRAINT `fk_party_pkmn4` FOREIGN KEY (`pkmn4`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
 ADD CONSTRAINT `fk_party_pkmn5` FOREIGN KEY (`pkmn5`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT `fk_party_pkmn6` FOREIGN KEY (`pkmn6`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ADD CONSTRAINT `fk_party_pkmn6` FOREIGN KEY (`pkmn6`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+ADD CONSTRAINT `fk_party_runid` FOREIGN KEY (`runid`) REFERENCES `Run`(`run_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
--- Add constraints to 'Player_Game'
-ALTER TABLE `Player_Game`
-ADD CONSTRAINT `fk_pg_pid` FOREIGN KEY (`pid`) REFERENCES `Player`(`player_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT  `fk_pg_gid` FOREIGN KEY (`gid`) REFERENCES `Game`(`game_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+-- Add constraints to 'Ruleset'
+ALTER TABLE `Ruleset`
+ADD CONSTRAINT `fk_ruleset_ruleid` FOREIGN KEY (`ruleid`) REFERENCES `Rule`(`rule_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+ADD CONSTRAINT `fk_ruleset_runid` FOREIGN KEY (`runid`) REFERENCES `Run`(`run_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
--- Add constraints to 'Game_Pokemon'
-ALTER TABLE `Game_Pokemon`
-ADD CONSTRAINT `fk_gp_gid` FOREIGN KEY (`gid`) REFERENCES `Game`(`game_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT `fk_gp_pkmn` FOREIGN KEY (`pkmn`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT `fk_gp_party` FOREIGN KEY (`party_id`) REFERENCES `Party`(`party_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+-- Add constraints to 'Run'
+ALTER TABLE `Run`
+ADD CONSTRAINT `fk_run_pid` FOREIGN KEY (`pid`) REFERENCES `Player`(`player_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+ADD CONSTRAINT  `fk_run_gid` FOREIGN KEY (`bid`) REFERENCES `Basegame`(`basegame_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
--- Add constraints to 'Game_Rule'
-ALTER TABLE `Game_Rule`
-ADD CONSTRAINT `fk_gr_gid` FOREIGN KEY (`gid`) REFERENCES `Game`(`game_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT `fk_gr_rid` FOREIGN KEY (`rid`) REFERENCES `Rule`(`rule_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+-- Add constraints to 'Basegame_Pokemon'
+ALTER TABLE `Basegame_Pokemon`
+ADD CONSTRAINT `fk_bp_gid` FOREIGN KEY (`bid`) REFERENCES `Basegame`(`basegame_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+ADD CONSTRAINT `fk_bp_pkmn` FOREIGN KEY (`pkmn`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- -- Add constraints to 'Game_Rule'
+-- ALTER TABLE `Game_Rule`
+-- ADD CONSTRAINT `fk_gr_gid` FOREIGN KEY (`gid`) REFERENCES `Game`(`game_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+-- ADD CONSTRAINT `fk_gr_rid` FOREIGN KEY (`rid`) REFERENCES `Rule`(`rule_id`) ON DELETE CASCADE ON UPDATE CASCADE;

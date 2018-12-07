@@ -1,4 +1,4 @@
-USE `nuzlocke_ratings`;
+USE `nrs`;
 
 INSERT INTO `Rule`(`name`,`difficulty`) VALUES ('Dupes Clause',0);
 INSERT INTO `Rule`(`name`,`difficulty`) VALUES ('Set Mode',2);
