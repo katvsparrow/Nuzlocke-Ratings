@@ -1,24 +1,44 @@
-var path = require('path');
-var express = require('express');
-var handlebars = require('handlebars');
-var exphbs = require('express-handlebars');
-var app = express();
-var port = process.env.PORT || 3000;
+const express = require('express');
+const fileUpload = require('express-fileupload');
+const bodyParser = require('body-parser');
+const mysql = require('mysql');
+const path = require('path');
+const app = express();
 
-var playerData = require('./data/players.json');
-var gameData = require('./data/games.json');
-var pokemonData = require('./data/pokemon-ranks.json');
-var ruleData = require('./data/rules.json');
+const {getHomePage} = require('./routes/index');
+const {addPlayerPage, addPlayer, deletePlayer, editPlayer, editPlayerPage} = require('./routes/player');
+const port = 3000;
 
-app.engine('handlebars', exphbs({ defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
-
-app.get('/', function(req, res){
-    res.status(200).render('home');
+const db = mysql.createConnection ({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'nrs'
 });
 
-app.use(express.static(__dirname + '/public'));
+db.connect((err) => {
+    if(err){
+        throw err;
+    }
+    console.log('Connected to database');
+});
+global.db = db;
 
-app.listen(port, function(){
-    console.log("== Server is listening on port", port, "==");
+app.set('port', process.env.port || port);
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(fileUpload());
+
+app.get('/', getHomePage);
+app.get('/add', addPlayerPage);
+app.get('/edit/:id', editPlayerPage);
+app.get('/delete/:id', deletePlayer);
+app.post('/add', addPlayer);
+app.post('/edit/:id', editPlayer);
+
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
 });

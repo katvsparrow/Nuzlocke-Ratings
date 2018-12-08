@@ -9,7 +9,11 @@ CREATE TABLE IF NOT EXISTS `Player` (
     `name` varchar(255) NOT NULL,
     `rating` int NOT NULL DEFAULT 1000,
     `matches_played` int NOT NULL DEFAULT 0,
-    `tournament_round` int DEFAULT 1
+    `tournament_round` int DEFAULT 1,
+    `avatar` varchar(255) DEFAULT NULL,
+    `email` varchar(255),
+    `forum_link` varchar(255) DEFAULT NULL,
+    `discord` varchar(32) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE IF NOT EXISTS `BaseGame` (

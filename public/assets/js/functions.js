@@ -10,8 +10,10 @@ function sortTable(n){
         
         for(i = 1; i < (rows.length - 1); i++){
             shouldSwitch = false;
-            x = rows[i].getElementsByTagName("TD")[n];
-            y = rows[i + 1].getElementsByTagName("TD")[n];
+            row1 = rows[i].getElementsByTagName("TD");
+            row2 = rows[i + 1].getElementsByTagName("TD");
+            x = row1[n];
+            y = row2[n];
             if(dir == 'asc'){
                 if(x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()){
                     shouldSwitch = true;

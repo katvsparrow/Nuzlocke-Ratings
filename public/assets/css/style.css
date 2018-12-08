@@ -1,0 +1,20 @@
+.table-wrapper {
+    margin-top: 50px;
+}
+
+.player-img {
+    width: 40px;
+    height: 40px;
+}
+
+.add-player-form {
+    margin-top: 50px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th.sortable {
+    cursor: pointer;
+}
