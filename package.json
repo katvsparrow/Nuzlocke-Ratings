@@ -25,6 +25,7 @@
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.12",
     "mysql": "^2.16.0",
+    "npm": "^6.5.0",
     "req-flash": "0.0.3"
   }
 }

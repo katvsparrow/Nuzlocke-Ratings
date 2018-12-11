@@ -7,6 +7,7 @@ const app = express();
 
 const {getHomePage} = require('./routes/index');
 const {addPlayerPage, addPlayer, deletePlayer, editPlayer, editPlayerPage} = require('./routes/player');
+const {addRunPage} = require('./routes/run');
 const port = 3000;
 
 const db = mysql.createConnection ({
@@ -34,6 +35,7 @@ app.use(fileUpload());
 
 app.get('/', getHomePage);
 app.get('/add', addPlayerPage);
+app.get('/add-run', addRunPage);
 app.get('/edit/:id', editPlayerPage);
 app.get('/delete/:id', deletePlayer);
 app.post('/add', addPlayer);
