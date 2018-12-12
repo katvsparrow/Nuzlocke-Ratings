@@ -22,8 +22,8 @@ INSERT INTO `BaseGame`(`name`,`generation`,`region`,`difficulty`) VALUES ('Black
 INSERT INTO `BaseGame`(`name`,`generation`,`region`,`difficulty`) VALUES ('White 2',5,'Unova',4);
 INSERT INTO `BaseGame`(`name`,`generation`,`region`,`difficulty`) VALUES ('X',6,'Kalos',1);
 INSERT INTO `BaseGame`(`name`,`generation`,`region`,`difficulty`) VALUES ('Y',6,'Kalos',1);
-INSERT INTO `BaseGame`(`name`,`generation`,`region`,`difficulty`) VALUES ('Omega Ruby',6,'Hoenn',2);
-INSERT INTO `BaseGame`(`name`,`generation`,`region`,`difficulty`) VALUES ('Alpha Sapphire',6,'Hoenn',2);
+INSERT INTO `BaseGame`(`name`,`generation`,`region`,`difficulty`) VALUES ('Omega Ruby',6,'Hoenn',1);
+INSERT INTO `BaseGame`(`name`,`generation`,`region`,`difficulty`) VALUES ('Alpha Sapphire',6,'Hoenn',1);
 INSERT INTO `BaseGame`(`name`,`generation`,`region`,`difficulty`) VALUES ('Sun',7,'Alola',2);
 INSERT INTO `BaseGame`(`name`,`generation`,`region`,`difficulty`) VALUES ('Moon',7,'Alola',2);
 INSERT INTO `BaseGame`(`name`,`generation`,`region`,`difficulty`) VALUES ('Ultra Sun',7,'Alola',4);

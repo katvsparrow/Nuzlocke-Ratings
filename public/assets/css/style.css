@@ -1,5 +1,5 @@
 .table-wrapper {
-    margin-top: 50px;
+    margin: 50px;
 }
 
 .player-img {
@@ -11,10 +11,10 @@
     margin-top: 50px;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
 th.sortable {
     cursor: pointer;
+}
+
+.bg-black {
+    background-color: #212529;
 }

@@ -1,6 +1,6 @@
-function sortTable(n){
+function sortTable(n, tableID){
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-    table = document.getElementById('leaderboard');
+    table = document.getElementById(tableID);
     switching = true;
     dir = 'asc';
 

@@ -1,0 +1,26 @@
+<% include partials/header.ejs %>
+    <div class="table-wrapper">
+        <table class="table table-hover table-dark table-striped" id="basegame-info-table">
+            <thead class="thead-info">
+                <tr>
+                    <th scope="col" onclick="sortTable(0, 'basegame-info-table')" class="sortable">Game</th>
+                    <th scope="col" onclick="sortTable(1, 'basegame-info-table')" class="sortable">Generation</th>
+                    <th scope="col" onclick="sortTable(2, 'basegame-info-table')" class="sortable">Region</th>
+                    <th scope="col" onclick="sortTable(3, 'basegame-info-table')" class="sortable">Difficulty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(var i = 0; i < basegames.length; i++){ %>
+                    <tr>
+                        <td>Pokemon <%= basegames[i].name %></td>
+                        <td><%= basegames[i].generation %></td>
+                        <td><%= basegames[i].region %></td>
+                        <td><%= basegames[i].difficulty %></td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

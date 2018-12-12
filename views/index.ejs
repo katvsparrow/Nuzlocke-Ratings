@@ -1,15 +1,15 @@
 <% include partials/header.ejs %>
     <div class="table-wrapper">
         <% if (players.length > 0) {%>
-            <table class="table table-hovered" id="leaderboard">
-                <thead class="thead-dark">
+            <table class="table table-hover table-dark table-striped" id="leaderboard">
+                <thead class="thead-info">
                     <tr>
-                        <th scope="col" onclick="sortTable(0)" class="sortable">Rank</th>
+                        <th scope="col" onclick="sortTable(0, 'leaderboard')" class="sortable">Rank</th>
                         <th scope="col">Avatar</th>
-                        <th scope="col" onclick="sortTable(2)" class="sortable">Username</th>
-                        <th scope="col" onclick="sortTable(3)" class="sortable">Rating</th>
-                        <th scope="col" onclick="sortTable(4)" class="sortable">Runs Completed</th>
-                        <th scope="col" onclick="sortTable(5)" class="sortable">Discord</th>
+                        <th scope="col" onclick="sortTable(2, 'leaderboard')" class="sortable">Username</th>
+                        <th scope="col" onclick="sortTable(3, 'leaderboard')" class="sortable">Rating</th>
+                        <th scope="col" onclick="sortTable(4, 'leaderboard')" class="sortable">Runs Completed</th>
+                        <th scope="col" onclick="sortTable(5, 'leaderboard')" class="sortable">Discord</th>
                         <th scope="col">Forum Profile</th>
                         <th scope="col">Action</th>
                     </tr>
