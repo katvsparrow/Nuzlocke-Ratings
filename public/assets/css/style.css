@@ -7,7 +7,7 @@
     height: 40px;
 }
 
-.add-player-form {
+.add-player-form, .add-run-form {
     margin-top: 50px;
 }
 
@@ -17,4 +17,12 @@ th.sortable {
 
 .bg-black {
     background-color: #212529;
+}
+
+body {
+    color: white;
+}
+
+.pokemon-input {
+    margin-bottom: 5px;
 }

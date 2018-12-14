@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `Player` (
 
 CREATE TABLE IF NOT EXISTS `BaseGame` (
     `basegame_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `name` varchar(255) NOT NULL,
+    `basegame_name` varchar(255) NOT NULL,
     `generation` tinyint(1) NOT NULL,
     `region` enum('Kanto', 'Johto', 'Hoenn', 'Sinnoh', 'Unova', 'Kalos', 'Alola') NOT NULL,
     `difficulty` tinyint(1) NOT NULL
@@ -26,13 +26,13 @@ CREATE TABLE IF NOT EXISTS `BaseGame` (
 
 CREATE TABLE IF NOT EXISTS `Rule` (
     `rule_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `name` varchar(255) NOT NULL,
+    `rule_name` varchar(255) NOT NULL,
     `difficulty` tinyint(1) NOT NULL  
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE IF NOT EXISTS `Pokemon` (
     `pokemon_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `name` varchar(255) NOT NULL
+    `pokemon_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
@@ -59,6 +59,7 @@ CREATE TABLE IF NOT EXISTS `Ruleset` (
 
 CREATE TABLE IF NOT EXISTS `Run` (
     `run_id` int AUTO_INCREMENT PRIMARY KEY,
+    `run_name` varchar(255) NOT NULL,
     `pid` int NOT NULL,
     `bid` int NOT NULL,
     `link` varchar(255) NOT NULL

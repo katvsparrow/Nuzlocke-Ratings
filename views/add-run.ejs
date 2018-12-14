@@ -4,19 +4,97 @@
             <p class="text-center text-danger"><%= message %></p>
         <% } %>
         <form class="add-run-form" action="" method="post" enctype="multipart/form-data">
-            <p>Please enter <b>completed runs only</b>.</p>
+            <h4>Please enter <b>completed runs only</b>.</h2>
+            <br />
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <select id="basegame" name="basegame" class="form-control" required>
+                    <label for="run-name-input" class="control-label">Run name</label>
+                    <input type="text" class="form-control" id="run-name-input" placeholder="Run name" required> 
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="run-link-input" class="control-label">Link to run</label>
+                    <input type="text" class="form-control" id="run-link-input" placeholder="Link to run" required> 
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="basegame-input" class="control-label">Game played</label>
+                    <select id="basegame-input" name="basegame" class="form-control" onchange="changedBasegame()" required>
                         <option selected disabled>Choose game</option>
                         <% for(var i = 0; i < basegames.length; i++) { %>
-                            <option>Pokemon <%= basegames[i].name %> (Difficulty: <%= basegames[i].difficulty %>)</option>
+                            <option>Pokemon <%= basegames[i].basegame_name %></option>
                         <% } %>
                     </select>
                 </div>
+
+                <div class="form-group col-md-6" id="team-selector">
+                </div>
             </div>
+            <button type="submit" class="btn btn-primary float-right">Add Run</button>
         </form>
     </div>
 </div>
+
+<script>
+var pokemon = <%-JSON.stringify(pokemon)%>;
+
+function changedBasegame(){
+    gameInput = document.getElementById('basegame-input');
+    teamSelector = document.getElementById('team-selector');
+    basegameName = gameInput.value.replace('Pokemon ', '');
+    createLabel(teamSelector);
+    validPokemon = getValidPokemon(pokemon, basegameName);
+    deleteTeamSlots();
+
+    for(var j = 1; j <= 6; j++){
+        var template = document.createElement('select');
+        template.setAttribute('class', 'pokemon-input form-control');
+        template.setAttribute('required', '');
+        
+        var optionTemplate = document.createElement('option');
+        optionTemplate.setAttribute('selected', '')
+        optionTemplate.innerHTML = 'Empty team slot';
+
+        template.setAttribute('name', 'party' + j);
+        template.appendChild(optionTemplate);
+        for(var i = 0; i < validPokemon.length; i++){
+            var pokemonOption = document.createElement('option');
+            pokemonOption.innerHTML = validPokemon[i].pokemon_name;
+            template.appendChild(pokemonOption);
+        }
+        teamSelector.appendChild(template);
+    }
+}
+
+function getValidPokemon(pokemon, basegameName){
+    validPokemon = [];
+    for(var i = 0; i < pokemon.length; i++){
+        if(pokemon[i].basegame_name == basegameName){
+            validPokemon.push(pokemon[i]);
+        }
+    }
+    return validPokemon;
+}
+
+function createLabel(teamSelector){
+    if(document.getElementById('final-team-label') == null){
+        var label = document.createElement('label');
+        label.setAttribute('class', 'control-label');
+        label.setAttribute('id', 'final-team-label')
+        label.innerHTML = 'Final team';
+        teamSelector.appendChild(label);
+    }
+}
+
+function deleteTeamSlots(){
+    var teamSlots = document.querySelectorAll('.pokemon-input');
+    for(var i = 0; i < teamSlots.length; i++){
+        teamSlots[i].remove();
+    }
+}
+</script>
+
 </body>
 </html>

@@ -15,7 +15,7 @@ pokemonList = []
 baseQuery = "INSERT INTO `basegame_pokemon`(`bid`, `pkmn`, `rank`) \n\
 SELECT `basegame`.`basegame_id`, `pokemon`.`pokemon_id`, \'%s\' \n\
 FROM `basegame` JOIN `pokemon` WHERE \n\
-`basegame`.`name` = \'%s\' AND `pokemon`.`name` = \'%s\';\n"
+`basegame`.`basegame_name` = \'%s\' AND `pokemon`.`pokemon_name` = \'%s\';\n"
 
 with open('data/pokemon-ranks.json', 'r') as fp:
     pokemonData = json.load(fp)
