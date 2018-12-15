@@ -42,12 +42,12 @@ CREATE TABLE IF NOT EXISTS `Pokemon` (
 
 CREATE TABLE IF NOT EXISTS `Party` (
     `party_id` int AUTO_INCREMENT PRIMARY KEY,
-    `pkmn1` int NOT NULL,
-    `pkmn2` int,
-    `pkmn3` int,
-    `pkmn4` int,
-    `pkmn5` int,
-    `pkmn6` int,
+    `pkmn_id` int NOT NULL,
+    -- `pkmn2` int,
+    -- `pkmn3` int,
+    -- `pkmn4` int,
+    -- `pkmn5` int,
+    -- `pkmn6` int,
     `runid` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -85,12 +85,12 @@ CREATE TABLE IF NOT EXISTS `Basegame_Pokemon` (
 
 -- Add constraints to 'Party'
 ALTER TABLE `Party`
-ADD CONSTRAINT `fk_party_pkmn1` FOREIGN KEY (`pkmn1`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT `fk_party_pkmn2` FOREIGN KEY (`pkmn2`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT `fk_party_pkmn3` FOREIGN KEY (`pkmn3`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT `fk_party_pkmn4` FOREIGN KEY (`pkmn4`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT `fk_party_pkmn5` FOREIGN KEY (`pkmn5`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT `fk_party_pkmn6` FOREIGN KEY (`pkmn6`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+ADD CONSTRAINT `fk_party_pkmn_id` FOREIGN KEY (`pkmn_id`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+-- ADD CONSTRAINT `fk_party_pkmn2` FOREIGN KEY (`pkmn2`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+-- ADD CONSTRAINT `fk_party_pkmn3` FOREIGN KEY (`pkmn3`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+-- ADD CONSTRAINT `fk_party_pkmn4` FOREIGN KEY (`pkmn4`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+-- ADD CONSTRAINT `fk_party_pkmn5` FOREIGN KEY (`pkmn5`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+-- ADD CONSTRAINT `fk_party_pkmn6` FOREIGN KEY (`pkmn6`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE,
 ADD CONSTRAINT `fk_party_runid` FOREIGN KEY (`runid`) REFERENCES `Run`(`run_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- Add constraints to 'Ruleset'

@@ -7,7 +7,7 @@ const app = express();
 
 const {getHomePage} = require('./routes/index');
 const {addPlayerPage, addPlayer, deletePlayer, editPlayer, editPlayerPage} = require('./routes/player');
-const {addRunPage} = require('./routes/run');
+const {addRunPage, addRun} = require('./routes/run');
 const {basegameInfo, ruleInfo} = require('./routes/info');
 const port = 3000;
 
@@ -15,7 +15,8 @@ const db = mysql.createConnection ({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'nrs'
+    database: 'nrs',
+    multipleStatements: true
 });
 
 db.connect((err) => {
@@ -43,6 +44,7 @@ app.get('/info/basegames', basegameInfo);
 app.get('/info/rules', ruleInfo);
 
 app.post('/add', addPlayer);
+app.post('/add-run', addRun);
 app.post('/edit/:id', editPlayer);
 
 app.listen(port, () => {
