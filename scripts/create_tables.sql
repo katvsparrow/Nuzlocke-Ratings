@@ -35,6 +35,14 @@ CREATE TABLE IF NOT EXISTS `Pokemon` (
     `pokemon_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE IF NOT EXISTS `Title` (
+    `title_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `title_name` varchar(32) NOT NULL,
+    `title_abbrev` varchar(3) NOT NULL,
+    `rating_floor` int NOT NULL,
+    `min_challenges` tinyint NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 -- --------------------- --
 -- Relationship tables   --

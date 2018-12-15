@@ -70,7 +70,7 @@ module.exports = {
                     message = "Invalid file format. Only 'gif', 'jpeg' and 'png' images are allowed.";
                     res.render('add-player.ejs', {
                         message,
-                        title: "Welcome to Socka | Add a new player"
+                        title: "Nuzlocke Ratings | Add a new player"
                     });
                 }
             }

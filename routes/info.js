@@ -26,5 +26,18 @@ module.exports = {
                 message: ''
             });
         });
+    },
+    titleInfo: (req, res) => {
+        let query = "SELECT * FROM `title`";
+
+        db.query(query, (err, result) => {
+            if(err) return res.status(500).send(err);
+
+            res.render('title-info.ejs', {
+                title: "Nuzlocke Ratings | Title Info",
+                titles: result,
+                message: ''
+            });
+        });
     }
 }

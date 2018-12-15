@@ -44,6 +44,7 @@ module.exports = {
         let runName = req.body.run_name;
         let runLink = req.body.run_link;
         let basegame = req.body.basegame;
+        let playerID = req.body.player_id;
         basegame = basegame.replace('Pokemon ', '');
 
         var party = [];
@@ -67,7 +68,7 @@ module.exports = {
         let runQuery = "INSERT INTO `run` (`run_name`, `bid`, `pid`, `link`) " +
         "SELECT '" + runName + "', `basegame`.`basegame_id`, `player`.`player_id`, '" + runLink + "' " +
         "FROM `basegame` INNER JOIN `player` " +
-        "WHERE `basegame`.`basegame_name` = '" + basegame + "' AND `player`.`player_id` = 1; " +
+        "WHERE `basegame`.`basegame_name` = '" + basegame + "' AND `player`.`player_id` = " + playerID + "; " +
         "SET @last_run_id = LAST_INSERT_ID(); ";
 
         for(var i = 0; i < party.length; i++){
@@ -76,6 +77,14 @@ module.exports = {
             "FROM `pokemon` WHERE `pokemon_name` = '" + party[i] + "'; ";
             runQuery += addendum;
         }
+        for(var i = 0; i < ruleset.length; i++){
+            var addendum = "INSERT INTO `ruleset` (`runid`, `ruleid`) " +
+            "SELECT @last_run_id, `rule_id` " +
+            "FROM `rule` WHERE `rule_name` = '" + ruleset[i] + "'; ";
+            runQuery += addendum;
+        }
+        runQuery += "SET @count = (SELECT COUNT(*) FROM `run` WHERE `pid` = " + playerID + "); ";
+        runQuery += "UPDATE `player` SET `matches_played` = @count WHERE `player_id` = " + playerID + "; ";
         
         db.query(runQuery, (err, result) => {
             if(err) return res.status(500).send(err);

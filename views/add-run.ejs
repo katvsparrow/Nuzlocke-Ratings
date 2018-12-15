@@ -20,6 +20,11 @@
 
             <div class="form-row">
                 <div class="form-group col-md-6">
+                    <label for="player-id-input" class="control-label">Player ID</label>
+                    <input type="text" class="form-control" id="player-id=input" placeholder="Player ID" required name="player_id">
+                </div>
+
+                <div class="form-group col-md-6">
                     <label for="basegame-input" class="control-label">Game played</label>
                     <select id="basegame-input" name="basegame" class="form-control" onchange="changedBasegame()" required>
                         <option selected disabled>Choose game</option>
@@ -27,9 +32,6 @@
                             <option>Pokemon <%= basegames[i].basegame_name %></option>
                         <% } %>
                     </select>
-                </div>
-                
-                <div class="form-group col-md-6" id="team-selector">
                 </div>
             </div>
 
@@ -42,6 +44,10 @@
                             <label class="form-check-label" for="defaultCheck"><%= rules[i].rule_name %></label>
                         </div>
                     <% } %>
+                </div>
+
+                <div class="form-group col-md-6" id="team-selector">
+                    
                 </div>
             </div>
             <button type="submit" class="btn btn-primary float-right">Add Run</button>
