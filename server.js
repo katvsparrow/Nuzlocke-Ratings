@@ -7,7 +7,7 @@ const app = express();
 
 const {getHomePage} = require('./routes/index');
 const {addPlayerPage, addPlayer, deletePlayer, editPlayer, editPlayerPage} = require('./routes/player');
-const {addRunPage, addRun} = require('./routes/run');
+const {addRunPage, addRun, displayRuns} = require('./routes/run');
 const {basegameInfo, ruleInfo, titleInfo} = require('./routes/info');
 const port = 3000;
 
@@ -40,6 +40,7 @@ app.get('/add', addPlayerPage);
 app.get('/add-run', addRunPage);
 app.get('/edit/:id', editPlayerPage);
 app.get('/delete/:id', deletePlayer);
+app.get('/:id/runs', displayRuns);
 app.get('/info/basegames', basegameInfo);
 app.get('/info/rules', ruleInfo);
 app.get('/info/titles', titleInfo);

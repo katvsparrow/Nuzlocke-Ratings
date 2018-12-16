@@ -21,7 +21,7 @@
                             <td><img src="/assets/img/<%= players[i].avatar %>" class="rounded-circle player-img" alt=""></td>
                             <td><%= players[i].name %></td>
                             <td><%= players[i].rating %></td>
-                            <td><%= players[i].matches_played %></td>
+                            <td><a href="/<%= players[i].player_id %>/runs"><%= players[i].matches_played %></a></td>
                             <td><%= players[i].discord %></td>
                             <% if(players[i].forum_link){ %>
                                 <td><a href="<%= players[i].forum_link %>" target="_blank">Forum Page</a></td>

@@ -16,6 +16,33 @@ function getUniqueBasegames(arr){
     return result;
 }
 
+function mergeRunData(runs){
+    uniqueIDs = [];
+    uniqueRuns = [];
+    
+    for(var i = 0; i < runs.length; i++){
+        if(!uniqueIDs.includes(runs[i].run_id)){
+            runs[i].party = [];
+            runs[i].ruleset = [];
+            uniqueIDs.push(runs[i].run_id);
+            uniqueRuns.push(runs[i]);
+        }
+    }
+
+    for(i = 0; i < uniqueRuns.length; i++){
+        for(var j = 0; j < runs.length; j++){
+            if(uniqueRuns[i].run_id == runs[j].run_id){
+                if(uniqueRuns[i].party.length < 6)
+                    uniqueRuns[i].party.push(runs[j].pokemon_name);
+                if(runs[j].rule_name && !uniqueRuns[i].ruleset.includes(runs[j].rule_name))
+                    uniqueRuns[i].ruleset.push(runs[j].rule_name);
+            }
+        }
+    }
+
+    return uniqueRuns;
+}
+
 module.exports = {
 
     addRunPage: (req, res) => {
@@ -89,6 +116,22 @@ module.exports = {
         db.query(runQuery, (err, result) => {
             if(err) return res.status(500).send(err);
             res.redirect('/');
+        });
+    },
+
+    displayRuns: (req, res) => {
+        let playerID = req.params.id;
+        let getRunsQuery = "SELECT `run`.`run_id`, `player`.`name`, `run`.`run_name`, `basegame`.`basegame_name`, `run`.`link`, `pokemon`.`pokemon_name`, `rule`.`rule_name` FROM `run` INNER JOIN `player` ON `run`.`pid` = `player`.`player_id` INNER JOIN `basegame` ON `run`.`bid` = `basegame`.`basegame_id` INNER JOIN `party` ON `run`.`run_id` = `party`.`runid` INNER JOIN `pokemon` ON `party`.`pkmn_id` = `pokemon`.`pokemon_id` LEFT JOIN `ruleset` ON `run`.`run_id` = `ruleset`.`runid` LEFT JOIN `rule` ON `ruleset`.`ruleid` = `rule`.`rule_id` WHERE `run`.`pid` = " + playerID;
+
+        db.query(getRunsQuery, (err, result) => {
+            if(err) return res.status(500).send(err);
+
+            runs = mergeRunData(result);
+            res.render('display-runs.ejs', {
+                'title': 'Nuzlocke Ratings | Display Runs',
+                'message': '',
+                'runs': runs
+            });
         });
     }
 

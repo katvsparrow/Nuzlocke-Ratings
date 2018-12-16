@@ -34,7 +34,7 @@ VALUES
     ),
     (
         'Nuzlocke Champion',
-        'NGM',
+        'NC',
         2700,
         10
     );

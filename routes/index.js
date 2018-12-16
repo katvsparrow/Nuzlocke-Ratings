@@ -8,8 +8,8 @@ module.exports = {
                 res.redirect('/');
             }
             res.render('index.ejs', {
-                title: "Nuzlocke Ratings | Leaderboard"
-                ,players: result
+                title: "Nuzlocke Ratings | Leaderboard",
+                players: result
             });
         });
     },
