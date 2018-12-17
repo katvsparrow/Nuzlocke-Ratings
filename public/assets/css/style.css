@@ -26,3 +26,13 @@ body {
 .pokemon-input {
     margin-bottom: 5px;
 }
+
+.hidden-data {
+    display: none;
+}
+
+ol.split {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}

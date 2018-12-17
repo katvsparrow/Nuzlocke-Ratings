@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `BaseGame` (
 CREATE TABLE IF NOT EXISTS `Rule` (
     `rule_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `rule_name` varchar(255) NOT NULL,
-    `difficulty` tinyint(1) NOT NULL  
+    `rule_difficulty` tinyint(1) NOT NULL  
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE IF NOT EXISTS `Pokemon` (
@@ -70,7 +70,9 @@ CREATE TABLE IF NOT EXISTS `Run` (
     `run_name` varchar(255) NOT NULL,
     `pid` int NOT NULL,
     `bid` int NOT NULL,
-    `link` varchar(255) NOT NULL
+    `link` varchar(255) NOT NULL,
+    `deaths` int NOT NULL,
+    `run_rating` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE IF NOT EXISTS `Basegame_Pokemon` (

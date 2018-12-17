@@ -7,7 +7,8 @@
                         <th scope="col" onclick="sortTable(0, 'display-runs-table')" class="sortable">#</th>
                         <th scope="col" onclick="sortTable(1, 'display-runs-table')" class="sortable">Run Name</th>
                         <th scope="col" onclick="sortTable(2, 'display-runs-table')" class="sortable">Game</th>
-                        <th scope="col" onclick="sortTable(3, 'display-runs-table')" class="sortable">Link</th>
+                        <th scope="col" onclick="sortTable(3, 'display-runs-table')" class="sortable">Rating</th>
+                        <th scope="col">Link</th>
                         <th scope="col">Team</th>
                         <th scope="col">Ruleset</th>
                     </tr>
@@ -18,13 +19,14 @@
                             <td><%= i + 1 %></td>
                             <td><%= runs[i].run_name %></td>
                             <td>Pokemon <%= runs[i].basegame_name %></td>
+                            <td><%= runs[i].run_rating %></td>
                             <td><a href="<%= runs[i].link %>" target="_blank">Link to run</a></td>
                             <td>
-                                <ul>
+                                <ol class="split">
                                     <% for(var j = 0; j < runs[i].party.length; j++){ %>
                                     <li><%= runs[i].party[j] %></li>
                                     <% } %>
-                                </ul>
+                                </ol>
                             </td>
                             <td>
                                 <% for(j = 0; j < runs[i].ruleset.length; j++){ %>

@@ -43,6 +43,19 @@ function mergeRunData(runs){
     return uniqueRuns;
 }
 
+function getExpectedScore(player, gameRating){
+    return 1.0 / (1 + 10 ** ((gameRating - player.rating) / 400.0));
+}
+
+function calculateK(player){
+    return 800.0 / (player.matches_played + player.tournament_round);
+}
+
+function adjustRating(player, gameRating){
+    console.log(player, player.rating);
+    return Math.floor(player.rating + calculateK(player) * (1 - getExpectedScore(player, gameRating)));
+}
+
 module.exports = {
 
     addRunPage: (req, res) => {
@@ -72,16 +85,12 @@ module.exports = {
         let runLink = req.body.run_link;
         let basegame = req.body.basegame;
         let playerID = req.body.player_id;
+        let deaths = req.body.deaths;
+        let gameRating = parseInt(req.body.game_rating);
         basegame = basegame.replace('Pokemon ', '');
 
         var party = [];
-        let party1 = req.body.party1;
-        let party2 = req.body.party2;
-        let party3 = req.body.party3;
-        let party4 = req.body.party4;
-        let party5 = req.body.party5;
-        let party6 = req.body.party6;
-        party.push(party1, party2, party3, party4, party5, party6);
+        party.push(req.body.party1, req.body.party2, req.body.party3, req.body.party4, req.body.party5, req.body.party6);
 
         var ruleset = [];
         for(var i = 0; i < numRules; i++){
@@ -92,9 +101,9 @@ module.exports = {
             }
         }
         
-        let runQuery = "INSERT INTO `run` (`run_name`, `bid`, `pid`, `link`) " +
-        "SELECT '" + runName + "', `basegame`.`basegame_id`, `player`.`player_id`, '" + runLink + "' " +
-        "FROM `basegame` INNER JOIN `player` " +
+        let runQuery = "INSERT INTO `run` (`run_name`, `bid`, `pid`, `link`, `deaths`, `run_rating`) " +
+        "SELECT '" + runName + "', `basegame`.`basegame_id`, `player`.`player_id`, '" + runLink + "', " + deaths + ", " + gameRating +
+        " FROM `basegame` INNER JOIN `player` " +
         "WHERE `basegame`.`basegame_name` = '" + basegame + "' AND `player`.`player_id` = " + playerID + "; " +
         "SET @last_run_id = LAST_INSERT_ID(); ";
 
@@ -115,13 +124,21 @@ module.exports = {
         
         db.query(runQuery, (err, result) => {
             if(err) return res.status(500).send(err);
-            res.redirect('/');
+            var updateRatingQuery = "SELECT `rating`, `matches_played`, `tournament_round` FROM `player` WHERE `player_id` = " + playerID;
+            db.query(updateRatingQuery, (err, result) => {
+                if(err) return res.status(500).send(err);
+                newRating = adjustRating(result[0], gameRating);
+                db.query("UPDATE `player` SET `rating` = " + newRating + " WHERE `player_id` = " + playerID, (err, result) => {
+                    if(err) return res.status(500).send(err);
+                    res.redirect('/');
+                });
+            });
         });
     },
 
     displayRuns: (req, res) => {
         let playerID = req.params.id;
-        let getRunsQuery = "SELECT `run`.`run_id`, `player`.`name`, `run`.`run_name`, `basegame`.`basegame_name`, `run`.`link`, `pokemon`.`pokemon_name`, `rule`.`rule_name` FROM `run` INNER JOIN `player` ON `run`.`pid` = `player`.`player_id` INNER JOIN `basegame` ON `run`.`bid` = `basegame`.`basegame_id` INNER JOIN `party` ON `run`.`run_id` = `party`.`runid` INNER JOIN `pokemon` ON `party`.`pkmn_id` = `pokemon`.`pokemon_id` LEFT JOIN `ruleset` ON `run`.`run_id` = `ruleset`.`runid` LEFT JOIN `rule` ON `ruleset`.`ruleid` = `rule`.`rule_id` WHERE `run`.`pid` = " + playerID;
+        let getRunsQuery = "SELECT `run`.`run_id`, `run`.`run_rating`, `player`.`name`, `run`.`run_name`, `basegame`.`basegame_name`, `run`.`link`, `pokemon`.`pokemon_name`, `rule`.`rule_name` FROM `run` INNER JOIN `player` ON `run`.`pid` = `player`.`player_id` INNER JOIN `basegame` ON `run`.`bid` = `basegame`.`basegame_id` INNER JOIN `party` ON `run`.`run_id` = `party`.`runid` INNER JOIN `pokemon` ON `party`.`pkmn_id` = `pokemon`.`pokemon_id` LEFT JOIN `ruleset` ON `run`.`run_id` = `ruleset`.`runid` LEFT JOIN `rule` ON `ruleset`.`ruleid` = `rule`.`rule_id` WHERE `run`.`pid` = " + playerID;
 
         db.query(getRunsQuery, (err, result) => {
             if(err) return res.status(500).send(err);
