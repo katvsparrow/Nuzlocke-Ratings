@@ -22,16 +22,18 @@
                             <td><%= runs[i].run_rating %></td>
                             <td><a href="<%= runs[i].link %>" target="_blank">Link to run</a></td>
                             <td>
-                                <ol class="split">
+                                <ul class="list-unstyled split">
                                     <% for(var j = 0; j < runs[i].party.length; j++){ %>
                                     <li><%= runs[i].party[j] %></li>
                                     <% } %>
-                                </ol>
+                                </ul>
                             </td>
                             <td>
-                                <% for(j = 0; j < runs[i].ruleset.length; j++){ %>
-                                <li><%= runs[i].ruleset[j] %></li>
-                                <% } %>
+                                <ol>
+                                    <% for(j = 0; j < runs[i].ruleset.length; j++){ %>
+                                    <li><%= runs[i].ruleset[j] %></li>
+                                    <% } %>
+                                </ol>
                             </td>
                         </tr>
                     <% } %>

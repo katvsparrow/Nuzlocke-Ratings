@@ -31,8 +31,16 @@ body {
     display: none;
 }
 
-ol.split {
+.split {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
+}
+
+#info-page-container {
+    margin: 50px;
+}
+
+.info-page-text {
+    margin: 20px;
 }
