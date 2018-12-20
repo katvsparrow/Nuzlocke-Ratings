@@ -20,8 +20,8 @@ const {
   ruleInfo,
   titleInfo
 } = require('./routes/info');
-const port = 3000;
 
+const port = process.env.PORT || 3000;
 const { JAWSDB_MARIA_URL } = process.env;
 const connection = JAWSDB_MARIA_URL
   ? JAWSDB_MARIA_URL
@@ -42,7 +42,7 @@ db.connect(err => {
 });
 global.db = db;
 
-app.set('port', process.env.port || port);
+app.set('port', port);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
