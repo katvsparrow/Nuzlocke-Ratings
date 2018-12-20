@@ -1,5 +1,3 @@
-USE `nrs`;
-
 INSERT INTO `Title`(`title_name`, `title_abbrev`, `rating_floor`, `min_challenges`)
 VALUES
     (

@@ -1,5 +1,3 @@
-USE `nrs`;
-
 INSERT INTO `Pokemon`(`pokemon_name`) VALUES ('Venusaur');
 INSERT INTO `Pokemon`(`pokemon_name`) VALUES ('Charizard');
 INSERT INTO `Pokemon`(`pokemon_name`) VALUES ('Blastoise');

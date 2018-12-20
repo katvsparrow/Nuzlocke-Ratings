@@ -1,5 +1,3 @@
-USE `nrs`;
-
 INSERT INTO `Rule`(`rule_name`,`rule_difficulty`) VALUES ('Dupes Clause',0);
 INSERT INTO `Rule`(`rule_name`,`rule_difficulty`) VALUES ('Set Mode',2);
 INSERT INTO `Rule`(`rule_name`,`rule_difficulty`) VALUES ('Monotype',3);

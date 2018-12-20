@@ -5,22 +5,37 @@ const mysql = require('mysql');
 const path = require('path');
 const app = express();
 
-const {getHomePage} = require('./routes/index');
-const {addPlayerPage, addPlayer, deletePlayer, editPlayer, editPlayerPage} = require('./routes/player');
-const {addRunPage, addRun, displayRuns} = require('./routes/run');
-const {overallInfo, basegameInfo, ruleInfo, titleInfo} = require('./routes/info');
+const { getHomePage } = require('./routes/index');
+const {
+    addPlayerPage,
+    addPlayer,
+    deletePlayer,
+    editPlayer,
+    editPlayerPage
+} = require('./routes/player');
+const { addRunPage, addRun, displayRuns } = require('./routes/run');
+const {
+    overallInfo,
+    basegameInfo,
+    ruleInfo,
+    titleInfo
+} = require('./routes/info');
 const port = 3000;
 
-const db = mysql.createConnection ({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'nrs',
-    multipleStatements: true
-});
+const { JAWSDB_URL } = process.env;
+const connection = JAWSDB_URL
+    ? JAWSDB_URL
+    : {
+          host: 'localhost',
+          user: 'root',
+          password: 'rootroot',
+          database: 'nrs',
+          multipleStatements: true
+      };
+const db = mysql.createConnection(connection);
 
-db.connect((err) => {
-    if(err){
+db.connect(err => {
+    if (err) {
         throw err;
     }
     console.log('Connected to database');

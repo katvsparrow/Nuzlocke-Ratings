@@ -12,15 +12,15 @@ import json
 #         print('----------------------------------')
 
 pokemonList = []
-baseQuery = "INSERT INTO `basegame_pokemon`(`bid`, `pkmn`, `rank`) \n\
-SELECT `basegame`.`basegame_id`, `pokemon`.`pokemon_id`, \'%s\' \n\
-FROM `basegame` JOIN `pokemon` WHERE \n\
-`basegame`.`basegame_name` = \'%s\' AND `pokemon`.`pokemon_name` = \'%s\';\n"
+baseQuery = "INSERT INTO `BaseGame_Pokemon`(`bid`, `pkmn`, `rank`) \n\
+SELECT `BaseGame`.`basegame_id`, `Pokemon`.`pokemon_id`, \'%s\' \n\
+FROM `BaseGame` JOIN `Pokemon` WHERE \n\
+`BaseGame`.`basegame_name` = \'%s\' AND `Pokemon`.`pokemon_name` = \"%s\";\n"
 
-with open('data/pokemon-ranks.json', 'r') as fp:
+with open('../data/pokemon-ranks.json', 'r') as fp:
     pokemonData = json.load(fp)
-with open('scripts/pokemon_ranks.sql', 'w') as fp:
+with open('pokemon_ranks.sql', 'w') as fp:
     for pokemon, ranks in pokemonData.items():
         for game, rank in ranks.items():
             fp.write(baseQuery % (rank, game, pokemon))
-
+            fp.write('\n')

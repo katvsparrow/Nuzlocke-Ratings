@@ -1,5 +1,3 @@
-USE `nrs`;
-
 INSERT INTO `BaseGame`(`basegame_name`,`generation`,`region`,`difficulty`) VALUES ('Red',1,'Kanto',2);
 INSERT INTO `BaseGame`(`basegame_name`,`generation`,`region`,`difficulty`) VALUES ('Blue',1,'Kanto',2);
 INSERT INTO `BaseGame`(`basegame_name`,`generation`,`region`,`difficulty`) VALUES ('Yellow',1,'Kanto',2);

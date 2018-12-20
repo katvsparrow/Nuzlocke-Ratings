@@ -1,5 +1,3 @@
-CREATE DATABASE IF NOT EXISTS `nrs`;
-
 -- --------------- --
 -- Create tables   --
 -- --------------- --
@@ -14,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `Player` (
     `email` varchar(255),
     `forum_link` varchar(255) DEFAULT NULL,
     `discord` varchar(32) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS `BaseGame` (
     `basegame_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -22,18 +20,18 @@ CREATE TABLE IF NOT EXISTS `BaseGame` (
     `generation` tinyint(1) NOT NULL,
     `region` enum('Kanto', 'Johto', 'Hoenn', 'Sinnoh', 'Unova', 'Kalos', 'Alola') NOT NULL,
     `difficulty` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS `Rule` (
     `rule_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `rule_name` varchar(255) NOT NULL,
     `rule_difficulty` tinyint(1) NOT NULL  
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS `Pokemon` (
     `pokemon_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `pokemon_name` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS `Title` (
     `title_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -41,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `Title` (
     `title_abbrev` varchar(3) NOT NULL,
     `rating_floor` int NOT NULL,
     `min_challenges` tinyint NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 
 -- --------------------- --
@@ -57,13 +55,13 @@ CREATE TABLE IF NOT EXISTS `Party` (
     -- `pkmn5` int,
     -- `pkmn6` int,
     `runid` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS `Ruleset` (
     `ruleset_id` int AUTO_INCREMENT PRIMARY KEY,
     `ruleid` int NOT NULL,
     `runid` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS `Run` (
     `run_id` int AUTO_INCREMENT PRIMARY KEY,
@@ -73,14 +71,14 @@ CREATE TABLE IF NOT EXISTS `Run` (
     `link` varchar(255) NOT NULL,
     `deaths` int NOT NULL,
     `run_rating` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
-CREATE TABLE IF NOT EXISTS `Basegame_Pokemon` (
+CREATE TABLE IF NOT EXISTS `BaseGame_Pokemon` (
     `basegame_pokemon_id` int AUTO_INCREMENT PRIMARY KEY,
     `bid` int NOT NULL,
     `pkmn` int,
     `rank` enum('S', 'A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D', 'E')
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 -- CREATE TABLE IF NOT EXISTS `Game_Rule` (
 --     `game_rule_id` int AUTO_INCREMENT PRIMARY KEY,
@@ -111,11 +109,11 @@ ADD CONSTRAINT `fk_ruleset_runid` FOREIGN KEY (`runid`) REFERENCES `Run`(`run_id
 -- Add constraints to 'Run'
 ALTER TABLE `Run`
 ADD CONSTRAINT `fk_run_pid` FOREIGN KEY (`pid`) REFERENCES `Player`(`player_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-ADD CONSTRAINT  `fk_run_gid` FOREIGN KEY (`bid`) REFERENCES `Basegame`(`basegame_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ADD CONSTRAINT  `fk_run_gid` FOREIGN KEY (`bid`) REFERENCES `BaseGame`(`basegame_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- Add constraints to 'Basegame_Pokemon'
-ALTER TABLE `Basegame_Pokemon`
-ADD CONSTRAINT `fk_bp_gid` FOREIGN KEY (`bid`) REFERENCES `Basegame`(`basegame_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+ALTER TABLE `BaseGame_Pokemon`
+ADD CONSTRAINT `fk_bp_gid` FOREIGN KEY (`bid`) REFERENCES `BaseGame`(`basegame_id`) ON DELETE CASCADE ON UPDATE CASCADE,
 ADD CONSTRAINT `fk_bp_pkmn` FOREIGN KEY (`pkmn`) REFERENCES `Pokemon`(`pokemon_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- -- Add constraints to 'Game_Rule'
