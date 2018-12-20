@@ -7,38 +7,38 @@ const app = express();
 
 const { getHomePage } = require('./routes/index');
 const {
-    addPlayerPage,
-    addPlayer,
-    deletePlayer,
-    editPlayer,
-    editPlayerPage
+  addPlayerPage,
+  addPlayer,
+  deletePlayer,
+  editPlayer,
+  editPlayerPage
 } = require('./routes/player');
 const { addRunPage, addRun, displayRuns } = require('./routes/run');
 const {
-    overallInfo,
-    basegameInfo,
-    ruleInfo,
-    titleInfo
+  overallInfo,
+  basegameInfo,
+  ruleInfo,
+  titleInfo
 } = require('./routes/info');
 const port = 3000;
 
-const { JAWSDB_URL } = process.env;
-const connection = JAWSDB_URL
-    ? JAWSDB_URL
-    : {
-          host: 'localhost',
-          user: 'root',
-          password: 'rootroot',
-          database: 'nrs',
-          multipleStatements: true
-      };
+const { JAWSDB_MARIA_URL } = process.env;
+const connection = JAWSDB_MARIA_URL
+  ? JAWSDB_MARIA_URL
+  : {
+      host: 'localhost',
+      user: 'root',
+      password: 'rootroot',
+      database: 'nrs',
+      multipleStatements: true
+    };
 const db = mysql.createConnection(connection);
 
 db.connect(err => {
-    if (err) {
-        throw err;
-    }
-    console.log('Connected to database');
+  if (err) {
+    throw err;
+  }
+  console.log('Connected to database');
 });
 global.db = db;
 
@@ -66,5 +66,5 @@ app.post('/add-run', addRun);
 app.post('/edit/:id', editPlayer);
 
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+  console.log(`Server running on port ${port}`);
 });
