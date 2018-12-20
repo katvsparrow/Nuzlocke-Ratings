@@ -23,8 +23,10 @@ const {
 
 const port = process.env.PORT || 3000;
 const { JAWSDB_MARIA_URL } = process.env;
+console.log(port);
+console.log(JAWSDB_MARIA_URL);
 const connection = JAWSDB_MARIA_URL
-  ? JAWSDB_MARIA_URL
+  ? JAWSDB_MARIA_URL + '?multipleStatements=true'
   : {
       host: 'localhost',
       user: 'root',
