@@ -1,7 +1,6 @@
 const express = require('express');
 const fileUpload = require('express-fileupload');
 const bodyParser = require('body-parser');
-const mysql = require('mysql');
 const path = require('path');
 const app = express();
 
@@ -22,27 +21,6 @@ const {
 } = require('./routes/info');
 
 const port = process.env.PORT || 3000;
-const { JAWSDB_MARIA_URL } = process.env;
-console.log(port);
-console.log(JAWSDB_MARIA_URL);
-const connection = JAWSDB_MARIA_URL
-  ? JAWSDB_MARIA_URL + '?multipleStatements=true'
-  : {
-      host: 'localhost',
-      user: 'root',
-      password: 'rootroot',
-      database: 'nrs',
-      multipleStatements: true
-    };
-const db = mysql.createConnection(connection);
-
-db.connect(err => {
-  if (err) {
-    throw err;
-  }
-  console.log('Connected to database');
-});
-global.db = db;
 
 app.set('port', port);
 app.set('views', __dirname + '/views');

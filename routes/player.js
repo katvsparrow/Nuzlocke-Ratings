@@ -1,4 +1,4 @@
-const fs = require('fs');
+const db = require('../db');
 
 module.exports = {
   addPlayerPage: (req, res) => {
@@ -13,159 +13,113 @@ module.exports = {
       return res.status(400).send('No files were uploaded.');
     }
 
-    let message = '';
-    let name = req.body.name;
-    let forum_link = req.body.forum_link;
-    let email = req.body.email;
-    let discord = req.body.discord;
-    let uploadedFile = req.files.avatar;
-    let image_name = uploadedFile.name;
+    const name = req.body.name;
+    const uploadedFile = req.files.avatar;
     let fileExtension = uploadedFile.mimetype.split('/')[1];
-    image_name = name + '.' + fileExtension;
+    const avatar = name + '.' + fileExtension;
 
-    let usernameQuery = "SELECT * FROM `Player` WHERE `name` = '" + name + "'";
+    const player = {
+      name,
+      email: req.body.email,
+      avatar,
+      forum_link: req.body.forum_link,
+      discord: req.body.discord
+    };
 
-    db.query(usernameQuery, (err, result) => {
+    db.getPlayerByUsername(name, (err, result) => {
       if (err) {
-        return res.status(500).send(err);
+        res.status(500).send('Error! Please contact server administrator.');
+        throw err;
       }
+
+      // if username exists, re-render with message
       if (result.length > 0) {
-        message = 'Username already exists';
-        res.render('add-player.ejs', {
-          message,
+        return res.render('add-player.ejs', {
+          message: 'Username already exists',
           title: 'Nuzlocke Ratings | Add a new player'
         });
-      } else {
-        // check the filetype before uploading it
-        if (
-          uploadedFile.mimetype === 'image/png' ||
-          uploadedFile.mimetype === 'image/jpeg' ||
-          uploadedFile.mimetype === 'image/gif'
-        ) {
-          // upload the file to the /public/assets/img directory
-          uploadedFile.mv(`public/assets/img/${image_name}`, err => {
-            if (err) {
-              return res.status(500).send(err);
-            }
-            // send the player's details to the database
-            let query =
-              "INSERT INTO `Player` (`name`, `email`, `avatar`) VALUES ('" +
-              name +
-              "', '" +
-              email +
-              "', '" +
-              image_name +
-              "')";
-            db.query(query, (err, result) => {
-              if (err) {
-                return res.status(500).send(err);
-              }
-            });
-            if (forum_link) {
-              db.query(
-                "UPDATE `Player` SET `forum_link`='" +
-                  forum_link +
-                  "' WHERE `name`='" +
-                  name +
-                  "'",
-                (err, result) => {
-                  if (err) {
-                    return res.status(500).send(err);
-                  }
-                }
-              );
-            }
-            if (discord) {
-              db.query(
-                "UPDATE `Player` SET `discord`='" +
-                  discord +
-                  "' WHERE `name`='" +
-                  name +
-                  "'",
-                (err, result) => {
-                  if (err) {
-                    return res.status(500).send(err);
-                  }
-                }
-              );
-            }
-            res.redirect('/');
-          });
-        } else {
-          message =
-            "Invalid file format. Only 'gif', 'jpeg' and 'png' images are allowed.";
-          res.render('add-player.ejs', {
-            message,
-            title: 'Nuzlocke Ratings | Add a new player'
-          });
-        }
       }
+
+      // check the filetype before uploading it
+      if (
+        uploadedFile.mimetype !== 'image/png' &&
+        uploadedFile.mimetype !== 'image/jpeg' &&
+        uploadedFile.mimetype !== 'image/gif'
+      ) {
+        return res.render('add-player.ejs', {
+          message:
+            "Invalid file format. Only 'gif', 'jpeg' and 'png' images are allowed.",
+          title: 'Nuzlocke Ratings | Add a new player'
+        });
+      }
+
+      // upload the file to the /public/assets/img directory
+      uploadedFile.mv(`public/assets/img/${avatar}`, err => {
+        if (err) {
+          console.error(err);
+        }
+      });
+
+      // send the player's details to the database
+      db.addPlayer(player, err => {
+        if (err) {
+          res.status(500).send('Error! Please contact server administrator.');
+          throw err;
+        }
+        res.redirect('/');
+      });
     });
   },
+
   editPlayerPage: (req, res) => {
-    let playerId = req.params.id;
-    let query =
-      "SELECT * FROM `Player` WHERE `player_id` = '" + playerId + "' ";
-    db.query(query, (err, result) => {
+    const playerId = req.params.id;
+
+    db.getPlayerById(playerId, (err, result) => {
       if (err) {
-        return res.status(500).send(err);
+        res.status(500).send('Error! Please contact server administrator.');
+        throw err;
+      }
+
+      let message = '';
+      if (result.length == 0) {
+        message = 'No player found with that ID.';
       }
       res.render('edit-player.ejs', {
         title: 'Edit Player',
         player: result[0],
-        message: ''
+        message
       });
     });
   },
-  editPlayer: (req, res) => {
-    let playerId = req.params.id;
-    let name = req.body.name;
-    let forum_link = req.body.forum_link;
-    let email = req.body.email;
-    let discord = req.body.discord;
 
-    let query =
-      "UPDATE `Player` SET `email` = '" +
-      email +
-      "', `forum_link` = '" +
-      forum_link +
-      "', `discord` = '" +
-      discord +
-      "' WHERE `player`.`player_id` = '" +
-      playerId +
-      "'";
-    db.query(query, (err, result) => {
+  editPlayer: (req, res) => {
+    const playerId = req.params.id;
+    const newInfo = {
+      forum_link: req.body.forum_link,
+      email: req.body.email,
+      discord: req.body.discord
+    };
+
+    db.editPlayer(playerId, newInfo, (err, result) => {
       if (err) {
-        return res.status(500).send(err);
+        res.status(500).send('Error! Please contact server administrator.');
+        throw err;
       }
+
       res.redirect('/');
     });
   },
+
   deletePlayer: (req, res) => {
     let playerId = req.params.id;
-    let getImageQuery =
-      'SELECT `avatar` from `Player` WHERE `player_id` = "' + playerId + '"';
-    let deleteUserQuery =
-      'DELETE FROM Player WHERE `player_id` = "' + playerId + '"';
 
-    db.query(getImageQuery, (err, result) => {
+    db.deletePlayer(playerId, (err, result) => {
       if (err) {
-        return res.status(500).send(err);
+        res.status(500).send('Error! Please contact server administrator.');
+        throw err;
       }
 
-      let image = result[0].avatar;
-
-      fs.unlink(`public/assets/img/${image}`, err => {
-        if (err) {
-          return res.status(500).send(err);
-        }
-        db.query(deleteUserQuery, (err, result) => {
-          if (err) {
-            return res.status(500).send(err);
-          }
-          res.redirect('/');
-        });
-      });
+      res.redirect('/');
     });
   }
 };

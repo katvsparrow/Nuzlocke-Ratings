@@ -1,5 +1,6 @@
-const fs = require('fs');
-const numRules = 11;
+const db = require('../db');
+
+const NUM_RULES = 11;
 
 function getUniqueBasegames(arr) {
   result = [];
@@ -55,7 +56,6 @@ function calculateK(player) {
 }
 
 function adjustRating(player, gameRating) {
-  console.log(player, player.rating);
   return Math.floor(
     player.rating +
       calculateK(player) * (1 - getExpectedScore(player, gameRating))
@@ -64,19 +64,19 @@ function adjustRating(player, gameRating) {
 
 module.exports = {
   addRunPage: (req, res) => {
-    let rulesQuery = 'SELECT * FROM `Rule`';
-    let dataQuery =
-      'SELECT * FROM `Pokemon`' +
-      'INNER JOIN `BaseGame_Pokemon`' +
-      'ON `Pokemon`.`pokemon_id` = `BaseGame_Pokemon`.`pkmn`' +
-      'INNER JOIN `BaseGame`' +
-      'ON `BaseGame`.`basegame_id` = `BaseGame_Pokemon`.`bid`';
+    db.getRules((err, rules) => {
+      if (err) {
+        res.status(500).send('Error! Please contact server administrator.');
+        throw err;
+      }
 
-    db.query(rulesQuery, function getRules(err, rules) {
-      if (err) return res.status(500).send(err);
-      db.query(dataQuery, function renderPage(err, pokemon) {
-        if (err) return res.status(500).send(err);
-        var basegames = getUniqueBasegames(pokemon);
+      db.getBasegamePokemon((err, pokemon) => {
+        if (err) {
+          res.status(500).send('Error! Please contact server administrator.');
+          throw err;
+        }
+
+        const basegames = getUniqueBasegames(pokemon);
 
         res.render('add-run.ejs', {
           title: 'Nuzlocke Ratings | Add a new run',
@@ -90,16 +90,14 @@ module.exports = {
   },
 
   addRun: (req, res) => {
-    let message = '';
-    let runName = req.body.run_name;
-    let runLink = req.body.run_link;
-    let basegame = req.body.basegame;
-    let playerID = req.body.player_id;
-    let deaths = req.body.deaths;
-    let gameRating = parseInt(req.body.game_rating);
-    basegame = basegame.replace('Pokemon ', '');
+    const name = req.body.run_name;
+    const link = req.body.run_link;
+    const basegame = req.body.basegame.replace('Pokemon ', '');
+    const playerId = req.body.player_id;
+    const deaths = req.body.deaths;
+    const rating = parseInt(req.body.game_rating);
 
-    var party = [];
+    const party = [];
     party.push(
       req.body.party1,
       req.body.party2,
@@ -109,98 +107,59 @@ module.exports = {
       req.body.party6
     );
 
-    var ruleset = [];
-    for (var i = 0; i < numRules; i++) {
-      var index = 'rule[' + i + ']';
+    const ruleset = [];
+    for (let i = 0; i < NUM_RULES; i++) {
+      const index = 'rule[' + i + ']';
       if (req.body[index]) {
-        var addRule = req.body[index];
+        const addRule = req.body[index];
         ruleset.push(addRule);
       }
     }
 
-    let runQuery =
-      'INSERT INTO `Run` (`run_name`, `bid`, `pid`, `link`, `deaths`, `run_rating`) ' +
-      "SELECT '" +
-      runName +
-      "', `BaseGame`.`basegame_id`, `Player`.`player_id`, '" +
-      runLink +
-      "', " +
-      deaths +
-      ', ' +
-      gameRating +
-      ' FROM `BaseGame` INNER JOIN `Player` ' +
-      "WHERE `BaseGame`.`basegame_name` = '" +
-      basegame +
-      "' AND `Player`.`player_id` = " +
-      playerID +
-      '; ' +
-      'SET @last_run_id = LAST_INSERT_ID(); ';
+    const runInfo = {
+      name,
+      link,
+      basegame,
+      playerId,
+      deaths,
+      rating,
+      party,
+      ruleset
+    };
 
-    for (var i = 0; i < party.length; i++) {
-      var addendum =
-        'INSERT INTO `Party` (`runid`, `pkmn_id`) ' +
-        'SELECT @last_run_id, `pokemon_id` ' +
-        "FROM `Pokemon` WHERE `pokemon_name` = '" +
-        party[i] +
-        "'; ";
-      runQuery += addendum;
-    }
-    for (var i = 0; i < ruleset.length; i++) {
-      var addendum =
-        'INSERT INTO `Ruleset` (`runid`, `ruleid`) ' +
-        'SELECT @last_run_id, `rule_id` ' +
-        "FROM `Rule` WHERE `rule_name` = '" +
-        ruleset[i] +
-        "'; ";
-      runQuery += addendum;
-    }
-    runQuery +=
-      'SET @count = (SELECT COUNT(*) FROM `Run` WHERE `pid` = ' +
-      playerID +
-      '); ';
-    runQuery +=
-      'UPDATE `Player` SET `matches_played` = @count WHERE `player_id` = ' +
-      playerID +
-      '; ';
+    db.addRun(runInfo, err => {
+      if (err) {
+        res.status(500).send('Error! Please contact server administrator.');
+        throw err;
+      }
 
-    db.query(runQuery, (err, result) => {
-      if (err) return res.status(500).send(err);
-      var updateRatingQuery =
-        'SELECT `rating`, `matches_played`, `tournament_round` FROM `Player` WHERE `player_id` = ' +
-        playerID;
-      db.query(updateRatingQuery, (err, result) => {
-        if (err) return res.status(500).send(err);
-        newRating = adjustRating(result[0], gameRating);
-        db.query(
-          'UPDATE `Player` SET `rating` = ' +
-            newRating +
-            ' WHERE `player_id` = ' +
-            playerID,
-          (err, result) => {
-            if (err) return res.status(500).send(err);
-            res.redirect('/');
+      db.getPlayerStats(playerId, (err, result) => {
+        if (err) {
+          res.status(500).send('Error! Please contact server administrator.');
+          throw err;
+        }
+
+        const newRating = adjustRating(result[0], rating);
+        db.updateRating(playerId, newRating, err => {
+          if (err) {
+            res.status(500).send('Error! Please contact server administrator.');
+            throw err;
           }
-        );
+
+          res.redirect('/');
+        });
       });
     });
   },
 
   displayRuns: (req, res) => {
-    let playerID = req.params.id;
-    let getRunsQuery =
-      'SELECT `Run`.`run_id`, `Run`.`run_rating`, `Player`.`name`, `Run`.`run_name`, `BaseGame`.`basegame_name`, `Run`.`link`, `Pokemon`.`pokemon_name`, `Rule`.`rule_name`' +
-      'FROM `Run`' +
-      'INNER JOIN `Player` ON `Run`.`pid` = `Player`.`player_id`' +
-      'INNER JOIN `BaseGame` ON `Run`.`bid` = `BaseGame`.`basegame_id`' +
-      'INNER JOIN `Party` ON `Run`.`run_id` = `Party`.`runid`' +
-      'INNER JOIN `Pokemon` ON `Party`.`pkmn_id` = `Pokemon`.`pokemon_id`' +
-      'LEFT JOIN `Ruleset` ON `Run`.`run_id` = `Ruleset`.`runid`' +
-      'LEFT JOIN `Rule` ON `Ruleset`.`ruleid` = `Rule`.`rule_id`' +
-      'WHERE `Run`.`pid` = ' +
-      playerID;
+    let playerId = req.params.id;
 
-    db.query(getRunsQuery, (err, result) => {
-      if (err) return res.status(500).send(err);
+    db.getRuns(playerId, (err, result) => {
+      if (err) {
+        res.status(500).send('Error! Please contact server administrator.');
+        throw err;
+      }
 
       runs = mergeRunData(result);
       res.render('display-runs.ejs', {

@@ -1,12 +1,13 @@
+const db = require('../db');
+
 module.exports = {
   getHomePage: (req, res) => {
-    let query = 'SELECT * FROM `Player` ORDER BY `rating` DESC'; // query database to get all the players
-
-    // execute query
-    db.query(query, (err, result) => {
+    db.getLeaderboard((err, result) => {
       if (err) {
+        res.status(500).send('Error! Please contact server administrator.');
         throw err;
       }
+
       res.render('index.ejs', {
         title: 'Nuzlocke Ratings | Leaderboard',
         players: result
