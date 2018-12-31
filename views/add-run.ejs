@@ -56,8 +56,8 @@
                     <label for="rule-checkboxes" class="control-label">Ruleset</label>
                     <% for(var i = 0; i < rules.length; i++){ %>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="<%= rules[i].rule_name %>" name="rule[<%= i %>]" onchange="calculateRating()" data-difficulty="<%= rules[i].rule_difficulty %>">
-                            <label class="form-check-label" for="defaultCheck"><%= rules[i].rule_name %></label>
+                            <input class="form-check-input" type="checkbox" value="<%= rules[i].name %>" name="rule[<%= i %>]" onchange="calculateRating()" data-difficulty="<%= rules[i].difficulty %>">
+                            <label class="form-check-label" for="defaultCheck"><%= rules[i].name %></label>
                         </div>
                     <% } %>
                 </div>

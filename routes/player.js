@@ -13,20 +13,19 @@ module.exports = {
       return res.status(400).send('No files were uploaded.');
     }
 
-    const name = req.body.name;
+    const username = req.body.name;
     const uploadedFile = req.files.avatar;
     let fileExtension = uploadedFile.mimetype.split('/')[1];
-    const avatar = name + '.' + fileExtension;
+    const avatar = username + '.' + fileExtension;
 
     const player = {
-      name,
+      username,
       email: req.body.email,
-      avatar,
-      forum_link: req.body.forum_link,
+      link: req.body.forum_link,
       discord: req.body.discord
     };
 
-    db.getPlayerByUsername(name, (err, result) => {
+    db.getPlayerByUsername(username, (err, result) => {
       if (err) {
         res.status(500).send('Error! Please contact server administrator.');
         throw err;
@@ -95,7 +94,7 @@ module.exports = {
   editPlayer: (req, res) => {
     const playerId = req.params.id;
     const newInfo = {
-      forum_link: req.body.forum_link,
+      link: req.body.forum_link,
       email: req.body.email,
       discord: req.body.discord
     };

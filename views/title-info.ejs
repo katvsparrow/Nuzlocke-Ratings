@@ -10,12 +10,12 @@
                 </tr>
             </thead>
             <tbody>
-                <% for(var i = 0; i < titles.length; i++){ %>
+                <% for(let title in titles){ %>
                     <tr>
-                        <td><%= titles[i].title_name %></td>
-                        <td><%= titles[i].title_abbrev %></td>
-                        <td><%= titles[i].rating_floor %></td>
-                        <td><%= titles[i].min_challenges %></td>
+                        <td><%= title %></td>
+                        <td><%= titles[title].abbreviation %></td>
+                        <td><%= titles[title].rating_floor %></td>
+                        <td><%= titles[title].min_challenges %></td>
                     </tr>
                 <% } %>
             </tbody>

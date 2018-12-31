@@ -52,7 +52,7 @@ function getExpectedScore(player, gameRating) {
 }
 
 function calculateK(player) {
-  return 800.0 / (player.matches_played + player.tournament_round);
+  return 800.0 / (player.runs_completed + 1) /*player.tournament_round*/;
 }
 
 function adjustRating(player, gameRating) {
@@ -133,13 +133,16 @@ module.exports = {
         throw err;
       }
 
-      db.getPlayerStats(playerId, (err, result) => {
+      db.getPlayerById(playerId, (err, result) => {
         if (err) {
           res.status(500).send('Error! Please contact server administrator.');
           throw err;
         }
 
+        console.log(result[0].rating);
+
         const newRating = adjustRating(result[0], rating);
+        console.log(newRating);
         db.updateRating(playerId, newRating, err => {
           if (err) {
             res.status(500).send('Error! Please contact server administrator.');
@@ -161,11 +164,11 @@ module.exports = {
         throw err;
       }
 
-      runs = mergeRunData(result);
+      //runs = mergeRunData(result);
       res.render('display-runs.ejs', {
         title: 'Nuzlocke Ratings | Display Runs',
         message: '',
-        runs: runs
+        runs: result
       });
     });
   }

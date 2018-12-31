@@ -19,19 +19,19 @@
                             <td><%= i + 1 %></td>
                             <td><%= runs[i].run_name %></td>
                             <td>Pokemon <%= runs[i].basegame_name %></td>
-                            <td><%= runs[i].run_rating %></td>
+                            <td><%= runs[i].rating %></td>
                             <td><a href="<%= runs[i].link %>" target="_blank">Link to run</a></td>
                             <td>
                                 <ul class="list-unstyled split">
                                     <% for(var j = 0; j < runs[i].party.length; j++){ %>
-                                    <li><%= runs[i].party[j] %></li>
+                                    <li><%= runs[i].party[j].name %></li>
                                     <% } %>
                                 </ul>
                             </td>
                             <td>
                                 <ol>
                                     <% for(j = 0; j < runs[i].ruleset.length; j++){ %>
-                                    <li><%= runs[i].ruleset[j] %></li>
+                                    <li><%= runs[i].ruleset[j].name %></li>
                                     <% } %>
                                 </ol>
                             </td>

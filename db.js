@@ -1,5 +1,6 @@
 const mysql = require('mysql');
 const fs = require('fs');
+const async = require('async');
 
 const { JAWSDB_MARIA_URL } = process.env;
 // if env variable exists, it's on cloud; otherwise, use localhost
@@ -17,42 +18,44 @@ const db = mysql.createPool(connection);
 
 module.exports = {
   // retrieve leaderboard
+  // result: [player_id, username, rating, runs_completed, discord, link]
   getLeaderboard: callback => {
-    const query = 'SELECT * FROM `Player` ORDER BY `rating` DESC';
+    const query =
+      'SELECT player_id, username, rating, runs_completed, discord, link ' +
+      'FROM `Player` ORDER BY `rating` DESC';
 
     db.query(query, callback);
   },
 
   // retrieve base game information
-  getBaseGames: callback => {
-    const query = 'SELECT * FROM `BaseGame`';
+  // result: [basegame_name, generation, region, difficulty]
+  getBasegames: callback => {
+    const query =
+      'SELECT name as basegame_name, generation, region, difficulty ' +
+      'FROM `Basegame`';
 
     db.query(query, callback);
   },
 
   // retrieve nuzlocke rule information
+  // result: [name, difficulty]
   getRules: callback => {
-    const query = 'SELECT * FROM `Rule`';
-
-    db.query(query, callback);
-  },
-
-  // retrieve nuzlocke title information
-  getTitles: callback => {
-    const query = 'SELECT * FROM `Title`';
+    const query = 'SELECT name, difficulty FROM `Rule`';
 
     db.query(query, callback);
   },
 
   // retrieve a specific player's information given their username
+  // result: [player_id, username, password, email, link, discord, rating, runs_completed]
   getPlayerByUsername: (username, callback) => {
-    const query = 'SELECT * FROM `Player` WHERE `name` = ?';
+    const query = 'SELECT * FROM `Player` WHERE `username` = ?';
     const values = [username];
 
     db.query(query, values, callback);
   },
 
   // retrieve a specific player's information given their ID
+  // result: [player_id, username, password, email, link, discord, rating, runs_completed]
   getPlayerById: (playerId, callback) => {
     const query = 'SELECT * FROM `Player` WHERE `player_id` = ?';
 
@@ -76,10 +79,11 @@ module.exports = {
 
   // delete a player
   deletePlayer: (playerId, callback) => {
-    const getImageQuery = 'SELECT `avatar` from `Player` WHERE `player_id` = ?';
+    //const getImageQuery = 'SELECT `avatar` from `Player` WHERE `player_id` = ?';
     const deleteUserQuery = 'DELETE FROM Player WHERE `player_id` = ?';
+    db.query(deleteUserQuery, playerId, callback);
 
-    db.query(getImageQuery, playerId, (err, result) => {
+    /*db.query(getImageQuery, playerId, (err, result) => {
       if (err) return callback(err);
 
       const image = result[0].avatar;
@@ -91,17 +95,17 @@ module.exports = {
       });
 
       db.query(deleteUserQuery, playerId, callback);
-    });
+    });*/
   },
 
   // get Pokemon ranking info by basegame
+  // result: [pokemon_name, basegame_name, rank]
   getBasegamePokemon: callback => {
     const query =
-      'SELECT * FROM `Pokemon`' +
-      'INNER JOIN `BaseGame_Pokemon`' +
-      'ON `Pokemon`.`pokemon_id` = `BaseGame_Pokemon`.`pkmn`' +
-      'INNER JOIN `BaseGame`' +
-      'ON `BaseGame`.`basegame_id` = `BaseGame_Pokemon`.`bid`';
+      'SELECT Pokemon.name as pokemon_name, Basegame.name as basegame_name, rank, difficulty ' +
+      'FROM Pokemon_Rank ' +
+      'INNER JOIN Pokemon ON Pokemon.pokemon_id = Pokemon_Rank.pokemon_id ' +
+      'INNER JOIN Basegame ON Basegame.basegame_id = Pokemon_Rank.basegame_id';
 
     db.query(query, callback);
   },
@@ -109,17 +113,17 @@ module.exports = {
   // add a new run, which involves adding to party and ruleset
   addRun: (runInfo, callback) => {
     const query =
-      'INSERT INTO `Run` (`run_name`, `bid`, `pid`, `link`, `deaths`, `run_rating`) ' +
-      'SELECT ?, `BaseGame`.`basegame_id`, `Player`.`player_id`, ?, ?, ? ' +
-      'FROM `BaseGame` INNER JOIN `Player` ' +
-      'WHERE `BaseGame`.`basegame_name` = ? AND `Player`.`player_id` = ?';
+      'INSERT INTO `Run` (`name`, `basegame_id`, `player_id`, `link`, `deaths`, `rating`) ' +
+      'SELECT ?, `Basegame`.`basegame_id`, ?, ?, ?, ? ' +
+      'FROM Basegame ' +
+      'WHERE `Basegame`.`name` = ?';
     const values = [
       runInfo.name,
+      runInfo.playerId,
       runInfo.link,
       runInfo.deaths,
       runInfo.rating,
-      runInfo.basegame,
-      runInfo.playerId
+      runInfo.basegame
     ];
 
     db.query(query, values, (err, result) => {
@@ -131,39 +135,30 @@ module.exports = {
 
       for (let pokemon of party) {
         const partyQuery =
-          'INSERT INTO `Party` (`runid`, `pkmn_id`) ' +
+          'INSERT INTO `Party` (`run_id`, `pokemon_id`) ' +
           'SELECT ?, `pokemon_id` ' +
-          'FROM `Pokemon` WHERE `pokemon_name` = ?;';
+          'FROM `Pokemon` WHERE `name` = ?;';
         query2 += mysql.format(partyQuery, [insertId, pokemon]);
       }
 
       for (let rule of ruleset) {
         const ruleQuery =
-          'INSERT INTO `Ruleset` (`runid`, `ruleid`) ' +
+          'INSERT INTO `Ruleset` (`run_id`, `rule_id`) ' +
           'SELECT ?, `rule_id` ' +
-          'FROM `Rule` WHERE `rule_name` = ?;';
+          'FROM `Rule` WHERE `name` = ?;';
         query2 += mysql.format(ruleQuery, [insertId, rule]);
       }
 
-      const countQuery =
-        'SET @count = (SELECT COUNT(*) FROM `Run` WHERE `pid` = ?);';
+      /*const countQuery =
+        'SET @count = (SELECT COUNT(*) FROM `Run` WHERE `player_id` = ?);';
       query2 += mysql.format(countQuery, playerId);
 
       const updateQuery =
         'UPDATE `Player` SET `matches_played` = @count WHERE `player_id` = ?';
-      query2 += mysql.format(updateQuery, playerId);
+      query2 += mysql.format(updateQuery, playerId);*/
 
       db.query(query2, callback);
     });
-  },
-
-  // get player rating, matches played, and tournament round (used for calcs)
-  getPlayerStats: (playerId, callback) => {
-    const query =
-      'SELECT `rating`, `matches_played`, `tournament_round` ' +
-      'FROM `Player` WHERE `player_id` = ?';
-
-    db.query(query, playerId, callback);
   },
 
   // update player's rating
@@ -175,17 +170,69 @@ module.exports = {
 
   // get all of a player's runs
   getRuns: (playerId, callback) => {
-    const query =
-      'SELECT `Run`.`run_id`, `Run`.`run_rating`, `Player`.`name`, `Run`.`run_name`, `BaseGame`.`basegame_name`, `Run`.`link`, `Pokemon`.`pokemon_name`, `Rule`.`rule_name`' +
-      'FROM `Run`' +
-      'INNER JOIN `Player` ON `Run`.`pid` = `Player`.`player_id`' +
-      'INNER JOIN `BaseGame` ON `Run`.`bid` = `BaseGame`.`basegame_id`' +
-      'INNER JOIN `Party` ON `Run`.`run_id` = `Party`.`runid`' +
-      'INNER JOIN `Pokemon` ON `Party`.`pkmn_id` = `Pokemon`.`pokemon_id`' +
-      'LEFT JOIN `Ruleset` ON `Run`.`run_id` = `Ruleset`.`runid`' +
-      'LEFT JOIN `Rule` ON `Ruleset`.`ruleid` = `Rule`.`rule_id`' +
-      'WHERE `Run`.`pid` = ?';
+    const runQuery =
+      'SELECT *, Run.name AS run_name, Basegame.name as basegame_name FROM Run ' +
+      'INNER JOIN Basegame ON Basegame.basegame_id = Run.basegame_id ' +
+      'WHERE player_id = ?';
 
-    db.query(query, playerId, callback);
+    db.query(runQuery, playerId, (err, result) => {
+      if (err) return callback(err);
+
+      let runs = result;
+
+      const partyQuery =
+        'SELECT Pokemon.name FROM Run ' +
+        'INNER JOIN Party ON Party.run_id = Run.run_id ' +
+        'INNER JOIN Pokemon ON Pokemon.pokemon_id = Party.pokemon_id ' +
+        'WHERE Run.run_id = ? AND Run.player_id = ?';
+      const rulesetQuery =
+        'SELECT Rule.name FROM Run ' +
+        'INNER JOIN Ruleset ON Ruleset.run_id = Run.run_id ' +
+        'INNER JOIN Rule ON Rule.rule_id = Ruleset.rule_id ' +
+        'WHERE Run.run_id = ? AND Run.player_id = ?';
+
+      // for each run, query their parties and results
+      // callback(err, runs) will be invoked when all queries are finished
+      async.each(
+        runs,
+        // this function is called for each run
+        // runsCallback is called when all runs have finished their queries
+        (run, runsCallback) => {
+          const values = [run.run_id, playerId];
+          // the following two functions query party and ruleset for each run
+          // "parallel" is parallel in the sense that there is no function order
+          // however, it is not true parallel as JS is single-threaded
+          async.parallel(
+            [
+              // query party and set run.party to the result
+              runCallback => {
+                db.query(partyQuery, values, (partyErr, partyResult) => {
+                  if (partyErr) return runCallback(partyErr);
+
+                  run.party = partyResult;
+                  runCallback();
+                });
+              },
+              //query ruleset and set run.ruleset to the result
+              runCallback => {
+                db.query(rulesetQuery, values, (rulesetErr, rulesetResult) => {
+                  if (rulesetErr) return runCallback(rulesetErr);
+
+                  run.ruleset = rulesetResult;
+                  runCallback();
+                });
+              }
+            ],
+            // this is called when the above two queries have finished
+            err => runsCallback(err)
+          );
+        },
+        // this is called when all runs have finished their queries
+        // invoke the original callback of the caller of getRuns()
+        err => {
+          return callback(err, runs);
+        }
+      );
+    });
   }
 };

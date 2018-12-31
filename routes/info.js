@@ -1,4 +1,5 @@
 const db = require('../db');
+const titles = require('../consts/titles');
 
 module.exports = {
   overallInfo: (req, res) => {
@@ -9,7 +10,7 @@ module.exports = {
   },
 
   basegameInfo: (req, res) => {
-    db.getBaseGames((err, result) => {
+    db.getBasegames((err, result) => {
       if (err) {
         res.status(500).send('Error! Please contact server administrator.');
         throw err;
@@ -37,16 +38,9 @@ module.exports = {
   },
 
   titleInfo: (req, res) => {
-    db.getTitles((err, result) => {
-      if (err) {
-        res.status(500).send('Error! Please contact server administrator.');
-        throw err;
-      }
-
-      res.render('title-info.ejs', {
-        title: 'Nuzlocke Ratings | Title Info',
-        titles: result
-      });
+    res.render('title-info.ejs', {
+      title: 'Nuzlocke Ratings | Title Info',
+      titles
     });
   }
 };

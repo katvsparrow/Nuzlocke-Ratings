@@ -19,12 +19,12 @@
                         <tr>
                             <td><%= i+1 %></td>
                             <td><img src="/assets/img/<%= players[i].avatar %>" class="rounded-circle player-img" alt=""></td>
-                            <td><%= players[i].name %></td>
+                            <td><%= players[i].username %></td>
                             <td><%= players[i].rating %></td>
-                            <td><a href="/<%= players[i].player_id %>/runs"><%= players[i].matches_played %></a></td>
+                            <td><a href="/<%= players[i].player_id %>/runs"><%= players[i].runs_completed %></a></td>
                             <td><%= players[i].discord %></td>
-                            <% if(players[i].forum_link){ %>
-                                <td><a href="<%= players[i].forum_link %>" target="_blank">Forum Page</a></td>
+                            <% if(players[i].link){ %>
+                                <td><a href="<%= players[i].link %>" target="_blank">Forum Page</a></td>
                             <% } else {%>
                                 <td>No Forum Page</td>
                             <% } %>
