@@ -25,7 +25,7 @@ module.exports = {
       return res.status(400).send('No files were uploaded.');
     }*/
 
-    const { username, password } = req.body;
+    const { username, password, email, link, discord } = req.body;
 
     let errors = [];
     if (!username) {
@@ -46,9 +46,9 @@ module.exports = {
     const player = {
       username,
       password: hash(password),
-      email: req.body.email,
-      link: req.body.forum_link,
-      discord: req.body.discord
+      email,
+      link,
+      discord
     };
 
     db.getPlayerByUsername(username, (err, result) => {

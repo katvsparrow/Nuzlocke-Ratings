@@ -30,6 +30,23 @@ function adjustRating(player, gameRating) {
   );
 }
 
+let _basegames = [];
+let _pokemon = [];
+let _rules = [];
+const _addRunPage = (req, res, errors, basegames, pokemon, rules) => {
+  _basegames = basegames;
+  _pokemon = pokemon;
+  _rules = rules;
+
+  req.app.locals.render(req, res, 'add-run.ejs', {
+    title: 'Nuzlocke Ratings | Add a new run',
+    errors,
+    basegames,
+    pokemon,
+    rules
+  });
+};
+
 module.exports = {
   addRunPage: (req, res) => {
     const { player } = req.session;
@@ -50,23 +67,59 @@ module.exports = {
         }
 
         const basegames = getUniqueBasegames(pokemon);
-
-        req.app.locals.render(req, res, 'add-run.ejs', {
-          title: 'Nuzlocke Ratings | Add a new run',
-          basegames,
-          pokemon,
-          rules
-        });
+        _addRunPage(req, res, [], basegames, pokemon, rules);
       });
     });
   },
 
   addRun: (req, res) => {
-    let { name, link, basegame, deaths, rating, party, ruleset } = req.body;
-    basegame = basegame.replace('Pokemon ', '');
-    rating = parseInt(rating);
-    const playerId = req.session.player.id;
+    const { player } = req.player;
+    if (!player) {
+      return res.redirect('/login');
+    }
 
+    let { name, link, basegame, deaths, rating, party, ruleset } = req.body;
+    deaths = parseInt(deaths);
+    rating = parseInt(rating);
+    const playerId = player.id;
+
+    let errors = [];
+    if (!name || typeof name != 'string') {
+      errors.push('Run name cannot be empty.');
+    }
+    if (typeof link != 'string') {
+      errors.push('Link must be valid.');
+    }
+    if (!basegame) {
+      errors.push('Basegame cannot be empty.');
+    }
+    if (isNaN(deaths)) {
+      errors.push('Deaths cannot be empty.');
+    }
+    if (isNaN(rating)) {
+      errors.push('Rating cannot be empty.');
+    }
+    let validParty = false;
+    if (party) {
+      for (let i = 0; i < party.length; i++) {
+        if (party[i] != 'Empty team slot') {
+          validParty = true;
+          break;
+        }
+      }
+    }
+    if (!validParty) {
+      errors.push('Party must have at least 1 Pokemon.');
+    }
+    if (!ruleset) {
+      ruleset = [];
+    }
+
+    if (errors.length > 0) {
+      return _addRunPage(req, res, errors, _basegames, _pokemon, _rules);
+    }
+
+    basegame = basegame.replace('Pokemon ', '');
     const runInfo = {
       name,
       link,
