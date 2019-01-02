@@ -1,45 +1,57 @@
-<% include partials/header.ejs %>
-    <div class="table-wrapper">
-        <% if (players.length > 0) {%>
-            <table class="table table-hover table-dark table-striped" id="leaderboard">
-                <thead class="thead-info">
-                    <tr>
-                        <th scope="col" onclick="sortTable(0, 'leaderboard')" class="sortable">Rank</th>
-                        <th scope="col">Avatar</th>
-                        <th scope="col" onclick="sortTable(2, 'leaderboard')" class="sortable">Username</th>
-                        <th scope="col" onclick="sortTable(3, 'leaderboard')" class="sortable">Rating</th>
-                        <th scope="col" onclick="sortTable(4, 'leaderboard')" class="sortable">Runs Completed</th>
-                        <th scope="col" onclick="sortTable(5, 'leaderboard')" class="sortable">Discord</th>
-                        <th scope="col">Forum Profile</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% for(var i=0; i < players.length; i++){ %>
-                        <tr>
-                            <td><%= i+1 %></td>
-                            <td><img src="/assets/img/<%= players[i].avatar %>" class="rounded-circle player-img" alt=""></td>
-                            <td><%= players[i].username %></td>
-                            <td><%= players[i].rating %></td>
-                            <td><a href="/<%= players[i].player_id %>/runs"><%= players[i].runs_completed %></a></td>
-                            <td><%= players[i].discord %></td>
-                            <% if(players[i].link){ %>
-                                <td><a href="<%= players[i].link %>" target="_blank">Forum Page</a></td>
-                            <% } else {%>
-                                <td>No Forum Page</td>
-                            <% } %>
-                            <td>
-                                <a href="/edit/<%= players[i].player_id %>" rel="noopener" class="btn btn-sm btn-success">Edit</a>
-                                <a href="/delete/<%= players[i].player_id %>" class="btn btn-sm btn-danger">Delete</a>
-                            </td>
-                        </tr>
-                    <% } %>
-                </tbody>
-            </table>
-        <% } else { %>
-            <p class="text-center">No players found. Go <a href="/add" >here</a> to add players.</p>
+<div class="table-wrapper">
+  <% if (players.length == 0) {%>
+  <p class="text-center">
+    No players found. <a href="/register">Click here to register!</a>
+  </p>
+  <% } else { %> <% } %>
+  <table class="table table-hover table-dark table-striped" id="leaderboard">
+    <thead class="thead-info">
+      <tr>
+        <th scope="col" onclick="sortTable(0, 'leaderboard')" class="sortable">
+          Rank
+        </th>
+        <th scope="col">Avatar</th>
+        <th scope="col" onclick="sortTable(2, 'leaderboard')" class="sortable">
+          Username
+        </th>
+        <th scope="col" onclick="sortTable(3, 'leaderboard')" class="sortable">
+          Rating
+        </th>
+        <th scope="col" onclick="sortTable(4, 'leaderboard')" class="sortable">
+          Runs Completed
+        </th>
+        <th scope="col" onclick="sortTable(5, 'leaderboard')" class="sortable">
+          Discord
+        </th>
+        <th scope="col">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i=0; i < players.length; i++){ %>
+      <tr>
+        <td><%= i+1 %></td>
+        <td>
+          <img
+            src="/assets/img/<%= players[i].avatar %>"
+            class="rounded-circle player-img"
+            alt=""
+          />
+        </td>
+        <td><%= players[i].username %></td>
+        <td><%= players[i].rating %></td>
+        <td>
+          <a href="/<%= players[i].username %>/runs"
+            ><%= players[i].runs_completed %></a
+          >
+        </td>
+        <td><%= players[i].discord %></td>
+        <% if(players[i].link){ %>
+        <td><a href="<%= players[i].link %>" target="_blank">Link</a></td>
+        <% } else {%>
+        <td>No Link</td>
         <% } %>
-    </div>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
 </div>
-</body>
-</html>

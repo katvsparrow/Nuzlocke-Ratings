@@ -2,12 +2,14 @@ const express = require('express');
 const fileUpload = require('express-fileupload');
 const bodyParser = require('body-parser');
 const path = require('path');
-const app = express();
+const session = require('express-session');
 
-const { getHomePage } = require('./routes/index');
+const { homePage } = require('./routes/index');
 const {
-  addPlayerPage,
-  addPlayer,
+  registerPage,
+  register,
+  loginPage,
+  login,
   deletePlayer,
   editPlayer,
   editPlayerPage
@@ -19,31 +21,82 @@ const {
   ruleInfo,
   titleInfo
 } = require('./routes/info');
+const db = require('./db');
 
 const port = process.env.PORT || 3000;
 
+const app = express();
 app.set('port', port);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(fileUpload());
+// session for maintaining logins
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET || 'allhailgoomy',
+    store: db.sessionStore,
+    resave: false,
+    saveUninitialized: false
+  })
+);
 
-app.get('/', getHomePage);
-app.get('/add', addPlayerPage);
-app.get('/add-run', addRunPage);
-app.get('/edit/:id', editPlayerPage);
-app.get('/delete/:id', deletePlayer);
-app.get('/:id/runs', displayRuns);
+// helper function to render a page, useful for standardizing all pages
+app.locals.render = (req, res, page, data) => {
+  res.render('template-page.ejs', {
+    player: req.session.player,
+    page,
+    ...data
+  });
+};
+
+// helper function to show an error page if an error occurs
+app.locals.error = (req, res, err) => {
+  app.locals.render(req, res.status(500), 'error.ejs');
+  console.error(err);
+};
+
+// helper function to show access denied page
+app.locals.forbidden = (req, res) => {
+  app.locals.render(req, res.status(403), 'forbidden.ejs');
+};
+
+app.get('/', homePage);
+
+app
+  .route('/register')
+  .get(registerPage)
+  .post(register);
+
+app
+  .route('/login')
+  .get(loginPage)
+  .post(login);
+
+app.get('/logout', (req, res) => {
+  delete req.session.player;
+  res.redirect('/');
+});
+
+app
+  .route('/add-run')
+  .get(addRunPage)
+  .post(addRun);
+
+app
+  .route('/edit/:username')
+  .get(editPlayerPage)
+  .post(editPlayer);
+
+app.get('/delete/:username', deletePlayer);
+app.get('/:username/runs', displayRuns);
 app.get('/info', overallInfo);
 app.get('/info/basegames', basegameInfo);
 app.get('/info/rules', ruleInfo);
 app.get('/info/titles', titleInfo);
-
-app.post('/add', addPlayer);
-app.post('/add-run', addRun);
-app.post('/edit/:id', editPlayer);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

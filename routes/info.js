@@ -3,20 +3,16 @@ const titles = require('../consts/titles');
 
 module.exports = {
   overallInfo: (req, res) => {
-    res.render('info.ejs', {
-      title: 'Nuzlocke Ratings | Info',
-      message: ''
+    req.app.locals.render(req, res, 'info.ejs', {
+      title: 'Nuzlocke Ratings | Info'
     });
   },
 
   basegameInfo: (req, res) => {
     db.getBasegames((err, result) => {
-      if (err) {
-        res.status(500).send('Error! Please contact server administrator.');
-        throw err;
-      }
+      if (err) return req.app.locals.error(req, res, err);
 
-      res.render('basegame-info.ejs', {
+      req.app.locals.render(req, res, 'basegame-info.ejs', {
         title: 'Nuzlocke Ratings | Game Info',
         basegames: result
       });
@@ -25,12 +21,9 @@ module.exports = {
 
   ruleInfo: (req, res) => {
     db.getRules((err, result) => {
-      if (err) {
-        res.status(500).send('Error! Please contact server administrator.');
-        throw err;
-      }
+      if (err) return req.app.locals.error(req, res, err);
 
-      res.render('rule-info.ejs', {
+      req.app.locals.render(req, res, 'rule-info.ejs', {
         title: 'Nuzlocke Ratings | Rule Info',
         rules: result
       });
@@ -38,7 +31,7 @@ module.exports = {
   },
 
   titleInfo: (req, res) => {
-    res.render('title-info.ejs', {
+    req.app.locals.render(req, res, 'title-info.ejs', {
       title: 'Nuzlocke Ratings | Title Info',
       titles
     });

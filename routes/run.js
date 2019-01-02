@@ -1,7 +1,5 @@
 const db = require('../db');
 
-const NUM_RULES = 11;
-
 function getUniqueBasegames(arr) {
   result = [];
   added = [];
@@ -15,36 +13,6 @@ function getUniqueBasegames(arr) {
     }
   }
   return result;
-}
-
-function mergeRunData(runs) {
-  uniqueIDs = [];
-  uniqueRuns = [];
-
-  for (var i = 0; i < runs.length; i++) {
-    if (!uniqueIDs.includes(runs[i].run_id)) {
-      runs[i].party = [];
-      runs[i].ruleset = [];
-      uniqueIDs.push(runs[i].run_id);
-      uniqueRuns.push(runs[i]);
-    }
-  }
-
-  for (i = 0; i < uniqueRuns.length; i++) {
-    for (var j = 0; j < runs.length; j++) {
-      if (uniqueRuns[i].run_id == runs[j].run_id) {
-        if (uniqueRuns[i].party.length < 6)
-          uniqueRuns[i].party.push(runs[j].pokemon_name);
-        if (
-          runs[j].rule_name &&
-          !uniqueRuns[i].ruleset.includes(runs[j].rule_name)
-        )
-          uniqueRuns[i].ruleset.push(runs[j].rule_name);
-      }
-    }
-  }
-
-  return uniqueRuns;
 }
 
 function getExpectedScore(player, gameRating) {
@@ -64,57 +32,40 @@ function adjustRating(player, gameRating) {
 
 module.exports = {
   addRunPage: (req, res) => {
+    const { player } = req.session;
+
+    // if user not logged in, redirect them to login
+    if (!player) {
+      return res.redirect('/login');
+    }
+
     db.getRules((err, rules) => {
       if (err) {
-        res.status(500).send('Error! Please contact server administrator.');
-        throw err;
+        return req.app.locals.error(req, res, err);
       }
 
       db.getBasegamePokemon((err, pokemon) => {
         if (err) {
-          res.status(500).send('Error! Please contact server administrator.');
-          throw err;
+          return req.app.locals.error(req, res, err);
         }
 
         const basegames = getUniqueBasegames(pokemon);
 
-        res.render('add-run.ejs', {
+        req.app.locals.render(req, res, 'add-run.ejs', {
           title: 'Nuzlocke Ratings | Add a new run',
-          message: '',
-          basegames: basegames,
-          pokemon: pokemon,
-          rules: rules
+          basegames,
+          pokemon,
+          rules
         });
       });
     });
   },
 
   addRun: (req, res) => {
-    const name = req.body.run_name;
-    const link = req.body.run_link;
-    const basegame = req.body.basegame.replace('Pokemon ', '');
-    const playerId = req.body.player_id;
-    const deaths = req.body.deaths;
-    const rating = parseInt(req.body.game_rating);
-
-    const party = [];
-    party.push(
-      req.body.party1,
-      req.body.party2,
-      req.body.party3,
-      req.body.party4,
-      req.body.party5,
-      req.body.party6
-    );
-
-    const ruleset = [];
-    for (let i = 0; i < NUM_RULES; i++) {
-      const index = 'rule[' + i + ']';
-      if (req.body[index]) {
-        const addRule = req.body[index];
-        ruleset.push(addRule);
-      }
-    }
+    let { name, link, basegame, deaths, rating, party, ruleset } = req.body;
+    basegame = basegame.replace('Pokemon ', '');
+    rating = parseInt(rating);
+    const playerId = req.session.player.id;
 
     const runInfo = {
       name,
@@ -129,24 +80,18 @@ module.exports = {
 
     db.addRun(runInfo, err => {
       if (err) {
-        res.status(500).send('Error! Please contact server administrator.');
-        throw err;
+        return req.app.locals.error(req, res, err);
       }
 
       db.getPlayerById(playerId, (err, result) => {
         if (err) {
-          res.status(500).send('Error! Please contact server administrator.');
-          throw err;
+          return req.app.locals.error(req, res, err);
         }
 
-        console.log(result[0].rating);
-
         const newRating = adjustRating(result[0], rating);
-        console.log(newRating);
         db.updateRating(playerId, newRating, err => {
           if (err) {
-            res.status(500).send('Error! Please contact server administrator.');
-            throw err;
+            return req.app.locals.error(req, res, err);
           }
 
           res.redirect('/');
@@ -156,19 +101,17 @@ module.exports = {
   },
 
   displayRuns: (req, res) => {
-    let playerId = req.params.id;
+    const { username } = req.params;
 
-    db.getRuns(playerId, (err, result) => {
+    db.getRuns(username, (err, runs) => {
       if (err) {
-        res.status(500).send('Error! Please contact server administrator.');
-        throw err;
+        return req.app.locals.error(req, res, err);
       }
 
-      //runs = mergeRunData(result);
-      res.render('display-runs.ejs', {
+      //runs = mergeRunData(runs);
+      req.app.locals.render(req, res, 'display-runs.ejs', {
         title: 'Nuzlocke Ratings | Display Runs',
-        message: '',
-        runs: result
+        runs
       });
     });
   }

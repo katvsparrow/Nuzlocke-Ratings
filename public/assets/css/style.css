@@ -1,46 +1,42 @@
 .table-wrapper {
-    margin: 50px;
+  margin: 50px;
 }
 
 .player-img {
-    width: 40px;
-    height: 40px;
-}
-
-.add-player-form, .add-run-form {
-    margin-top: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 th.sortable {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .bg-black {
-    background-color: #212529;
+  background-color: #212529;
 }
 
 body {
-    color: white;
+  color: white;
 }
 
 .pokemon-input {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .hidden-data {
-    display: none;
+  display: none;
 }
 
 .split {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
 #info-page-container {
-    margin: 50px;
+  margin: 50px;
 }
 
 .info-page-text {
-    margin: 20px;
+  margin: 20px;
 }

@@ -1,22 +1,33 @@
-<% include partials/header.ejs %>
-    <div class="table-wrapper">
-        <table class="table table-hover table-dark table-striped" id="rule-info-table">
-            <thead class="thead-info">
-                <tr>
-                    <th scope="col" onclick="sortTable(0, 'rule-info-table')" class="sortable">Rule</th>
-                    <th scope="col" onclick="sortTable(1, 'rule-info-table')" class="sortable">Difficulty</th>
-                </tr>
-            </thead>
-            <tbody>
-                <% for(var i = 0; i < rules.length; i++){ %>
-                    <tr>
-                        <td><%= rules[i].name %></td>
-                        <td><%= rules[i].difficulty %></td>
-                    </tr>
-                <% } %>
-            </tbody>
-        </table>
-    </div>
+<div class="table-wrapper">
+  <table
+    class="table table-hover table-dark table-striped"
+    id="rule-info-table"
+  >
+    <thead class="thead-info">
+      <tr>
+        <th
+          scope="col"
+          onclick="sortTable(0, 'rule-info-table')"
+          class="sortable"
+        >
+          Rule
+        </th>
+        <th
+          scope="col"
+          onclick="sortTable(1, 'rule-info-table')"
+          class="sortable"
+        >
+          Difficulty
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i = 0; i < rules.length; i++){ %>
+      <tr>
+        <td><%= rules[i].name %></td>
+        <td><%= rules[i].difficulty %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
 </div>
-</body>
-</html>

@@ -1,38 +1,61 @@
-<% include partials/header.ejs %>
 <div class="container">
-    <% if (message) { %>
-        <p class="text-center text-danger"><%= message %></p>
-    <% } %>
-
-    <% if (player) { %>
-        <form class="add-player-form" action="" method="post" enctype="multipart/form-data">
-            <b>Update your details:</b>
-            <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="name">Username</label>
-                        <input type="text" class="form-control" name="name" id="username" value="<%= player.username %>" required disabled title="Username can't be changed">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="forum_link">Link to forum profile</label>
-                        <input type="text" class="form-control" name="forum_link" id="player-forum" value="<%= player.forum_link %>">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-6">
-                        <label for="email">Email (required)</label>
-                        <input type="text" class="form-control" name="email" id="player-email" value="<%= player.email %>" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="Discord">Discord</label>
-                        <input type="text" class="form-control" name="discord" id="player-discord" value="<%= player.discord %>">
-                    </div>
-                </div>
-            <button type="submit" class="btn btn-success float-right">Update Player</button>
-        </form>
-    <% } else { %>
-        <p class="text-center">Player Not Found. Go <a href="/add">here</a> to add players.</p>
-    <% } %>
+  <form
+    class="add-player-form"
+    action=""
+    method="post"
+    enctype="multipart/form-data"
+  >
+    <b>Update your details:</b>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="name">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          id="username"
+          value="<%= player.username %>"
+          required
+          disabled
+          title="Username can't be changed"
+        />
+      </div>
+      <div class="form-group col-md-6">
+        <label for="forum_link">Link to forum profile</label>
+        <input
+          type="text"
+          class="form-control"
+          name="forum_link"
+          id="player-forum"
+          value="<%= player.forum_link %>"
+        />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6">
+        <label for="email">Email (required)</label>
+        <input
+          type="text"
+          class="form-control"
+          name="email"
+          id="player-email"
+          value="<%= player.email %>"
+          required
+        />
+      </div>
+      <div class="form-group col-md-6">
+        <label for="Discord">Discord</label>
+        <input
+          type="text"
+          class="form-control"
+          name="discord"
+          id="player-discord"
+          value="<%= player.discord %>"
+        />
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success float-right">
+      Update Player
+    </button>
+  </form>
 </div>
-</div>
-</body>
-</html>
