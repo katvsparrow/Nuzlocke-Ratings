@@ -22,6 +22,7 @@ const {
   titleInfo
 } = require('./routes/info');
 const db = require('./db');
+const logger = require('./logger');
 
 const port = process.env.PORT || 3000;
 
@@ -55,13 +56,23 @@ app.locals.render = (req, res, page, data) => {
 
 // helper function to show an error page if an error occurs
 app.locals.error = (req, res, err) => {
-  app.locals.render(req, res.status(500), 'error.ejs');
-  console.error(err);
+  app.locals.render(req, res.status(500), 'error.ejs', {
+    title: 'Nuzlocke Ratings | Error'
+  });
+  logger.error(err);
 };
 
 // helper function to show access denied page
 app.locals.forbidden = (req, res) => {
-  app.locals.render(req, res.status(403), 'forbidden.ejs');
+  app.locals.render(req, res.status(403), 'forbidden.ejs', {
+    title: 'Nuzlocke Ratings | Access Denied'
+  });
+  logger.log(
+    'Access denied for ' +
+      req.session.player.username +
+      ' accessing ' +
+      req.path
+  );
 };
 
 app.get('/', homePage);
