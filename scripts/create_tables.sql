@@ -26,6 +26,29 @@ CREATE TABLE IF NOT EXISTS Basegame (
     difficulty TINYINT(1) NOT NULL
 ) ENGINE=InnoDB;
 
+-- Represents a single title.
+--
+-- Key: title_id
+CREATE TABLE IF NOT EXISTS Title (
+    title_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(32) NOT NULL,
+    abbreviation VARCHAR(3) NOT NULL,
+    rating_floor SMALLINT NOT NULL,
+    min_bronze_challenges TINYINT NOT NULL,
+    min_silver_challenges TINYINT NOT NULL,
+    min_gold_challenges TINYINT NOT NULL
+) ENGINE=InnoDB;
+
+-- Represents a single challenge.
+--
+-- Key: challenge_id
+CREATE TABLE IF NOT EXISTS Challenge (
+    challenge_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(64) NOT NULL,
+    tier ENUM('Gold', 'Silver', 'Bronze', 'Leader') NOT NULL,
+    classification ENUM('Multiple Runs', 'Single Run', 'Single Battle', 'Kanto', 'Johto', 'Hoenn', 'Sinnoh', 'Unova', 'Kalos', 'Alola') NOT NULL,
+    description TEXT NOT NULL
+) ENGINE=InnoDB;
 
 -- Represents a single run owned by a player.
 --

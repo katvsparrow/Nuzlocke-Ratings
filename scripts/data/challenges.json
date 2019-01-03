@@ -1,0 +1,530 @@
+[
+  {
+    "Name": "The Wrong Generation",
+    "Tier": "Bronze",
+    "Classification": "Multiple Runs",
+    "Description": "Complete at least two pairs of original games and their remakes (for example, one pair could consist of Red and FireRed)."
+  },
+  {
+    "Name": "Ultimate Edition",
+    "Tier": "Bronze",
+    "Classification": "Multiple Runs",
+    "Description": "Complete a Nuzlocke of every 'third version' game (Yellow, Crystal, Emerald, Platinum, Black 2/White 2, Ultra Sun/Ultra Moon)."
+  },
+  {
+    "Name": "Globetrotter",
+    "Tier": "Silver",
+    "Classification": "Multiple Runs",
+    "Description": "Complete at least one Nuzlocke in every region, with each run having five deaths or fewer."
+  },
+  {
+    "Name": "Share the Love",
+    "Tier": "Silver",
+    "Classification": "Multiple Runs",
+    "Description": "Complete a Nuzlocke with every single starter from a generation of your choice (the starter must be on your final team and may not die)."
+  },
+  {
+    "Name": "No Dupes!",
+    "Tier": "Gold",
+    "Classification": "Multiple Runs",
+    "Description": "Complete at least five Nuzlockes of games that take place in the same region without ever using the same Pokemon twice."
+  },
+  {
+    "Name": "Deja Vu",
+    "Tier": "Gold",
+    "Classification": "Multiple Runs",
+    "Description": "Complete two runs with identical final teams, with the runs taking place in different regions."
+  },
+  {
+    "Name": "High-Five",
+    "Tier": "Bronze",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke with a cumulative ruleset difficulty of five or more."
+  },
+  {
+    "Name": "No Gods or Kings",
+    "Tier": "Bronze",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke using only Pokemon ranked B+ or below throughout the run."
+  },
+  {
+    "Name": "Fiverr",
+    "Tier": "Bronze",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke in which you only use five team slots."
+  },
+  {
+    "Name": "Back to Mono",
+    "Tier": "Bronze",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke without using a single dual-type Pokemon."
+  },
+  {
+    "Name": "Dual of the Fates",
+    "Tier": "Bronze",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke using only dual-type Pokemon."
+  },
+  {
+    "Name": "New Is Always Better",
+    "Tier": "Bronze",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke using only Pokemon introduced in the region in which the game takes place (may not be done in Kanto games or Black/White)."
+  },
+  {
+    "Name": "Fair Fight",
+    "Tier": "Bronze",
+    "Classification": "Single Run",
+    "Description": "When facing a Gym Leader, have only as many Pokemon on your team as they have on theirs."
+  },
+  {
+    "Name": "That Was Easy",
+    "Tier": "Silver",
+    "Classification": "Single Run",
+    "Description": "Complete a deathless Nuzlocke of a Level 4 difficulty game."
+  },
+  {
+    "Name": "Well, Technically...",
+    "Tier": "Silver",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke without ever using TMs, move tutors, or move reminders."
+  },
+  {
+    "Name": "The Four Derps of the Apocalypse",
+    "Tier": "Silver",
+    "Classification": "Single Run",
+    "Description": "Take your starter, an early-game Bug, an early-game bird, and an early-game rodent to the Hall of Fame without any of them dying."
+  },
+  {
+    "Name": "The Dark Knight",
+    "Tier": "Silver",
+    "Classification": "Single Run",
+    "Description": "In every battle against a rival that has a starter Pokemon, use your own starter to take on your opponent’s starter."
+  },
+  {
+    "Name": "Reconstruction",
+    "Tier": "Silver",
+    "Classification": "Single Run",
+    "Description": "Recover from losing more than half your team in a single battle by going the rest of the run without another death."
+  },
+  {
+    "Name": "Go Fish",
+    "Tier": "Silver",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke using only Pokemon that you acquired by fishing."
+  },
+  {
+    "Name": "Team Four Star",
+    "Tier": "Silver",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke in which you only use four team slots."
+  },
+  {
+    "Name": "Extreme Set Mode",
+    "Tier": "Gold",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke without ever switching Pokemon out in battle."
+  },
+  {
+    "Name": "Gotta Catch 'Em All",
+    "Tier": "Gold",
+    "Classification": "Single Run",
+    "Description": "Successfully catch a Pokemon in every single pre-Elite Four area in the game."
+  },
+  {
+    "Name": "Deep Blue",
+    "Tier": "Gold",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke with a rating of 3000 or higher."
+  },
+  {
+    "Name": "Oh Heal No",
+    "Tier": "Gold",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke without using any Pokemon Centers or non-compulsory healing NPCs. In addition, Pokemon may only go in the box if they have full HP and PP and are not afflicted by any status conditions (catching Pokemon while your team is full is fine). This does not apply to the Generation I games, as the box doesn’t heal Pokemon."
+  },
+  {
+    "Name": "Unventory",
+    "Tier": "Gold",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke without using any items apart from Key Items and HMs."
+  },
+  {
+    "Name": "Wildlife Preserver",
+    "Tier": "Gold",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke without defeating a single wild Pokemon (or catching wild Pokemon that aren’t your first encounter in an area in the Let’s Go games)."
+  },
+  {
+    "Name": "Three's a Crowd",
+    "Tier": "Gold",
+    "Classification": "Single Run",
+    "Description": "Complete a Nuzlocke in which you only use three team slots."
+  },
+  {
+    "Name": "Mirror Move",
+    "Tier": "Bronze",
+    "Classification": "Single Battle",
+    "Description": "Defeat a rival, evil team boss, Gym Leader, Elite Four member, or Champion with a team identical to their own."
+  },
+  {
+    "Name": "You've Got a Friend in Me",
+    "Tier": "Bronze",
+    "Classification": "Single Battle",
+    "Description": "Use your starter to sweep an Elite Four member or Champion without any setup."
+  },
+  {
+    "Name": "Run Killer",
+    "Tier": "Silver",
+    "Classification": "Single Battle",
+    "Description": "Defeat Ultra Necrozma in Ultra Sun or Ultra Moon without losing any team members."
+  },
+  {
+    "Name": "Team Effort",
+    "Tier": "Silver",
+    "Classification": "Single Battle",
+    "Description": "Use every single Pokemon on your team in the Champion battle and in every Elite Four battle."
+  },
+  {
+    "Name": "Untouchable",
+    "Tier": "Gold",
+    "Classification": "Single Battle",
+    "Description": "Beat the Champion with zero net HP loss and no item use during the battle (held items are fine, though). More than one Pokemon must be used in the battle."
+  },
+  {
+    "Name": "High Risk, Low Reward",
+    "Tier": "Gold",
+    "Classification": "Single Battle",
+    "Description": "Sweep a Gym Leader, Elite Four member, or Champion using a Pokemon with a 4x weakness to the opponent’s chosen type (the leader must have at least one Pokemon with a damage-dealing move of their chosen type)."
+  },
+  {
+    "Name": "Brock n' Roll",
+    "Tier": "Leader",
+    "Classification": "Kanto",
+    "Description": "Defeat Brock using only Normal-types."
+  },
+  {
+    "Name": "Mistymeanor",
+    "Tier": "Leader",
+    "Classification": "Kanto",
+    "Description": "Defeat Misty without using Grass-types or status moves."
+  },
+  {
+    "Name": "Surge Protector",
+    "Tier": "Leader",
+    "Classification": "Kanto",
+    "Description": "Defeat Surge without using any Pokemon that resistant or immune to Electric-type moves."
+  },
+  {
+    "Name": "Amerika the Beautiful",
+    "Tier": "Leader",
+    "Classification": "Kanto",
+    "Description": "Defeat Erika using only Water-types, excluding Gyarados."
+  },
+  {
+    "Name": "D.S. al koga",
+    "Tier": "Leader",
+    "Classification": "Kanto",
+    "Description": "Yellow: Defeat Koga without missing a single move. Other Kanto Games: Defeat Koga by making at least one of his Pokemon use Self-Destruct."
+  },
+  {
+    "Name": "Sabrina the Cheating Witch",
+    "Tier": "Leader",
+    "Classification": "Kanto",
+    "Description": "Defeat Sabrina using only a Hitmonlee or Hitmonchan."
+  },
+  {
+    "Name": "Blaine as Day",
+    "Tier": "Leader",
+    "Classification": "Kanto",
+    "Description": "Defeat Blaine without a single Burn Heal in your inventory."
+  },
+  {
+    "Name": "Don Giovanni",
+    "Tier": "Leader",
+    "Classification": "Kanto",
+    "Description": "Sweep Giovanni with a Poison-type Pokemon."
+  },
+  {
+    "Name": "Falkner? I Barely Know 'Er!",
+    "Tier": "Leader",
+    "Classification": "Johto",
+    "Description": "Sweep Falkner with a Zubat."
+  },
+  {
+    "Name": "Bugsy Mogues",
+    "Tier": "Leader",
+    "Classification": "Johto",
+    "Description": "Sweep Bugsy with a Togepi or Togetic."
+  },
+  {
+    "Name": "Whitneysing a Murder",
+    "Tier": "Leader",
+    "Classification": "Johto",
+    "Description": "GSC: Defeat Whitney by using Rollout. HGSS: Defeat Whitney with Pokemon that have evolved once and are level 20 or under."
+  },
+  {
+    "Name": "Absolutely Mortyfied",
+    "Tier": "Leader",
+    "Classification": "Johto",
+    "Description": "Defeat Morty while making at least one of his Pokemon Struggle itself to death."
+  },
+  {
+    "Name": "How Much Wood Would Chuck Chuck?",
+    "Tier": "Leader",
+    "Classification": "Johto",
+    "Description": "Defeat Chuck by only using HM moves or TM moves obtained from other Gym Leaders."
+  },
+  {
+    "Name": "Smooth Jas",
+    "Tier": "Leader",
+    "Classification": "Johto",
+    "Description": "Defeat Jasmine with a Dark-type Pokemon or a Pokemon that has a Fairy typing in later generations."
+  },
+  {
+    "Name": "Small Pryce to Pay",
+    "Tier": "Leader",
+    "Classification": "Johto",
+    "Description": "Defeat Pryce with Pokemon with base stat totals less than or equal to 400."
+  },
+  {
+    "Name": "I Can See Clairly Now",
+    "Tier": "Leader",
+    "Classification": "Johto",
+    "Description": "OHKO all of Clair’s Pokemon without having any of your Pokemon over level 45."
+  },
+  {
+    "Name": "Put On the Red Light, Roxanne",
+    "Tier": "Leader",
+    "Classification": "Hoenn",
+    "Description": "Defeat Roxanne without using any damage-dealing Water-, Grass-, or Fighting-type moves."
+  },
+  {
+    "Name": "Brawlyhalla",
+    "Tier": "Leader",
+    "Classification": "Hoenn",
+    "Description": "Defeat Brawly using only your Granite Cave catch."
+  },
+  {
+    "Name": "Elementary, My Dear Wattson",
+    "Tier": "Leader",
+    "Classification": "Hoenn",
+    "Description": "Defeat Wattson without a Fire-, Fighting-, or Ground-type on your team."
+  },
+  {
+    "Name": "Flannery O'Verheat",
+    "Tier": "Leader",
+    "Classification": "Hoenn",
+    "Description": "Defeat Flannery while keeping a Pokemon weak to Fire in battle for at least three full turns."
+  },
+  {
+    "Name": "Where Norman Has Gone Before",
+    "Tier": "Leader",
+    "Classification": "Hoenn",
+    "Description": "Defeat Norman by inflicting at least two of his Pokemon with (non-volatile) status conditions."
+  },
+  {
+    "Name": "Winona Flyder",
+    "Tier": "Leader",
+    "Classification": "Hoenn",
+    "Description": "Sweep Winona with a Grass-, Bug-, or Fighting-type."
+  },
+  {
+    "Name": "Tater Tots and Liza Beans",
+    "Tier": "Leader",
+    "Classification": "Hoenn",
+    "Description": "Defeat Tate and Liza using only spread moves."
+  },
+  {
+    "Name": "Juan Question: What's In Your Wallace?",
+    "Tier": "Leader",
+    "Classification": "Hoenn",
+    "Description": "Use Solarbeam to KO at least three of Juan’s/Wallace’s Pokemon."
+  },
+  {
+    "Name": "Noah's Roark",
+    "Tier": "Leader",
+    "Classification": "Sinnoh",
+    "Description": "Defeat Roark and switch out at least three Pokemon against his Cranidos."
+  },
+  {
+    "Name": "Gardenia of Eden",
+    "Tier": "Leader",
+    "Classification": "Sinnoh",
+    "Description": "Defeat Gardenia using only your Eterna Forest catch."
+  },
+  {
+    "Name": "Maylene Mean Fighting Machine",
+    "Tier": "Leader",
+    "Classification": "Sinnoh",
+    "Description": "Defeat Maylene using only HP draining moves (all non-damaging moves are also fair game)."
+  },
+  {
+    "Name": "Wake Up, Sheeple!",
+    "Tier": "Leader",
+    "Classification": "Sinnoh",
+    "Description": "Defeat Wake using only Pokemon you can catch in the Great Marsh and their evolutions."
+  },
+  {
+    "Name": "Fantina of the Opera",
+    "Tier": "Leader",
+    "Classification": "Sinnoh",
+    "Description": "Defeat Fantina using only Ghost-types."
+  },
+  {
+    "Name": "BYRONICLE",
+    "Tier": "Leader",
+    "Classification": "Sinnoh",
+    "Description": "Defeat Byron without using any super effective or STAB moves."
+  },
+  {
+    "Name": "Candice Day Get Any Worse?",
+    "Tier": "Leader",
+    "Classification": "Sinnoh",
+    "Description": "Defeat Candice without using any 100% accurate moves."
+  },
+  {
+    "Name": "Volknerswagen",
+    "Tier": "Leader",
+    "Classification": "Sinnoh",
+    "Description": "Defeat Volkner using only Pokemon that appear on any of Volkner’s or Flint’s in-game teams."
+  },
+  {
+    "Name": "Watercress Salad with Cilantro and Chili Flakes",
+    "Tier": "Leader",
+    "Classification": "Unova",
+    "Description": "Defeat Chili, Cress, or Cilan using only your starter."
+  },
+  {
+    "Name": "Lenora Sphere",
+    "Tier": "Leader",
+    "Classification": "Unova",
+    "Description": "Defeat Lenora with one of your Pokemon surviving a boosted Retaliate from her Watchog (may not be in the Roggenrola line)."
+  },
+  {
+    "Name": "Iceburgh Lettuce",
+    "Tier": "Leader",
+    "Classification": "Unova",
+    "Description": "Defeat Burgh using only Bug-type Pokemon."
+  },
+  {
+    "Name": "Queen Elesabeth II",
+    "Tier": "Leader",
+    "Classification": "Unova",
+    "Description": "Defeat Elesa without any of your Pokemon ever getting paralyzed."
+  },
+  {
+    "Name": "Exclaydrill",
+    "Tier": "Leader",
+    "Classification": "Unova",
+    "Description": "Defeat Clay without using any super effective moves."
+  },
+  {
+    "Name": "Skyla White",
+    "Tier": "Leader",
+    "Classification": "Unova",
+    "Description": "Sweep Skyla with a Pokemon weak to Flying."
+  },
+  {
+    "Name": "Alpha Brycentauri",
+    "Tier": "Leader",
+    "Classification": "Unova",
+    "Description": "Sweep Brycen with a Ground-type."
+  },
+  {
+    "Name": "Dr. Drayden feat. Iris Cube",
+    "Tier": "Leader",
+    "Classification": "Unova",
+    "Description": "Defeat Drayden or Iris without using moves that do neutral damage."
+  },
+  {
+    "Name": "I Think I've Found Myself a Cherenleader",
+    "Tier": "Leader",
+    "Classification": "Unova",
+    "Description": "Defeat Cheren without using your starter or Floccesy Ranch catch."
+  },
+  {
+    "Name": "Roxie You Like a Hurricane",
+    "Tier": "Leader",
+    "Classification": "Unova",
+    "Description": "Defeat Roxie and get all of your Pokemon poisoned in the process."
+  },
+  {
+    "Name": "Marlon Off-Brando",
+    "Tier": "Leader",
+    "Classification": "Unova",
+    "Description": "Defeat Marlon with a Pokemon that can learn Shell Smash."
+  },
+  {
+    "Name": "Rule Violation",
+    "Tier": "Leader",
+    "Classification": "Kalos",
+    "Description": "Defeat Viola with an early-route rodent or bug."
+  },
+  {
+    "Name": "Flagrant Foul",
+    "Tier": "Leader",
+    "Classification": "Kalos",
+    "Description": "Defeat Grant with a fossil Pokemon."
+  },
+  {
+    "Name": "Korrina-Gadda-Da-Vida",
+    "Tier": "Leader",
+    "Classification": "Kalos",
+    "Description": "Defeat Korrina with a Pokemon weak to Fighting."
+  },
+  {
+    "Name": "Esperamos!",
+    "Tier": "Leader",
+    "Classification": "Kalos",
+    "Description": "Defeat Ramos without using any moves above 60 base power."
+  },
+  {
+    "Name": "Oh My Darlin' Clemontine",
+    "Tier": "Leader",
+    "Classification": "Kalos",
+    "Description": "Defeat Clemont with only Flying- or Water-types."
+  },
+  {
+    "Name": "High Valeriean",
+    "Tier": "Leader",
+    "Classification": "Kalos",
+    "Description": "Defeat Valerie using only Dragon-types."
+  },
+  {
+    "Name": "The Twelve Olympians",
+    "Tier": "Leader",
+    "Classification": "Kalos",
+    "Description": "Defeat Olympia in exactly twelve moves."
+  },
+  {
+    "Name": "Beowulfric",
+    "Tier": "Leader",
+    "Classification": "Kalos",
+    "Description": "Defeat Wulfric with one Pokemon, and use only special moves against his Cryogonal and only physical moves against his Avalugg."
+  },
+  {
+    "Name": "Hala At Your Boy",
+    "Tier": "Leader",
+    "Classification": "Alola",
+    "Description": "Defeat Hala at the Pokemon League with a Pokemon you used against him in his kahuna battle."
+  },
+  {
+    "Name": "Oliviability Rankings",
+    "Tier": "Leader",
+    "Classification": "Alola",
+    "Description": "Defeat Olivia using only D Rank or E Rank Pokemon."
+  },
+  {
+    "Name": "Tunanudle Casserole",
+    "Tier": "Leader",
+    "Classification": "Alola",
+    "Description": "Defeat Nanu using Pokemon you obtained by fishing."
+  },
+  {
+    "Name": "If You're Hapu and You Know It",
+    "Tier": "Leader",
+    "Classification": "Alola",
+    "Description": "Defeat Hapu with Pokemon that appear in Totem Battles, whether as Totem Pokemon or assist Pokemon."
+  }
+]

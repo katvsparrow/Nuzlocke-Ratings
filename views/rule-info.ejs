@@ -3,6 +3,8 @@
     class="table table-hover table-dark table-striped"
     id="rule-info-table"
   >
+    <col width="200">
+    <col width="150">
     <thead class="thead-info">
       <tr>
         <th
@@ -19,6 +21,11 @@
         >
           Difficulty
         </th>
+        <th
+          scope="col"
+        >
+          Description
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -26,6 +33,7 @@
       <tr>
         <td><%= rules[i].name %></td>
         <td><%= rules[i].difficulty %></td>
+        <td><%= rules[i].description %></td>
       </tr>
       <% } %>
     </tbody>

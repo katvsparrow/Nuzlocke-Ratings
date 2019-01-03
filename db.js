@@ -45,7 +45,7 @@ module.exports = {
   // retrieve nuzlocke rule information
   // result: [name, difficulty]
   getRules: callback => {
-    const query = 'SELECT name, difficulty FROM Rule';
+    const query = 'SELECT name, difficulty, description FROM Rule';
 
     db.query(query, callback);
   },
