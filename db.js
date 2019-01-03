@@ -118,7 +118,8 @@ module.exports = {
       'SELECT Pokemon.name as pokemon_name, Basegame.name as basegame_name, rank, difficulty ' +
       'FROM Pokemon_Rank ' +
       'INNER JOIN Pokemon ON Pokemon.pokemon_id = Pokemon_Rank.pokemon_id ' +
-      'INNER JOIN Basegame ON Basegame.basegame_id = Pokemon_Rank.basegame_id';
+      'INNER JOIN Basegame ON Basegame.basegame_id = Pokemon_Rank.basegame_id ' +
+      'ORDER BY Pokemon.name';
 
     db.query(query, callback);
   },
@@ -140,7 +141,7 @@ module.exports = {
     ];
 
     db.query(query, values, (err, result) => {
-      if (err) return callback(err);
+      if (err || result.affectedRows != 1) return callback(err);
 
       const insertId = result.insertId;
       const { party, ruleset } = runInfo;
