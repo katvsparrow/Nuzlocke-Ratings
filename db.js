@@ -7,7 +7,7 @@ const connectionString = process.env.JAWSDB_MARIA_URL;
 
 // if env variable exists, it's on cloud; otherwise, use localhost
 const connection = connectionString
-  ? connectionString + '?multiplestatements=true'
+  ? connectionString + '?multipleStatements=true'
   : {
       host: 'localhost',
       user: 'root',

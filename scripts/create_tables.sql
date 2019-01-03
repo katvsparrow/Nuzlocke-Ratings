@@ -95,7 +95,8 @@ CREATE TABLE IF NOT EXISTS Party (
 CREATE TABLE IF NOT EXISTS Rule (
     rule_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    difficulty TINYINT(1) NOT NULL  
+    difficulty TINYINT(1) NOT NULL,
+    description TEXT NOT NULL  
 ) ENGINE=InnoDB;
 
 

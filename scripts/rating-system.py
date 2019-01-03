@@ -205,7 +205,7 @@ class Main(object):
 
     def getPokemon(self):
         self.pokemonList = []
-        with open('data/pokemon-ranks.json', 'r') as fp:
+        with open('data/pokemon.json', 'r') as fp:
             pokemonData = json.load(fp)
         for pokemon, ranks in pokemonData.items():
             self.pokemonList.append(Pokemon(pokemon, ranks))
