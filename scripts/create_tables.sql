@@ -1,6 +1,21 @@
+-- Represents a single title.
+--
+-- Key: title_id
+CREATE TABLE IF NOT EXISTS Title (
+    title_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(32) NOT NULL,
+    abbreviation VARCHAR(3) NOT NULL,
+    rating_floor SMALLINT NOT NULL,
+    min_bronze_challenges TINYINT NOT NULL,
+    min_silver_challenges TINYINT NOT NULL,
+    min_gold_challenges TINYINT NOT NULL
+) ENGINE=InnoDB;
+
 -- Represents a single player.
 --
 -- Key: player_id
+--
+-- Foreign Key: title_id references Title table
 CREATE TABLE IF NOT EXISTS Player (
     player_id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL UNIQUE,
@@ -11,7 +26,11 @@ CREATE TABLE IF NOT EXISTS Player (
     link VARCHAR(255),
     discord VARCHAR(32),
     rating INT DEFAULT 1000,
-    runs_completed INT DEFAULT 0
+    runs_completed INT DEFAULT 0,
+    title_id INT,
+    FOREIGN KEY (title_id) REFERENCES Title(title_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
 ) ENGINE=InnoDB;
 
 
@@ -26,19 +45,6 @@ CREATE TABLE IF NOT EXISTS Basegame (
     difficulty TINYINT(1) NOT NULL
 ) ENGINE=InnoDB;
 
--- Represents a single title.
---
--- Key: title_id
-CREATE TABLE IF NOT EXISTS Title (
-    title_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(32) NOT NULL,
-    abbreviation VARCHAR(3) NOT NULL,
-    rating_floor SMALLINT NOT NULL,
-    min_bronze_challenges TINYINT NOT NULL,
-    min_silver_challenges TINYINT NOT NULL,
-    min_gold_challenges TINYINT NOT NULL
-) ENGINE=InnoDB;
-
 -- Represents a single challenge.
 --
 -- Key: challenge_id
@@ -48,6 +54,25 @@ CREATE TABLE IF NOT EXISTS Challenge (
     tier ENUM('Gold', 'Silver', 'Bronze', 'Leader') NOT NULL,
     classification ENUM('Multiple Runs', 'Single Run', 'Single Battle', 'Kanto', 'Johto', 'Hoenn', 'Sinnoh', 'Unova', 'Kalos', 'Alola') NOT NULL,
     description TEXT NOT NULL
+) ENGINE=InnoDB;
+
+-- Represents a single challenge completed by a player.
+--
+-- Player to Challenge is m:n, i.e.,
+-- 1 player can do multiple challenges, and
+-- 1 challenge can be done by multiple players.
+--
+-- Foreign Key: player_id references Player table
+-- Foreign Key: challenge_id references Challenge table
+CREATE TABLE IF NOT EXISTS Player_Challenge (
+    player_id INT NOT NULL,
+    challenge_id INT NOT NULL,
+    FOREIGN KEY (player_id) REFERENCES Player(player_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    FOREIGN KEY (challenge_id) REFERENCES Challenge(challenge_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
 ) ENGINE=InnoDB;
 
 -- Represents a single run owned by a player.
