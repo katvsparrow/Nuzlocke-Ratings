@@ -1,7 +1,34 @@
-<div id="info-page-container">
-  <h4>Welcome to the Nuzlocke Rating System!</h4>
-  <p class="info-page-text">
-    If you've ever played chess or competitive Pokemon on Pokemon Showdown,
-    you're probably familiar with the Elo rating system.
-  </p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 info-page-col">
+        <h4>Welcome to the Nuzlocke Rating System!</h4>
+        <br>
+        <p class="text-left">
+          Ever wanted to be able to call yourself a Nuzlocke Grandmaster? Maybe you do a lot of undocumented Nuzlockes and want a way to show that to the world. Or, maybe you just want to prove to your friends that you're a better Nuzlocker than they are. Regardless of your motive, we're certainly glad you're here!
+          <br><br>
+          The Nuzlocke Rating System uses the same Elo rating formula used by official chess federations, Pokemon Showdown, and a host of other organizations. At its core, it's quite simple: you start with a default rating, and your rating will increase when you win and decrease when you lose. Beating higher-rated opponents earns you more rating points than you'd otherwise gain from beating a lower-rated opponent, while losing to lower-rated opponents can cause your rating to significantly drop. Though most Elo-based rating systems rely on player-versus-player (PvP) interaction, Nuzlocke challenges are inherently player-versus-environment (PvE) experiences. So, we had to change a few things to make it suit our purposes.
+          <br><br>
+          Since a Nuzlocke run pits a player against a Pokemon game, <b>games act as opponents and therefore have ratings of their own</b>. In addition, it is impossible to "lose" a match - <b>every completed Nuzlocke counts as a win, no matter what</b>. We felt that this was appropriate as Nuzlockes require significantly more time, effort, and heartache than a chess game or Pokemon Showdown battle. So, the main factor in determining a player's rating growth is the rating of the games they complete. As mentioned before, high-rated opponents provide faster rating growth than low-rated opponents do, so don't be confused by some of the seemingly contradictory statements in the following descriptions.
+          <br><br>
+          <h5>Game Rating Modifiers</h5> 
+          <ol>
+            <li>
+                <b>Game Difficulty:</b> Game difficulty is graded on a scale from 1 to 4, with 1 being the easiest and 4 being the hardest. The formula currently being used to form a game's base rating is <code>1000 + 200 * difficulty</code>, so base ratings are 1200, 1400, 1600, and 1800 for games with difficulties of 1, 2, 3, and 4, respectively. If you'd like to check the difficulty ratings assigned to the games, please check the <a href="/info/basegames">Game Information</a> page.
+            </li>
+            <li>
+              <b>Ruleset Difficulty:</b> The ruleset used by a player consists of multiple different rules, with each rule being assigned a value from 1 to 4. These work just like the game difficulty levels, but the multiplier is 50 rather than 200. So, for instance, a Notepad (difficulty 3) run of Platinum (difficulty 4) would end up being <code>1000 + (200 * 4) + (50 * 3) = 1950</code>. Separate rules will stack, so a STABless (difficulty 4) and Superless (difficulty 4) run would have a total ruleset difficulty of 8, which would give a rating boost of <code>8 * 50 = 400</code>. If you'd like to check the difficulty ratings assigned to common Nuzlocke rules, please check the <a href="/info/rules">Rule Information</a> page. Also, feel free to suggest rules in the #rule-suggestions channel of the <a href="https://discord.gg/3gRb7jf">Discord server</a>.
+            </li>
+            <li>
+              <b>Death Count:</b> Death tolls of less than five will increase the game's rating, while death tolls over five will do the opposite. Five deaths is treated as the baseline and will not impact the game's rating at all. The farther a death count gets from this baseline, the more severe the impact - for instance, four deaths gives a rating boost of +25, while a deathless run gives a rating boost of +200.
+            </li>
+            <li>
+              <b>Pokemon Viability:</b> Players who use Pokemon that are generally considered to be inferior will benefit from doing so. The <a href="/info/viability">Nuzlocke Viability Rankings</a> will be used to judge a player's final team, and the game's rating will be adjusted accordingly. Most players will receive a relatively modest boost from this, but players who go the extra mile and use awful Pokemon will be rewarded handsomely.
+            </li>
+          </ol>
+        </p>
+    </div>
+    <div class="col-md-4 info-page-col">
+      <img src="https://i.redd.it/7vskqf5qt0hy.png"/>
+    </div>
+  </div>
 </div>

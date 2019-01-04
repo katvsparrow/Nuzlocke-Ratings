@@ -1,0 +1,51 @@
+<div class="table-wrapper">
+  <table
+    class="table table-hover table-dark table-striped"
+    id="viability-info-table"
+  >
+    <thead class="thead-info">
+      <tr>
+        <th
+          scope="col"
+          onclick="sortTable(0, 'viability-info-table')"
+          class="sortable"
+        >
+          Game
+        </th>
+        <th
+          scope="col"
+          onclick="sortTable(1, 'viability-info-table')"
+          class="sortable"
+        >
+          Generation
+        </th>
+        <th
+          scope="col"
+          onclick="sortTable(2, 'viability-info-table')"
+          class="sortable"
+        >
+          Region
+        </th>
+        <th
+          scope="col"
+        >
+          Link
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(let v in viability){ %>
+      <tr>
+        <td><%= v %></td>
+        <td><%= viability[v].generation %></td>
+        <td><%= viability[v].region %></td>
+        <% if (viability[v].link) {%>
+        <td><a href="<%= viability[v].link %>" target="_blank">Link to thread</a></td>
+        <% } else {%>
+        <td>Coming soon!</td>
+        <% } %>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>

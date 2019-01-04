@@ -50,6 +50,14 @@ module.exports = {
     db.query(query, callback);
   },
 
+  // retrieve title information
+  // result: [name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges]
+  getTitles: callback => {
+    const query = 'SELECT name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges FROM Title';
+
+    db.query(query, callback);
+  },
+
   // retrieve a specific player's information given their username
   // result: [player_id, username, password, email, link, discord, rating, runs_completed]
   getPlayerByUsername: (username, callback) => {

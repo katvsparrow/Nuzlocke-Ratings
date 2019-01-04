@@ -33,10 +33,6 @@ body {
   -moz-columns: 2;
 }
 
-#info-page-container {
-  margin: 50px;
-}
-
-.info-page-text {
-  margin: 20px;
+.info-page-col {
+  padding: 50px 0 0 50px;
 }

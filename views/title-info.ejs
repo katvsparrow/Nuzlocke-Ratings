@@ -31,17 +31,33 @@
           onclick="sortTable(3, 'title-info-table')"
           class="sortable"
         >
-          Minimum Challenges
+          Bronze Challenges Required
+        </th>
+        <th
+          scope="col"
+          onclick="sortTable(4, 'title-info-table')"
+          class="sortable"
+        >
+          Silver Challenges Required
+        </th>
+        <th
+          scope="col"
+          onclick="sortTable(5, 'title-info-table')"
+          class="sortable"
+        >
+          Gold Challenges Required
         </th>
       </tr>
     </thead>
     <tbody>
       <% for(let title in titles){ %>
       <tr>
-        <td><%= title %></td>
+        <td><%= titles[title].name %></td>
         <td><%= titles[title].abbreviation %></td>
         <td><%= titles[title].rating_floor %></td>
-        <td><%= titles[title].min_challenges %></td>
+        <td><%= titles[title].min_bronze_challenges %></td>
+        <td><%= titles[title].min_silver_challenges %></td>
+        <td><%= titles[title].min_gold_challenges %></td>
       </tr>
       <% } %>
     </tbody>

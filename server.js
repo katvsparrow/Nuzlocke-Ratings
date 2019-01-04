@@ -14,12 +14,17 @@ const {
   editPlayer,
   editPlayerPage
 } = require('./routes/player');
-const { addRunPage, addRun, displayRuns } = require('./routes/run');
+const { 
+  addRunPage, 
+  addRun, 
+  displayRuns 
+} = require('./routes/run');
 const {
   overallInfo,
   basegameInfo,
   ruleInfo,
-  titleInfo
+  titleInfo,
+  viabilityInfo
 } = require('./routes/info');
 const db = require('./db');
 const logger = require('./logger');
@@ -108,6 +113,7 @@ app.get('/info', overallInfo);
 app.get('/info/basegames', basegameInfo);
 app.get('/info/rules', ruleInfo);
 app.get('/info/titles', titleInfo);
+app.get('/info/viability', viabilityInfo);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

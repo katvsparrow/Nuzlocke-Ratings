@@ -1,5 +1,6 @@
 const db = require('../db');
-const titles = require('../consts/titles');
+const viability = require('../consts/viability');
+// const titles = require('../consts/titles');
 
 module.exports = {
   overallInfo: (req, res) => {
@@ -31,9 +32,20 @@ module.exports = {
   },
 
   titleInfo: (req, res) => {
-    req.app.locals.render(req, res, 'title-info.ejs', {
-      title: 'Nuzlocke Ratings | Title Info',
-      titles
+    db.getTitles((err, result) => {
+      if (err) return req.app.locals.error(req, res, err);
+
+      req.app.locals.render(req, res, 'title-info.ejs', {
+        title: 'Nuzlocke Ratings | Title Info',
+        titles: result
+      });
     });
-  }
+  },
+
+  viabilityInfo: (req, res) => {
+    req.app.locals.render(req, res, 'viability-info.ejs', {
+      title: 'Nuzlocke Ratings | Viability Info',
+      viability: viability
+    });
+  } 
 };

@@ -220,18 +220,18 @@
       translated = [];
       for(var i = 0; i < ranks.length; i++){
           switch(ranks[i]){
-              case 'S' : translated.push(-2); break;
-              case 'A+': translated.push(0); break;
+              case 'S' : translated.push(0); break;
+              case 'A+': translated.push(1); break;
               case 'A' : translated.push(2); break;
-              case 'A-': translated.push(4); break;
-              case 'B+': translated.push(6); break;
-              case 'B' : translated.push(8); break;
-              case 'B-': translated.push(10); break;
+              case 'A-': translated.push(3); break;
+              case 'B+': translated.push(5); break;
+              case 'B' : translated.push(7); break;
+              case 'B-': translated.push(9); break;
               case 'C+': translated.push(12); break;
-              case 'C' : translated.push(14); break;
-              case 'C-': translated.push(16); break;
-              case 'D' : translated.push(18); break;
-              case 'E' : translated.push(20); break;
+              case 'C' : translated.push(15); break;
+              case 'C-': translated.push(18); break;
+              case 'D' : translated.push(22); break;
+              case 'E' : translated.push(27); break;
           }
       }
       return translated;
