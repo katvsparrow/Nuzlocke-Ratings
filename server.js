@@ -24,7 +24,8 @@ const {
   basegameInfo,
   ruleInfo,
   titleInfo,
-  viabilityInfo
+  viabilityInfo,
+  challengeInfo
 } = require('./routes/info');
 const db = require('./db');
 const logger = require('./logger');
@@ -114,6 +115,7 @@ app.get('/info/basegames', basegameInfo);
 app.get('/info/rules', ruleInfo);
 app.get('/info/titles', titleInfo);
 app.get('/info/viability', viabilityInfo);
+app.get('/info/challenges', challengeInfo);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

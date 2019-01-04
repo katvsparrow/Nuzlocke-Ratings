@@ -1,0 +1,171 @@
+<div class="table-wrapper">
+  <h4>Multiple Run Challenges</h4><br>
+  <table
+    class="table table-hover table-dark table-striped"
+    id="multirun-challenge-info-table"
+  >
+    <col width="225">
+    <col width="150">
+    <thead class="thead-info">
+      <tr>
+        <th
+          scope="col"
+          onclick="sortTable(0, 'multirun-challenge-info-table')"
+          class="sortable"
+        >
+          Challenge
+        </th>
+        <th
+          scope="col"
+          onclick="sortTable(1, 'multirun-challenge-info-table')"
+          class="sortable"
+        >
+          Tier
+        </th>
+        <th
+          scope="col"
+        >
+          Description
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i = 0; i < multiRun.length; i++){ %>
+      <tr>
+        <td><%= multiRun[i].name %></td>
+        <td><%= multiRun[i].tier %></td>
+        <td><%= multiRun[i].description %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div><br>
+
+<div class="table-wrapper">
+  <h4>Single Run Challenges</h4><br>
+  <table
+    class="table table-hover table-dark table-striped"
+    id="single-run-challenge-info-table"
+  >
+    <col width="225">
+    <col width="150">
+    <thead class="thead-info">
+      <tr>
+        <th
+          scope="col"
+          onclick="sortTable(0, 'single-run-challenge-info-table')"
+          class="sortable"
+        >
+          Challenge
+        </th>
+        <th
+          scope="col"
+          onclick="sortTable(1, 'single-run-challenge-info-table')"
+          class="sortable"
+        >
+          Tier
+        </th>
+        <th
+          scope="col"
+        >
+          Description
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i = 0; i < singleRun.length; i++){ %>
+      <tr>
+        <td><%= singleRun[i].name %></td>
+        <td><%= singleRun[i].tier %></td>
+        <td><%= singleRun[i].description %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div><br>
+
+<div class="table-wrapper">
+  <h4>Single Battle Challenges</h4><br>
+  <table
+    class="table table-hover table-dark table-striped"
+    id="single-battle-challenge-info-table"
+  >
+    <col width="225">
+    <col width="150">
+    <thead class="thead-info">
+      <tr>
+        <th
+          scope="col"
+          onclick="sortTable(0, 'single-battle-challenge-info-table')"
+          class="sortable"
+        >
+          Challenge
+        </th>
+        <th
+          scope="col"
+          onclick="sortTable(1, 'single-battle-challenge-info-table')"
+          class="sortable"
+        >
+          Tier
+        </th>
+        <th
+          scope="col"
+        >
+          Description
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i = 0; i < singleBattle.length; i++){ %>
+      <tr>
+        <td><%= singleBattle[i].name %></td>
+        <td><%= singleBattle[i].tier %></td>
+        <td><%= singleBattle[i].description %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div><br>
+
+<div class="table-wrapper">
+  <h4>Leader Challenges</h4><br>
+  <table
+    class="table table-hover table-dark table-striped"
+    id="leader-challenge-info-table"
+  >
+    <col width="225">
+    <col width="150">
+    <thead class="thead-info">
+      <tr>
+        <th
+          scope="col"
+          onclick="sortTable(0, 'leader-challenge-info-table')"
+          class="sortable"
+        >
+          Challenge
+        </th>
+        <th
+          scope="col"
+          onclick="sortTable(1, 'leader-challenge-info-table')"
+          class="sortable"
+        >
+          Region
+        </th>
+        <th
+          scope="col"
+        >
+          Description
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i = 0; i < leader.length; i++){ %>
+      <tr>
+        <td><%= leader[i].name %></td>
+        <td><%= leader[i].classification %></td>
+        <td><%= leader[i].description %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>

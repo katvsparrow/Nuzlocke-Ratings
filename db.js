@@ -58,6 +58,14 @@ module.exports = {
     db.query(query, callback);
   },
 
+  // retrieve challenge information
+  // result: [name, tier, classification, description]
+  getChallenges: callback => {
+    const query = 'SELECT name, tier, classification, description FROM Challenge';
+
+    db.query(query, callback);
+  },
+
   // retrieve a specific player's information given their username
   // result: [player_id, username, password, email, link, discord, rating, runs_completed]
   getPlayerByUsername: (username, callback) => {

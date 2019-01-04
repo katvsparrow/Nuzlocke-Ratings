@@ -36,7 +36,7 @@ module.exports = {
       if (err) return req.app.locals.error(req, res, err);
 
       req.app.locals.render(req, res, 'title-info.ejs', {
-        title: 'Nuzlocke Ratings | Title Info',
+        title: 'Nuzlocke Ratings | Titles',
         titles: result
       });
     });
@@ -47,5 +47,41 @@ module.exports = {
       title: 'Nuzlocke Ratings | Viability Info',
       viability: viability
     });
-  } 
+  },
+
+  challengeInfo: (req, res) => {
+    db.getChallenges((err, result) => {
+      if (err) return req.app.locals.error(req, res, err);
+
+      multiRun = [];
+      singleRun = [];
+      singleBattle = [];
+      leader = [];
+
+      for(let challenge in result){
+        if(result[challenge].tier != 'Leader'){
+          if(result[challenge].classification == 'Multiple Runs'){
+            multiRun.push(result[challenge]);
+          }
+          else if(result[challenge].classification == 'Single Run'){
+            singleRun.push(result[challenge]);
+          }
+          else if(result[challenge].classification == 'Single Battle'){
+            singleBattle.push(result[challenge]);
+          }
+        }
+        else{
+          leader.push(result[challenge]);
+        }
+      }
+
+      req.app.locals.render(req, res, 'challenge-info.ejs', {
+        title: 'Nuzlocke Ratings | Challenges',
+        multiRun,
+        singleRun,
+        singleBattle,
+        leader
+      });
+    });
+  }
 };
