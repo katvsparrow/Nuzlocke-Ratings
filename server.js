@@ -14,11 +14,7 @@ const {
   editPlayer,
   editPlayerPage
 } = require('./routes/player');
-const { 
-  addRunPage, 
-  addRun, 
-  displayRuns 
-} = require('./routes/run');
+const { addRunPage, addRun, displayRuns } = require('./routes/run');
 const {
   overallInfo,
   basegameInfo,
@@ -49,6 +45,15 @@ app.use(
     saveUninitialized: false
   })
 );
+
+// keep this middleware at the end, add any other middleware above this
+app.use((req, res, next) => {
+  try {
+    next();
+  } catch (error) {
+    req.app.locals.error(req, res, error);
+  }
+});
 
 // helper function to render a page, useful for standardizing all pages
 app.locals.render = (req, res, page, data) => {
