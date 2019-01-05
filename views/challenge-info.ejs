@@ -27,6 +27,13 @@
         >
           Description
         </th>
+        <% if(player) { %>
+        <th
+          scope="col"
+        >
+          Actions
+        </th>
+        <% } %>
       </tr>
     </thead>
     <tbody>
@@ -35,6 +42,9 @@
         <td><%= multiRun[i].name %></td>
         <td><%= multiRun[i].tier %></td>
         <td><%= multiRun[i].description %></td>
+        <% if(player) { %>
+          <td><a href="/add-challenge/<%= multiRun[i].challenge_id %>" rel="noopener" class="btn btn-sm btn-success">Register Completion</a></td>
+        <% } %>
       </tr>
       <% } %>
     </tbody>
@@ -70,6 +80,13 @@
         >
           Description
         </th>
+        <% if(player) { %>
+        <th
+          scope="col"
+        >
+          Actions
+        </th>
+        <% } %>
       </tr>
     </thead>
     <tbody>
@@ -78,6 +95,9 @@
         <td><%= singleRun[i].name %></td>
         <td><%= singleRun[i].tier %></td>
         <td><%= singleRun[i].description %></td>
+        <% if(player) { %>
+          <td><a href="/add-challenge/<%= singleRun[i].challenge_id %>" rel="noopener" class="btn btn-sm btn-success">Register Completion</a></td>
+        <% } %>
       </tr>
       <% } %>
     </tbody>
@@ -113,6 +133,13 @@
         >
           Description
         </th>
+        <% if(player) { %>
+        <th
+          scope="col"
+        >
+          Actions
+        </th>
+        <% } %>
       </tr>
     </thead>
     <tbody>
@@ -121,6 +148,9 @@
         <td><%= singleBattle[i].name %></td>
         <td><%= singleBattle[i].tier %></td>
         <td><%= singleBattle[i].description %></td>
+        <% if(player) { %>
+          <td><a href="/add-challenge/<%= singleBattle[i].challenge_id %>" rel="noopener" class="btn btn-sm btn-success">Register Completion</a></td>
+        <% } %>
       </tr>
       <% } %>
     </tbody>
@@ -164,6 +194,9 @@
         <td><%= leader[i].name %></td>
         <td><%= leader[i].classification %></td>
         <td><%= leader[i].description %></td>
+        <% if(player) { %>
+          <td><a href="/add-challenge/<%= leader[i].challenge_id %>" rel="noopener" class="btn btn-sm btn-success">Register Completion</a></td>
+        <% } %>
       </tr>
       <% } %>
     </tbody>

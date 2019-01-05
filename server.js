@@ -23,6 +23,7 @@ const {
   viabilityInfo,
   challengeInfo
 } = require('./routes/info');
+const { addChallenge, addChallengePage } = require('./routes/challenge');
 const db = require('./db');
 const logger = require('./logger');
 
@@ -112,6 +113,11 @@ app
   .route('/edit/:username')
   .get(editPlayerPage)
   .post(editPlayer);
+
+app
+  .route('/add-challenge/:challenge_id')
+  .get(addChallengePage)
+  .post(addChallenge);
 
 app.get('/delete/:username', deletePlayer);
 app.get('/:username/runs', displayRuns);

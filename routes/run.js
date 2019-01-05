@@ -73,7 +73,7 @@ module.exports = {
   },
 
   addRun: (req, res) => {
-    const { player } = req.player;
+    const { player } = req.session;
     if (!player) {
       return res.redirect('/login');
     }

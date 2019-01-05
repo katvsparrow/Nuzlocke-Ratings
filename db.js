@@ -59,11 +59,20 @@ module.exports = {
   },
 
   // retrieve challenge information
-  // result: [name, tier, classification, description]
+  // result: [challenge_id, name, tier, classification, description]
   getChallenges: callback => {
-    const query = 'SELECT name, tier, classification, description FROM Challenge';
+    const query = 'SELECT challenge_id, name, tier, classification, description FROM Challenge';
 
     db.query(query, callback);
+  },
+
+  // retrieve a single challenge given its ID
+  // result: [name, tier, classification, description]
+  getChallengeByID: (id, callback) => {
+    const query = 'SELECT name, tier, classification, description FROM Challenge WHERE challenge_id = ?';
+    const values = [id];
+
+    db.query(query, values, callback);
   },
 
   // retrieve a specific player's information given their username
