@@ -76,9 +76,23 @@ module.exports = {
   },
 
   // retrieve a specific player's information given their username
-  // result: [player_id, username, password, email, link, discord, rating, runs_completed]
+  // result: [player_id, username, password, email, link, discord, rating, runs_completed, title_name]
   getPlayerByUsername: (username, callback) => {
-    const query = 'SELECT * FROM Player WHERE username = ?';
+    const query = 'SELECT * FROM Player LEFT JOIN Title ON Player.title_id = Title.title_id WHERE username = ?';
+    const values = [username];
+
+    db.query(query, values, callback);
+  },
+
+  // retrieve a specific player's challenges given their username
+  // result: [challenge_name, tier, classification, description, run_name]
+  getChallengesByUsername: (username, callback) => {
+    const query =
+      'SELECT Challenge.name as challenge_name, tier, classification, description, Run.name as run_name FROM Player ' +
+      'INNER JOIN Player_Challenge ON Player.player_id = Player_Challenge.player_id ' +
+      'INNER JOIN Run ON Player_Challenge.run_id = Run.run_id ' +
+      'INNER JOIN Challenge ON Player_Challenge.challenge_id = Challenge.challenge_id ' +
+      'WHERE username = ?';
     const values = [username];
 
     db.query(query, values, callback);
@@ -191,6 +205,20 @@ module.exports = {
       db.query(query2, callback);
     });
   },
+
+  // get a player's completed challenges
+  getCompletedChallenges: (playerId, callback) => {
+    const query = 'SELECT * FROM Challenge INNER JOIN Player_Challenge ON Challenge.challenge_id = Player_Challenge.challenge_id WHERE player_id = ?';
+
+    db.query(query, [playerId], callback);
+  },
+
+  // register challenge completion
+  challengeCompletion: (playerId, challengeId, runName, callback) => {
+    const query = 'INSERT INTO Player_Challenge (player_id, challenge_id, run_id) SELECT ?, ?, run_id FROM run WHERE run.name = ?';
+
+    db.query(query, [playerId, challengeId, runName], callback);
+  }, 
 
   // update player's rating
   updateRating: (playerId, newRating, callback) => {

@@ -6,7 +6,7 @@
     <div class="form-row">
       <div class="form-group col-md-6">
         <label id="runs-for-challenges" class="control-label">In which run did you complete the challenge?</label>
-        <select class="pick-run form-control" required name="pickRun">
+        <select class="pick-run form-control" required name="runName">
           <option selected disabled>My completed runs</option>
           <% for(var i = 0; i < runs.length; i++){ %>
           <option><%= runs[i].run_name %></option>

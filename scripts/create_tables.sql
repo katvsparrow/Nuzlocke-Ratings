@@ -64,13 +64,18 @@ CREATE TABLE IF NOT EXISTS Challenge (
 --
 -- Foreign Key: player_id references Player table
 -- Foreign Key: challenge_id references Challenge table
+-- Foreign Key: run_id references Run table
 CREATE TABLE IF NOT EXISTS Player_Challenge (
     player_id INT NOT NULL,
     challenge_id INT NOT NULL,
+    run_id INT NOT NULL,
     FOREIGN KEY (player_id) REFERENCES Player(player_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE,
     FOREIGN KEY (challenge_id) REFERENCES Challenge(challenge_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    FOREIGN KEY (run_id) REFERENCES Run(run_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
 ) ENGINE=InnoDB;

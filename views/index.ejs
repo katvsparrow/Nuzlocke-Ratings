@@ -10,7 +10,7 @@
         <th scope="col" onclick="sortTable(0, 'leaderboard')" class="sortable">
           Rank
         </th>
-        <th scope="col">Avatar</th>
+        <th scope="col">Title</th>
         <th scope="col" onclick="sortTable(2, 'leaderboard')" class="sortable">
           Username
         </th>
@@ -23,7 +23,7 @@
         <th scope="col" onclick="sortTable(5, 'leaderboard')" class="sortable">
           Discord
         </th>
-        <th scope="col">Link</th>
+        <th scope="col">Profile</th>
       </tr>
     </thead>
     <tbody>
@@ -46,7 +46,7 @@
         </td>
         <td><%= players[i].discord %></td>
         <% if(players[i].link){ %>
-        <td><a href="<%= players[i].link %>" target="_blank">Link</a></td>
+        <td><a href="/profile/<%= players[i].username %>">View <%= players[i].username %>'s profile</a></td>
         <% } else {%>
         <td>No Link</td>
         <% } %>

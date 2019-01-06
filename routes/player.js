@@ -181,21 +181,43 @@ module.exports = {
     });
   },
 
-  deletePlayer: (req, res) => {
+  playerProfile: (req, res) => {
     const { username } = req.params;
-    const { player } = req.session;
-
-    // verify correct user is logged in
-    if (!player || player.username != username) {
-      return req.app.locals.forbidden(req, res);
-    }
-
-    db.deletePlayer(player.id, err => {
+    
+    db.getPlayerByUsername(username, (err, playerInfo) => {
       if (err) {
-        req.app.locals.error(req, res, err);
+        return req.app.locals.error(req, res, err);
       }
 
-      res.redirect('/');
+      db.getChallengesByUsername(username, (err, challenges) => {
+        if (err) {
+          return req.app.locals.error(req, res, err);
+        }
+        console.log(playerInfo);
+          req.app.locals.render(req, res, 'player-profile.ejs', {
+            title: 'Nuzlocke Ratings | ' + username,
+            playerInfo: playerInfo[0],
+            challenges
+          });
+      });
     });
   }
+  
+  // deletePlayer: (req, res) => {
+  //   const { username } = req.params;
+  //   const { player } = req.session;
+
+  //   // verify correct user is logged in
+  //   if (!player || player.username != username) {
+  //     return req.app.locals.forbidden(req, res);
+  //   }
+
+  //   db.deletePlayer(player.id, err => {
+  //     if (err) {
+  //       req.app.locals.error(req, res, err);
+  //     }
+
+  //     res.redirect('/');
+  //   });
+  // }
 };

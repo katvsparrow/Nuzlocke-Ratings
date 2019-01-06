@@ -10,9 +10,10 @@ const {
   register,
   loginPage,
   login,
-  deletePlayer,
+  // deletePlayer,
   editPlayer,
-  editPlayerPage
+  editPlayerPage,
+  playerProfile
 } = require('./routes/player');
 const { addRunPage, addRun, displayRuns } = require('./routes/run');
 const {
@@ -115,11 +116,12 @@ app
   .post(editPlayer);
 
 app
-  .route('/add-challenge/:challenge_id')
+  .route('/add-challenge/:challengeID')
   .get(addChallengePage)
   .post(addChallenge);
 
-app.get('/delete/:username', deletePlayer);
+// app.get('/delete/:username', deletePlayer);
+app.get('/profile/:username', playerProfile);
 app.get('/:username/runs', displayRuns);
 app.get('/info', overallInfo);
 app.get('/info/basegames', basegameInfo);
