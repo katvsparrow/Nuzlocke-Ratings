@@ -10,10 +10,11 @@ module.exports = {
       return res.redirect('/login');
     }
 
-    db.getCompletedChallenges(player.id, (err, completedChallenges) => {
+    db.getChallengesByID(player.id, (err, completedChallenges) => {
       if (err) {
         return req.app.locals.error(req, res, err);
       }
+      
       for(cc in completedChallenges){
         if(challengeID == completedChallenges[cc].challenge_id){
           // ERROR HANDLING: redirect back to /info/challenges with the error message 'You have already completed this challenge!'

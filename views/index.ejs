@@ -30,13 +30,14 @@
       <% for(var i=0; i < players.length; i++){ %>
       <tr>
         <td><%= i+1 %></td>
-        <td>
+        <!-- <td>
           <img
             src="/assets/img/<%= players[i].avatar %>"
             class="rounded-circle player-img"
             alt=""
           />
-        </td>
+        </td> -->
+        <td><%= players[i].abbreviation %></td>
         <td><%= players[i].username %></td>
         <td><%= players[i].rating %></td>
         <td>

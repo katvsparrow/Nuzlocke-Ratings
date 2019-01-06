@@ -1,5 +1,6 @@
 const db = require('../db');
 const viability = require('../consts/viability');
+const functions_module = require('../public/assets/js/functions_module');
 // const titles = require('../consts/titles');
 
 module.exports = {
@@ -32,13 +33,31 @@ module.exports = {
   },
 
   titleInfo: (req, res) => {
-    db.getTitles((err, result) => {
+    const { player } = req.session;
+
+    db.getTitles((err, titles) => {
       if (err) return req.app.locals.error(req, res, err);
 
-      req.app.locals.render(req, res, 'title-info.ejs', {
-        title: 'Nuzlocke Ratings | Titles',
-        titles: result
-      });
+      if (player) {
+        db.getChallengesByUsername(player.username, (err, challenges) => {
+          if (err) return req.app.locals.error(req, res, err);
+          
+          challengeCounts = functions_module.countChallenges(challenges);
+
+          req.app.locals.render(req, res, 'title-info.ejs', {
+            title: 'Nuzlocke Ratings | Titles',
+            challengeCounts,
+            titles,
+            playerRating: challenges[0].player_rating
+          });        
+        });
+      }
+      else {
+        req.app.locals.render(req, res, 'title-info.ejs', {
+          title: 'Nuzlocke Ratings | Titles',
+          titles
+        });
+      }
     });
   },
 

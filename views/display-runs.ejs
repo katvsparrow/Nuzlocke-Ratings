@@ -55,7 +55,9 @@
           </ul>
         </td>
         <td>
-          <ol>
+          <ol 
+            <% if(runs[i].ruleset.length > 3){%> class="split" <% }%>
+          >
             <% for(j = 0; j < runs[i].ruleset.length; j++){ %>
             <li><%= runs[i].ruleset[j].name %></li>
             <% } %>

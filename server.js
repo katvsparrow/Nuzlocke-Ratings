@@ -25,6 +25,7 @@ const {
   challengeInfo
 } = require('./routes/info');
 const { addChallenge, addChallengePage } = require('./routes/challenge');
+const { addTitle, addTitlePage } = require('./routes/title');
 const db = require('./db');
 const logger = require('./logger');
 
@@ -119,6 +120,11 @@ app
   .route('/add-challenge/:challengeID')
   .get(addChallengePage)
   .post(addChallenge);
+
+app
+  .route('/add-title/:titleID')
+  .get(addTitlePage)
+  .post(addTitle);
 
 // app.get('/delete/:username', deletePlayer);
 app.get('/profile/:username', playerProfile);

@@ -26,8 +26,8 @@ module.exports = {
   // result: [player_id, username, rating, runs_completed, discord, link]
   getLeaderboard: callback => {
     const query =
-      'SELECT player_id, username, rating, runs_completed, discord, link ' +
-      'FROM Player ORDER BY rating DESC';
+      'SELECT player_id, username, rating, runs_completed, discord, link, Title.name as title_name, abbreviation ' +
+      'FROM Player LEFT JOIN Title ON Player.title_id = Title.title_id ORDER BY rating DESC';
 
     db.query(query, callback);
   },
@@ -51,9 +51,9 @@ module.exports = {
   },
 
   // retrieve title information
-  // result: [name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges]
+  // result: [title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges]
   getTitles: callback => {
-    const query = 'SELECT name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges FROM Title';
+    const query = 'SELECT title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges FROM Title';
 
     db.query(query, callback);
   },
@@ -75,6 +75,15 @@ module.exports = {
     db.query(query, values, callback);
   },
 
+  // retrieve a single title given its ID
+  // result: [name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges]
+  getTitleByID: (id, callback) => {
+    const query = 'SELECT * FROM Title WHERE title_id = ?';
+    const values = [id];
+
+    db.query(query, values, callback);
+  },
+
   // retrieve a specific player's information given their username
   // result: [player_id, username, password, email, link, discord, rating, runs_completed, title_name]
   getPlayerByUsername: (username, callback) => {
@@ -85,10 +94,10 @@ module.exports = {
   },
 
   // retrieve a specific player's challenges given their username
-  // result: [challenge_name, tier, classification, description, run_name]
+  // result: [challenge_name, tier, classification, description, run_name, player_rating]
   getChallengesByUsername: (username, callback) => {
     const query =
-      'SELECT Challenge.name as challenge_name, tier, classification, description, Run.name as run_name FROM Player ' +
+      'SELECT Challenge.name as challenge_name, tier, classification, description, Run.name as run_name, Player.rating as player_rating FROM Player ' +
       'INNER JOIN Player_Challenge ON Player.player_id = Player_Challenge.player_id ' +
       'INNER JOIN Run ON Player_Challenge.run_id = Run.run_id ' +
       'INNER JOIN Challenge ON Player_Challenge.challenge_id = Challenge.challenge_id ' +
@@ -163,6 +172,13 @@ module.exports = {
     db.query(query, callback);
   },
 
+  addTitle: (titleId, playerId, callback) => {
+    const query = 'UPDATE Player SET title_id = ? WHERE player_id = ?';
+    const values = [titleId, playerId];
+
+    db.query(query, values, callback);
+  },
+
   // add a new run, which involves adding to party and ruleset
   addRun: (runInfo, callback) => {
     const query =
@@ -207,7 +223,7 @@ module.exports = {
   },
 
   // get a player's completed challenges
-  getCompletedChallenges: (playerId, callback) => {
+  getChallengesByID: (playerId, callback) => {
     const query = 'SELECT * FROM Challenge INNER JOIN Player_Challenge ON Challenge.challenge_id = Player_Challenge.challenge_id WHERE player_id = ?';
 
     db.query(query, [playerId], callback);
