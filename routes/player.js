@@ -193,10 +193,18 @@ module.exports = {
         if (err) {
           return req.app.locals.error(req, res, err);
         }
-        req.app.locals.render(req, res, 'player-profile.ejs', {
-          title: 'Nuzlocke Ratings | ' + username,
-          playerInfo: playerInfo[0],
-          challenges
+
+        db.getRuns(username, (err, runs) => {
+          if (err) {
+            return req.app.locals.error(req, res, err);
+          }
+
+          req.app.locals.render(req, res, 'player-profile.ejs', {
+            title: 'Nuzlocke Ratings | ' + username,
+            playerInfo: playerInfo[0],
+            challenges,
+            runs
+          });
         });
       });
     });

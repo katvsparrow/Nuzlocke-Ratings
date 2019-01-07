@@ -8,7 +8,8 @@ CREATE TABLE IF NOT EXISTS Title (
     rating_floor SMALLINT NOT NULL,
     min_bronze_challenges TINYINT NOT NULL,
     min_silver_challenges TINYINT NOT NULL,
-    min_gold_challenges TINYINT NOT NULL
+    min_gold_challenges TINYINT NOT NULL,
+    color ENUM('info', 'warning', 'danger', 'success', 'light', 'primary') NOT NULL
 ) ENGINE=InnoDB;
 
 -- Represents a single player.
@@ -27,6 +28,7 @@ CREATE TABLE IF NOT EXISTS Player (
     discord VARCHAR(32),
     rating INT DEFAULT 1000,
     runs_completed INT DEFAULT 0,
+    challenges_completed INT DEFAULT 0,
     title_id INT,
     FOREIGN KEY (title_id) REFERENCES Title(title_id)
         ON DELETE CASCADE
@@ -205,3 +207,9 @@ CREATE TRIGGER update_runs_completed AFTER INSERT ON Run
         UPDATE Player
         SET runs_completed=(SELECT COUNT(*) FROM Run WHERE player_id=NEW.player_id)
         WHERE Player.player_id=NEW.player_id;
+
+CREATE TRIGGER update_challenges_completed AFTER INSERT ON Player_Challenge
+    FOR EACH ROW
+        UPDATE Player
+        SET challenges_completed=(SELECT COUNT(*) FROM Player_Challenge WHERE player_id=NEW.player_id)
+        WHERE Player.player_id = NEW.player_id

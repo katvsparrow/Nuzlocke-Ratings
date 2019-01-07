@@ -23,10 +23,10 @@ module.exports = {
   sessionStore: new MySQLStore({}, db),
 
   // retrieve leaderboard
-  // result: [player_id, username, rating, runs_completed, discord, link]
+  // result: [player_id, username, rating, runs_completed, challenges_completed, title_name, abbreviation, color]
   getLeaderboard: callback => {
     const query =
-      'SELECT player_id, username, rating, runs_completed, discord, link, Title.name as title_name, abbreviation ' +
+      'SELECT player_id, username, rating, runs_completed, challenges_completed, Title.name as title_name, abbreviation, color ' +
       'FROM Player LEFT JOIN Title ON Player.title_id = Title.title_id ORDER BY rating DESC';
 
     db.query(query, callback);
@@ -51,9 +51,9 @@ module.exports = {
   },
 
   // retrieve title information
-  // result: [title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges]
+  // result: [title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges, color]
   getTitles: callback => {
-    const query = 'SELECT title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges FROM Title';
+    const query = 'SELECT title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges, color FROM Title';
 
     db.query(query, callback);
   },
@@ -85,7 +85,7 @@ module.exports = {
   },
 
   // retrieve a specific player's information given their username
-  // result: [player_id, username, password, email, link, discord, rating, runs_completed, title_name]
+  // result: [Player *, Title *]
   getPlayerByUsername: (username, callback) => {
     const query = 'SELECT * FROM Player LEFT JOIN Title ON Player.title_id = Title.title_id WHERE username = ?';
     const values = [username];
@@ -98,9 +98,9 @@ module.exports = {
   getChallengesByUsername: (username, callback) => {
     const query =
       'SELECT Challenge.name as challenge_name, tier, classification, description, Run.name as run_name, Player.rating as player_rating FROM Player ' +
-      'INNER JOIN Player_Challenge ON Player.player_id = Player_Challenge.player_id ' +
-      'INNER JOIN Run ON Player_Challenge.run_id = Run.run_id ' +
-      'INNER JOIN Challenge ON Player_Challenge.challenge_id = Challenge.challenge_id ' +
+      'LEFT JOIN Player_Challenge ON Player.player_id = Player_Challenge.player_id ' +
+      'LEFT JOIN Run ON Player_Challenge.run_id = Run.run_id ' +
+      'LEFT JOIN Challenge ON Player_Challenge.challenge_id = Challenge.challenge_id ' +
       'WHERE username = ?';
     const values = [username];
 

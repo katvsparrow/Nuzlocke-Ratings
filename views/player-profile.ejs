@@ -1,32 +1,72 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-8 info-page-col">
-      <h4><%= playerInfo.username %></h4><br>
-      <p><b>Rating:</b> <%= playerInfo.rating %></p>
-
-      <p><b>Title:</b>
-        <% if(playerInfo.name){ %>
-          <%= playerInfo.name %> 
-        <% } else { %> 
-          None 
+    <div class="col-md-6 info-page-col">
+      <h4>
+        <% if(playerInfo.abbreviation){ %>
+          <span class="badge badge-<%= playerInfo.color %>"><%= playerInfo.abbreviation %></span>
         <% } %>
-      </p>
-
-      <p><b>Discord:</b>
-        <% if(playerInfo.discord){ %>
-          <%= playerInfo.discord %> 
-        <% } else { %> 
-          None 
+        <%= playerInfo.username %>
+        <% if(player && player.username == playerInfo.username){ %>
+          <a href="/edit/<%= player.username %>" class="btn btn-primary float-right" role="button">Edit Profile</a>
         <% } %>
-      </p>
+      </h4>
 
-      <p><b>Personal Page:</b>
-        <% if(playerInfo.link){ %>
-          <a href="<%= playerInfo.link %>" target="_blank">Link</a> 
-        <% } else { %> 
-          None 
+      
+      <br>
+
+      <div class="list-group">
+        <p class="list-group-item list-group-item-action list-group-item-secondary"><b>Rating:</b> <%= playerInfo.rating %></p>
+
+        <p class="list-group-item list-group-item-action list-group-item-dark"><b>Title:</b>
+          <% if(playerInfo.name){ %>
+            <%= playerInfo.name %> <span class="badge badge-<%= playerInfo.color %>"><%= playerInfo.abbreviation %></span>
+          <% } else { %> 
+            None 
+          <% } %>
+        </p>
+
+        <p class="list-group-item list-group-item-action list-group-item-secondary"><b>Discord:</b>
+          <% if(playerInfo.discord){ %>
+            <%= playerInfo.discord %> 
+          <% } else { %> 
+            None 
+          <% } %>
+        </p>
+
+        <p class="list-group-item list-group-item-action list-group-item-dark"><b>Personal Page:</b>
+          <% if(playerInfo.link){ %>
+            <a href="<%= playerInfo.link %>" target="_blank">Link</a> 
+          <% } else { %> 
+            None 
+          <% } %>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  
+  <div class="row">
+    <div class="col-md-12 info-page-col">
+      <h4>
+        <% if(playerInfo.abbreviation){ %>
+          <span class="badge badge-<%= playerInfo.color %>"><%= playerInfo.abbreviation %></span>
         <% } %>
-      </p>
+        <%= playerInfo.username %>'s Runs
+      </h4>
+      <%- include display-runs.ejs %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 info-page-col">
+      <h4>
+        <% if(playerInfo.abbreviation){ %>
+          <span class="badge badge-<%= playerInfo.color %>"><%= playerInfo.abbreviation %></span>
+        <% } %>
+        <%= playerInfo.username %>'s Challenges
+      </h4>
+      <%- include display-challenges.ejs %>
     </div>
   </div>
 </div>

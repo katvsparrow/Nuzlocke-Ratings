@@ -21,7 +21,7 @@
           Runs Completed
         </th>
         <th scope="col" onclick="sortTable(5, 'leaderboard')" class="sortable">
-          Discord
+          Challenges Completed
         </th>
         <th scope="col">Profile</th>
       </tr>
@@ -37,20 +37,12 @@
             alt=""
           />
         </td> -->
-        <td><%= players[i].abbreviation %></td>
+        <td><span class="badge badge-<%= players[i].color %>"><%= players[i].abbreviation %></span></td>
         <td><%= players[i].username %></td>
         <td><%= players[i].rating %></td>
-        <td>
-          <a href="/<%= players[i].username %>/runs"
-            ><%= players[i].runs_completed %></a
-          >
-        </td>
-        <td><%= players[i].discord %></td>
-        <% if(players[i].link){ %>
+        <td><a href="/<%= players[i].username %>/display-runs"><%= players[i].runs_completed %></a></td>
+        <td><a href="/<%= players[i].username %>/display-challenges"><%= players[i].challenges_completed %></a></td>
         <td><a href="/profile/<%= players[i].username %>">View <%= players[i].username %>'s profile</a></td>
-        <% } else {%>
-        <td>No Link</td>
-        <% } %>
       </tr>
       <% } %>
     </tbody>

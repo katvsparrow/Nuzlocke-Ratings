@@ -1,7 +1,7 @@
 <div class="container mt-5 text-center">
   <% if (errors.length == 0){ %>
     <h3><%= player.username %>, are you sure you want to apply for the <b><%= titleResult.name %></b> title?</h3>
-    <h5>Your username will be preceded by the abbreviation '<%= titleResult.abbreviation %>'.</h5>
+    <h5>Your username will be preceded by the badge <span class="badge badge-<%= titleResult.color %>"><%= titleResult.abbreviation %></span>.</h5>
     <br>
     <div class="col-md-2 split" style="margin:auto">
       <form action="" method="post" enctype="multipart/form-data">

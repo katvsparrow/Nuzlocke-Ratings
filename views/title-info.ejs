@@ -17,7 +17,7 @@
           onclick="sortTable(1, 'title-info-table')"
           class="sortable"
         >
-          Abbreviation
+          Badge
         </th>
         <th
           scope="col"
@@ -60,7 +60,7 @@
       <% for(let title in titles){ %>
       <tr>
         <td><%= titles[title].name %></td>
-        <td><%= titles[title].abbreviation %></td>
+        <td><span class="badge badge-<%= titles[title].color %>"><%= titles[title].abbreviation %></span></td>
         <td
           <% if(player){ %>
             <% if(playerRating >= titles[title].rating_floor){ %>

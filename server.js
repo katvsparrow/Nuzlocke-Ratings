@@ -25,7 +25,7 @@ const {
   challengeInfo,
   walkthroughInfo
 } = require('./routes/info');
-const { addChallenge, addChallengePage } = require('./routes/challenge');
+const { addChallenge, addChallengePage, displayChallenges } = require('./routes/challenge');
 const { addTitle, addTitlePage } = require('./routes/title');
 const db = require('./db');
 const logger = require('./logger');
@@ -129,7 +129,8 @@ app
 
 // app.get('/delete/:username', deletePlayer);
 app.get('/profile/:username', playerProfile);
-app.get('/:username/runs', displayRuns);
+app.get('/:username/display-runs', displayRuns);
+app.get('/:username/display-challenges', displayChallenges);
 app.get('/info', overallInfo);
 app.get('/info/basegames', basegameInfo);
 app.get('/info/rules', ruleInfo);

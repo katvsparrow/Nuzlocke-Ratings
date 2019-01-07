@@ -61,5 +61,27 @@ module.exports = {
 
       res.redirect('/');
     });
+  },
+
+  displayChallenges: (req, res) => {
+    const { username } = req.params;
+
+    db.getChallengesByUsername(username, (err, challenges) => {
+      if (err) {
+        return req.app.locals.error(req, res, err);
+      }
+
+      db.getRuns(username, (err, runs) => {
+        if (err) {
+          return req.app.locals.error(req, res, err);
+        }
+        console.log(challenges);
+        req.app.locals.render(req, res, 'display-challenges.ejs', {
+          title: 'Nuzlocke Ratings | Display Challenges',
+          challenges,
+          runs
+        });
+      });
+    });
   }
 }
