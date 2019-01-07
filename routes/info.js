@@ -102,5 +102,11 @@ module.exports = {
         leader
       });
     });
+  },
+
+  walkthroughInfo: (req, res) => {
+    req.app.locals.render(req, res, 'walkthrough.ejs', {
+      title: 'Nuzlocke Ratings | Getting Started',
+    });
   }
 };

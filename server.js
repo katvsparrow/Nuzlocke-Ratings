@@ -22,7 +22,8 @@ const {
   ruleInfo,
   titleInfo,
   viabilityInfo,
-  challengeInfo
+  challengeInfo,
+  walkthroughInfo
 } = require('./routes/info');
 const { addChallenge, addChallengePage } = require('./routes/challenge');
 const { addTitle, addTitlePage } = require('./routes/title');
@@ -135,6 +136,7 @@ app.get('/info/rules', ruleInfo);
 app.get('/info/titles', titleInfo);
 app.get('/info/viability', viabilityInfo);
 app.get('/info/challenges', challengeInfo);
+app.get('/getting-started', walkthroughInfo);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

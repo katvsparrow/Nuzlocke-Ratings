@@ -49,12 +49,41 @@
               >Information</a
             >
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="/info">Information</a>
+                <a class="dropdown-item" href="/getting-started">Getting started</a>
+              <a class="dropdown-item" href="/info">How the system works</a>
+              <a class="dropdown-item" href="/faq">Frequently asked questions</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">            
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbar-drop-info"
+              href="#"
+              data-toggle="dropdown"
+              >Data</a
+            >
+            <div class="dropdown-menu">
               <a class="dropdown-item" href="/info/basegames">Games</a>
               <a class="dropdown-item" href="/info/rules">Rules</a>
               <a class="dropdown-item" href="/info/titles">Titles</a>
               <a class="dropdown-item" href="/info/challenges">Challenges</a>
-              <a class="dropdown-item" href="/info/viability">Viability Rankings</a>
+              <a class="dropdown-item" href="/info/viability">Viability rankings</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbar-drop-info"
+              href="#"
+              data-toggle="dropdown"
+              >Add</a
+            >
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="/add-run">Add a run</a>
+              <a class="dropdown-item" href="/info/challenges">Complete a challenge</a>
+              <a class="dropdown-item" href="/info/titles">Apply for a title</a>
             </div>
           </li>
         </ul>
@@ -71,7 +100,7 @@
           <% } else { %>
 
           <li class="nav-item">
-            <a class="nav-link" href="/add-run">Add Run</a>
+            <a class="nav-link" href="/profile/<%= player.username %>">My Profile</a>
           </li>
 
           <li class="nav-item">

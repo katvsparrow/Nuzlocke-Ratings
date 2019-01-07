@@ -6,8 +6,8 @@
     <% } %>
   </ul>
   <% } %>
-  <h3>Adding a run for <%= player.username %></h3>
-  <h4>Please enter <b>completed runs only</b>.</h4>
+  <h3>Adding a run for <a href="/profile/<%= player.username %>" target="_blank"><%= player.username %></a>.</h3>
+  <h4>Please only enter runs that were completed on or after <b>January 1st, 2019</b>.</h4>
   <form action="" method="post" enctype="multipart/form-data">
     <br />
     <div class="form-row">
