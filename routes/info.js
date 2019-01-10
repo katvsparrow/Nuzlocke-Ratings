@@ -108,5 +108,11 @@ module.exports = {
     req.app.locals.render(req, res, 'walkthrough.ejs', {
       title: 'Nuzlocke Ratings | Getting Started',
     });
+  },
+
+  creditsPage: (req, res) => {
+    req.app.locals.render(req, res, 'credits.ejs', {
+      title: 'Nuzlocke Ratings | Credits'
+    });
   }
 };
