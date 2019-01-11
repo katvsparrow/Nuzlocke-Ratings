@@ -1,2401 +1,2145 @@
 {
-	"Venusaur": {
-		"Red": "A+",
-		"Blue": "A+",
-		"Yellow": "A+",
-		"FireRed": "A+",
-		"LeafGreen": "A+"
-	},
-	"Charizard": {
-		"Red": "A",
-		"Blue": "A",
-		"Yellow": "A",
-		"FireRed": "A",
-		"LeafGreen": "A"
-	},
-	"Blastoise": {
-		"Red": "A+",
-		"Blue": "A+",
-		"Yellow": "A+",
-		"FireRed": "A+",
-		"LeafGreen": "A+"
-	},
-	"Butterfree": {
-		"Red": "D",
-		"Blue": "D",
-		"Yellow": "D",
-		"Gold": "C+",
-		"Silver": "E",
-		"Crystal": "C",
-		"FireRed": "B-",
-		"LeafGreen": "B-"
-	},
-	"Beedrill": {
-		"Red": "C-",
-		"Blue": "C-",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D",
-		"FireRed": "D",
-		"LeafGreen": "D"
-	},
-	"Pidgeot": {
-		"Red": "D",
-		"Blue": "D",
-		"Yellow": "D",
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "C",
-		"FireRed": "C+",
-		"LeafGreen": "C+"
-	},
-	"Raticate": {
-		"Red": "B",
-		"Blue": "B",
-		"Yellow": "B",
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "C+",
-		"FireRed": "C+",
-		"LeafGreen": "C+"
-	},
-	"Alolan Raticate": {},
-	"Fearow": {
-		"Red": "A-",
-		"Blue": "A-",
-		"Yellow": "A-",
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A",
-		"FireRed": "B+",
-		"LeafGreen": "B+"
-	},
-	"Arbok": {
-		"Red": "D",
-		"Blue": "D",
-		"Gold": "C-",
-		"Silver": "C-",
-		"Crystal": "D",
-		"FireRed": "C-"
-	},
-	"Pikachu": {
-		"Yellow": "D"
-	},
-	"Raichu": {
-		"Red": "B",
-		"Blue": "B",
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "B+",
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B",
-		"FireRed": "B",
-		"LeafGreen": "B",
-		"Diamond": "B+",
-		"Pearl": "B+",
-		"Platinum": "B+"
-	},
-	"Alolan Raichu": {
-		"Sun": "A",
-		"Moon": "A"
-	},
-	"Sandslash": {
-		"Red": "A-",
-		"Blue": "A-",
-		"Yellow": "A-",
-		"Gold": "B-",
-		"Crystal": "B-",
-		"Ruby": "C",
-		"Sapphire": "C",
-		"Emerald": "C",
-		"LeafGreen": "B-"
-	},
-	"Alolan Sandslash": {},
-	"Nidoqueen": {
-		"Red": "S",
-		"Blue": "S",
-		"Yellow": "S",
-		"Gold": "A+",
-		"Silver": "A+",
-		"Crystal": "A+",
-		"FireRed": "A+",
-		"LeafGreen": "A+"
-	},
-	"Nidoking": {
-		"Red": "S",
-		"Blue": "S",
-		"Yellow": "S",
-		"Gold": "A+",
-		"Silver": "A+",
-		"Crystal": "A+",
-		"FireRed": "A+",
-		"LeafGreen": "A+"
-	},
-	"Clefable": {
-		"Red": "S",
-		"Blue": "S",
-		"Yellow": "S",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "A+",
-		"FireRed": "A",
-		"LeafGreen": "A",
-		"Diamond": "A",
-		"Pearl": "A",
-		"Platinum": "A"
-	},
-	"Ninetales": {
-		"Blue": "B+",
-		"Silver": "D",
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B",
-		"LeafGreen": "B"
-	},
-	"Alolan Ninetales": {},
-	"Wigglytuff": {
-		"Red": "D",
-		"Blue": "D",
-		"Yellow": "D",
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "D",
-		"Ruby": "D",
-		"Sapphire": "D",
-		"Emerald": "D",
-		"FireRed": "D",
-		"LeafGreen": "D"
-	},
-	"Vileplume": {
-		"Red": "A-",
-		"Yellow": "A-",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "B-",
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B",
-		"FireRed": "B"
-	},
-	"Parasect": {
-		"Red": "D",
-		"Blue": "D",
-		"Yellow": "D",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D",
-		"FireRed": "D",
-		"LeafGreen": "D"
-	},
-	"Venomoth": {
-		"Red": "C",
-		"Blue": "C",
-		"Yellow": "C+",
-		"Gold": "C+",
-		"Silver": "C+",
-		"Crystal": "C+",
-		"FireRed": "C+",
-		"LeafGreen": "C+"
-	},
-	"Dugtrio": {
-		"Red": "B-",
-		"Blue": "B-",
-		"Yellow": "B-",
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E",
-		"FireRed": "C-",
-		"LeafGreen": "C-"
-	},
-	"Alolan Dugtrio": {},
-	"Persian": {
-		"Blue": "C",
-		"Silver": "C",
-		"Crystal": "C",
-		"FireRed": "C",
-		"LeafGreen": "C"
-	},
-	"Alolan Persian": {},
-	"Golduck": {
-		"Red": "B",
-		"Blue": "B",
-		"Yellow": "B",
-		"Gold": "B+",
-		"Silver": "B+",
-		"Crystal": "A-",
-		"Ruby": "B+",
-		"Sapphire": "B+",
-		"Emerald": "B+",
-		"FireRed": "A-",
-		"Diamond": "A-",
-		"Pearl": "A-",
-		"Platinum": "A-"
-	},
-	"Primeape": {
-		"Red": "C-",
-		"Blue": "C-",
-		"Yellow": "C",
-		"Gold": "D",
-		"FireRed": "C",
-		"LeafGreen": "C"
-	},
-	"Arcanine": {
-		"Red": "A-",
-		"Yellow": "B",
-		"Gold": "C-",
-		"Crystal": "A",
-		"FireRed": "A"
-	},
-	"Poliwrath": {
-		"Red": "A",
-		"Blue": "A",
-		"Yellow": "A",
-		"Gold": "C+",
-		"Silver": "C+",
-		"Crystal": "A",
-		"FireRed": "A",
-		"LeafGreen": "A"
-	},
-	"Kadabra": {
-		"Red": "A+",
-		"Blue": "A+",
-		"Yellow": "A+",
-		"Gold": "B+",
-		"Silver": "B+",
-		"Crystal": "B+",
-		"Ruby": "C+",
-		"Sapphire": "C+",
-		"Emerald": "C+",
-		"FireRed": "B",
-		"LeafGreen": "B",
-		"Diamond": "B",
-		"Pearl": "B",
-		"Platinum": "B"
-	},
-	"Alakazam": {
-		"Red": "S",
-		"Blue": "S",
-		"Yellow": "S",
-		"Gold": "S",
-		"Silver": "S",
-		"Crystal": "S",
-		"Ruby": "A-",
-		"Sapphire": "A-",
-		"Emerald": "A-",
-		"FireRed": "S",
-		"LeafGreen": "S",
-		"Diamond": "A+",
-		"Pearl": "A+",
-		"Platinum": "A+"
-	},
-	"Machoke": {
-		"Red": "C+",
-		"Blue": "C+",
-		"Yellow": "C+",
-		"Gold": "B-",
-		"Silver": "B-",
-		"Crystal": "B-",
-		"Ruby": "C+",
-		"Sapphire": "C+",
-		"Emerald": "C+",
-		"FireRed": "C+",
-		"LeafGreen": "C+",
-		"Diamond": "C+",
-		"Pearl": "C+",
-		"Platinum": "C+"
-	},
-	"Machamp": {
-		"Red": "A-",
-		"Blue": "A-",
-		"Yellow": "A-",
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A+",
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A",
-		"FireRed": "A",
-		"LeafGreen": "A",
-		"Diamond": "A",
-		"Pearl": "A",
-		"Platinum": "A"
-	},
-	"Victreebel": {
-		"Blue": "A-",
-		"Gold": "C-",
-		"Silver": "C-",
-		"Crystal": "C+",
-		"LeafGreen": "C"
-	},
-	"Tentacruel": {
-		"Red": "A+",
-		"Blue": "A+",
-		"Yellow": "A+",
-		"Gold": "A+",
-		"Silver": "A+",
-		"Crystal": "A+",
-		"Ruby": "A+",
-		"Sapphire": "A+",
-		"Emerald": "A+",
-		"FireRed": "A",
-		"LeafGreen": "A",
-		"Diamond": "A+",
-		"Pearl": "A+",
-		"Platinum": "A+"
-	},
-	"Graveler": {
-		"Red": "B",
-		"Blue": "B",
-		"Yellow": "B",
-		"Gold": "B+",
-		"Silver": "B+",
-		"Crystal": "B+",
-		"Ruby": "C-",
-		"Sapphire": "C-",
-		"Emerald": "C-",
-		"FireRed": "C",
-		"LeafGreen": "C",
-		"Diamond": "C-",
-		"Pearl": "C-",
-		"Platinum": "C-"
-	},
-	"Golem": {
-		"Red": "A+",
-		"Blue": "A+",
-		"Yellow": "A+",
-		"Gold": "S",
-		"Silver": "S",
-		"Crystal": "S",
-		"Ruby": "B+",
-		"Sapphire": "B+",
-		"Emerald": "B+",
-		"FireRed": "A-",
-		"LeafGreen": "A-",
-		"Diamond": "A-",
-		"Pearl": "A-",
-		"Platinum": "A-"
-	},
-	"Alolan Golem": {},
-	"Rapidash": {
-		"Red": "D",
-		"Blue": "D",
-		"Yellow": "C-",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D",
-		"FireRed": "E",
-		"LeafGreen": "E",
-		"Diamond": "C+",
-		"Pearl": "C+",
-		"Platinum": "C+"
-	},
-	"Slowbro": {
-		"Red": "S",
-		"Blue": "S",
-		"Yellow": "S",
-		"Gold": "A-",
-		"Silver": "A-",
-		"Crystal": "A-",
-		"LeafGreen": "A+",
-		"Sun": "C-",
-		"Moon": "C-"
-	},
-	"Farfetch'd": {
-		"Red": "D",
-		"Blue": "D",
-		"Yellow": "E",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D",
-		"FireRed": "D",
-		"LeafGreen": "D"
-	},
-	"Dodrio": {
-		"Red": "A",
-		"Blue": "A",
-		"Yellow": "A",
-		"Gold": "B",
-		"Silver": "B",
-		"Crystal": "B+",
-		"Ruby": "B+",
-		"Sapphire": "B+",
-		"Emerald": "B+",
-		"FireRed": "A",
-		"LeafGreen": "A"
-	},
-	"Dewgong": {
-		"Red": "A-",
-		"Blue": "A-",
-		"Yellow": "A-",
-		"Gold": "B",
-		"Silver": "B",
-		"Crystal": "B",
-		"FireRed": "B",
-		"LeafGreen": "B"
-	},
-	"Muk": {
-		"Red": "D",
-		"Blue": "D",
-		"Yellow": "D",
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "D",
-		"Ruby": "B+",
-		"Sapphire": "B+",
-		"Emerald": "B+",
-		"FireRed": "B",
-		"LeafGreen": "B"
-	},
-	"Alolan Muk": {
-		"Sun": "B+",
-		"Moon": "B+"
-	},
-	"Cloyster": {
-		"Red": "A+",
-		"Blue": "A+",
-		"Yellow": "A+",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "B-",
-		"FireRed": "B-"
-	},
-	"Haunter": {
-		"Red": "C",
-		"Blue": "C",
-		"Yellow": "C",
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "C+",
-		"FireRed": "C",
-		"LeafGreen": "C",
-		"Diamond": "B-",
-		"Pearl": "B-",
-		"Platinum": "B-"
-	},
-	"Gengar": {
-		"Red": "A",
-		"Blue": "A",
-		"Yellow": "A",
-		"Gold": "A+",
-		"Silver": "A+",
-		"Crystal": "A+",
-		"FireRed": "A+",
-		"LeafGreen": "A+",
-		"Diamond": "A+",
-		"Pearl": "A+",
-		"Platinum": "A+",
-		"Sun": "A",
-		"Moon": "A"
-	},
-	"Hypno": {
-		"Red": "A+",
-		"Blue": "A+",
-		"Yellow": "A+",
-		"Gold": "B",
-		"Silver": "B",
-		"Crystal": "B",
-		"FireRed": "B",
-		"LeafGreen": "B"
-	},
-	"Kingler": {
-		"Red": "D",
-		"Blue": "D",
-		"Yellow": "D",
-		"Gold": "C-",
-		"Silver": "C-",
-		"Crystal": "C-",
-		"FireRed": "D",
-		"LeafGreen": "D"
-	},
-	"Electrode": {
-		"Red": "C",
-		"Blue": "C",
-		"Yellow": "C-",
-		"Gold": "C-",
-		"Silver": "C-",
-		"Crystal": "C-",
-		"Ruby": "C",
-		"Sapphire": "C",
-		"Emerald": "C",
-		"FireRed": "C",
-		"LeafGreen": "C"
-	},
-	"Exeggutor": {
-		"Red": "A",
-		"Blue": "A",
-		"Yellow": "A",
-		"Gold": "C-",
-		"Silver": "C-",
-		"Crystal": "B-",
-		"FireRed": "B",
-		"LeafGreen": "B"
-	},
-	"Alolan Exeggutor": {},
-	"Marowak": {
-		"Red": "B",
-		"Blue": "B",
-		"Yellow": "B",
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "B",
-		"FireRed": "A",
-		"LeafGreen": "A"
-	},
-	"Alolan Marowak": {},
-	"Hitmonlee": {
-		"Red": "B",
-		"Blue": "B",
-		"Yellow": "B",
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "B",
-		"FireRed": "C+",
-		"LeafGreen": "C+"
-	},
-	"Hitmonchan": {
-		"Red": "D",
-		"Blue": "D",
-		"Yellow": "D",
-		"Gold": "C-",
-		"Silver": "C-",
-		"Crystal": "D",
-		"FireRed": "B-",
-		"LeafGreen": "B-"
-	},
-	"Weezing": {
-		"Red": "B-",
-		"Blue": "B-",
-		"Gold": "B+",
-		"Silver": "B+",
-		"Crystal": "B+",
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A",
-		"FireRed": "B-",
-		"LeafGreen": "B-"
-	},
-	"Kangaskhan": {
-		"Red": "B+",
-		"Blue": "B+",
-		"Yellow": "B+",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D",
-		"FireRed": "A+",
-		"LeafGreen": "A+"
-	},
-	"Seaking": {
-		"Red": "D",
-		"Blue": "D",
-		"Yellow": "D",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D",
-		"Ruby": "E",
-		"Sapphire": "E",
-		"Emerald": "E",
-		"FireRed": "E",
-		"LeafGreen": "E",
-		"Diamond": "E",
-		"Pearl": "E",
-		"Platinum": "E"
-	},
-	"Starmie": {
-		"Red": "S",
-		"Blue": "S",
-		"Yellow": "S",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "A-",
-		"Ruby": "A-",
-		"Sapphire": "A-",
-		"Emerald": "A-",
-		"LeafGreen": "S"
-	},
-	"Mr. Mime": {
-		"Red": "A+",
-		"Blue": "A+",
-		"Yellow": "A+",
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "D",
-		"FireRed": "B",
-		"LeafGreen": "B",
-		"Diamond": "B",
-		"Platinum": "B"
-	},
-	"Jynx": {
-		"Red": "A+",
-		"Blue": "A+",
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "B+",
-		"FireRed": "A",
-		"LeafGreen": "A"
-	},
-	"Pinsir": {
-		"Blue": "C",
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "B-",
-		"Ruby": "B+",
-		"Sapphire": "B+",
-		"Emerald": "B+",
-		"LeafGreen": "C+"
-	},
-	"Tauros": {
-		"Red": "S",
-		"Blue": "S",
-		"Yellow": "S",
-		"Gold": "A-",
-		"Silver": "A-",
-		"Crystal": "A-",
-		"FireRed": "A+",
-		"LeafGreen": "A+"
-	},
-	"Gyarados": {
-		"Red": "S",
-		"Blue": "S",
-		"Yellow": "S",
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A",
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A",
-		"FireRed": "A",
-		"LeafGreen": "A",
-		"Diamond": "S",
-		"Pearl": "S",
-		"Platinum": "S"
-	},
-	"Lapras": {
-		"Red": "A+",
-		"Blue": "A+",
-		"Yellow": "A+",
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A",
-		"FireRed": "S",
-		"LeafGreen": "S"
-	},
-	"Ditto": {
-		"Red": "E",
-		"Blue": "E",
-		"Yellow": "E",
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E",
-		"FireRed": "E",
-		"LeafGreen": "E",
-		"Sun": "E",
-		"Moon": "E"
-	},
-	"Eevee": {},
-	"Vaporeon": {
-		"Red": "A",
-		"Blue": "A",
-		"Yellow": "A",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "A",
-		"FireRed": "A",
-		"LeafGreen": "A"
-	},
-	"Jolteon": {
-		"Red": "A",
-		"Blue": "A",
-		"Yellow": "A",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "C",
-		"FireRed": "A-",
-		"LeafGreen": "A-"
-	},
-	"Flareon": {
-		"Red": "A-",
-		"Blue": "A-",
-		"Yellow": "A-",
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "B",
-		"FireRed": "B",
-		"LeafGreen": "B"
-	},
-	"Omastar": {
-		"Red": "B+",
-		"Blue": "B+",
-		"Yellow": "B+",
-		"FireRed": "D",
-		"LeafGreen": "D"
-	},
-	"Kabutops": {
-		"Red": "C",
-		"Blue": "C",
-		"Yellow": "C",
-		"FireRed": "D",
-		"LeafGreen": "D"
-	},
-	"Aerodactyl": {
-		"Red": "E",
-		"Blue": "E",
-		"Yellow": "E",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D",
-		"FireRed": "D",
-		"LeafGreen": "D"
-	},
-	"Snorlax": {
-		"Red": "S",
-		"Blue": "S",
-		"Yellow": "S",
-		"Gold": "A-",
-		"Silver": "A-",
-		"Crystal": "A-",
-		"FireRed": "S",
-		"LeafGreen": "S",
-		"Diamond": "A+",
-		"Pearl": "A+",
-		"Platinum": "A+",
-		"Sun": "D",
-		"Moon": "D"
-	},
-	"Articuno": {
-		"Red": "S",
-		"Blue": "S",
-		"Yellow": "S",
-		"FireRed": "A",
-		"LeafGreen": "A"
-	},
-	"Zapdos": {
-		"Red": "S",
-		"Blue": "S",
-		"Yellow": "S",
-		"FireRed": "A+",
-		"LeafGreen": "A+"
-	},
-	"Moltres": {
-		"Red": "A",
-		"Blue": "A",
-		"Yellow": "A",
-		"FireRed": "B+",
-		"LeafGreen": "B+"
-	},
-	"Dragonite": {
-		"Red": "B-",
-		"Blue": "B-",
-		"Yellow": "B-",
-		"Gold": "B",
-		"Silver": "B",
-		"Crystal": "C+",
-		"FireRed": "C",
-		"LeafGreen": "C"
-	},
-	"Mewtwo": {},
-	"Mew": {},
-	"Meganium": {
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A"
-	},
-	"Typhlosion": {
-		"Gold": "A+",
-		"Silver": "A+",
-		"Crystal": "A"
-	},
-	"Feraligatr": {
-		"Gold": "S",
-		"Silver": "S",
-		"Crystal": "S"
-	},
-	"Furret": {
-		"Gold": "B-",
-		"Silver": "B-",
-		"Crystal": "C"
-	},
-	"Noctowl": {
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "B-",
-		"Diamond": "C",
-		"Pearl": "C",
-		"Platinum": "C"
-	},
-	"Ledian": {
-		"Silver": "E",
-		"Crystal": "E",
-		"Sun": "E",
-		"Moon": "E"
-	},
-	"Ariados": {
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "C-",
-		"Sun": "D",
-		"Moon": "D"
-	},
-	"Golbat": {
-		"Red": "E",
-		"Blue": "E",
-		"Yellow": "E",
-		"FireRed": "C-",
-		"LeafGreen": "C-"
-	},
-	"Crobat": {
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A",
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A",
-		"Diamond": "A",
-		"Pearl": "A",
-		"Platinum": "A",
-		"Sun": "A",
-		"Moon": "A"
-	},
-	"Lanturn": {
-		"Gold": "A+",
-		"Silver": "A+",
-		"Crystal": "A+",
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B"
-	},
-	"Xatu": {
-		"Gold": "C+",
-		"Silver": "C+",
-		"Crystal": "C+",
-		"Ruby": "B-",
-		"Sapphire": "B-",
-		"Emerald": "B-"
-	},
-	"Ampharos": {
-		"Gold": "A+",
-		"Silver": "A+"
-	},
-	"Bellossom": {
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "C",
-		"Ruby": "C",
-		"Sapphire": "C",
-		"Emerald": "C"
-	},
-	"Azumarill (Huge Power)": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "D",
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B",
-		"Diamond": "B+",
-		"Pearl": "B+",
-		"Platinum": "B+"
-	},
-	"Azumarill (Thick Fat)": {
-		"Diamond": "D",
-		"Pearl": "D",
-		"Platinum": "D"
-	},
-	"Sudowoodo": {
-		"Gold": "B+",
-		"Silver": "B+",
-		"Crystal": "B+",
-		"Diamond": "B",
-		"Platinum": "B"
-	},
-	"Politoed": {
-		"Gold": "B",
-		"Silver": "B",
-		"Crystal": "A-"
-	},
-	"Jumpluff": {
-		"Gold": "B+",
-		"Silver": "B+",
-		"Crystal": "B+"
-	},
-	"Sunflora": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E"
-	},
-	"Quagsire": {
-		"Gold": "A-",
-		"Silver": "A-",
-		"Crystal": "B+",
-		"Diamond": "B+",
-		"Pearl": "B+",
-		"Platinum": "B+"
-	},
-	"Espeon": {
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A"
-	},
-	"Umbreon": {
-		"Gold": "A-",
-		"Silver": "A-",
-		"Crystal": "A-"
-	},
-	"Slowking": {
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A",
-		"Sun": "C-",
-		"Moon": "C-"
-	},
-	"Unown": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E",
-		"Diamond": "E",
-		"Pearl": "E",
-		"Platinum": "E"
-	},
-	"Wobbuffet": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E",
-		"Ruby": "D",
-		"Sapphire": "D",
-		"Emerald": "D"
-	},
-	"Girafarig": {
-		"Gold": "B+",
-		"Silver": "B+",
-		"Ruby": "B+",
-		"Sapphire": "B+",
-		"Emerald": "B+",
-		"Diamond": "B+",
-		"Pearl": "B+",
-		"Platinum": "B+"
-	},
-	"Forretress": {
-		"Gold": "C+",
-		"Silver": "C+",
-		"Crystal": "C+"
-	},
-	"Dunsparce": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E"
-	},
-	"Onix": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E",
-		"FireRed": "E",
-		"LeafGreen": "E",
-		"Diamond": "E",
-		"Pearl": "E",
-		"Platinum": "E"
-	},
-	"Steelix": {
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A+",
-		"Diamond": "A-",
-		"Pearl": "A-",
-		"Platinum": "A-"
-	},
-	"Granbull": {
-		"Gold": "B",
-		"Silver": "B",
-		"Crystal": "A"
-	},
-	"Qwilfish": {
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "C-"
-	},
-	"Scyther": {
-		"Red": "C-",
-		"Yellow": "C-",
-		"Gold": "B-",
-		"Silver": "B-",
-		"Crystal": "B",
-		"FireRed": "C+"
-	},
-	"Scizor": {
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A"
-	},
-	"Shuckle": {
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D"
-	},
-	"Heracross": {
-		"Gold": "B",
-		"Silver": "B",
-		"Crystal": "B",
-		"Ruby": "C-",
-		"Sapphire": "C-",
-		"Emerald": "C-",
-		"Diamond": "A+",
-		"Pearl": "A+",
-		"Platinum": "A+"
-	},
-	"Ursaring": {
-		"Gold": "B+",
-		"Crystal": "A+"
-	},
-	"Magcargo": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E",
-		"Ruby": "D",
-		"Sapphire": "D",
-		"Emerald": "D"
-	},
-	"Corsola": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E",
-		"Ruby": "E",
-		"Sapphire": "E",
-		"Emerald": "E",
-		"Sun": "E",
-		"Moon": "E"
-	},
-	"Octillery": {
-		"Gold": "C-",
-		"Silver": "C-",
-		"Diamond": "A-",
-		"Pearl": "A-",
-		"Platinum": "A-"
-	},
-	"Delibird": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E",
-		"Sun": "E",
-		"Moon": "E"
-	},
-	"Mantine": {
-		"Gold": "B-",
-		"Crystal": "B",
-		"Diamond": "D",
-		"Pearl": "D",
-		"Platinum": "D"
-	},
-	"Skarmory": {
-		"Silver": "A+",
-		"Crystal": "A+",
-		"Ruby": "A+",
-		"Sapphire": "A+",
-		"Emerald": "A+"
-	},
-	"Houndoom": {
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D"
-	},
-	"Seadra": {
-		"Red": "C+",
-		"Blue": "C+",
-		"Yellow": "C+",
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "C+",
-		"Ruby": "D",
-		"Sapphire": "D",
-		"Emerald": "D",
-		"FireRed": "C",
-		"LeafGreen": "C"
-	},
-	"Kingdra": {
-		"Gold": "B",
-		"Silver": "B",
-		"Crystal": "B+",
-		"Ruby": "C",
-		"Sapphire": "C",
-		"Emerald": "C"
-	},
-	"Donphan": {
-		"Silver": "B",
-		"Crystal": "A",
-		"Ruby": "B-",
-		"Sapphire": "B-",
-		"Emerald": "B-"
-	},
-	"Stantler": {
-		"Gold": "B+",
-		"Silver": "B+",
-		"Crystal": "B"
-	},
-	"Smeargle": {
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D",
-		"Sun": "E",
-		"Moon": "E"
-	},
-	"Hitmontop": {
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D"
-	},
-	"Miltank": {
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A"
-	},
-	"Chansey": {
-		"Red": "A-",
-		"Blue": "A-",
-		"Yellow": "A-",
-		"Gold": "E",
-		"Silver": "E",
-		"FireRed": "D",
-		"LeafGreen": "D"
-	},
-	"Blissey": {
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D",
-		"Diamond": "A-",
-		"Pearl": "A-",
-		"Platinum": "A-",
-		"Sun": "D",
-		"Moon": "D"
-	},
-	"Raikou": {
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A"
-	},
-	"Entei": {
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A"
-	},
-	"Suicune": {
-		"Gold": "A+",
-		"Silver": "A+",
-		"Crystal": "S"
-	},
-	"Tyranitar": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "C"
-	},
-	"Lugia": {
-		"Gold": "S",
-		"Silver": "S",
-		"Crystal": "A+"
-	},
-	"Ho-Oh": {
-		"Gold": "S",
-		"Silver": "S",
-		"Crystal": "E"
-	},
-	"Celebi": {},
-	"Sceptile": {
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A"
-	},
-	"Blaziken": {
-		"Ruby": "A+",
-		"Sapphire": "A+",
-		"Emerald": "A+"
-	},
-	"Swampert": {
-		"Ruby": "S",
-		"Sapphire": "S",
-		"Emerald": "S"
-	},
-	"Mightyena": {
-		"Ruby": "C",
-		"Sapphire": "C",
-		"Emerald": "C"
-	},
-	"Linoone": {
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A"
-	},
-	"Beautifly": {
-		"Ruby": "C",
-		"Sapphire": "C",
-		"Emerald": "C",
-		"Diamond": "C-",
-		"Pearl": "C-",
-		"Platinum": "C-"
-	},
-	"Dustox": {
-		"Ruby": "C",
-		"Sapphire": "C",
-		"Emerald": "C",
-		"Diamond": "C-",
-		"Pearl": "C-",
-		"Platinum": "C-"
-	},
-	"Ludicolo": {
-		"Sapphire": "B+",
-		"Emerald": "B+"
-	},
-	"Shiftry": {
-		"Ruby": "C+",
-		"Sapphire": "C+",
-		"Emerald": "C+"
-	},
-	"Swellow": {
-		"Ruby": "A-",
-		"Sapphire": "A-",
-		"Emerald": "A-"
-	},
-	"Pelipper": {
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B",
-		"Diamond": "D",
-		"Pearl": "D",
-		"Platinum": "D",
-		"Sun": "B+",
-		"Moon": "B+"
-	},
-	"Gardevoir": {
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A"
-	},
-	"Masquerain": {
-		"Ruby": "C-",
-		"Sapphire": "C-",
-		"Emerald": "C-"
-	},
-	"Breloom": {
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B"
-	},
-	"Slaking": {
-		"Ruby": "B+",
-		"Sapphire": "B+",
-		"Emerald": "B+"
-	},
-	"Ninjask": {
-		"Ruby": "B+",
-		"Sapphire": "B+",
-		"Emerald": "B+"
-	},
-	"Shedinja": {
-		"Ruby": "D",
-		"Sapphire": "D",
-		"Emerald": "D"
-	},
-	"Exploud": {
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B"
-	},
-	"Hariyama": {
-		"Ruby": "A-",
-		"Sapphire": "A-",
-		"Emerald": "A-"
-	},
-	"Delcatty": {
-		"Ruby": "E",
-		"Sapphire": "E",
-		"Emerald": "E"
-	},
-	"Sableye": {
-		"Sapphire": "C+",
-		"Emerald": "C+"
-	},
-	"Mawile": {
-		"Ruby": "C+",
-		"Sapphire": "C+",
-		"Emerald": "C+"
-	},
-	"Aggron": {
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A"
-	},
-	"Medicham": {
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Diamond": "B-",
-		"Pearl": "B-",
-		"Platinum": "B-"
-	},
-	"Manectric": {
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A"
-	},
-	"Plusle": {
-		"Ruby": "D",
-		"Sapphire": "D",
-		"Emerald": "D"
-	},
-	"Minun": {
-		"Ruby": "C-",
-		"Sapphire": "C-",
-		"Emerald": "C-"
-	},
-	"Volbeat": {
-		"Ruby": "C-",
-		"Sapphire": "C-",
-		"Emerald": "C-"
-	},
-	"Illumise": {
-		"Ruby": "C-",
-		"Sapphire": "C-",
-		"Emerald": "C-"
-	},
-	"Swalot": {
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B"
-	},
-	"Sharpedo": {
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B"
-	},
-	"Wailord": {
-		"Ruby": "B-",
-		"Sapphire": "B-",
-		"Emerald": "B-"
-	},
-	"Camerupt": {
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B"
-	},
-	"Torkoal": {
-		"Ruby": "C+",
-		"Sapphire": "C+",
-		"Emerald": "C+"
-	},
-	"Grumpig": {
-		"Ruby": "B+",
-		"Sapphire": "B+",
-		"Emerald": "B+"
-	},
-	"Spinda": {
-		"Ruby": "E",
-		"Sapphire": "E",
-		"Emerald": "E",
-		"Sun": "E",
-		"Moon": "E"
-	},
-	"Flygon": {
-		"Ruby": "B+",
-		"Sapphire": "B+",
-		"Emerald": "B+"
-	},
-	"Cacturne": {
-		"Ruby": "C",
-		"Sapphire": "C",
-		"Emerald": "C"
-	},
-	"Altaria": {
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B"
-	},
-	"Zangoose": {
-		"Ruby": "A-"
-	},
-	"Seviper": {
-		"Sapphire": "B",
-		"Emerald": "B"
-	},
-	"Lunatone": {
-		"Sapphire": "B"
-	},
-	"Solrock": {
-		"Ruby": "B",
-		"Emerald": "B"
-	},
-	"Whiscash": {
-		"Ruby": "A-",
-		"Sapphire": "A-",
-		"Emerald": "A-",
-		"Diamond": "A-",
-		"Pearl": "A-",
-		"Platinum": "A-"
-	},
-	"Crawdaunt": {
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B"
-	},
-	"Claydol": {
-		"Ruby": "B-",
-		"Sapphire": "B-",
-		"Emerald": "B-"
-	},
-	"Cradily": {
-		"Ruby": "B-",
-		"Sapphire": "B-",
-		"Emerald": "B-"
-	},
-	"Armaldo": {
-		"Ruby": "C+",
-		"Sapphire": "C+",
-		"Emerald": "C+"
-	},
-	"Milotic": {
-		"Ruby": "A+",
-		"Sapphire": "A+",
-		"Emerald": "A+"
-	},
-	"Castform": {
-		"Ruby": "C-",
-		"Sapphire": "C-",
-		"Emerald": "C-"
-	},
-	"Kecleon": {
-		"Ruby": "C-",
-		"Sapphire": "C-",
-		"Emerald": "C-"
-	},
-	"Banette": {
-		"Ruby": "C+",
-		"Sapphire": "C+",
-		"Emerald": "C+"
-	},
-	"Tropius": {
-		"Ruby": "B",
-		"Sapphire": "B",
-		"Emerald": "B"
-	},
-	"Chimecho": {
-		"Ruby": "E",
-		"Sapphire": "E",
-		"Emerald": "E",
-		"Diamond": "D",
-		"Pearl": "D",
-		"Platinum": "D"
-	},
-	"Absol": {
-		"Ruby": "C+",
-		"Sapphire": "C+",
-		"Emerald": "C+"
-	},
-	"Glalie": {
-		"Ruby": "D",
-		"Sapphire": "D",
-		"Emerald": "D"
-	},
-	"Walrein": {
-		"Ruby": "A-",
-		"Sapphire": "A-",
-		"Emerald": "A-"
-	},
-	"Clamperl": {
-		"Ruby": "E",
-		"Sapphire": "E",
-		"Emerald": "E"
-	},
-	"Huntail": {
-		"Ruby": "D",
-		"Sapphire": "D",
-		"Emerald": "D"
-	},
-	"Gorebyss": {
-		"Ruby": "C",
-		"Sapphire": "C",
-		"Emerald": "C"
-	},
-	"Relicanth": {
-		"Ruby": "C-",
-		"Sapphire": "C-",
-		"Emerald": "C-"
-	},
-	"Luvdisc": {
-		"Ruby": "E",
-		"Sapphire": "E",
-		"Emerald": "E",
-		"Sun": "E",
-		"Moon": "E"
-	},
-	"Salamence": {
-		"Ruby": "D",
-		"Sapphire": "D",
-		"Emerald": "D"
-	},
-	"Metagross": {},
-	"Regirock": {
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A"
-	},
-	"Regice": {
-		"Ruby": "A+",
-		"Sapphire": "A+",
-		"Emerald": "A+"
-	},
-	"Registeel": {
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A"
-	},
-	"Latias": {},
-	"Latios": {},
-	"Kyogre": {
-		"Sapphire": "S"
-	},
-	"Groudon": {
-		"Ruby": "S"
-	},
-	"Rayquaza": {
-		"Emerald": "S"
-	},
-	"Jirachi": {},
-	"Deoxys": {},
-	"Torterra": {
-		"Diamond": "A+",
-		"Pearl": "A+",
-		"Platinum": "A+"
-	},
-	"Infernape": {
-		"Diamond": "S",
-		"Pearl": "S",
-		"Platinum": "S"
-	},
-	"Empoleon": {
-		"Diamond": "A",
-		"Pearl": "A",
-		"Platinum": "A"
-	},
-	"Staraptor": {
-		"Diamond": "S",
-		"Pearl": "S",
-		"Platinum": "S"
-	},
-	"Bibarel": {
-		"Diamond": "A",
-		"Pearl": "A",
-		"Platinum": "A"
-	},
-	"Kricketune": {
-		"Diamond": "D",
-		"Pearl": "D",
-		"Platinum": "D"
-	},
-	"Luxray": {
-		"Diamond": "B",
-		"Pearl": "B",
-		"Platinum": "B"
-	},
-	"Roselia": {
-		"Ruby": "C",
-		"Sapphire": "C",
-		"Emerald": "C"
-	},
-	"Roserade": {
-		"Diamond": "B+",
-		"Pearl": "B+",
-		"Platinum": "B+"
-	},
-	"Rampardos": {
-		"Diamond": "B",
-		"Platinum": "B"
-	},
-	"Bastiodon": {
-		"Pearl": "B",
-		"Platinum": "B"
-	},
-	"Wormadam (Plant Cloak)": {
-		"Diamond": "D",
-		"Pearl": "D",
-		"Platinum": "D"
-	},
-	"Wormadam (Sandy Cloak)": {
-		"Diamond": "C",
-		"Pearl": "C",
-		"Platinum": "C"
-	},
-	"Wormadam (Trash Cloak)": {
-		"Diamond": "C-",
-		"Pearl": "C-",
-		"Platinum": "C-"
-	},
-	"Mothim": {
-		"Diamond": "B-",
-		"Pearl": "B-",
-		"Platinum": "B-"
-	},
-	"Combee": {
-		"Diamond": "E",
-		"Pearl": "E",
-		"Platinum": "E"
-	},
-	"Vespiquen": {
-		"Diamond": "B-",
-		"Pearl": "B-",
-		"Platinum": "B-"
-	},
-	"Pachirisu": {
-		"Diamond": "D",
-		"Pearl": "D",
-		"Platinum": "D"
-	},
-	"Floatzel": {
-		"Diamond": "A-",
-		"Pearl": "A-",
-		"Platinum": "A-"
-	},
-	"Cherrim": {
-		"Diamond": "C",
-		"Pearl": "C",
-		"Platinum": "C"
-	},
-	"Gastrodon": {
-		"Diamond": "B+",
-		"Pearl": "B+",
-		"Platinum": "B+"
-	},
-	"Aipom": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E"
-	},
-	"Ambipom": {
-		"Diamond": "B",
-		"Pearl": "B",
-		"Platinum": "B"
-	},
-	"Drifblim": {
-		"Diamond": "B+",
-		"Pearl": "B+",
-		"Platinum": "B+"
-	},
-	"Lopunny": {
-		"Diamond": "C-",
-		"Pearl": "C-",
-		"Platinum": "C-"
-	},
-	"Misdreavus": {
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D"
-	},
-	"Mismagius": {
-		"Diamond": "B+",
-		"Pearl": "B+",
-		"Platinum": "B+"
-	},
-	"Murkrow": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E"
-	},
-	"Honchkrow": {
-		"Diamond": "A"
-	},
-	"Purugly": {
-		"Diamond": "D",
-		"Pearl": "D",
-		"Platinum": "D"
-	},
-	"Skuntank": {
-		"Diamond": "B-",
-		"Pearl": "B-",
-		"Platinum": "B-"
-	},
-	"Bronzong": {
-		"Diamond": "A",
-		"Pearl": "A",
-		"Platinum": "A"
-	},
-	"Chatot": {
-		"Diamond": "E",
-		"Pearl": "E",
-		"Platinum": "E"
-	},
-	"Spiritomb": {
-		"Diamond": "B+",
-		"Pearl": "B+",
-		"Platinum": "B+"
-	},
-	"Garchomp": {
-		"Diamond": "B-",
-		"Pearl": "B-",
-		"Platinum": "B-"
-	},
-	"Lucario": {
-		"Diamond": "A",
-		"Pearl": "A",
-		"Platinum": "A"
-	},
-	"Hippowdon": {
-		"Diamond": "B+",
-		"Pearl": "B+",
-		"Platinum": "B+"
-	},
-	"Drapion": {
-		"Diamond": "A+",
-		"Pearl": "A+",
-		"Platinum": "A+"
-	},
-	"Toxicroak": {
-		"Diamond": "A",
-		"Pearl": "A",
-		"Platinum": "A"
-	},
-	"Carnivine": {
-		"Diamond": "E",
-		"Pearl": "E",
-		"Platinum": "E"
-	},
-	"Lumineon": {
-		"Diamond": "E",
-		"Pearl": "E",
-		"Platinum": "E"
-	},
-	"Abomasnow": {
-		"Diamond": "C",
-		"Pearl": "C",
-		"Platinum": "C"
-	},
-	"Sneasel": {
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D"
-	},
-	"Weavile": {
-		"Diamond": "C",
-		"Pearl": "C",
-		"Platinum": "C"
-	},
-	"Magneton": {
-		"Red": "B",
-		"Blue": "B",
-		"Yellow": "A-",
-		"Gold": "B",
-		"Silver": "B",
-		"Crystal": "B",
-		"Ruby": "A",
-		"Sapphire": "A",
-		"Emerald": "A",
-		"FireRed": "A",
-		"LeafGreen": "A"
-	},
-	"Magnezone": {
-		"Sun": "A",
-		"Moon": "A"
-	},
-	"Lickitung": {
-		"Red": "D",
-		"Blue": "D",
-		"FireRed": "E",
-		"LeafGreen": "E"
-	},
-	"Lickilicky": {},
-	"Rhydon": {
-		"Gold": "B+",
-		"Silver": "B+",
-		"Crystal": "B",
-		"Ruby": "C+",
-		"Sapphire": "C+",
-		"Emerald": "C+",
-		"FireRed": "B",
-		"LeafGreen": "B"
-	},
-	"Rhyperior": {},
-	"Tangela": {
-		"FireRed": "D",
-		"LeafGreen": "D"
-	},
-	"Tangrowth": {},
-	"Electabuzz": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "A",
-		"FireRed": "B+"
-	},
-	"Electivire": {},
-	"Magmar": {
-		"Gold": "A",
-		"Silver": "A",
-		"Crystal": "A",
-		"LeafGreen": "D"
-	},
-	"Magmortar": {},
-	"Togetic": {
-		"Gold": "D",
-		"Silver": "D",
-		"Crystal": "D"
-	},
-	"Togekiss": {},
-	"Yanma": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E"
-	},
-	"Yanmega": {},
-	"Leafeon": {},
-	"Glaceon": {
-		"Sun": "D",
-		"Moon": "D"
-	},
-	"Gligar": {
-		"Gold": "D",
-		"Crystal": "C-"
-	},
-	"Gliscor": {},
-	"Piloswine": {
-		"Gold": "B",
-		"Silver": "B",
-		"Crystal": "B-"
-	},
-	"Mamoswine": {},
-	"Porygon": {
-		"Gold": "E",
-		"Silver": "E",
-		"Crystal": "E",
-		"FireRed": "C-",
-		"LeafGreen": "C-"
-	},
-	"Porygon2": {
-		"Gold": "C",
-		"Silver": "C",
-		"Crystal": "C+"
-	},
-	"Porygon-Z": {},
-	"Gallade": {},
-	"Nosepass": {
-		"Ruby": "E",
-		"Sapphire": "E",
-		"Emerald": "E"
-	},
-	"Probopass": {},
-	"Dusclops": {
-		"Ruby": "C+",
-		"Sapphire": "C+",
-		"Emerald": "C+"
-	},
-	"Dusknoir": {},
-	"Froslass": {},
-	"Rotom": {},
-	"Rotom-Heat": {},
-	"Rotom-Wash": {},
-	"Rotom-Frost": {},
-	"Rotom-Fan": {},
-	"Rotom-Mow": {},
-	"Uxie": {
-		"Diamond": "B",
-		"Pearl": "B",
-		"Platinum": "B"
-	},
-	"Mesprit": {
-		"Diamond": "E",
-		"Pearl": "E",
-		"Platinum": "E"
-	},
-	"Azelf": {
-		"Diamond": "A+",
-		"Pearl": "A+",
-		"Platinum": "A+"
-	},
-	"Dialga": {
-		"Diamond": "S"
-	},
-	"Palkia": {
-		"Pearl": "S"
-	},
-	"Heatran": {},
-	"Regigigas": {},
-	"Giratina": {},
-	"Giratina-Origin": {},
-	"Cresselia": {},
-	"Phione": {},
-	"Manaphy": {},
-	"Darkrai": {},
-	"Shaymin": {},
-	"Shaymin-Sky": {},
-	"Arceus": {},
-	"Victini": {},
-	"Serperior": {
-		"Black": "A-",
-		"White": "A-"
-	},
-	"Emboar": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Samurott": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Watchog": {
-		"Black": "B-",
-		"White": "B-"
-	},
-	"Stoutland": {
-		"Black": "A+",
-		"White": "A+"
-	},
-	"Liepard": {
-		"Black": "C",
-		"White": "C"
-	},
-	"Simisage": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Simisear": {
-		"Black": "B-",
-		"White": "B-"
-	},
-	"Simipour": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Musharna": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Unfezant": {
-		"Black": "C",
-		"White": "C"
-	},
-	"Zebstrika": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Boldore": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Gigalith": {
-		"Black": "A-",
-		"White": "A-"
-	},
-	"Swoobat": {
-		"Black": "C",
-		"White": "C"
-	},
-	"Excadrill": {
-		"Black": "S",
-		"White": "S"
-	},
-	"Audino": {
-		"Black": "C-",
-		"White": "C-"
-	},
-	"Gurdurr": {
-		"Black": "B+",
-		"White": "B+"
-	},
-	"Conkeldurr": {
-		"Black": "A+",
-		"White": "A+"
-	},
-	"Seismitoad": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Throh": {
-		"Black": "B+",
-		"White": "B+"
-	},
-	"Sawk": {
-		"Black": "B+",
-		"White": "B+"
-	},
-	"Leavanny": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Scolipede": {
-		"Black": "A-",
-		"White": "A-"
-	},
-	"Whimsicott": {
-		"Black": "A-",
-		"White": "A-"
-	},
-	"Lilligant": {
-		"Black": "A+",
-		"White": "A+"
-	},
-	"Basculin": {
-		"Black": "C+",
-		"White": "C+"
-	},
-	"Krookodile": {
-		"Black": "A+",
-		"White": "A+"
-	},
-	"Darmanitan": {
-		"Black": "A-",
-		"White": "A-"
-	},
-	"Darmanitan-Zen": {},
-	"Maractus": {
-		"Black": "C+",
-		"White": "C+"
-	},
-	"Crustle": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Scrafty": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Sigilyph": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Cofagrigus": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Carracosta": {
-		"Black": "B+",
-		"White": "B+"
-	},
-	"Archeops": {
-		"Black": "A+",
-		"White": "A+"
-	},
-	"Garbodor": {
-		"Black": "C+",
-		"White": "C+"
-	},
-	"Zoroark": {},
-	"Cinccino": {
-		"Black": "C",
-		"White": "C"
-	},
-	"Gothitelle": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Reuniclus": {
-		"Black": "A-",
-		"White": "A-"
-	},
-	"Swanna": {
-		"Black": "C+",
-		"White": "C+"
-	},
-	"Vanilluxe": {
-		"Black": "B-",
-		"White": "B-"
-	},
-	"Sawsbuck": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Emolga": {
-		"Black": "D",
-		"White": "D"
-	},
-	"Karrablast": {
-		"Black": "E",
-		"White": "E"
-	},
-	"Escavalier": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Amoonguss": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Jellicent": {
-		"Black": "A+",
-		"White": "A+"
-	},
-	"Alomomola": {
-		"Black": "C+",
-		"White": "C+"
-	},
-	"Galvantula": {
-		"Black": "A-",
-		"White": "A-"
-	},
-	"Ferrothorn": {
-		"Black": "A+",
-		"White": "A+"
-	},
-	"Klinklang": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Eelektross": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Beheeyem": {
-		"Black": "C-",
-		"White": "C-"
-	},
-	"Chandelure": {
-		"Black": "A+",
-		"White": "A+"
-	},
-	"Haxorus": {
-		"Black": "B+",
-		"White": "B+"
-	},
-	"Beartic": {
-		"Black": "C",
-		"White": "C"
-	},
-	"Cryogonal": {
-		"Black": "D",
-		"White": "D"
-	},
-	"Shelmet": {
-		"Black": "E",
-		"White": "E"
-	},
-	"Accelgor": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Stunfisk": {
-		"Black": "C",
-		"White": "C"
-	},
-	"Mienshao": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Druddigon": {
-		"Black": "C",
-		"White": "C"
-	},
-	"Golurk": {
-		"Black": "B-",
-		"White": "B-"
-	},
-	"Bisharp": {
-		"Black": "A-",
-		"White": "A-"
-	},
-	"Bouffalant": {},
-	"Braviary": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Mandibuzz": {
-		"Black": "B-",
-		"White": "B-"
-	},
-	"Heatmor": {
-		"Black": "C-",
-		"White": "C-"
-	},
-	"Durant": {
-		"Black": "B",
-		"White": "B"
-	},
-	"Zweilous": {
-		"Black": "D",
-		"White": "D"
-	},
-	"Hydreigon": {
-		"Black": "D",
-		"White": "D"
-	},
-	"Larvesta": {
-		"Black": "D",
-		"White": "D"
-	},
-	"Volcarona": {
-		"Black": "D",
-		"White": "D"
-	},
-	"Cobalion": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Terrakion": {
-		"Black": "B+",
-		"White": "B+"
-	},
-	"Virizion": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Tornadus": {
-		"Black": "D",
-		"White": "D"
-	},
-	"Tornadus-Therian": {},
-	"Thundurus": {
-		"Black": "D",
-		"White": "D"
-	},
-	"Thundurus-Therian": {},
-	"Reshiram": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Zekrom": {
-		"Black": "A",
-		"White": "A"
-	},
-	"Landorus": {},
-	"Landorus-Therian": {},
-	"Kyurem": {},
-	"Kyurem-Black": {},
-	"Kyurem-White": {},
-	"Keldeo": {},
-	"Meloetta": {},
-	"Genesect": {},
-	"Chesnaught": {},
-	"Delphox": {},
-	"Greninja": {},
-	"Ash Greninja": {},
-	"Diggersby": {},
-	"Talonflame": {},
-	"Vivillon": {},
-	"Pyroar": {},
-	"Florges": {},
-	"Gogoat": {},
-	"Pangoro": {},
-	"Furfrou": {},
-	"Meowstic": {},
-	"Aegislash": {},
-	"Spritzee": {},
-	"Aromatisse": {},
-	"Swirlix": {},
-	"Slurpuff": {},
-	"Malamar": {},
-	"Barbaracle": {},
-	"Dragalge": {},
-	"Clawitzer": {},
-	"Heliolisk": {},
-	"Tyrantrum": {},
-	"Aurorus": {},
-	"Sylveon": {},
-	"Hawlucha": {},
-	"Dedenne": {},
-	"Carbink": {},
-	"Goodra": {},
-	"Klefki": {},
-	"Phantump": {},
-	"Trevenant": {},
-	"Pumpkaboo": {},
-	"Gourgeist": {},
-	"Avalugg": {},
-	"Noivern": {},
-	"Xerneas": {},
-	"Yveltal": {},
-	"Zygarde": {},
-	"Zygarde 10%": {},
-	"Zygarde Complete": {},
-	"Diancie": {},
-	"Hoopa": {},
-	"Hoopa Unbound": {},
-	"Volcanion": {},
-	"Decidueye": {
-		"Sun": "B+",
-		"Moon": "B+"
-	},
-	"Incineroar": {
-		"Sun": "A",
-		"Moon": "A"
-	},
-	"Primarina": {
-		"Sun": "A",
-		"Moon": "A"
-	},
-	"Toucannon": {
-		"Sun": "A",
-		"Moon": "A"
-	},
-	"Gumshoos": {
-		"Sun": "D",
-		"Moon": "D"
-	},
-	"Vikavolt": {
-		"Sun": "B",
-		"Moon": "B"
-	},
-	"Crabominable": {},
-	"Oricorio": {
-		"Sun": "B",
-		"Moon": "B"
-	},
-	"Ribombee": {
-		"Sun": "B+",
-		"Moon": "B+"
-	},
-	"Lycanroc Midday": {},
-	"Lycanroc Midnight": {},
-	"Lyranroc Dusk": {},
-	"Wishiwashi": {
-		"Sun": "A+",
-		"Moon": "A+"
-	},
-	"Toxapex": {
-		"Sun": "D",
-		"Moon": "D"
-	},
-	"Mudsdale": {},
-	"Araquanid": {},
-	"Lurantis": {},
-	"Shiinotic": {},
-	"Salandit": {
-		"Sun": "E",
-		"Moon": "E"
-	},
-	"Salazzle": {},
-	"Bewear": {},
-	"Tsareena": {},
-	"Comfey": {},
-	"Oranguru": {},
-	"Passimian": {},
-	"Golisopod": {
-		"Sun": "A",
-		"Moon": "A"
-	},
-	"Palossand": {},
-	"Pyukumuku": {
-		"Sun": "E",
-		"Moon": "E"
-	},
-	"Type: Null": {},
-	"Silvally": {},
-	"Minior": {},
-	"Komala": {},
-	"Turtonator": {},
-	"Togedemaru": {},
-	"Mimikyu": {},
-	"Bruxish": {},
-	"Drampa": {},
-	"Dhelmise": {},
-	"Kommo-o": {},
-	"Tapu Koko": {},
-	"Tapu Lele": {},
-	"Tapu Bulu": {},
-	"Tapu Fini": {},
-	"Solgaleo": {},
-	"Lunala": {},
-	"Nihilego": {},
-	"Buzzwole": {},
-	"Pheromosa": {},
-	"Xurkitree": {},
-	"Celesteela": {},
-	"Kartana": {},
-	"Guzzlord": {},
-	"Necrozma": {},
-	"Necrozma Dusk Mane": {},
-	"Necrozma Dawn Wings": {},
-	"Necrozma Ultra": {},
-	"Magearna": {},
-	"Marshadow": {},
-	"Naganadel": {},
-	"Stakataka": {},
-	"Blacephalon": {},
-	"Zeraora": {}
-	}
+  "Pokemon": [
+    {
+      "Name": "Venusaur",
+      "Ranks": { "Red": "A+", "Blue": "A+", "FireRed": "A+", "LeafGreen": "A+" }
+    },
+    {
+      "Name": "Charizard",
+      "Ranks": { "Red": "A", "Blue": "A", "FireRed": "A", "LeafGreen": "A" }
+    },
+    {
+      "Name": "Blastoise",
+      "Ranks": { "Red": "A+", "Blue": "A+", "FireRed": "A+", "LeafGreen": "A+" }
+    },
+    {
+      "Name": "Butterfree",
+      "Ranks": {
+        "Red": "D",
+        "Blue": "D",
+        "Gold": "C+",
+        "Silver": "E",
+        "Crystal": "C",
+        "FireRed": "B-",
+        "LeafGreen": "B-"
+      }
+    },
+    {
+      "Name": "Beedrill",
+      "Ranks": {
+        "Red": "C-",
+        "Blue": "C-",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "D",
+        "FireRed": "D",
+        "LeafGreen": "D"
+      }
+    },
+    {
+      "Name": "Pidgeot",
+      "Ranks": {
+        "Red": "D",
+        "Blue": "D",
+        "Gold": "C",
+        "Silver": "C",
+        "Crystal": "C",
+        "FireRed": "C+",
+        "LeafGreen": "C+"
+      }
+    },
+    {
+      "Name": "Raticate",
+      "Ranks": {
+        "Red": "B",
+        "Blue": "B",
+        "Gold": "C",
+        "Silver": "C",
+        "Crystal": "C+",
+        "FireRed": "C+",
+        "LeafGreen": "C+"
+      }
+    },
+    { "Name": "Alolan Raticate", "Ranks": {} },
+    {
+      "Name": "Fearow",
+      "Ranks": {
+        "Red": "A-",
+        "Blue": "A-",
+        "Gold": "A",
+        "Silver": "A",
+        "Crystal": "A",
+        "FireRed": "B+",
+        "LeafGreen": "B+"
+      }
+    },
+    {
+      "Name": "Arbok",
+      "Ranks": {
+        "Red": "D",
+        "Blue": "D",
+        "Gold": "C-",
+        "Silver": "C-",
+        "Crystal": "D",
+        "FireRed": "C-"
+      }
+    },
+    {
+      "Name": "Pikachu",
+      "Ranks": { "Diamond": "E", "Pearl": "E", "Platinum": "E" }
+    },
+    {
+      "Name": "Raichu",
+      "Ranks": {
+        "Red": "B",
+        "Blue": "B",
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "B+",
+        "Ruby": "B",
+        "Sapphire": "B",
+        "Emerald": "B",
+        "FireRed": "B",
+        "LeafGreen": "B",
+        "Diamond": "B+",
+        "Pearl": "B+",
+        "Platinum": "B+"
+      }
+    },
+    { "Name": "Alolan Raichu", "Ranks": { "Sun": "A", "Moon": "A" } },
+    {
+      "Name": "Sandslash",
+      "Ranks": {
+        "Red": "A-",
+        "Blue": "A-",
+        "Gold": "B-",
+        "Crystal": "B-",
+        "Ruby": "C",
+        "Sapphire": "C",
+        "Emerald": "C",
+        "LeafGreen": "B-"
+      }
+    },
+    { "Name": "Alolan Sandslash", "Ranks": {} },
+    {
+      "Name": "Nidoqueen",
+      "Ranks": {
+        "Red": "S",
+        "Blue": "S",
+        "Gold": "A+",
+        "Silver": "A+",
+        "Crystal": "A+",
+        "FireRed": "A+",
+        "LeafGreen": "A+"
+      }
+    },
+    {
+      "Name": "Nidoking",
+      "Ranks": {
+        "Red": "S",
+        "Blue": "S",
+        "Gold": "A+",
+        "Silver": "A+",
+        "Crystal": "A+",
+        "FireRed": "A+",
+        "LeafGreen": "A+"
+      }
+    },
+    {
+      "Name": "Clefable",
+      "Ranks": {
+        "Red": "S",
+        "Blue": "S",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "A+",
+        "FireRed": "A",
+        "LeafGreen": "A",
+        "Diamond": "A",
+        "Pearl": "A",
+        "Platinum": "A"
+      }
+    },
+    {
+      "Name": "Ninetales",
+      "Ranks": {
+        "Blue": "B+",
+        "Silver": "D",
+        "Ruby": "B",
+        "Sapphire": "B",
+        "Emerald": "B",
+        "LeafGreen": "B"
+      }
+    },
+    { "Name": "Alolan Ninetales", "Ranks": {} },
+    {
+      "Name": "Wigglytuff",
+      "Ranks": {
+        "Red": "D",
+        "Blue": "D",
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "D",
+        "Ruby": "D",
+        "Sapphire": "D",
+        "Emerald": "D",
+        "FireRed": "D",
+        "LeafGreen": "D"
+      }
+    },
+    {
+      "Name": "Vileplume",
+      "Ranks": {
+        "Red": "A-",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "B-",
+        "Ruby": "B",
+        "Sapphire": "B",
+        "Emerald": "B",
+        "FireRed": "B"
+      }
+    },
+    {
+      "Name": "Parasect",
+      "Ranks": {
+        "Red": "D",
+        "Blue": "D",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "D",
+        "FireRed": "D",
+        "LeafGreen": "D"
+      }
+    },
+    {
+      "Name": "Venomoth",
+      "Ranks": {
+        "Red": "C",
+        "Blue": "C",
+        "Gold": "C+",
+        "Silver": "C+",
+        "Crystal": "C+",
+        "FireRed": "C+",
+        "LeafGreen": "C+"
+      }
+    },
+    {
+      "Name": "Dugtrio",
+      "Ranks": {
+        "Red": "B-",
+        "Blue": "B-",
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "E",
+        "FireRed": "C-",
+        "LeafGreen": "C-"
+      }
+    },
+    { "Name": "Alolan Dugtrio", "Ranks": {} },
+    {
+      "Name": "Persian",
+      "Ranks": {
+        "Blue": "C",
+        "Silver": "C",
+        "Crystal": "C",
+        "FireRed": "C",
+        "LeafGreen": "C"
+      }
+    },
+    { "Name": "Alolan Persian", "Ranks": {} },
+    {
+      "Name": "Golduck",
+      "Ranks": {
+        "Red": "B",
+        "Blue": "B",
+        "Gold": "B+",
+        "Silver": "B+",
+        "Crystal": "A-",
+        "Ruby": "B+",
+        "Sapphire": "B+",
+        "Emerald": "B+",
+        "FireRed": "A-",
+        "Diamond": "A-",
+        "Pearl": "A-",
+        "Platinum": "A-"
+      }
+    },
+    {
+      "Name": "Primeape",
+      "Ranks": {
+        "Red": "C-",
+        "Blue": "C-",
+        "Gold": "D",
+        "FireRed": "C",
+        "LeafGreen": "C"
+      }
+    },
+    {
+      "Name": "Arcanine",
+      "Ranks": { "Red": "A-", "Gold": "C-", "Crystal": "A", "FireRed": "A" }
+    },
+    {
+      "Name": "Poliwrath",
+      "Ranks": {
+        "Red": "A",
+        "Blue": "A",
+        "Gold": "C+",
+        "Silver": "C+",
+        "Crystal": "A",
+        "FireRed": "A",
+        "LeafGreen": "A"
+      }
+    },
+    {
+      "Name": "Kadabra",
+      "Ranks": {
+        "Red": "A+",
+        "Blue": "A+",
+        "Gold": "B+",
+        "Silver": "B+",
+        "Crystal": "B+",
+        "Ruby": "C+",
+        "Sapphire": "C+",
+        "Emerald": "C+",
+        "FireRed": "B",
+        "LeafGreen": "B",
+        "Diamond": "B",
+        "Pearl": "B",
+        "Platinum": "B"
+      }
+    },
+    {
+      "Name": "Alakazam",
+      "Ranks": {
+        "Red": "S",
+        "Blue": "S",
+        "Gold": "S",
+        "Silver": "S",
+        "Crystal": "S",
+        "Ruby": "A-",
+        "Sapphire": "A-",
+        "Emerald": "A-",
+        "FireRed": "S",
+        "LeafGreen": "S",
+        "Diamond": "A+",
+        "Pearl": "A+",
+        "Platinum": "A+"
+      }
+    },
+    {
+      "Name": "Machoke",
+      "Ranks": {
+        "Red": "C+",
+        "Blue": "C+",
+        "Gold": "B-",
+        "Silver": "B-",
+        "Crystal": "B-",
+        "Ruby": "C+",
+        "Sapphire": "C+",
+        "Emerald": "C+",
+        "FireRed": "C+",
+        "LeafGreen": "C+",
+        "Diamond": "C+",
+        "Pearl": "C+",
+        "Platinum": "C+"
+      }
+    },
+    {
+      "Name": "Machamp",
+      "Ranks": {
+        "Red": "A-",
+        "Blue": "A-",
+        "Gold": "A",
+        "Silver": "A",
+        "Crystal": "A+",
+        "Ruby": "A",
+        "Sapphire": "A",
+        "Emerald": "A",
+        "FireRed": "A",
+        "LeafGreen": "A",
+        "Diamond": "A",
+        "Pearl": "A",
+        "Platinum": "A"
+      }
+    },
+    {
+      "Name": "Victreebel",
+      "Ranks": {
+        "Blue": "A-",
+        "Gold": "C-",
+        "Silver": "C-",
+        "Crystal": "C+",
+        "LeafGreen": "C"
+      }
+    },
+    {
+      "Name": "Tentacruel",
+      "Ranks": {
+        "Red": "A+",
+        "Blue": "A+",
+        "Gold": "A+",
+        "Silver": "A+",
+        "Crystal": "A+",
+        "Ruby": "A+",
+        "Sapphire": "A+",
+        "Emerald": "A+",
+        "FireRed": "A",
+        "LeafGreen": "A",
+        "Diamond": "A+",
+        "Pearl": "A+",
+        "Platinum": "A+"
+      }
+    },
+    {
+      "Name": "Graveler",
+      "Ranks": {
+        "Red": "B",
+        "Blue": "B",
+        "Gold": "B+",
+        "Silver": "B+",
+        "Crystal": "B+",
+        "Ruby": "C-",
+        "Sapphire": "C-",
+        "Emerald": "C-",
+        "FireRed": "C",
+        "LeafGreen": "C",
+        "Diamond": "C-",
+        "Pearl": "C-",
+        "Platinum": "C-"
+      }
+    },
+    {
+      "Name": "Golem",
+      "Ranks": {
+        "Red": "A+",
+        "Blue": "A+",
+        "Gold": "S",
+        "Silver": "S",
+        "Crystal": "S",
+        "Ruby": "B+",
+        "Sapphire": "B+",
+        "Emerald": "B+",
+        "FireRed": "A-",
+        "LeafGreen": "A-",
+        "Diamond": "A-",
+        "Pearl": "A-",
+        "Platinum": "A-"
+      }
+    },
+    { "Name": "Alolan Golem", "Ranks": {} },
+    {
+      "Name": "Rapidash",
+      "Ranks": {
+        "Red": "D",
+        "Blue": "D",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "D",
+        "FireRed": "E",
+        "LeafGreen": "E",
+        "Diamond": "C+",
+        "Pearl": "C+",
+        "Platinum": "C+"
+      }
+    },
+    {
+      "Name": "Slowbro",
+      "Ranks": {
+        "Red": "S",
+        "Blue": "S",
+        "Gold": "A-",
+        "Silver": "A-",
+        "Crystal": "A-",
+        "LeafGreen": "A+",
+        "Sun": "C-",
+        "Moon": "C-"
+      }
+    },
+    {
+      "Name": "Farfetch'd",
+      "Ranks": {
+        "Red": "D",
+        "Blue": "D",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "D",
+        "FireRed": "D",
+        "LeafGreen": "D"
+      }
+    },
+    {
+      "Name": "Dodrio",
+      "Ranks": {
+        "Red": "A",
+        "Blue": "A",
+        "Gold": "B",
+        "Silver": "B",
+        "Crystal": "B+",
+        "Ruby": "B+",
+        "Sapphire": "B+",
+        "Emerald": "B+",
+        "FireRed": "A",
+        "LeafGreen": "A"
+      }
+    },
+    {
+      "Name": "Dewgong",
+      "Ranks": {
+        "Red": "A-",
+        "Blue": "A-",
+        "Gold": "B",
+        "Silver": "B",
+        "Crystal": "B",
+        "FireRed": "B",
+        "LeafGreen": "B"
+      }
+    },
+    {
+      "Name": "Muk",
+      "Ranks": {
+        "Red": "D",
+        "Blue": "D",
+        "Gold": "C",
+        "Silver": "C",
+        "Crystal": "D",
+        "Ruby": "B+",
+        "Sapphire": "B+",
+        "Emerald": "B+",
+        "FireRed": "B",
+        "LeafGreen": "B"
+      }
+    },
+    { "Name": "Alolan Muk", "Ranks": { "Sun": "B+", "Moon": "B+" } },
+    {
+      "Name": "Cloyster",
+      "Ranks": {
+        "Red": "A+",
+        "Blue": "A+",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "B-",
+        "FireRed": "B-"
+      }
+    },
+    {
+      "Name": "Haunter",
+      "Ranks": {
+        "Red": "C",
+        "Blue": "C",
+        "Gold": "C",
+        "Silver": "C",
+        "Crystal": "C+",
+        "FireRed": "C",
+        "LeafGreen": "C",
+        "Diamond": "B-",
+        "Pearl": "B-",
+        "Platinum": "B-"
+      }
+    },
+    {
+      "Name": "Gengar",
+      "Ranks": {
+        "Red": "A",
+        "Blue": "A",
+        "Gold": "A+",
+        "Silver": "A+",
+        "Crystal": "A+",
+        "FireRed": "A+",
+        "LeafGreen": "A+",
+        "Diamond": "A+",
+        "Pearl": "A+",
+        "Platinum": "A+",
+        "Sun": "A",
+        "Moon": "A"
+      }
+    },
+    {
+      "Name": "Hypno",
+      "Ranks": {
+        "Red": "A+",
+        "Blue": "A+",
+        "Gold": "B",
+        "Silver": "B",
+        "Crystal": "B",
+        "FireRed": "B",
+        "LeafGreen": "B"
+      }
+    },
+    {
+      "Name": "Kingler",
+      "Ranks": {
+        "Red": "D",
+        "Blue": "D",
+        "Gold": "C-",
+        "Silver": "C-",
+        "Crystal": "C-",
+        "FireRed": "D",
+        "LeafGreen": "D"
+      }
+    },
+    {
+      "Name": "Electrode",
+      "Ranks": {
+        "Red": "C",
+        "Blue": "C",
+        "Gold": "C-",
+        "Silver": "C-",
+        "Crystal": "C-",
+        "Ruby": "C",
+        "Sapphire": "C",
+        "Emerald": "C",
+        "FireRed": "C",
+        "LeafGreen": "C"
+      }
+    },
+    {
+      "Name": "Exeggutor",
+      "Ranks": {
+        "Red": "A",
+        "Blue": "A",
+        "Gold": "C-",
+        "Silver": "C-",
+        "Crystal": "B-",
+        "FireRed": "B",
+        "LeafGreen": "B"
+      }
+    },
+    { "Name": "Alolan Exeggutor", "Ranks": {} },
+    {
+      "Name": "Marowak",
+      "Ranks": {
+        "Red": "B",
+        "Blue": "B",
+        "Gold": "C",
+        "Silver": "C",
+        "Crystal": "B",
+        "FireRed": "A",
+        "LeafGreen": "A"
+      }
+    },
+    { "Name": "Alolan Marowak", "Ranks": {} },
+    {
+      "Name": "Hitmonlee",
+      "Ranks": {
+        "Red": "B",
+        "Blue": "B",
+        "Gold": "C",
+        "Silver": "C",
+        "Crystal": "B",
+        "FireRed": "C+",
+        "LeafGreen": "C+"
+      }
+    },
+    {
+      "Name": "Hitmonchan",
+      "Ranks": {
+        "Red": "D",
+        "Blue": "D",
+        "Gold": "C-",
+        "Silver": "C-",
+        "Crystal": "D",
+        "FireRed": "B-",
+        "LeafGreen": "B-"
+      }
+    },
+    {
+      "Name": "Weezing",
+      "Ranks": {
+        "Red": "B-",
+        "Blue": "B-",
+        "Gold": "B+",
+        "Silver": "B+",
+        "Crystal": "B+",
+        "Ruby": "A",
+        "Sapphire": "A",
+        "Emerald": "A",
+        "FireRed": "B-",
+        "LeafGreen": "B-"
+      }
+    },
+    {
+      "Name": "Kangaskhan",
+      "Ranks": {
+        "Red": "B+",
+        "Blue": "B+",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "D",
+        "FireRed": "A+",
+        "LeafGreen": "A+"
+      }
+    },
+    {
+      "Name": "Seaking",
+      "Ranks": {
+        "Red": "D",
+        "Blue": "D",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "D",
+        "Ruby": "E",
+        "Sapphire": "E",
+        "Emerald": "E",
+        "FireRed": "E",
+        "LeafGreen": "E",
+        "Diamond": "E",
+        "Pearl": "E",
+        "Platinum": "E"
+      }
+    },
+    {
+      "Name": "Starmie",
+      "Ranks": {
+        "Red": "S",
+        "Blue": "S",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "A-",
+        "Ruby": "A-",
+        "Sapphire": "A-",
+        "Emerald": "A-",
+        "LeafGreen": "S"
+      }
+    },
+    {
+      "Name": "Mr. Mime",
+      "Ranks": {
+        "Red": "A+",
+        "Blue": "A+",
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "D",
+        "FireRed": "B",
+        "LeafGreen": "B",
+        "Diamond": "B",
+        "Platinum": "B"
+      }
+    },
+    {
+      "Name": "Jynx",
+      "Ranks": {
+        "Red": "A+",
+        "Blue": "A+",
+        "Gold": "C",
+        "Silver": "C",
+        "Crystal": "B+",
+        "FireRed": "A",
+        "LeafGreen": "A"
+      }
+    },
+    {
+      "Name": "Pinsir",
+      "Ranks": {
+        "Blue": "C",
+        "Gold": "C",
+        "Silver": "C",
+        "Crystal": "B-",
+        "Ruby": "B+",
+        "Sapphire": "B+",
+        "Emerald": "B+",
+        "LeafGreen": "C+"
+      }
+    },
+    {
+      "Name": "Tauros",
+      "Ranks": {
+        "Red": "S",
+        "Blue": "S",
+        "Gold": "A-",
+        "Silver": "A-",
+        "Crystal": "A-",
+        "FireRed": "A+",
+        "LeafGreen": "A+"
+      }
+    },
+    {
+      "Name": "Gyarados",
+      "Ranks": {
+        "Red": "S",
+        "Blue": "S",
+        "Gold": "A",
+        "Silver": "A",
+        "Crystal": "A",
+        "Ruby": "A",
+        "Sapphire": "A",
+        "Emerald": "A",
+        "FireRed": "A",
+        "LeafGreen": "A",
+        "Diamond": "S",
+        "Pearl": "S",
+        "Platinum": "S"
+      }
+    },
+    {
+      "Name": "Lapras",
+      "Ranks": {
+        "Red": "A+",
+        "Blue": "A+",
+        "Gold": "A",
+        "Silver": "A",
+        "Crystal": "A",
+        "FireRed": "S",
+        "LeafGreen": "S"
+      }
+    },
+    {
+      "Name": "Ditto",
+      "Ranks": {
+        "Red": "E",
+        "Blue": "E",
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "E",
+        "FireRed": "E",
+        "LeafGreen": "E",
+        "Sun": "E",
+        "Moon": "E"
+      }
+    },
+    { "Name": "Eevee", "Ranks": {} },
+    {
+      "Name": "Vaporeon",
+      "Ranks": {
+        "Red": "A",
+        "Blue": "A",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "A",
+        "FireRed": "A",
+        "LeafGreen": "A"
+      }
+    },
+    {
+      "Name": "Jolteon",
+      "Ranks": {
+        "Red": "A",
+        "Blue": "A",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "C",
+        "FireRed": "A-",
+        "LeafGreen": "A-"
+      }
+    },
+    {
+      "Name": "Flareon",
+      "Ranks": {
+        "Red": "A-",
+        "Blue": "A-",
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "B",
+        "FireRed": "B",
+        "LeafGreen": "B"
+      }
+    },
+    {
+      "Name": "Omastar",
+      "Ranks": { "Red": "B+", "Blue": "B+", "FireRed": "D", "LeafGreen": "D" }
+    },
+    {
+      "Name": "Kabutops",
+      "Ranks": { "Red": "C", "Blue": "C", "FireRed": "D", "LeafGreen": "D" }
+    },
+    {
+      "Name": "Aerodactyl",
+      "Ranks": {
+        "Red": "E",
+        "Blue": "E",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "D",
+        "FireRed": "D",
+        "LeafGreen": "D"
+      }
+    },
+    {
+      "Name": "Snorlax",
+      "Ranks": {
+        "Red": "S",
+        "Blue": "S",
+        "Gold": "A-",
+        "Silver": "A-",
+        "Crystal": "A-",
+        "FireRed": "S",
+        "LeafGreen": "S",
+        "Diamond": "A+",
+        "Pearl": "A+",
+        "Platinum": "A+",
+        "Sun": "D",
+        "Moon": "D"
+      }
+    },
+    {
+      "Name": "Articuno",
+      "Ranks": { "Red": "S", "Blue": "S", "FireRed": "A", "LeafGreen": "A" }
+    },
+    {
+      "Name": "Zapdos",
+      "Ranks": { "Red": "S", "Blue": "S", "FireRed": "A+", "LeafGreen": "A+" }
+    },
+    {
+      "Name": "Moltres",
+      "Ranks": { "Red": "A", "Blue": "A", "FireRed": "B+", "LeafGreen": "B+" }
+    },
+    {
+      "Name": "Dragonite",
+      "Ranks": {
+        "Red": "B-",
+        "Blue": "B-",
+        "Gold": "B",
+        "Silver": "B",
+        "Crystal": "C+",
+        "FireRed": "C",
+        "LeafGreen": "C"
+      }
+    },
+    { "Name": "Mewtwo", "Ranks": {} },
+    { "Name": "Mew", "Ranks": {} },
+    {
+      "Name": "Meganium",
+      "Ranks": { "Gold": "A", "Silver": "A", "Crystal": "A" }
+    },
+    {
+      "Name": "Typhlosion",
+      "Ranks": { "Gold": "A+", "Silver": "A+", "Crystal": "A" }
+    },
+    {
+      "Name": "Feraligatr",
+      "Ranks": { "Gold": "S", "Silver": "S", "Crystal": "S" }
+    },
+    {
+      "Name": "Furret",
+      "Ranks": { "Gold": "B-", "Silver": "B-", "Crystal": "C" }
+    },
+    {
+      "Name": "Noctowl",
+      "Ranks": {
+        "Gold": "C",
+        "Silver": "C",
+        "Crystal": "B-",
+        "Diamond": "C",
+        "Pearl": "C",
+        "Platinum": "C"
+      }
+    },
+    {
+      "Name": "Ledian",
+      "Ranks": { "Silver": "E", "Crystal": "E", "Sun": "E", "Moon": "E" }
+    },
+    {
+      "Name": "Ariados",
+      "Ranks": {
+        "Gold": "C",
+        "Silver": "C",
+        "Crystal": "C-",
+        "Sun": "D",
+        "Moon": "D"
+      }
+    },
+    {
+      "Name": "Golbat",
+      "Ranks": { "Red": "E", "Blue": "E", "FireRed": "C-", "LeafGreen": "C-" }
+    },
+    {
+      "Name": "Crobat",
+      "Ranks": {
+        "Gold": "A",
+        "Silver": "A",
+        "Crystal": "A",
+        "Ruby": "A",
+        "Sapphire": "A",
+        "Emerald": "A",
+        "Diamond": "A",
+        "Pearl": "A",
+        "Platinum": "A",
+        "Sun": "A",
+        "Moon": "A"
+      }
+    },
+    {
+      "Name": "Lanturn",
+      "Ranks": {
+        "Gold": "A+",
+        "Silver": "A+",
+        "Crystal": "A+",
+        "Ruby": "B",
+        "Sapphire": "B",
+        "Emerald": "B"
+      }
+    },
+    {
+      "Name": "Xatu",
+      "Ranks": {
+        "Gold": "C+",
+        "Silver": "C+",
+        "Crystal": "C+",
+        "Ruby": "B-",
+        "Sapphire": "B-",
+        "Emerald": "B-"
+      }
+    },
+    { "Name": "Ampharos", "Ranks": { "Gold": "A+", "Silver": "A+" } },
+    {
+      "Name": "Bellossom",
+      "Ranks": {
+        "Gold": "C",
+        "Silver": "C",
+        "Crystal": "C",
+        "Ruby": "C",
+        "Sapphire": "C",
+        "Emerald": "C"
+      }
+    },
+    {
+      "Name": "Azumarill (Huge Power)",
+      "Ranks": {
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "D",
+        "Ruby": "B",
+        "Sapphire": "B",
+        "Emerald": "B",
+        "Diamond": "B+",
+        "Pearl": "B+",
+        "Platinum": "B+"
+      }
+    },
+    {
+      "Name": "Azumarill (Thick Fat)",
+      "Ranks": { "Diamond": "D", "Pearl": "D", "Platinum": "D" }
+    },
+    {
+      "Name": "Sudowoodo",
+      "Ranks": {
+        "Gold": "B+",
+        "Silver": "B+",
+        "Crystal": "B+",
+        "Diamond": "B",
+        "Platinum": "B"
+      }
+    },
+    {
+      "Name": "Politoed",
+      "Ranks": { "Gold": "B", "Silver": "B", "Crystal": "A-" }
+    },
+    {
+      "Name": "Jumpluff",
+      "Ranks": { "Gold": "B+", "Silver": "B+", "Crystal": "B+" }
+    },
+    {
+      "Name": "Sunflora",
+      "Ranks": { "Gold": "E", "Silver": "E", "Crystal": "E" }
+    },
+    {
+      "Name": "Quagsire",
+      "Ranks": {
+        "Gold": "A-",
+        "Silver": "A-",
+        "Crystal": "B+",
+        "Diamond": "B+",
+        "Pearl": "B+",
+        "Platinum": "B+"
+      }
+    },
+    {
+      "Name": "Espeon",
+      "Ranks": { "Gold": "A", "Silver": "A", "Crystal": "A" }
+    },
+    {
+      "Name": "Umbreon",
+      "Ranks": { "Gold": "A-", "Silver": "A-", "Crystal": "A-" }
+    },
+    {
+      "Name": "Slowking",
+      "Ranks": {
+        "Gold": "A",
+        "Silver": "A",
+        "Crystal": "A",
+        "Sun": "C-",
+        "Moon": "C-"
+      }
+    },
+    {
+      "Name": "Unown",
+      "Ranks": {
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "E",
+        "Diamond": "E",
+        "Pearl": "E",
+        "Platinum": "E"
+      }
+    },
+    {
+      "Name": "Wobbuffet",
+      "Ranks": {
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "E",
+        "Ruby": "D",
+        "Sapphire": "D",
+        "Emerald": "D"
+      }
+    },
+    {
+      "Name": "Girafarig",
+      "Ranks": {
+        "Gold": "B+",
+        "Silver": "B+",
+        "Ruby": "B+",
+        "Sapphire": "B+",
+        "Emerald": "B+",
+        "Diamond": "B+",
+        "Pearl": "B+",
+        "Platinum": "B+"
+      }
+    },
+    {
+      "Name": "Forretress",
+      "Ranks": { "Gold": "C+", "Silver": "C+", "Crystal": "C+" }
+    },
+    {
+      "Name": "Dunsparce",
+      "Ranks": { "Gold": "E", "Silver": "E", "Crystal": "E" }
+    },
+    {
+      "Name": "Onix",
+      "Ranks": {
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "E",
+        "FireRed": "E",
+        "LeafGreen": "E",
+        "Diamond": "E",
+        "Pearl": "E",
+        "Platinum": "E"
+      }
+    },
+    {
+      "Name": "Steelix",
+      "Ranks": {
+        "Gold": "A",
+        "Silver": "A",
+        "Crystal": "A+",
+        "Diamond": "A-",
+        "Pearl": "A-",
+        "Platinum": "A-"
+      }
+    },
+    {
+      "Name": "Granbull",
+      "Ranks": { "Gold": "B", "Silver": "B", "Crystal": "A" }
+    },
+    {
+      "Name": "Qwilfish",
+      "Ranks": { "Gold": "D", "Silver": "D", "Crystal": "C-" }
+    },
+    {
+      "Name": "Scyther",
+      "Ranks": {
+        "Red": "C-",
+        "Gold": "B-",
+        "Silver": "B-",
+        "Crystal": "B",
+        "FireRed": "C+"
+      }
+    },
+    {
+      "Name": "Scizor",
+      "Ranks": { "Gold": "A", "Silver": "A", "Crystal": "A" }
+    },
+    {
+      "Name": "Shuckle",
+      "Ranks": { "Gold": "D", "Silver": "D", "Crystal": "D" }
+    },
+    {
+      "Name": "Heracross",
+      "Ranks": {
+        "Gold": "B",
+        "Silver": "B",
+        "Crystal": "B",
+        "Ruby": "C-",
+        "Sapphire": "C-",
+        "Emerald": "C-",
+        "Diamond": "A+",
+        "Pearl": "A+",
+        "Platinum": "A+"
+      }
+    },
+    { "Name": "Ursaring", "Ranks": { "Gold": "B+", "Crystal": "A+" } },
+    {
+      "Name": "Magcargo",
+      "Ranks": {
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "E",
+        "Ruby": "D",
+        "Sapphire": "D",
+        "Emerald": "D"
+      }
+    },
+    {
+      "Name": "Corsola",
+      "Ranks": {
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "E",
+        "Ruby": "E",
+        "Sapphire": "E",
+        "Emerald": "E",
+        "Sun": "E",
+        "Moon": "E"
+      }
+    },
+    {
+      "Name": "Octillery",
+      "Ranks": {
+        "Gold": "C-",
+        "Silver": "C-",
+        "Diamond": "A-",
+        "Pearl": "A-",
+        "Platinum": "A-"
+      }
+    },
+    {
+      "Name": "Delibird",
+      "Ranks": {
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "E",
+        "Sun": "E",
+        "Moon": "E"
+      }
+    },
+    {
+      "Name": "Mantine",
+      "Ranks": {
+        "Gold": "B-",
+        "Crystal": "B",
+        "Diamond": "D",
+        "Pearl": "D",
+        "Platinum": "D"
+      }
+    },
+    {
+      "Name": "Skarmory",
+      "Ranks": {
+        "Silver": "A+",
+        "Crystal": "A+",
+        "Ruby": "A+",
+        "Sapphire": "A+",
+        "Emerald": "A+"
+      }
+    },
+    {
+      "Name": "Houndoom",
+      "Ranks": { "Gold": "D", "Silver": "D", "Crystal": "D" }
+    },
+    {
+      "Name": "Seadra",
+      "Ranks": {
+        "Red": "C+",
+        "Blue": "C+",
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "C+",
+        "Ruby": "D",
+        "Sapphire": "D",
+        "Emerald": "D",
+        "FireRed": "C",
+        "LeafGreen": "C"
+      }
+    },
+    {
+      "Name": "Kingdra",
+      "Ranks": {
+        "Gold": "B",
+        "Silver": "B",
+        "Crystal": "B+",
+        "Ruby": "C",
+        "Sapphire": "C",
+        "Emerald": "C"
+      }
+    },
+    {
+      "Name": "Donphan",
+      "Ranks": {
+        "Silver": "B",
+        "Crystal": "A",
+        "Ruby": "B-",
+        "Sapphire": "B-",
+        "Emerald": "B-"
+      }
+    },
+    {
+      "Name": "Stantler",
+      "Ranks": { "Gold": "B+", "Silver": "B+", "Crystal": "B" }
+    },
+    {
+      "Name": "Smeargle",
+      "Ranks": {
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "D",
+        "Sun": "E",
+        "Moon": "E"
+      }
+    },
+    {
+      "Name": "Hitmontop",
+      "Ranks": { "Gold": "D", "Silver": "D", "Crystal": "D" }
+    },
+    {
+      "Name": "Miltank",
+      "Ranks": { "Gold": "A", "Silver": "A", "Crystal": "A" }
+    },
+    {
+      "Name": "Chansey",
+      "Ranks": {
+        "Red": "A-",
+        "Blue": "A-",
+        "Gold": "E",
+        "Silver": "E",
+        "FireRed": "D",
+        "LeafGreen": "D"
+      }
+    },
+    {
+      "Name": "Blissey",
+      "Ranks": {
+        "Gold": "D",
+        "Silver": "D",
+        "Crystal": "D",
+        "Diamond": "A-",
+        "Pearl": "A-",
+        "Platinum": "A-",
+        "Sun": "D",
+        "Moon": "D"
+      }
+    },
+    {
+      "Name": "Raikou",
+      "Ranks": { "Gold": "A", "Silver": "A", "Crystal": "A" }
+    },
+    {
+      "Name": "Entei",
+      "Ranks": { "Gold": "A", "Silver": "A", "Crystal": "A" }
+    },
+    {
+      "Name": "Suicune",
+      "Ranks": { "Gold": "A+", "Silver": "A+", "Crystal": "S" }
+    },
+    {
+      "Name": "Tyranitar",
+      "Ranks": { "Gold": "E", "Silver": "E", "Crystal": "C" }
+    },
+    {
+      "Name": "Lugia",
+      "Ranks": { "Gold": "S", "Silver": "S", "Crystal": "A+" }
+    },
+    {
+      "Name": "Ho-Oh",
+      "Ranks": { "Gold": "S", "Silver": "S", "Crystal": "E" }
+    },
+    { "Name": "Celebi", "Ranks": {} },
+    {
+      "Name": "Sceptile",
+      "Ranks": { "Ruby": "A", "Sapphire": "A", "Emerald": "A" }
+    },
+    {
+      "Name": "Blaziken",
+      "Ranks": { "Ruby": "A+", "Sapphire": "A+", "Emerald": "A+" }
+    },
+    {
+      "Name": "Swampert",
+      "Ranks": { "Ruby": "S", "Sapphire": "S", "Emerald": "S" }
+    },
+    {
+      "Name": "Mightyena",
+      "Ranks": { "Ruby": "C", "Sapphire": "C", "Emerald": "C" }
+    },
+    {
+      "Name": "Linoone",
+      "Ranks": { "Ruby": "A", "Sapphire": "A", "Emerald": "A" }
+    },
+    {
+      "Name": "Beautifly",
+      "Ranks": {
+        "Ruby": "C",
+        "Sapphire": "C",
+        "Emerald": "C",
+        "Diamond": "C-",
+        "Pearl": "C-",
+        "Platinum": "C-"
+      }
+    },
+    {
+      "Name": "Dustox",
+      "Ranks": {
+        "Ruby": "C",
+        "Sapphire": "C",
+        "Emerald": "C",
+        "Diamond": "C-",
+        "Pearl": "C-",
+        "Platinum": "C-"
+      }
+    },
+    { "Name": "Ludicolo", "Ranks": { "Sapphire": "B+", "Emerald": "B+" } },
+    {
+      "Name": "Shiftry",
+      "Ranks": { "Ruby": "C+", "Sapphire": "C+", "Emerald": "C+" }
+    },
+    {
+      "Name": "Swellow",
+      "Ranks": { "Ruby": "A-", "Sapphire": "A-", "Emerald": "A-" }
+    },
+    {
+      "Name": "Pelipper",
+      "Ranks": {
+        "Ruby": "B",
+        "Sapphire": "B",
+        "Emerald": "B",
+        "Diamond": "D",
+        "Pearl": "D",
+        "Platinum": "D",
+        "Sun": "B+",
+        "Moon": "B+"
+      }
+    },
+    {
+      "Name": "Gardevoir",
+      "Ranks": { "Ruby": "A", "Sapphire": "A", "Emerald": "A" }
+    },
+    {
+      "Name": "Masquerain",
+      "Ranks": { "Ruby": "C-", "Sapphire": "C-", "Emerald": "C-" }
+    },
+    {
+      "Name": "Breloom",
+      "Ranks": { "Ruby": "B", "Sapphire": "B", "Emerald": "B" }
+    },
+    {
+      "Name": "Slaking",
+      "Ranks": { "Ruby": "B+", "Sapphire": "B+", "Emerald": "B+" }
+    },
+    {
+      "Name": "Ninjask",
+      "Ranks": { "Ruby": "B+", "Sapphire": "B+", "Emerald": "B+" }
+    },
+    {
+      "Name": "Shedinja",
+      "Ranks": { "Ruby": "D", "Sapphire": "D", "Emerald": "D" }
+    },
+    {
+      "Name": "Exploud",
+      "Ranks": { "Ruby": "B", "Sapphire": "B", "Emerald": "B" }
+    },
+    {
+      "Name": "Hariyama",
+      "Ranks": { "Ruby": "A-", "Sapphire": "A-", "Emerald": "A-" }
+    },
+    {
+      "Name": "Delcatty",
+      "Ranks": { "Ruby": "E", "Sapphire": "E", "Emerald": "E" }
+    },
+    { "Name": "Sableye", "Ranks": { "Sapphire": "C+", "Emerald": "C+" } },
+    {
+      "Name": "Mawile",
+      "Ranks": { "Ruby": "C+", "Sapphire": "C+", "Emerald": "C+" }
+    },
+    {
+      "Name": "Aggron",
+      "Ranks": { "Ruby": "A", "Sapphire": "A", "Emerald": "A" }
+    },
+    {
+      "Name": "Medicham",
+      "Ranks": {
+        "Ruby": "B",
+        "Sapphire": "B",
+        "Diamond": "B-",
+        "Pearl": "B-",
+        "Platinum": "B-"
+      }
+    },
+    {
+      "Name": "Manectric",
+      "Ranks": { "Ruby": "A", "Sapphire": "A", "Emerald": "A" }
+    },
+    {
+      "Name": "Plusle",
+      "Ranks": { "Ruby": "D", "Sapphire": "D", "Emerald": "D" }
+    },
+    {
+      "Name": "Minun",
+      "Ranks": { "Ruby": "C-", "Sapphire": "C-", "Emerald": "C-" }
+    },
+    {
+      "Name": "Volbeat",
+      "Ranks": { "Ruby": "C-", "Sapphire": "C-", "Emerald": "C-" }
+    },
+    {
+      "Name": "Illumise",
+      "Ranks": { "Ruby": "C-", "Sapphire": "C-", "Emerald": "C-" }
+    },
+    {
+      "Name": "Swalot",
+      "Ranks": { "Ruby": "B", "Sapphire": "B", "Emerald": "B" }
+    },
+    {
+      "Name": "Sharpedo",
+      "Ranks": { "Ruby": "B", "Sapphire": "B", "Emerald": "B" }
+    },
+    {
+      "Name": "Wailord",
+      "Ranks": { "Ruby": "B-", "Sapphire": "B-", "Emerald": "B-" }
+    },
+    {
+      "Name": "Camerupt",
+      "Ranks": { "Ruby": "B", "Sapphire": "B", "Emerald": "B" }
+    },
+    {
+      "Name": "Torkoal",
+      "Ranks": { "Ruby": "C+", "Sapphire": "C+", "Emerald": "C+" }
+    },
+    {
+      "Name": "Grumpig",
+      "Ranks": { "Ruby": "B+", "Sapphire": "B+", "Emerald": "B+" }
+    },
+    {
+      "Name": "Spinda",
+      "Ranks": {
+        "Ruby": "E",
+        "Sapphire": "E",
+        "Emerald": "E",
+        "Sun": "E",
+        "Moon": "E"
+      }
+    },
+    {
+      "Name": "Flygon",
+      "Ranks": { "Ruby": "B+", "Sapphire": "B+", "Emerald": "B+" }
+    },
+    {
+      "Name": "Cacturne",
+      "Ranks": { "Ruby": "C", "Sapphire": "C", "Emerald": "C" }
+    },
+    {
+      "Name": "Altaria",
+      "Ranks": { "Ruby": "B", "Sapphire": "B", "Emerald": "B" }
+    },
+    { "Name": "Zangoose", "Ranks": { "Ruby": "A-" } },
+    { "Name": "Seviper", "Ranks": { "Sapphire": "B", "Emerald": "B" } },
+    { "Name": "Lunatone", "Ranks": { "Sapphire": "B" } },
+    { "Name": "Solrock", "Ranks": { "Ruby": "B", "Emerald": "B" } },
+    {
+      "Name": "Whiscash",
+      "Ranks": {
+        "Ruby": "A-",
+        "Sapphire": "A-",
+        "Emerald": "A-",
+        "Diamond": "A-",
+        "Pearl": "A-",
+        "Platinum": "A-"
+      }
+    },
+    {
+      "Name": "Crawdaunt",
+      "Ranks": { "Ruby": "B", "Sapphire": "B", "Emerald": "B" }
+    },
+    {
+      "Name": "Claydol",
+      "Ranks": { "Ruby": "B-", "Sapphire": "B-", "Emerald": "B-" }
+    },
+    {
+      "Name": "Cradily",
+      "Ranks": { "Ruby": "B-", "Sapphire": "B-", "Emerald": "B-" }
+    },
+    {
+      "Name": "Armaldo",
+      "Ranks": { "Ruby": "C+", "Sapphire": "C+", "Emerald": "C+" }
+    },
+    {
+      "Name": "Milotic",
+      "Ranks": { "Ruby": "A+", "Sapphire": "A+", "Emerald": "A+" }
+    },
+    {
+      "Name": "Castform",
+      "Ranks": { "Ruby": "C-", "Sapphire": "C-", "Emerald": "C-" }
+    },
+    {
+      "Name": "Kecleon",
+      "Ranks": { "Ruby": "C-", "Sapphire": "C-", "Emerald": "C-" }
+    },
+    {
+      "Name": "Banette",
+      "Ranks": { "Ruby": "C+", "Sapphire": "C+", "Emerald": "C+" }
+    },
+    {
+      "Name": "Tropius",
+      "Ranks": { "Ruby": "B", "Sapphire": "B", "Emerald": "B" }
+    },
+    {
+      "Name": "Chimecho",
+      "Ranks": {
+        "Ruby": "E",
+        "Sapphire": "E",
+        "Emerald": "E",
+        "Diamond": "D",
+        "Pearl": "D",
+        "Platinum": "D"
+      }
+    },
+    {
+      "Name": "Absol",
+      "Ranks": { "Ruby": "C+", "Sapphire": "C+", "Emerald": "C+" }
+    },
+    {
+      "Name": "Glalie",
+      "Ranks": { "Ruby": "D", "Sapphire": "D", "Emerald": "D" }
+    },
+    {
+      "Name": "Walrein",
+      "Ranks": { "Ruby": "A-", "Sapphire": "A-", "Emerald": "A-" }
+    },
+    {
+      "Name": "Clamperl",
+      "Ranks": { "Ruby": "E", "Sapphire": "E", "Emerald": "E" }
+    },
+    {
+      "Name": "Huntail",
+      "Ranks": { "Ruby": "D", "Sapphire": "D", "Emerald": "D" }
+    },
+    {
+      "Name": "Gorebyss",
+      "Ranks": { "Ruby": "C", "Sapphire": "C", "Emerald": "C" }
+    },
+    {
+      "Name": "Relicanth",
+      "Ranks": { "Ruby": "C-", "Sapphire": "C-", "Emerald": "C-" }
+    },
+    {
+      "Name": "Luvdisc",
+      "Ranks": {
+        "Ruby": "E",
+        "Sapphire": "E",
+        "Emerald": "E",
+        "Sun": "E",
+        "Moon": "E"
+      }
+    },
+    {
+      "Name": "Salamence",
+      "Ranks": { "Ruby": "D", "Sapphire": "D", "Emerald": "D" }
+    },
+    { "Name": "Metagross", "Ranks": {} },
+    {
+      "Name": "Regirock",
+      "Ranks": { "Ruby": "A", "Sapphire": "A", "Emerald": "A" }
+    },
+    {
+      "Name": "Regice",
+      "Ranks": { "Ruby": "A+", "Sapphire": "A+", "Emerald": "A+" }
+    },
+    {
+      "Name": "Registeel",
+      "Ranks": { "Ruby": "A", "Sapphire": "A", "Emerald": "A" }
+    },
+    { "Name": "Latias", "Ranks": {} },
+    { "Name": "Latios", "Ranks": {} },
+    { "Name": "Kyogre", "Ranks": { "Sapphire": "S" } },
+    { "Name": "Groudon", "Ranks": { "Ruby": "S" } },
+    { "Name": "Rayquaza", "Ranks": { "Emerald": "S" } },
+    { "Name": "Jirachi", "Ranks": {} },
+    { "Name": "Deoxys", "Ranks": {} },
+    {
+      "Name": "Torterra",
+      "Ranks": { "Diamond": "A+", "Pearl": "A+", "Platinum": "A+" }
+    },
+    {
+      "Name": "Infernape",
+      "Ranks": { "Diamond": "S", "Pearl": "S", "Platinum": "S" }
+    },
+    {
+      "Name": "Empoleon",
+      "Ranks": { "Diamond": "A", "Pearl": "A", "Platinum": "A" }
+    },
+    {
+      "Name": "Staraptor",
+      "Ranks": { "Diamond": "S", "Pearl": "S", "Platinum": "S" }
+    },
+    {
+      "Name": "Bibarel",
+      "Ranks": { "Diamond": "A", "Pearl": "A", "Platinum": "A" }
+    },
+    {
+      "Name": "Kricketune",
+      "Ranks": { "Diamond": "D", "Pearl": "D", "Platinum": "D" }
+    },
+    {
+      "Name": "Luxray",
+      "Ranks": { "Diamond": "B", "Pearl": "B", "Platinum": "B" }
+    },
+    {
+      "Name": "Roselia",
+      "Ranks": { "Ruby": "C", "Sapphire": "C", "Emerald": "C" }
+    },
+    {
+      "Name": "Roserade",
+      "Ranks": { "Diamond": "B+", "Pearl": "B+", "Platinum": "B+" }
+    },
+    { "Name": "Rampardos", "Ranks": { "Diamond": "B", "Platinum": "B" } },
+    { "Name": "Bastiodon", "Ranks": { "Pearl": "B", "Platinum": "B" } },
+    {
+      "Name": "Wormadam (Plant Cloak)",
+      "Ranks": { "Diamond": "D", "Pearl": "D", "Platinum": "D" }
+    },
+    {
+      "Name": "Wormadam (Sandy Cloak)",
+      "Ranks": { "Diamond": "C", "Pearl": "C", "Platinum": "C" }
+    },
+    {
+      "Name": "Wormadam (Trash Cloak)",
+      "Ranks": { "Diamond": "C-", "Pearl": "C-", "Platinum": "C-" }
+    },
+    {
+      "Name": "Mothim",
+      "Ranks": { "Diamond": "B-", "Pearl": "B-", "Platinum": "B-" }
+    },
+    {
+      "Name": "Combee",
+      "Ranks": { "Diamond": "E", "Pearl": "E", "Platinum": "E" }
+    },
+    {
+      "Name": "Vespiquen",
+      "Ranks": { "Diamond": "B-", "Pearl": "B-", "Platinum": "B-" }
+    },
+    {
+      "Name": "Pachirisu",
+      "Ranks": { "Diamond": "D", "Pearl": "D", "Platinum": "D" }
+    },
+    {
+      "Name": "Floatzel",
+      "Ranks": { "Diamond": "A-", "Pearl": "A-", "Platinum": "A-" }
+    },
+    {
+      "Name": "Cherrim",
+      "Ranks": { "Diamond": "C", "Pearl": "C", "Platinum": "C" }
+    },
+    {
+      "Name": "Gastrodon",
+      "Ranks": { "Diamond": "B+", "Pearl": "B+", "Platinum": "B+" }
+    },
+    {
+      "Name": "Aipom",
+      "Ranks": { "Gold": "E", "Silver": "E", "Crystal": "E" }
+    },
+    {
+      "Name": "Ambipom",
+      "Ranks": { "Diamond": "B", "Pearl": "B", "Platinum": "B" }
+    },
+    {
+      "Name": "Drifblim",
+      "Ranks": { "Diamond": "B+", "Pearl": "B+", "Platinum": "B+" }
+    },
+    {
+      "Name": "Lopunny",
+      "Ranks": { "Diamond": "C-", "Pearl": "C-", "Platinum": "C-" }
+    },
+    {
+      "Name": "Misdreavus",
+      "Ranks": { "Gold": "D", "Silver": "D", "Crystal": "D" }
+    },
+    {
+      "Name": "Mismagius",
+      "Ranks": { "Diamond": "B+", "Pearl": "B+", "Platinum": "B+" }
+    },
+    {
+      "Name": "Murkrow",
+      "Ranks": { "Gold": "E", "Silver": "E", "Crystal": "E" }
+    },
+    { "Name": "Honchkrow", "Ranks": { "Diamond": "A" } },
+    {
+      "Name": "Purugly",
+      "Ranks": { "Diamond": "D", "Pearl": "D", "Platinum": "D" }
+    },
+    {
+      "Name": "Skuntank",
+      "Ranks": { "Diamond": "B-", "Pearl": "B-", "Platinum": "B-" }
+    },
+    {
+      "Name": "Bronzong",
+      "Ranks": { "Diamond": "A", "Pearl": "A", "Platinum": "A" }
+    },
+    {
+      "Name": "Chatot",
+      "Ranks": { "Diamond": "E", "Pearl": "E", "Platinum": "E" }
+    },
+    {
+      "Name": "Spiritomb",
+      "Ranks": { "Diamond": "B+", "Pearl": "B+", "Platinum": "B+" }
+    },
+    {
+      "Name": "Garchomp",
+      "Ranks": { "Diamond": "B-", "Pearl": "B-", "Platinum": "B-" }
+    },
+    {
+      "Name": "Lucario",
+      "Ranks": { "Diamond": "A", "Pearl": "A", "Platinum": "A" }
+    },
+    {
+      "Name": "Hippowdon",
+      "Ranks": { "Diamond": "B+", "Pearl": "B+", "Platinum": "B+" }
+    },
+    {
+      "Name": "Drapion",
+      "Ranks": { "Diamond": "A+", "Pearl": "A+", "Platinum": "A+" }
+    },
+    {
+      "Name": "Toxicroak",
+      "Ranks": { "Diamond": "A", "Pearl": "A", "Platinum": "A" }
+    },
+    {
+      "Name": "Carnivine",
+      "Ranks": { "Diamond": "E", "Pearl": "E", "Platinum": "E" }
+    },
+    {
+      "Name": "Lumineon",
+      "Ranks": { "Diamond": "E", "Pearl": "E", "Platinum": "E" }
+    },
+    {
+      "Name": "Abomasnow",
+      "Ranks": { "Diamond": "C", "Pearl": "C", "Platinum": "C" }
+    },
+    {
+      "Name": "Sneasel",
+      "Ranks": { "Gold": "D", "Silver": "D", "Crystal": "D" }
+    },
+    {
+      "Name": "Weavile",
+      "Ranks": { "Diamond": "C", "Pearl": "C", "Platinum": "C" }
+    },
+    {
+      "Name": "Magneton",
+      "Ranks": {
+        "Gold": "B",
+        "Silver": "B",
+        "Crystal": "B",
+        "Ruby": "A",
+        "Sapphire": "A",
+        "Emerald": "A",
+        "FireRed": "A",
+        "LeafGreen": "A"
+      }
+    },
+    { "Name": "Magnezone", "Ranks": { "Sun": "A", "Moon": "A" } },
+    { "Name": "Lickitung", "Ranks": { "FireRed": "E", "LeafGreen": "E" } },
+    { "Name": "Lickilicky", "Ranks": {} },
+    {
+      "Name": "Rhydon",
+      "Ranks": {
+        "Gold": "B+",
+        "Silver": "B+",
+        "Crystal": "B",
+        "Ruby": "C+",
+        "Sapphire": "C+",
+        "Emerald": "C+",
+        "FireRed": "B",
+        "LeafGreen": "B"
+      }
+    },
+    { "Name": "Rhyperior", "Ranks": {} },
+    { "Name": "Tangela", "Ranks": { "FireRed": "D", "LeafGreen": "D" } },
+    { "Name": "Tangrowth", "Ranks": {} },
+    {
+      "Name": "Electabuzz",
+      "Ranks": { "Gold": "E", "Silver": "E", "Crystal": "A", "FireRed": "B+" }
+    },
+    { "Name": "Electivire", "Ranks": {} },
+    {
+      "Name": "Magmar",
+      "Ranks": { "Gold": "A", "Silver": "A", "Crystal": "A", "LeafGreen": "D" }
+    },
+    { "Name": "Magmortar", "Ranks": {} },
+    {
+      "Name": "Togetic",
+      "Ranks": { "Gold": "D", "Silver": "D", "Crystal": "D" }
+    },
+    { "Name": "Togekiss", "Ranks": {} },
+    {
+      "Name": "Yanma",
+      "Ranks": { "Gold": "E", "Silver": "E", "Crystal": "E" }
+    },
+    { "Name": "Yanmega", "Ranks": {} },
+    { "Name": "Leafeon", "Ranks": {} },
+    { "Name": "Glaceon", "Ranks": { "Sun": "D", "Moon": "D" } },
+    { "Name": "Gligar", "Ranks": { "Gold": "D", "Crystal": "C-" } },
+    { "Name": "Gliscor", "Ranks": {} },
+    {
+      "Name": "Piloswine",
+      "Ranks": { "Gold": "B", "Silver": "B", "Crystal": "B-" }
+    },
+    { "Name": "Mamoswine", "Ranks": {} },
+    {
+      "Name": "Porygon",
+      "Ranks": {
+        "Gold": "E",
+        "Silver": "E",
+        "Crystal": "E",
+        "FireRed": "C-",
+        "LeafGreen": "C-"
+      }
+    },
+    {
+      "Name": "Porygon2",
+      "Ranks": { "Gold": "C", "Silver": "C", "Crystal": "C+" }
+    },
+    { "Name": "Porygon-Z", "Ranks": {} },
+    { "Name": "Gallade", "Ranks": {} },
+    {
+      "Name": "Nosepass",
+      "Ranks": { "Ruby": "E", "Sapphire": "E", "Emerald": "E" }
+    },
+    { "Name": "Probopass", "Ranks": {} },
+    {
+      "Name": "Dusclops",
+      "Ranks": { "Ruby": "C+", "Sapphire": "C+", "Emerald": "C+" }
+    },
+    { "Name": "Dusknoir", "Ranks": {} },
+    { "Name": "Froslass", "Ranks": {} },
+    { "Name": "Rotom", "Ranks": {} },
+    { "Name": "Rotom-Heat", "Ranks": {} },
+    { "Name": "Rotom-Wash", "Ranks": {} },
+    { "Name": "Rotom-Frost", "Ranks": {} },
+    { "Name": "Rotom-Fan", "Ranks": {} },
+    { "Name": "Rotom-Mow", "Ranks": {} },
+    {
+      "Name": "Uxie",
+      "Ranks": { "Diamond": "B", "Pearl": "B", "Platinum": "B" }
+    },
+    {
+      "Name": "Mesprit",
+      "Ranks": { "Diamond": "E", "Pearl": "E", "Platinum": "E" }
+    },
+    {
+      "Name": "Azelf",
+      "Ranks": { "Diamond": "A+", "Pearl": "A+", "Platinum": "A+" }
+    },
+    { "Name": "Dialga", "Ranks": { "Diamond": "S" } },
+    { "Name": "Palkia", "Ranks": { "Pearl": "S" } },
+    { "Name": "Heatran", "Ranks": {} },
+    { "Name": "Regigigas", "Ranks": {} },
+    { "Name": "Giratina", "Ranks": {} },
+    { "Name": "Giratina-Origin", "Ranks": {} },
+    { "Name": "Cresselia", "Ranks": {} },
+    { "Name": "Phione", "Ranks": {} },
+    { "Name": "Manaphy", "Ranks": {} },
+    { "Name": "Darkrai", "Ranks": {} },
+    { "Name": "Shaymin", "Ranks": {} },
+    { "Name": "Shaymin-Sky", "Ranks": {} },
+    { "Name": "Arceus", "Ranks": {} },
+    { "Name": "Victini", "Ranks": {} },
+    { "Name": "Serperior", "Ranks": { "Black": "A-", "White": "A-" } },
+    { "Name": "Emboar", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Samurott", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Watchog", "Ranks": { "Black": "B-", "White": "B-" } },
+    { "Name": "Stoutland", "Ranks": { "Black": "A+", "White": "A+" } },
+    { "Name": "Liepard", "Ranks": { "Black": "C", "White": "C" } },
+    { "Name": "Simisage", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Simisear", "Ranks": { "Black": "B-", "White": "B-" } },
+    { "Name": "Simipour", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Musharna", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Unfezant", "Ranks": { "Black": "C", "White": "C" } },
+    { "Name": "Zebstrika", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Boldore", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Gigalith", "Ranks": { "Black": "A-", "White": "A-" } },
+    { "Name": "Swoobat", "Ranks": { "Black": "C", "White": "C" } },
+    { "Name": "Excadrill", "Ranks": { "Black": "S", "White": "S" } },
+    { "Name": "Audino", "Ranks": { "Black": "C-", "White": "C-" } },
+    { "Name": "Gurdurr", "Ranks": { "Black": "B+", "White": "B+" } },
+    { "Name": "Conkeldurr", "Ranks": { "Black": "A+", "White": "A+" } },
+    { "Name": "Seismitoad", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Throh", "Ranks": { "Black": "B+", "White": "B+" } },
+    { "Name": "Sawk", "Ranks": { "Black": "B+", "White": "B+" } },
+    { "Name": "Leavanny", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Scolipede", "Ranks": { "Black": "A-", "White": "A-" } },
+    { "Name": "Whimsicott", "Ranks": { "Black": "A-", "White": "A-" } },
+    { "Name": "Lilligant", "Ranks": { "Black": "A+", "White": "A+" } },
+    { "Name": "Basculin", "Ranks": { "Black": "C+", "White": "C+" } },
+    { "Name": "Krookodile", "Ranks": { "Black": "A+", "White": "A+" } },
+    { "Name": "Darmanitan", "Ranks": { "Black": "A-", "White": "A-" } },
+    { "Name": "Darmanitan-Zen", "Ranks": {} },
+    { "Name": "Maractus", "Ranks": { "Black": "C+", "White": "C+" } },
+    { "Name": "Crustle", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Scrafty", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Sigilyph", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Cofagrigus", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Carracosta", "Ranks": { "Black": "B+", "White": "B+" } },
+    { "Name": "Archeops", "Ranks": { "Black": "A+", "White": "A+" } },
+    { "Name": "Garbodor", "Ranks": { "Black": "C+", "White": "C+" } },
+    { "Name": "Zoroark", "Ranks": {} },
+    { "Name": "Cinccino", "Ranks": { "Black": "C", "White": "C" } },
+    { "Name": "Gothitelle", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Reuniclus", "Ranks": { "Black": "A-", "White": "A-" } },
+    { "Name": "Swanna", "Ranks": { "Black": "C+", "White": "C+" } },
+    { "Name": "Vanilluxe", "Ranks": { "Black": "B-", "White": "B-" } },
+    { "Name": "Sawsbuck", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Emolga", "Ranks": { "Black": "D", "White": "D" } },
+    { "Name": "Karrablast", "Ranks": { "Black": "E", "White": "E" } },
+    { "Name": "Escavalier", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Amoonguss", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Jellicent", "Ranks": { "Black": "A+", "White": "A+" } },
+    { "Name": "Alomomola", "Ranks": { "Black": "C+", "White": "C+" } },
+    { "Name": "Galvantula", "Ranks": { "Black": "A-", "White": "A-" } },
+    { "Name": "Ferrothorn", "Ranks": { "Black": "A+", "White": "A+" } },
+    { "Name": "Klinklang", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Eelektross", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Beheeyem", "Ranks": { "Black": "C-", "White": "C-" } },
+    { "Name": "Chandelure", "Ranks": { "Black": "A+", "White": "A+" } },
+    { "Name": "Haxorus", "Ranks": { "Black": "B+", "White": "B+" } },
+    { "Name": "Beartic", "Ranks": { "Black": "C", "White": "C" } },
+    { "Name": "Cryogonal", "Ranks": { "Black": "D", "White": "D" } },
+    { "Name": "Shelmet", "Ranks": { "Black": "E", "White": "E" } },
+    { "Name": "Accelgor", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Stunfisk", "Ranks": { "Black": "C", "White": "C" } },
+    { "Name": "Mienshao", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Druddigon", "Ranks": { "Black": "C", "White": "C" } },
+    { "Name": "Golurk", "Ranks": { "Black": "B-", "White": "B-" } },
+    { "Name": "Bisharp", "Ranks": { "Black": "A-", "White": "A-" } },
+    { "Name": "Bouffalant", "Ranks": {} },
+    { "Name": "Braviary", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Mandibuzz", "Ranks": { "Black": "B-", "White": "B-" } },
+    { "Name": "Heatmor", "Ranks": { "Black": "C-", "White": "C-" } },
+    { "Name": "Durant", "Ranks": { "Black": "B", "White": "B" } },
+    { "Name": "Zweilous", "Ranks": { "Black": "D", "White": "D" } },
+    { "Name": "Hydreigon", "Ranks": { "Black": "D", "White": "D" } },
+    { "Name": "Larvesta", "Ranks": { "Black": "D", "White": "D" } },
+    { "Name": "Volcarona", "Ranks": { "Black": "D", "White": "D" } },
+    { "Name": "Cobalion", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Terrakion", "Ranks": { "Black": "B+", "White": "B+" } },
+    { "Name": "Virizion", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Tornadus", "Ranks": { "Black": "D", "White": "D" } },
+    { "Name": "Tornadus-Therian", "Ranks": {} },
+    { "Name": "Thundurus", "Ranks": { "Black": "D", "White": "D" } },
+    { "Name": "Thundurus-Therian", "Ranks": {} },
+    { "Name": "Reshiram", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Zekrom", "Ranks": { "Black": "A", "White": "A" } },
+    { "Name": "Landorus", "Ranks": {} },
+    { "Name": "Landorus-Therian", "Ranks": {} },
+    { "Name": "Kyurem", "Ranks": {} },
+    { "Name": "Kyurem-Black", "Ranks": {} },
+    { "Name": "Kyurem-White", "Ranks": {} },
+    { "Name": "Keldeo", "Ranks": {} },
+    { "Name": "Meloetta", "Ranks": {} },
+    { "Name": "Genesect", "Ranks": {} },
+    { "Name": "Chesnaught", "Ranks": {} },
+    { "Name": "Delphox", "Ranks": {} },
+    { "Name": "Greninja", "Ranks": {} },
+    { "Name": "Ash Greninja", "Ranks": {} },
+    { "Name": "Diggersby", "Ranks": {} },
+    { "Name": "Talonflame", "Ranks": {} },
+    { "Name": "Vivillon", "Ranks": {} },
+    { "Name": "Pyroar", "Ranks": {} },
+    { "Name": "Florges", "Ranks": {} },
+    { "Name": "Gogoat", "Ranks": {} },
+    { "Name": "Pangoro", "Ranks": {} },
+    { "Name": "Furfrou", "Ranks": {} },
+    { "Name": "Meowstic", "Ranks": {} },
+    { "Name": "Aegislash", "Ranks": {} },
+    { "Name": "Spritzee", "Ranks": {} },
+    { "Name": "Aromatisse", "Ranks": {} },
+    { "Name": "Swirlix", "Ranks": {} },
+    { "Name": "Slurpuff", "Ranks": {} },
+    { "Name": "Malamar", "Ranks": {} },
+    { "Name": "Barbaracle", "Ranks": {} },
+    { "Name": "Dragalge", "Ranks": {} },
+    { "Name": "Clawitzer", "Ranks": {} },
+    { "Name": "Heliolisk", "Ranks": {} },
+    { "Name": "Tyrantrum", "Ranks": {} },
+    { "Name": "Aurorus", "Ranks": {} },
+    { "Name": "Sylveon", "Ranks": {} },
+    { "Name": "Hawlucha", "Ranks": {} },
+    { "Name": "Dedenne", "Ranks": {} },
+    { "Name": "Carbink", "Ranks": {} },
+    { "Name": "Goodra", "Ranks": {} },
+    { "Name": "Klefki", "Ranks": {} },
+    { "Name": "Phantump", "Ranks": {} },
+    { "Name": "Trevenant", "Ranks": {} },
+    { "Name": "Pumpkaboo", "Ranks": {} },
+    { "Name": "Gourgeist", "Ranks": {} },
+    { "Name": "Avalugg", "Ranks": {} },
+    { "Name": "Noivern", "Ranks": {} },
+    { "Name": "Xerneas", "Ranks": {} },
+    { "Name": "Yveltal", "Ranks": {} },
+    { "Name": "Zygarde", "Ranks": {} },
+    { "Name": "Zygarde 10%", "Ranks": {} },
+    { "Name": "Zygarde Complete", "Ranks": {} },
+    { "Name": "Diancie", "Ranks": {} },
+    { "Name": "Hoopa", "Ranks": {} },
+    { "Name": "Hoopa Unbound", "Ranks": {} },
+    { "Name": "Volcanion", "Ranks": {} },
+    { "Name": "Decidueye", "Ranks": { "Sun": "B+", "Moon": "B+" } },
+    { "Name": "Incineroar", "Ranks": { "Sun": "A", "Moon": "A" } },
+    { "Name": "Primarina", "Ranks": { "Sun": "A", "Moon": "A" } },
+    { "Name": "Toucannon", "Ranks": { "Sun": "A", "Moon": "A" } },
+    { "Name": "Gumshoos", "Ranks": { "Sun": "D", "Moon": "D" } },
+    { "Name": "Vikavolt", "Ranks": { "Sun": "B", "Moon": "B" } },
+    { "Name": "Crabominable", "Ranks": {} },
+    { "Name": "Oricorio", "Ranks": { "Sun": "B", "Moon": "B" } },
+    { "Name": "Ribombee", "Ranks": { "Sun": "B+", "Moon": "B+" } },
+    { "Name": "Lycanroc Midday", "Ranks": {} },
+    { "Name": "Lycanroc Midnight", "Ranks": {} },
+    { "Name": "Lyranroc Dusk", "Ranks": {} },
+    { "Name": "Wishiwashi", "Ranks": { "Sun": "A+", "Moon": "A+" } },
+    { "Name": "Toxapex", "Ranks": { "Sun": "D", "Moon": "D" } },
+    { "Name": "Mudsdale", "Ranks": {} },
+    { "Name": "Araquanid", "Ranks": {} },
+    { "Name": "Lurantis", "Ranks": {} },
+    { "Name": "Shiinotic", "Ranks": {} },
+    { "Name": "Salandit (♂)", "Ranks": { "Sun": "E", "Moon": "E" } },
+    { "Name": "Salazzle", "Ranks": {} },
+    { "Name": "Bewear", "Ranks": {} },
+    { "Name": "Tsareena", "Ranks": {} },
+    { "Name": "Comfey", "Ranks": {} },
+    { "Name": "Oranguru", "Ranks": {} },
+    { "Name": "Passimian", "Ranks": {} },
+    { "Name": "Golisopod", "Ranks": { "Sun": "A", "Moon": "A" } },
+    { "Name": "Palossand", "Ranks": {} },
+    { "Name": "Pyukumuku", "Ranks": { "Sun": "E", "Moon": "E" } },
+    { "Name": "Type: Null", "Ranks": {} },
+    { "Name": "Silvally", "Ranks": {} },
+    { "Name": "Minior", "Ranks": {} },
+    { "Name": "Komala", "Ranks": {} },
+    { "Name": "Turtonator", "Ranks": {} },
+    { "Name": "Togedemaru", "Ranks": {} },
+    { "Name": "Mimikyu", "Ranks": {} },
+    { "Name": "Bruxish", "Ranks": {} },
+    { "Name": "Drampa", "Ranks": {} },
+    { "Name": "Dhelmise", "Ranks": {} },
+    { "Name": "Kommo-o", "Ranks": {} },
+    { "Name": "Tapu Koko", "Ranks": {} },
+    { "Name": "Tapu Lele", "Ranks": {} },
+    { "Name": "Tapu Bulu", "Ranks": {} },
+    { "Name": "Tapu Fini", "Ranks": {} },
+    { "Name": "Solgaleo", "Ranks": {} },
+    { "Name": "Lunala", "Ranks": {} },
+    { "Name": "Nihilego", "Ranks": {} },
+    { "Name": "Buzzwole", "Ranks": {} },
+    { "Name": "Pheromosa", "Ranks": {} },
+    { "Name": "Xurkitree", "Ranks": {} },
+    { "Name": "Celesteela", "Ranks": {} },
+    { "Name": "Kartana", "Ranks": {} },
+    { "Name": "Guzzlord", "Ranks": {} },
+    { "Name": "Necrozma", "Ranks": {} },
+    { "Name": "Necrozma Dusk Mane", "Ranks": {} },
+    { "Name": "Necrozma Dawn Wings", "Ranks": {} },
+    { "Name": "Necrozma Ultra", "Ranks": {} },
+    { "Name": "Magearna", "Ranks": {} },
+    { "Name": "Marshadow", "Ranks": {} },
+    { "Name": "Naganadel", "Ranks": {} },
+    { "Name": "Stakataka", "Ranks": {} },
+    { "Name": "Blacephalon", "Ranks": {} },
+    { "Name": "Zeraora", "Ranks": {} }
+  ]
+}

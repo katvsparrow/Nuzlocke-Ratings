@@ -48,11 +48,7 @@
           Gold Challenges Required
         </th>
         <% if(player) { %>
-        <th
-          scope="col"
-        >
-          Actions
-        </th>
+        <th scope="col">Actions</th>
         <% } %>
       </tr>
     </thead>
@@ -60,71 +56,47 @@
       <% for(let title in titles){ %>
       <tr>
         <td><%= titles[title].name %></td>
-        <td><span class="badge badge-<%= titles[title].color %>"><%= titles[title].abbreviation %></span></td>
-        <td
-          <% if(player){ %>
-            <% if(playerRating >= titles[title].rating_floor){ %>
-              class="text-success"
-            <% } else { %>
-              class="text-danger"
-            <% } %>
-          <% } %>
-        >
-          <% if(player){ %>
-            <%= playerRating %>/<%= titles[title].rating_floor %>
-          <% } else {%>
-            <%= titles[title].rating_floor %>
-          <% } %>
+        <td><span class="badge %>"><%= titles[title].abbreviation %></span></td>
+        <td <% if(player){ %>
+          <% if(playerRating >= titles[title].rating_floor){ %>
+          class="text-success" <% } else { %> class="text-danger" <% } %> <% }
+          %> > <% if(player){ %> <%= playerRating %>/<%=
+          titles[title].rating_floor %> <% } else {%> <%=
+          titles[title].rating_floor %> <% } %>
         </td>
-        <td 
-          <% if(player){ %>
-            <% if(challengeCounts['Bronze'] >= titles[title].min_bronze_challenges){ %>
-              class="text-success"
-            <% } else { %>
-              class="text-danger"
-            <% } %>
-          <% } %>
-        >
-          <% if(player){ %>
-            <%= challengeCounts['Bronze'] %>/<%= titles[title].min_bronze_challenges %>
-          <% } else {%>
-            <%= titles[title].min_bronze_challenges %>
-          <% } %>
+        <td <% if(player){ %>
+          <% if(challengeCounts['Bronze'] >=
+          titles[title].min_bronze_challenges){ %> class="text-success" <% }
+          else { %> class="text-danger" <% } %> <% } %> > <% if(player){ %> <%=
+          challengeCounts['Bronze'] %>/<%= titles[title].min_bronze_challenges
+          %> <% } else {%> <%= titles[title].min_bronze_challenges %> <% } %>
         </td>
-        <td
-          <% if(player){ %>
-            <% if(challengeCounts['Silver'] >= titles[title].min_silver_challenges){ %>
-              class="text-success"
-            <% } else { %>
-              class="text-danger"
-            <% } %>
-          <% } %>
-        >
-          <% if(player){ %>
-            <%= challengeCounts['Silver'] %>/<%= titles[title].min_silver_challenges %>
-          <% } else {%>
-            <%= titles[title].min_silver_challenges %>
-          <% } %>
+        <td <% if(player){ %>
+          <% if(challengeCounts['Silver'] >=
+          titles[title].min_silver_challenges){ %> class="text-success" <% }
+          else { %> class="text-danger" <% } %> <% } %> > <% if(player){ %> <%=
+          challengeCounts['Silver'] %>/<%= titles[title].min_silver_challenges
+          %> <% } else {%> <%= titles[title].min_silver_challenges %> <% } %>
         </td>
-        <td
-          <% if(player){ %>
-            <% if(challengeCounts['Gold'] >= titles[title].min_gold_challenges){ %>
-              class="text-success"
-            <% } else { %>
-              class="text-danger"
-            <% } %>
-          <% } %>
-        >
-          <% if(player){ %>
-            <%= challengeCounts['Gold'] %>/<%= titles[title].min_gold_challenges %>
-          <% } else {%>
-            <%= titles[title].min_gold_challenges %>
-          <% } %>
+        <td <% if(player){ %>
+          <% if(challengeCounts['Gold'] >= titles[title].min_gold_challenges){
+          %> class="text-success" <% } else { %> class="text-danger" <% } %> <%
+          } %> > <% if(player){ %> <%= challengeCounts['Gold'] %>/<%=
+          titles[title].min_gold_challenges %> <% } else {%> <%=
+          titles[title].min_gold_challenges %> <% } %>
         </td>
         <% if(player) { %>
         <td>
-          <% if(challengeCounts['Bronze'] >= titles[title].min_bronze_challenges && challengeCounts['Silver'] >= titles[title].min_silver_challenges && challengeCounts['Gold'] >= titles[title].min_gold_challenges && playerRating >= titles[title].rating_floor){ %>
-            <a href="/add-title/<%= titles[title].title_id %>" rel="noopener" class="btn btn-sm btn-success">Apply</a>
+          <% if(challengeCounts['Bronze'] >= titles[title].min_bronze_challenges
+          && challengeCounts['Silver'] >= titles[title].min_silver_challenges &&
+          challengeCounts['Gold'] >= titles[title].min_gold_challenges &&
+          playerRating >= titles[title].rating_floor){ %>
+          <a
+            href="/add-title/<%= titles[title].title_id %>"
+            rel="noopener"
+            class="btn btn-sm btn-success"
+            >Apply</a
+          >
           <% } %>
         </td>
         <% } %>

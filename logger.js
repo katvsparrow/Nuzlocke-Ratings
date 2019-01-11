@@ -5,5 +5,6 @@ module.exports = {
 
   error: message => {
     console.error(new Date().toLocaleString('en-US') + ': ' + message);
+    console.trace();
   }
 };

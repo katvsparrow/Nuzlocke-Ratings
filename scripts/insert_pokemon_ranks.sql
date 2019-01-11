@@ -1,17 +1,9 @@
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Venusaur" AND Basegame.name="Red";
+DELETE FROM Pokemon_Rank;
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Venusaur" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Venusaur" AND Basegame.name="Yellow";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -24,19 +16,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Venusaur" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Charizard" AND Basegame.name="Red";
+WHERE Pokemon.name="Venusaur" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Charizard" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Charizard" AND Basegame.name="Yellow";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -49,19 +36,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Charizard" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Blastoise" AND Basegame.name="Red";
+WHERE Pokemon.name="Charizard" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Blastoise" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Blastoise" AND Basegame.name="Yellow";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -74,29 +56,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Blastoise" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Butterfree" AND Basegame.name="Red";
+WHERE Pokemon.name="Blastoise" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Butterfree" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Butterfree" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Butterfree" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Butterfree" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -109,29 +76,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Butterfree" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Butterfree" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Butterfree" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Beedrill" AND Basegame.name="Red";
+WHERE Pokemon.name="Butterfree" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Butterfree" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Beedrill" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Beedrill" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Beedrill" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -146,32 +113,27 @@ WHERE Pokemon.name="Beedrill" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Beedrill" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Beedrill" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Pidgeot" AND Basegame.name="Red";
+WHERE Pokemon.name="Beedrill" AND Basegame.name="LeafGreen";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Beedrill" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Beedrill" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Pidgeot" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Pidgeot" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Pidgeot" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Pidgeot" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -184,34 +146,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Pidgeot" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Pidgeot" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Pidgeot" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Raticate" AND Basegame.name="Red";
+WHERE Pokemon.name="Pidgeot" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Pidgeot" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Raticate" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Raticate" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Raticate" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Raticate" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -224,34 +181,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Raticate" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Raticate" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Raticate" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Fearow" AND Basegame.name="Red";
+WHERE Pokemon.name="Raticate" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Raticate" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Fearow" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Fearow" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Fearow" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Fearow" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -264,29 +216,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Fearow" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Fearow" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Fearow" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Arbok" AND Basegame.name="Red";
+WHERE Pokemon.name="Fearow" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Fearow" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Arbok" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Arbok" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Arbok" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -299,14 +251,34 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Arbok" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Pikachu" AND Basegame.name="Yellow";
+WHERE Pokemon.name="Arbok" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Raichu" AND Basegame.name="Red";
+WHERE Pokemon.name="Arbok" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Arbok" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Pikachu" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Pikachu" AND Basegame.name="Pearl";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Pikachu" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -314,29 +286,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Raichu" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Raichu" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Raichu" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Raichu" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Raichu" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Raichu" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Raichu" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -349,14 +306,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Raichu" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Raichu" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Raichu" AND Basegame.name="LeafGreen";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Raichu" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -369,9 +326,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Raichu" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Alolan Raichu" AND Basegame.name="Sun";
+WHERE Pokemon.name="Raichu" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Raichu" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Raichu" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Raichu" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -379,9 +351,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Alolan Raichu" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Sandslash" AND Basegame.name="Red";
+WHERE Pokemon.name="Alolan Raichu" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -389,9 +361,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Sandslash" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Sandslash" AND Basegame.name="Yellow";
+WHERE Pokemon.name="Sandslash" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Sandslash" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -401,7 +378,12 @@ WHERE Pokemon.name="Sandslash" AND Basegame.name="Gold";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Sandslash" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Sandslash" AND Basegame.name="LeafGreen";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Sandslash" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -414,39 +396,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Sandslash" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Sandslash" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Sandslash" AND Basegame.name="LeafGreen";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Nidoqueen" AND Basegame.name="Red";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Nidoqueen" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Nidoqueen" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Nidoqueen" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Nidoqueen" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -461,32 +413,27 @@ WHERE Pokemon.name="Nidoqueen" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Nidoqueen" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Nidoqueen" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Nidoking" AND Basegame.name="Red";
+WHERE Pokemon.name="Nidoqueen" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Nidoqueen" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Nidoking" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Nidoking" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Nidoking" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Nidoking" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -501,32 +448,27 @@ WHERE Pokemon.name="Nidoking" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Nidoking" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Nidoking" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Clefable" AND Basegame.name="Red";
+WHERE Pokemon.name="Nidoking" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Nidoking" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Clefable" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Clefable" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Clefable" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Clefable" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -536,17 +478,22 @@ WHERE Pokemon.name="Clefable" AND Basegame.name="Crystal";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Clefable" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Clefable" AND Basegame.name="FireRed";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Clefable" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Clefable" AND Basegame.name="LeafGreen";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Clefable" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -559,24 +506,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Clefable" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ninetales" AND Basegame.name="Blue";
+WHERE Pokemon.name="Clefable" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ninetales" AND Basegame.name="Silver";
+WHERE Pokemon.name="Clefable" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ninetales" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Ninetales" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Ninetales" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -589,9 +531,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Ninetales" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Ninetales" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Ninetales" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Red";
+WHERE Pokemon.name="Ninetales" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -601,32 +553,7 @@ WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Blue";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -639,44 +566,39 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Wigglytuff" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Wigglytuff" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Vileplume" AND Basegame.name="Red";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Vileplume" AND Basegame.name="Yellow";
+WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Vileplume" AND Basegame.name="Gold";
+WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Ruby";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Vileplume" AND Basegame.name="Silver";
+WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Wigglytuff" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Vileplume" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Vileplume" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Vileplume" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -691,27 +613,32 @@ WHERE Pokemon.name="Vileplume" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Parasect" AND Basegame.name="Red";
+WHERE Pokemon.name="Vileplume" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Vileplume" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Vileplume" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Vileplume" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Vileplume" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Parasect" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Parasect" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Parasect" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Parasect" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -726,32 +653,27 @@ WHERE Pokemon.name="Parasect" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Parasect" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Parasect" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Venomoth" AND Basegame.name="Red";
+WHERE Pokemon.name="Parasect" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Parasect" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Venomoth" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Venomoth" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Venomoth" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Venomoth" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -766,32 +688,27 @@ WHERE Pokemon.name="Venomoth" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Venomoth" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Venomoth" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Dugtrio" AND Basegame.name="Red";
+WHERE Pokemon.name="Venomoth" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Venomoth" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Dugtrio" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dugtrio" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dugtrio" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dugtrio" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -804,19 +721,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Dugtrio" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dugtrio" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Dugtrio" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Persian" AND Basegame.name="Blue";
+WHERE Pokemon.name="Dugtrio" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dugtrio" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Persian" AND Basegame.name="Silver";
+WHERE Pokemon.name="Persian" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -834,9 +761,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Persian" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Golduck" AND Basegame.name="Red";
+WHERE Pokemon.name="Persian" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -844,9 +771,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Golduck" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Golduck" AND Basegame.name="Yellow";
+WHERE Pokemon.name="Golduck" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Golduck" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Golduck" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Golduck" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -854,14 +796,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Golduck" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Golduck" AND Basegame.name="Silver";
+WHERE Pokemon.name="Golduck" AND Basegame.name="Pearl";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Golduck" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Golduck" AND Basegame.name="Platinum";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Golduck" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -876,32 +823,7 @@ WHERE Pokemon.name="Golduck" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Golduck" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Golduck" AND Basegame.name="FireRed";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Golduck" AND Basegame.name="Diamond";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Golduck" AND Basegame.name="Pearl";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Golduck" AND Basegame.name="Platinum";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Primeape" AND Basegame.name="Red";
+WHERE Pokemon.name="Golduck" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -911,7 +833,7 @@ WHERE Pokemon.name="Primeape" AND Basegame.name="Blue";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Primeape" AND Basegame.name="Yellow";
+WHERE Pokemon.name="Primeape" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -921,27 +843,12 @@ WHERE Pokemon.name="Primeape" AND Basegame.name="Gold";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Primeape" AND Basegame.name="FireRed";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Primeape" AND Basegame.name="LeafGreen";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Arcanine" AND Basegame.name="Red";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Arcanine" AND Basegame.name="Yellow";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Arcanine" AND Basegame.name="Gold";
+WHERE Pokemon.name="Primeape" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -954,29 +861,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Arcanine" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Poliwrath" AND Basegame.name="Red";
+WHERE Pokemon.name="Arcanine" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Arcanine" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Poliwrath" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Poliwrath" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Poliwrath" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Poliwrath" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -989,14 +886,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Poliwrath" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Poliwrath" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Poliwrath" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Kadabra" AND Basegame.name="Red";
+WHERE Pokemon.name="Poliwrath" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Poliwrath" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -1004,34 +911,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Kadabra" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kadabra" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kadabra" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kadabra" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Kadabra" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Kadabra" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kadabra" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Kadabra" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -1044,14 +931,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Kadabra" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Kadabra" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Kadabra" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Kadabra" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Kadabra" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -1064,9 +951,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Kadabra" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Alakazam" AND Basegame.name="Red";
+WHERE Pokemon.name="Kadabra" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Kadabra" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Kadabra" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Kadabra" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -1076,32 +978,12 @@ WHERE Pokemon.name="Alakazam" AND Basegame.name="Blue";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Alakazam" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Alakazam" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Alakazam" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Alakazam" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Alakazam" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Alakazam" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Alakazam" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -1116,12 +998,12 @@ WHERE Pokemon.name="Alakazam" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Alakazam" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Alakazam" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Alakazam" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Alakazam" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -1134,29 +1016,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Alakazam" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Machoke" AND Basegame.name="Red";
+WHERE Pokemon.name="Alakazam" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Alakazam" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Alakazam" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Alakazam" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Machoke" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Machoke" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Machoke" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Machoke" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -1166,12 +1048,7 @@ WHERE Pokemon.name="Machoke" AND Basegame.name="Crystal";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Machoke" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Machoke" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Machoke" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -1184,14 +1061,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Machoke" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Machoke" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Machoke" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Machoke" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Machoke" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -1204,29 +1081,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Machoke" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Machamp" AND Basegame.name="Red";
+WHERE Pokemon.name="Machoke" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Machoke" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Machoke" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Machoke" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Machamp" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Machamp" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Machamp" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Machamp" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -1236,12 +1113,7 @@ WHERE Pokemon.name="Machamp" AND Basegame.name="Crystal";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Machamp" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Machamp" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Machamp" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -1256,12 +1128,12 @@ WHERE Pokemon.name="Machamp" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Machamp" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Machamp" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Machamp" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Machamp" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -1276,17 +1148,27 @@ WHERE Pokemon.name="Machamp" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Machamp" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Machamp" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Machamp" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Machamp" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Victreebel" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Victreebel" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Victreebel" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -1294,14 +1176,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Victreebel" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Victreebel" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Victreebel" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Tentacruel" AND Basegame.name="Red";
+WHERE Pokemon.name="Victreebel" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -1311,7 +1198,22 @@ WHERE Pokemon.name="Tentacruel" AND Basegame.name="Blue";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Tentacruel" AND Basegame.name="Yellow";
+WHERE Pokemon.name="Tentacruel" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Tentacruel" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Tentacruel" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Tentacruel" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -1319,14 +1221,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Tentacruel" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Tentacruel" AND Basegame.name="Silver";
+WHERE Pokemon.name="Tentacruel" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Tentacruel" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Tentacruel" AND Basegame.name="Pearl";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Tentacruel" AND Basegame.name="Platinum";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Tentacruel" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -1341,57 +1253,12 @@ WHERE Pokemon.name="Tentacruel" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Tentacruel" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Tentacruel" AND Basegame.name="FireRed";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Tentacruel" AND Basegame.name="LeafGreen";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Tentacruel" AND Basegame.name="Diamond";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Tentacruel" AND Basegame.name="Pearl";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Tentacruel" AND Basegame.name="Platinum";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Graveler" AND Basegame.name="Red";
+WHERE Pokemon.name="Tentacruel" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Graveler" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Graveler" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Graveler" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Graveler" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -1401,12 +1268,7 @@ WHERE Pokemon.name="Graveler" AND Basegame.name="Crystal";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Graveler" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Graveler" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Graveler" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -1419,14 +1281,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Graveler" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Graveler" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Graveler" AND Basegame.name="LeafGreen";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Graveler" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -1439,9 +1301,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Graveler" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Golem" AND Basegame.name="Red";
+WHERE Pokemon.name="Graveler" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Graveler" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Graveler" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Graveler" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -1449,34 +1326,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Golem" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Golem" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Golem" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Golem" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Golem" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Golem" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Golem" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Golem" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -1489,14 +1346,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Golem" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Golem" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Golem" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Golem" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Golem" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -1509,9 +1366,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Golem" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Rapidash" AND Basegame.name="Red";
+WHERE Pokemon.name="Golem" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Golem" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Golem" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Golem" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -1519,24 +1391,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Rapidash" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Rapidash" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Rapidash" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Rapidash" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Rapidash" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Rapidash" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -1544,14 +1406,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Rapidash" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Rapidash" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Rapidash" AND Basegame.name="LeafGreen";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Rapidash" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -1564,9 +1426,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Rapidash" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Slowbro" AND Basegame.name="Red";
+WHERE Pokemon.name="Rapidash" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Rapidash" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -1574,24 +1441,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Slowbro" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Slowbro" AND Basegame.name="Yellow";
+WHERE Pokemon.name="Slowbro" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Slowbro" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Slowbro" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Slowbro" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -1601,37 +1458,27 @@ WHERE Pokemon.name="Slowbro" AND Basegame.name="LeafGreen";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Slowbro" AND Basegame.name="Sun";
+WHERE Pokemon.name="Slowbro" AND Basegame.name="Moon";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Slowbro" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Slowbro" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Slowbro" AND Basegame.name="Moon";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Farfetch'd" AND Basegame.name="Red";
+WHERE Pokemon.name="Slowbro" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Farfetch'd" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Farfetch'd" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Farfetch'd" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Farfetch'd" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -1646,12 +1493,22 @@ WHERE Pokemon.name="Farfetch'd" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Farfetch'd" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Farfetch'd" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Dodrio" AND Basegame.name="Red";
+WHERE Pokemon.name="Farfetch'd" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Farfetch'd" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -1659,34 +1516,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Dodrio" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dodrio" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dodrio" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dodrio" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Dodrio" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dodrio" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dodrio" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -1699,34 +1531,39 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Dodrio" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dodrio" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Dodrio" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Dewgong" AND Basegame.name="Red";
+WHERE Pokemon.name="Dodrio" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dodrio" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dodrio" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dodrio" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Dewgong" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dewgong" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dewgong" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dewgong" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -1741,12 +1578,22 @@ WHERE Pokemon.name="Dewgong" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Dewgong" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Dewgong" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Muk" AND Basegame.name="Red";
+WHERE Pokemon.name="Dewgong" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dewgong" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -1756,32 +1603,7 @@ WHERE Pokemon.name="Muk" AND Basegame.name="Blue";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Muk" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Muk" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Muk" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Muk" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Muk" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Muk" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -1794,14 +1616,34 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Muk" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Muk" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Muk" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Muk" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Alolan Muk" AND Basegame.name="Sun";
+WHERE Pokemon.name="Muk" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Muk" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Muk" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -1809,29 +1651,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Alolan Muk" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Cloyster" AND Basegame.name="Red";
+WHERE Pokemon.name="Alolan Muk" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Cloyster" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Cloyster" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Cloyster" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Cloyster" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -1844,9 +1671,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Cloyster" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Haunter" AND Basegame.name="Red";
+WHERE Pokemon.name="Cloyster" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Cloyster" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Cloyster" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -1854,24 +1691,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Haunter" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Haunter" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Haunter" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Haunter" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Haunter" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Haunter" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -1881,12 +1708,12 @@ WHERE Pokemon.name="Haunter" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Haunter" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Haunter" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Haunter" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Haunter" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -1899,29 +1726,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Haunter" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Gengar" AND Basegame.name="Red";
+WHERE Pokemon.name="Haunter" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Haunter" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Gengar" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Gengar" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Gengar" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Gengar" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -1931,7 +1748,17 @@ WHERE Pokemon.name="Gengar" AND Basegame.name="Crystal";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Gengar" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Gengar" AND Basegame.name="FireRed";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Gengar" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -1939,9 +1766,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Gengar" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Gengar" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Gengar" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -1956,37 +1783,22 @@ WHERE Pokemon.name="Gengar" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Gengar" AND Basegame.name="Sun";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Gengar" AND Basegame.name="Moon";
+WHERE Pokemon.name="Gengar" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Hypno" AND Basegame.name="Red";
+WHERE Pokemon.name="Gengar" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Gengar" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Hypno" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Hypno" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Hypno" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Hypno" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -2001,32 +1813,27 @@ WHERE Pokemon.name="Hypno" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Hypno" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Hypno" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Kingler" AND Basegame.name="Red";
+WHERE Pokemon.name="Hypno" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Hypno" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Kingler" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kingler" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kingler" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kingler" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -2039,14 +1846,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Kingler" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Kingler" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Kingler" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Electrode" AND Basegame.name="Red";
+WHERE Pokemon.name="Kingler" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Kingler" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -2056,32 +1873,7 @@ WHERE Pokemon.name="Electrode" AND Basegame.name="Blue";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Electrode" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Electrode" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Electrode" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Electrode" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Electrode" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Electrode" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -2094,34 +1886,39 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Electrode" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Electrode" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Electrode" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Exeggutor" AND Basegame.name="Red";
+WHERE Pokemon.name="Electrode" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Electrode" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Electrode" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Electrode" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Exeggutor" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Exeggutor" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Exeggutor" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Exeggutor" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -2134,34 +1931,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Exeggutor" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Exeggutor" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Exeggutor" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Marowak" AND Basegame.name="Red";
+WHERE Pokemon.name="Exeggutor" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Exeggutor" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Marowak" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Marowak" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Marowak" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Marowak" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -2174,6 +1966,11 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Marowak" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Marowak" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Marowak" AND Basegame.name="LeafGreen";
@@ -2181,27 +1978,17 @@ WHERE Pokemon.name="Marowak" AND Basegame.name="LeafGreen";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Hitmonlee" AND Basegame.name="Red";
+WHERE Pokemon.name="Marowak" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Marowak" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Hitmonlee" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Hitmonlee" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Hitmonlee" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Hitmonlee" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -2214,34 +2001,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Hitmonlee" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Hitmonlee" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Hitmonlee" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Hitmonchan" AND Basegame.name="Red";
+WHERE Pokemon.name="Hitmonlee" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Hitmonlee" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Hitmonchan" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Hitmonchan" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Hitmonchan" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Hitmonchan" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -2254,14 +2036,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Hitmonchan" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Hitmonchan" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Hitmonchan" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Weezing" AND Basegame.name="Red";
+WHERE Pokemon.name="Hitmonchan" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Hitmonchan" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -2271,27 +2063,7 @@ WHERE Pokemon.name="Weezing" AND Basegame.name="Blue";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Weezing" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Weezing" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Weezing" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Weezing" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Weezing" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -2304,34 +2076,39 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Weezing" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Weezing" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Weezing" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Weezing" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Weezing" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Weezing" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Kangaskhan" AND Basegame.name="Red";
+WHERE Pokemon.name="Weezing" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Kangaskhan" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kangaskhan" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kangaskhan" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kangaskhan" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -2344,14 +2121,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Kangaskhan" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Kangaskhan" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Kangaskhan" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Kangaskhan" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Seaking" AND Basegame.name="Red";
+WHERE Pokemon.name="Kangaskhan" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -2361,32 +2148,12 @@ WHERE Pokemon.name="Seaking" AND Basegame.name="Blue";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Seaking" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Seaking" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Seaking" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Seaking" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Seaking" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Seaking" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Seaking" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -2399,14 +2166,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Seaking" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Seaking" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Seaking" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Seaking" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Seaking" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -2419,9 +2186,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Seaking" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Starmie" AND Basegame.name="Red";
+WHERE Pokemon.name="Seaking" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Seaking" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Seaking" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Seaking" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -2429,9 +2211,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Starmie" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Starmie" AND Basegame.name="Yellow";
+WHERE Pokemon.name="Starmie" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Starmie" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -2439,14 +2226,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Starmie" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Starmie" AND Basegame.name="Silver";
+WHERE Pokemon.name="Starmie" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Starmie" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Starmie" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -2459,39 +2246,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Starmie" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Starmie" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Starmie" AND Basegame.name="LeafGreen";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Red";
+WHERE Pokemon.name="Starmie" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -2501,7 +2263,17 @@ WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Crystal";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Mr. Mime" AND Basegame.name="FireRed";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -2511,32 +2283,22 @@ WHERE Pokemon.name="Mr. Mime" AND Basegame.name="LeafGreen";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Diamond";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Jynx" AND Basegame.name="Red";
+WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Mr. Mime" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Jynx" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Jynx" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Jynx" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -2549,9 +2311,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Jynx" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Jynx" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Jynx" AND Basegame.name="LeafGreen";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Jynx" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Jynx" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -2559,19 +2336,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Pinsir" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Pinsir" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Pinsir" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Pinsir" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Pinsir" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Pinsir" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Pinsir" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -2584,39 +2366,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Pinsir" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Pinsir" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Pinsir" AND Basegame.name="LeafGreen";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Tauros" AND Basegame.name="Red";
+WHERE Pokemon.name="Pinsir" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Tauros" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Tauros" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Tauros" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Tauros" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -2629,6 +2386,11 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Tauros" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Tauros" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Tauros" AND Basegame.name="LeafGreen";
@@ -2636,7 +2398,12 @@ WHERE Pokemon.name="Tauros" AND Basegame.name="LeafGreen";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Gyarados" AND Basegame.name="Red";
+WHERE Pokemon.name="Tauros" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Tauros" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -2644,34 +2411,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Gyarados" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Gyarados" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Gyarados" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Gyarados" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Gyarados" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Gyarados" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Gyarados" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Gyarados" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -2686,12 +2433,12 @@ WHERE Pokemon.name="Gyarados" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Gyarados" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Gyarados" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Gyarados" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Gyarados" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -2704,29 +2451,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Gyarados" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Lapras" AND Basegame.name="Red";
+WHERE Pokemon.name="Gyarados" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Gyarados" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Gyarados" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Gyarados" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Lapras" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Lapras" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Lapras" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Lapras" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -2739,34 +2486,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Lapras" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Lapras" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Lapras" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ditto" AND Basegame.name="Red";
+WHERE Pokemon.name="Lapras" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Lapras" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Ditto" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Ditto" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Ditto" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Ditto" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -2781,12 +2523,12 @@ WHERE Pokemon.name="Ditto" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ditto" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Ditto" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ditto" AND Basegame.name="Sun";
+WHERE Pokemon.name="Ditto" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -2794,29 +2536,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Ditto" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Vaporeon" AND Basegame.name="Red";
+WHERE Pokemon.name="Ditto" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Ditto" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Ditto" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Vaporeon" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Vaporeon" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Vaporeon" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Vaporeon" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -2829,6 +2566,11 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Vaporeon" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Vaporeon" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Vaporeon" AND Basegame.name="LeafGreen";
@@ -2836,27 +2578,17 @@ WHERE Pokemon.name="Vaporeon" AND Basegame.name="LeafGreen";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Jolteon" AND Basegame.name="Red";
+WHERE Pokemon.name="Vaporeon" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Vaporeon" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Jolteon" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Jolteon" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Jolteon" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Jolteon" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -2869,34 +2601,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Jolteon" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Jolteon" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Jolteon" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Flareon" AND Basegame.name="Red";
+WHERE Pokemon.name="Jolteon" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Jolteon" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Flareon" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Flareon" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Flareon" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Flareon" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -2909,24 +2636,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Flareon" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Flareon" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Flareon" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Omastar" AND Basegame.name="Red";
+WHERE Pokemon.name="Flareon" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Flareon" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Omastar" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Omastar" AND Basegame.name="Yellow";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -2939,19 +2671,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Omastar" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Kabutops" AND Basegame.name="Red";
+WHERE Pokemon.name="Omastar" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Kabutops" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kabutops" AND Basegame.name="Yellow";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -2964,29 +2691,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Kabutops" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Aerodactyl" AND Basegame.name="Red";
+WHERE Pokemon.name="Kabutops" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Aerodactyl" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Aerodactyl" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Aerodactyl" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Aerodactyl" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -3001,12 +2713,22 @@ WHERE Pokemon.name="Aerodactyl" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Aerodactyl" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Aerodactyl" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Snorlax" AND Basegame.name="Red";
+WHERE Pokemon.name="Aerodactyl" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Aerodactyl" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -3014,24 +2736,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Snorlax" AND Basegame.name="Blue";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Snorlax" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Snorlax" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Snorlax" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Snorlax" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Snorlax" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -3039,14 +2751,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Snorlax" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Snorlax" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Snorlax" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Snorlax" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Snorlax" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -3059,29 +2776,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Snorlax" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Snorlax" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Snorlax" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Snorlax" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Snorlax" AND Basegame.name="Moon";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Articuno" AND Basegame.name="Red";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Articuno" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Articuno" AND Basegame.name="Yellow";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -3096,17 +2808,12 @@ WHERE Pokemon.name="Articuno" AND Basegame.name="LeafGreen";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Zapdos" AND Basegame.name="Red";
+WHERE Pokemon.name="Articuno" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Zapdos" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Zapdos" AND Basegame.name="Yellow";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -3119,19 +2826,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Zapdos" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Moltres" AND Basegame.name="Red";
+WHERE Pokemon.name="Zapdos" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Moltres" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Moltres" AND Basegame.name="Yellow";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -3144,29 +2846,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Moltres" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Dragonite" AND Basegame.name="Red";
+WHERE Pokemon.name="Moltres" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Dragonite" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dragonite" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dragonite" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dragonite" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -3179,9 +2866,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Dragonite" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dragonite" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Dragonite" AND Basegame.name="LeafGreen";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dragonite" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dragonite" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Meganium" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -3196,7 +2903,7 @@ WHERE Pokemon.name="Meganium" AND Basegame.name="Silver";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Meganium" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Typhlosion" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -3209,9 +2916,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Typhlosion" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Typhlosion" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Feraligatr" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -3224,9 +2931,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Feraligatr" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Feraligatr" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Furret" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -3237,21 +2944,6 @@ INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Furret" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Furret" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Noctowl" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Noctowl" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -3266,6 +2958,11 @@ WHERE Pokemon.name="Noctowl" AND Basegame.name="Diamond";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Noctowl" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Noctowl" AND Basegame.name="Pearl";
 
 INSERT INTO Pokemon_Rank
@@ -3274,9 +2971,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Noctowl" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ledian" AND Basegame.name="Silver";
+WHERE Pokemon.name="Noctowl" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -3286,22 +2983,17 @@ WHERE Pokemon.name="Ledian" AND Basegame.name="Crystal";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ledian" AND Basegame.name="Sun";
+WHERE Pokemon.name="Ledian" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ledian" AND Basegame.name="Moon";
+WHERE Pokemon.name="Ledian" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ariados" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Ariados" AND Basegame.name="Silver";
+WHERE Pokemon.name="Ledian" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -3309,9 +3001,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Ariados" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ariados" AND Basegame.name="Sun";
+WHERE Pokemon.name="Ariados" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -3319,19 +3011,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Ariados" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Golbat" AND Basegame.name="Red";
+WHERE Pokemon.name="Ariados" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Ariados" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Golbat" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Golbat" AND Basegame.name="Yellow";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -3344,14 +3036,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Golbat" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Crobat" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Crobat" AND Basegame.name="Silver";
+WHERE Pokemon.name="Golbat" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -3361,12 +3048,7 @@ WHERE Pokemon.name="Crobat" AND Basegame.name="Crystal";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Crobat" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Crobat" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Crobat" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -3376,7 +3058,12 @@ WHERE Pokemon.name="Crobat" AND Basegame.name="Emerald";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Crobat" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Crobat" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Crobat" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -3391,27 +3078,37 @@ WHERE Pokemon.name="Crobat" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Crobat" AND Basegame.name="Sun";
+WHERE Pokemon.name="Crobat" AND Basegame.name="Ruby";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Crobat" AND Basegame.name="Moon";
+WHERE Pokemon.name="Crobat" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Lanturn" AND Basegame.name="Gold";
+WHERE Pokemon.name="Crobat" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Lanturn" AND Basegame.name="Silver";
+WHERE Pokemon.name="Crobat" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Lanturn" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Lanturn" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Lanturn" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -3424,24 +3121,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Lanturn" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Lanturn" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Xatu" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Xatu" AND Basegame.name="Silver";
+WHERE Pokemon.name="Lanturn" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Xatu" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Xatu" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Xatu" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -3454,9 +3151,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Xatu" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Xatu" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Xatu" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -3471,17 +3168,17 @@ WHERE Pokemon.name="Ampharos" AND Basegame.name="Silver";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Bellossom" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Bellossom" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Bellossom" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Bellossom" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Bellossom" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -3496,7 +3193,22 @@ WHERE Pokemon.name="Bellossom" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Bellossom" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Bellossom" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -3504,14 +3216,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Silver";
+WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Pearl";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -3524,24 +3236,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Diamond";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Pearl";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Platinum";
+WHERE Pokemon.name="Azumarill (Huge Power)" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -3561,16 +3258,6 @@ WHERE Pokemon.name="Azumarill (Thick Fat)" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Sudowoodo" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Sudowoodo" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Sudowoodo" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
@@ -3579,9 +3266,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Sudowoodo" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Sudowoodo" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Sudowoodo" AND Basegame.name="Platinum";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Sudowoodo" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Politoed" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -3594,9 +3296,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Politoed" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Politoed" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Jumpluff" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -3609,9 +3311,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Jumpluff" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Jumpluff" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Sunflora" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -3624,21 +3326,6 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Sunflora" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Sunflora" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Quagsire" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Quagsire" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Quagsire" AND Basegame.name="Crystal";
@@ -3647,6 +3334,11 @@ INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Quagsire" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Quagsire" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -3659,6 +3351,16 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Quagsire" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Quagsire" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Espeon" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Espeon" AND Basegame.name="Gold";
@@ -3669,9 +3371,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Espeon" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Espeon" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Umbreon" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -3684,9 +3386,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Umbreon" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Umbreon" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Slowking" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -3694,34 +3396,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Slowking" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Slowking" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Slowking" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Slowking" AND Basegame.name="Sun";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Slowking" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Unown" AND Basegame.name="Gold";
+WHERE Pokemon.name="Slowking" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Unown" AND Basegame.name="Silver";
+WHERE Pokemon.name="Slowking" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -3736,6 +3423,11 @@ WHERE Pokemon.name="Unown" AND Basegame.name="Diamond";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Unown" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Unown" AND Basegame.name="Pearl";
 
 INSERT INTO Pokemon_Rank
@@ -3746,17 +3438,22 @@ WHERE Pokemon.name="Unown" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Wobbuffet" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Wobbuffet" AND Basegame.name="Silver";
+WHERE Pokemon.name="Unown" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Wobbuffet" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Wobbuffet" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Wobbuffet" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -3769,9 +3466,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Wobbuffet" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Wobbuffet" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Wobbuffet" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Girafarig" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Girafarig" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -3781,7 +3488,12 @@ WHERE Pokemon.name="Girafarig" AND Basegame.name="Gold";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Girafarig" AND Basegame.name="Silver";
+WHERE Pokemon.name="Girafarig" AND Basegame.name="Pearl";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Girafarig" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -3796,22 +3508,12 @@ WHERE Pokemon.name="Girafarig" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Girafarig" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Girafarig" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Girafarig" AND Basegame.name="Diamond";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Girafarig" AND Basegame.name="Pearl";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Girafarig" AND Basegame.name="Platinum";
+WHERE Pokemon.name="Forretress" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -3824,9 +3526,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Forretress" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Forretress" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Dunsparce" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -3841,22 +3543,12 @@ WHERE Pokemon.name="Dunsparce" AND Basegame.name="Silver";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Dunsparce" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Onix" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Onix" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Onix" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Onix" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -3866,12 +3558,12 @@ WHERE Pokemon.name="Onix" AND Basegame.name="FireRed";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Onix" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Onix" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Onix" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Onix" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -3884,14 +3576,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Onix" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Steelix" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Steelix" AND Basegame.name="Silver";
+WHERE Pokemon.name="Onix" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -3904,6 +3591,11 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Steelix" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Steelix" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Steelix" AND Basegame.name="Pearl";
@@ -3912,6 +3604,16 @@ INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Steelix" AND Basegame.name="Platinum";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Steelix" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Granbull" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -3924,9 +3626,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Granbull" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Granbull" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Qwilfish" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -3939,31 +3641,6 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Qwilfish" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Qwilfish" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Scyther" AND Basegame.name="Red";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Scyther" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Scyther" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Scyther" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Scyther" AND Basegame.name="Crystal";
@@ -3972,6 +3649,26 @@ INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Scyther" AND Basegame.name="FireRed";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Scyther" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Scyther" AND Basegame.name="Red";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Scyther" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Scizor" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -3984,9 +3681,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Scizor" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Scizor" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Shuckle" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -3999,34 +3696,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Shuckle" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Shuckle" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Heracross" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Heracross" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Heracross" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Heracross" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Heracross" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Heracross" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -4034,9 +3711,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Heracross" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Heracross" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Heracross" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -4049,9 +3726,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Heracross" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ursaring" AND Basegame.name="Gold";
+WHERE Pokemon.name="Heracross" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Heracross" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Heracross" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -4059,19 +3746,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Ursaring" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Magcargo" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Magcargo" AND Basegame.name="Silver";
+WHERE Pokemon.name="Ursaring" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Magcargo" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Magcargo" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Magcargo" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -4084,9 +3776,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Magcargo" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Magcargo" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Magcargo" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Corsola" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Corsola" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -4096,12 +3798,7 @@ WHERE Pokemon.name="Corsola" AND Basegame.name="Gold";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Corsola" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Corsola" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Corsola" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -4116,7 +3813,7 @@ WHERE Pokemon.name="Corsola" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Corsola" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Corsola" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -4124,24 +3821,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Corsola" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Corsola" AND Basegame.name="Moon";
+WHERE Pokemon.name="Octillery" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Octillery" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Octillery" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Octillery" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -4154,14 +3841,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Octillery" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Delibird" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Delibird" AND Basegame.name="Silver";
+WHERE Pokemon.name="Octillery" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -4171,7 +3853,7 @@ WHERE Pokemon.name="Delibird" AND Basegame.name="Crystal";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Delibird" AND Basegame.name="Sun";
+WHERE Pokemon.name="Delibird" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -4179,9 +3861,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Delibird" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Mantine" AND Basegame.name="Gold";
+WHERE Pokemon.name="Delibird" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Delibird" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -4192,6 +3879,11 @@ INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Mantine" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Mantine" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -4206,12 +3898,12 @@ WHERE Pokemon.name="Mantine" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Skarmory" AND Basegame.name="Silver";
+WHERE Pokemon.name="Skarmory" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Skarmory" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Skarmory" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -4226,7 +3918,12 @@ WHERE Pokemon.name="Skarmory" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Skarmory" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Skarmory" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Houndoom" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -4239,16 +3936,6 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Houndoom" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Houndoom" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Seadra" AND Basegame.name="Red";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Seadra" AND Basegame.name="Blue";
@@ -4256,7 +3943,17 @@ WHERE Pokemon.name="Seadra" AND Basegame.name="Blue";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Seadra" AND Basegame.name="Yellow";
+WHERE Pokemon.name="Seadra" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Seadra" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Seadra" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -4264,14 +3961,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Seadra" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Seadra" AND Basegame.name="Silver";
+WHERE Pokemon.name="Seadra" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Seadra" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Seadra" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -4286,32 +3983,22 @@ WHERE Pokemon.name="Seadra" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Seadra" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Seadra" AND Basegame.name="FireRed";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Seadra" AND Basegame.name="LeafGreen";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kingdra" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kingdra" AND Basegame.name="Silver";
+WHERE Pokemon.name="Seadra" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Kingdra" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Kingdra" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Kingdra" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -4324,19 +4011,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Kingdra" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Kingdra" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Donphan" AND Basegame.name="Silver";
+WHERE Pokemon.name="Kingdra" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Donphan" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Donphan" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -4349,9 +4036,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Donphan" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Donphan" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Donphan" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Stantler" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -4364,9 +4056,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Stantler" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Stantler" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Smeargle" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -4374,14 +4066,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Smeargle" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Smeargle" AND Basegame.name="Silver";
+WHERE Pokemon.name="Smeargle" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Smeargle" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Smeargle" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -4389,9 +4081,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Smeargle" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Smeargle" AND Basegame.name="Moon";
+WHERE Pokemon.name="Hitmontop" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -4404,9 +4096,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Hitmontop" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Hitmontop" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Miltank" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -4419,34 +4111,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Miltank" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Miltank" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Chansey" AND Basegame.name="Red";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Chansey" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Chansey" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Chansey" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Chansey" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -4454,19 +4121,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Chansey" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Chansey" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Chansey" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Blissey" AND Basegame.name="Gold";
+WHERE Pokemon.name="Chansey" AND Basegame.name="Red";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Blissey" AND Basegame.name="Silver";
+WHERE Pokemon.name="Chansey" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -4477,6 +4149,16 @@ INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Blissey" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Blissey" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Blissey" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -4491,12 +4173,17 @@ WHERE Pokemon.name="Blissey" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Blissey" AND Basegame.name="Sun";
+WHERE Pokemon.name="Blissey" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Blissey" AND Basegame.name="Moon";
+WHERE Pokemon.name="Blissey" AND Basegame.name="Sun";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Raikou" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -4511,7 +4198,7 @@ WHERE Pokemon.name="Raikou" AND Basegame.name="Silver";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Raikou" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Entei" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -4524,9 +4211,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Entei" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Entei" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Suicune" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -4539,9 +4226,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Suicune" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Suicune" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Tyranitar" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -4554,9 +4241,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Tyranitar" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Tyranitar" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Lugia" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -4569,9 +4256,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Lugia" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Lugia" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Ho-Oh" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -4584,9 +4271,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Ho-Oh" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ho-Oh" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Sceptile" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -4599,9 +4286,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Sceptile" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Sceptile" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Blaziken" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -4614,9 +4301,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Blaziken" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Blaziken" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Swampert" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -4629,9 +4316,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Swampert" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Swampert" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Mightyena" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -4644,9 +4331,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Mightyena" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Mightyena" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Linoone" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -4659,29 +4346,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Linoone" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Linoone" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Beautifly" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Beautifly" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Beautifly" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Beautifly" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Beautifly" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -4696,22 +4368,22 @@ WHERE Pokemon.name="Beautifly" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Dustox" AND Basegame.name="Ruby";
+WHERE Pokemon.name="Beautifly" AND Basegame.name="Ruby";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Dustox" AND Basegame.name="Sapphire";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dustox" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Beautifly" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Dustox" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dustox" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -4724,14 +4396,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Dustox" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ludicolo" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Dustox" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Dustox" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Ludicolo" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Ludicolo" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Shiftry" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -4744,9 +4431,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Shiftry" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Shiftry" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Swellow" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -4759,19 +4446,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Swellow" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Swellow" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Pelipper" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Pelipper" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Pelipper" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -4779,9 +4456,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Pelipper" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Pelipper" AND Basegame.name="Diamond";
+WHERE Pokemon.name="Pelipper" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -4794,14 +4471,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Pelipper" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Pelipper" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Pelipper" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Pelipper" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Pelipper" AND Basegame.name="Moon";
+WHERE Pokemon.name="Gardevoir" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -4814,9 +4501,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Gardevoir" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Gardevoir" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Masquerain" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -4829,9 +4516,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Masquerain" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Masquerain" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Breloom" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -4844,9 +4531,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Breloom" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Breloom" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Slaking" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -4861,7 +4548,7 @@ WHERE Pokemon.name="Slaking" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Slaking" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Ninjask" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -4874,9 +4561,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Ninjask" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ninjask" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Shedinja" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -4889,9 +4576,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Shedinja" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Shedinja" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Exploud" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -4904,9 +4591,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Exploud" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Exploud" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Hariyama" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -4919,9 +4606,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Hariyama" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Hariyama" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Delcatty" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -4934,9 +4621,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Delcatty" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Delcatty" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Sableye" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -4946,7 +4633,7 @@ WHERE Pokemon.name="Sableye" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Sableye" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Mawile" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -4959,9 +4646,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Mawile" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Mawile" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Aggron" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -4972,21 +4659,6 @@ INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Aggron" AND Basegame.name="Sapphire";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Aggron" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Medicham" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Medicham" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -5004,6 +4676,21 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Medicham" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Medicham" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Medicham" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Manectric" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Manectric" AND Basegame.name="Ruby";
@@ -5014,9 +4701,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Manectric" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Manectric" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Plusle" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -5029,9 +4716,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Plusle" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Plusle" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Minun" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -5046,7 +4733,7 @@ WHERE Pokemon.name="Minun" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Minun" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Volbeat" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -5061,7 +4748,7 @@ WHERE Pokemon.name="Volbeat" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Volbeat" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Illumise" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -5074,9 +4761,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Illumise" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Illumise" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Swalot" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -5091,7 +4778,7 @@ WHERE Pokemon.name="Swalot" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Swalot" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Sharpedo" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -5104,9 +4791,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Sharpedo" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Sharpedo" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Wailord" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -5119,9 +4806,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Wailord" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Wailord" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Camerupt" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -5134,9 +4821,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Camerupt" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Camerupt" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Torkoal" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -5149,9 +4836,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Torkoal" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Torkoal" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Grumpig" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -5164,9 +4851,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Grumpig" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Grumpig" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Spinda" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Spinda" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -5181,17 +4873,12 @@ WHERE Pokemon.name="Spinda" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Spinda" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Spinda" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Spinda" AND Basegame.name="Moon";
+WHERE Pokemon.name="Flygon" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -5204,9 +4891,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Flygon" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Flygon" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Cacturne" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -5219,9 +4906,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Cacturne" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Cacturne" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Altaria" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -5234,19 +4921,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Altaria" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Altaria" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Zangoose" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Seviper" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -5256,12 +4933,12 @@ WHERE Pokemon.name="Seviper" AND Basegame.name="Emerald";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Lunatone" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Seviper" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Solrock" AND Basegame.name="Ruby";
+WHERE Pokemon.name="Lunatone" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -5269,24 +4946,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Solrock" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Whiscash" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Whiscash" AND Basegame.name="Sapphire";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Whiscash" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Solrock" AND Basegame.name="Ruby";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Whiscash" AND Basegame.name="Diamond";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Whiscash" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -5299,6 +4971,21 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Whiscash" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Whiscash" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Whiscash" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Crawdaunt" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Crawdaunt" AND Basegame.name="Ruby";
@@ -5309,9 +4996,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Crawdaunt" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Crawdaunt" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Claydol" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -5326,7 +5013,7 @@ WHERE Pokemon.name="Claydol" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Claydol" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Cradily" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
@@ -5339,9 +5026,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Cradily" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Cradily" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Armaldo" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -5354,9 +5041,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Armaldo" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Armaldo" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Milotic" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -5369,9 +5056,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Milotic" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Milotic" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Castform" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -5386,7 +5073,7 @@ WHERE Pokemon.name="Castform" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Castform" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Kecleon" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -5399,9 +5086,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Kecleon" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Kecleon" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Banette" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -5414,9 +5101,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Banette" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Banette" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Tropius" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -5429,29 +5116,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Tropius" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Tropius" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Chimecho" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Chimecho" AND Basegame.name="Sapphire";
+WHERE Pokemon.name="Chimecho" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Chimecho" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Chimecho" AND Basegame.name="Diamond";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -5464,6 +5136,21 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Chimecho" AND Basegame.name="Platinum";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Chimecho" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Chimecho" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Absol" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Absol" AND Basegame.name="Ruby";
@@ -5474,9 +5161,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Absol" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Absol" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Glalie" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -5489,9 +5176,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Glalie" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Glalie" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Walrein" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
@@ -5504,9 +5191,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Walrein" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Walrein" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Clamperl" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -5519,9 +5206,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Clamperl" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Clamperl" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Huntail" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -5534,9 +5221,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Huntail" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Huntail" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Gorebyss" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -5549,9 +5236,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Gorebyss" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Gorebyss" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Relicanth" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
@@ -5564,9 +5251,14 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Relicanth" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Relicanth" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Luvdisc" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Luvdisc" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -5581,17 +5273,12 @@ WHERE Pokemon.name="Luvdisc" AND Basegame.name="Sapphire";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Luvdisc" AND Basegame.name="Emerald";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Luvdisc" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Luvdisc" AND Basegame.name="Moon";
+WHERE Pokemon.name="Salamence" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -5604,9 +5291,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Salamence" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Salamence" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Regirock" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -5619,9 +5306,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Regirock" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Regirock" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Regice" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -5634,9 +5321,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Regice" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Regice" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Registeel" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -5647,11 +5334,6 @@ INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Registeel" AND Basegame.name="Sapphire";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Registeel" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
@@ -5776,17 +5458,17 @@ WHERE Pokemon.name="Luxray" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Roselia" AND Basegame.name="Emerald";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Roselia" AND Basegame.name="Ruby";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Roselia" AND Basegame.name="Sapphire";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Roselia" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -5976,17 +5658,17 @@ WHERE Pokemon.name="Gastrodon" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Aipom" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Aipom" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Aipom" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Aipom" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -6036,17 +5718,17 @@ WHERE Pokemon.name="Lopunny" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Misdreavus" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Misdreavus" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Misdreavus" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Misdreavus" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -6066,17 +5748,17 @@ WHERE Pokemon.name="Mismagius" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Murkrow" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Murkrow" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Murkrow" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Murkrow" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -6281,17 +5963,17 @@ WHERE Pokemon.name="Abomasnow" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
+WHERE Pokemon.name="Sneasel" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
 WHERE Pokemon.name="Sneasel" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Sneasel" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Sneasel" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -6311,42 +5993,7 @@ WHERE Pokemon.name="Weavile" AND Basegame.name="Platinum";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Magneton" AND Basegame.name="Red";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Magneton" AND Basegame.name="Blue";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Magneton" AND Basegame.name="Yellow";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Magneton" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Magneton" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
-FROM Basegame, Pokemon
 WHERE Pokemon.name="Magneton" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Magneton" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Magneton" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -6359,6 +6006,11 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Magneton" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Magneton" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Magneton" AND Basegame.name="LeafGreen";
@@ -6366,7 +6018,17 @@ WHERE Pokemon.name="Magneton" AND Basegame.name="LeafGreen";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Magnezone" AND Basegame.name="Sun";
+WHERE Pokemon.name="Magneton" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Magneton" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Magneton" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -6374,14 +6036,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Magnezone" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Lickitung" AND Basegame.name="Red";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Lickitung" AND Basegame.name="Blue";
+WHERE Pokemon.name="Magnezone" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -6394,29 +6051,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Lickitung" AND Basegame.name="LeafGreen";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Rhydon" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Rhydon" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Rhydon" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Rhydon" AND Basegame.name="Ruby";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Rhydon" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -6429,9 +6066,29 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Rhydon" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Rhydon" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Rhydon" AND Basegame.name="LeafGreen";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Rhydon" AND Basegame.name="Ruby";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Rhydon" AND Basegame.name="Sapphire";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Rhydon" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -6442,6 +6099,16 @@ INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Tangela" AND Basegame.name="LeafGreen";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Electabuzz" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Electabuzz" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -6456,12 +6123,7 @@ WHERE Pokemon.name="Electabuzz" AND Basegame.name="Silver";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Electabuzz" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Electabuzz" AND Basegame.name="FireRed";
+WHERE Pokemon.name="Magmar" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -6469,19 +6131,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Magmar" AND Basegame.name="Gold";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Magmar" AND Basegame.name="LeafGreen";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Magmar" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Magmar" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Magmar" AND Basegame.name="LeafGreen";
+WHERE Pokemon.name="Togetic" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -6494,9 +6156,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Togetic" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Togetic" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Yanma" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -6509,16 +6171,6 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Yanma" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Yanma" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Glaceon" AND Basegame.name="Sun";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Glaceon" AND Basegame.name="Moon";
@@ -6526,12 +6178,22 @@ WHERE Pokemon.name="Glaceon" AND Basegame.name="Moon";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Gligar" AND Basegame.name="Gold";
+WHERE Pokemon.name="Glaceon" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Gligar" AND Basegame.name="Crystal";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Gligar" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Piloswine" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -6544,21 +6206,6 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Piloswine" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B-"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Piloswine" AND Basegame.name="Crystal";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Porygon" AND Basegame.name="Gold";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Porygon" AND Basegame.name="Silver";
-
-INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Porygon" AND Basegame.name="Crystal";
@@ -6569,9 +6216,24 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Porygon" AND Basegame.name="FireRed";
 
 INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Porygon" AND Basegame.name="Gold";
+
+INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C-"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Porygon" AND Basegame.name="LeafGreen";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Porygon" AND Basegame.name="Silver";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Porygon2" AND Basegame.name="Crystal";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C"
@@ -6584,9 +6246,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Porygon2" AND Basegame.name="Silver";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Porygon2" AND Basegame.name="Crystal";
+WHERE Pokemon.name="Nosepass" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
@@ -6599,9 +6261,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Nosepass" AND Basegame.name="Sapphire";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Nosepass" AND Basegame.name="Emerald";
+WHERE Pokemon.name="Dusclops" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
@@ -6612,11 +6274,6 @@ INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Dusclops" AND Basegame.name="Sapphire";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "C+"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Dusclops" AND Basegame.name="Emerald";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -7476,17 +7133,12 @@ WHERE Pokemon.name="Zekrom" AND Basegame.name="White";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Decidueye" AND Basegame.name="Sun";
+WHERE Pokemon.name="Decidueye" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Decidueye" AND Basegame.name="Moon";
-
-INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
-FROM Basegame, Pokemon
-WHERE Pokemon.name="Incineroar" AND Basegame.name="Sun";
+WHERE Pokemon.name="Decidueye" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -7496,7 +7148,7 @@ WHERE Pokemon.name="Incineroar" AND Basegame.name="Moon";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Primarina" AND Basegame.name="Sun";
+WHERE Pokemon.name="Incineroar" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -7506,7 +7158,7 @@ WHERE Pokemon.name="Primarina" AND Basegame.name="Moon";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Toucannon" AND Basegame.name="Sun";
+WHERE Pokemon.name="Primarina" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -7514,9 +7166,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Toucannon" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Gumshoos" AND Basegame.name="Sun";
+WHERE Pokemon.name="Toucannon" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -7524,9 +7176,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Gumshoos" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Vikavolt" AND Basegame.name="Sun";
+WHERE Pokemon.name="Gumshoos" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -7536,7 +7188,7 @@ WHERE Pokemon.name="Vikavolt" AND Basegame.name="Moon";
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Oricorio" AND Basegame.name="Sun";
+WHERE Pokemon.name="Vikavolt" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
@@ -7544,9 +7196,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Oricorio" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Ribombee" AND Basegame.name="Sun";
+WHERE Pokemon.name="Oricorio" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
@@ -7554,9 +7206,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Ribombee" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "B+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Wishiwashi" AND Basegame.name="Sun";
+WHERE Pokemon.name="Ribombee" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
@@ -7564,9 +7216,9 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Wishiwashi" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A+"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Toxapex" AND Basegame.name="Sun";
+WHERE Pokemon.name="Wishiwashi" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
@@ -7574,19 +7226,19 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Toxapex" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "D"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Salandit" AND Basegame.name="Sun";
+WHERE Pokemon.name="Toxapex" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Salandit" AND Basegame.name="Moon";
+WHERE Pokemon.name="Salandit (♂)" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Golisopod" AND Basegame.name="Sun";
+WHERE Pokemon.name="Salandit (♂)" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
@@ -7594,12 +7246,17 @@ FROM Basegame, Pokemon
 WHERE Pokemon.name="Golisopod" AND Basegame.name="Moon";
 
 INSERT INTO Pokemon_Rank
-SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
 FROM Basegame, Pokemon
-WHERE Pokemon.name="Pyukumuku" AND Basegame.name="Sun";
+WHERE Pokemon.name="Golisopod" AND Basegame.name="Sun";
 
 INSERT INTO Pokemon_Rank
 SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Pyukumuku" AND Basegame.name="Moon";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "E"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Pyukumuku" AND Basegame.name="Sun";
 

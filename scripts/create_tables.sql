@@ -8,14 +8,12 @@ CREATE TABLE IF NOT EXISTS Title (
     rating_floor SMALLINT NOT NULL,
     min_bronze_challenges TINYINT NOT NULL,
     min_silver_challenges TINYINT NOT NULL,
-    min_gold_challenges TINYINT NOT NULL,
-    color ENUM('info', 'warning', 'danger', 'success', 'light', 'primary') NOT NULL
+    min_gold_challenges TINYINT NOT NULL
 ) ENGINE=InnoDB;
 
 -- Represents a single player.
 --
 -- Key: player_id
---
 -- Foreign Key: title_id references Title table
 CREATE TABLE IF NOT EXISTS Player (
     player_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -58,30 +56,6 @@ CREATE TABLE IF NOT EXISTS Challenge (
     description TEXT NOT NULL
 ) ENGINE=InnoDB;
 
--- Represents a single challenge completed by a player.
---
--- Player to Challenge is m:n, i.e.,
--- 1 player can do multiple challenges, and
--- 1 challenge can be done by multiple players.
---
--- Foreign Key: player_id references Player table
--- Foreign Key: challenge_id references Challenge table
--- Foreign Key: run_id references Run table
-CREATE TABLE IF NOT EXISTS Player_Challenge (
-    player_id INT NOT NULL,
-    challenge_id INT NOT NULL,
-    run_id INT NOT NULL,
-    FOREIGN KEY (player_id) REFERENCES Player(player_id)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE,
-    FOREIGN KEY (challenge_id) REFERENCES Challenge(challenge_id)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE,
-    FOREIGN KEY (run_id) REFERENCES Run(run_id)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE
-) ENGINE=InnoDB;
-
 -- Represents a single run owned by a player.
 --
 -- Player to Run is 1:n, i.e.,
@@ -107,6 +81,31 @@ CREATE TABLE IF NOT EXISTS Run (
         ON DELETE CASCADE
         ON UPDATE CASCADE,
     FOREIGN KEY (basegame_id) REFERENCES Basegame(basegame_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+) ENGINE=InnoDB;
+
+-- Represents a single challenge completed by a player.
+--
+-- Player to Challenge is m:n, i.e.,
+-- 1 player can do multiple challenges, and
+-- 1 challenge can be done by multiple players.
+--
+-- Key: player_id and challenge_id
+-- Foreign Key: player_id references Player table
+-- Foreign Key: challenge_id references Challenge table
+-- Foreign Key: run_id references Run table
+CREATE TABLE IF NOT EXISTS Player_Challenge (
+    player_id INT NOT NULL,
+    challenge_id INT NOT NULL,
+    run_id INT NOT NULL,
+    FOREIGN KEY (player_id) REFERENCES Player(player_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    FOREIGN KEY (challenge_id) REFERENCES Challenge(challenge_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    FOREIGN KEY (run_id) REFERENCES Run(run_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
 ) ENGINE=InnoDB;
@@ -202,12 +201,14 @@ CREATE TABLE IF NOT EXISTS Pokemon_Rank (
 ) ENGINE=InnoDB;
 
 
+DROP TRIGGER IF EXISTS update_runs_completed;
 CREATE TRIGGER update_runs_completed AFTER INSERT ON Run
     FOR EACH ROW
         UPDATE Player
         SET runs_completed=(SELECT COUNT(*) FROM Run WHERE player_id=NEW.player_id)
         WHERE Player.player_id=NEW.player_id;
 
+DROP TRIGGER IF EXISTS update_challenges_completed;
 CREATE TRIGGER update_challenges_completed AFTER INSERT ON Player_Challenge
     FOR EACH ROW
         UPDATE Player
