@@ -1,9 +1,19 @@
 const db = require('../db');
 
+const _addChallengePage = (req, res, errors, runs, challenge) => {
+  req.app.locals.render(req, res, 'add-challenge.ejs', {
+    title: 'Nuzlocke Ratings | Register Completed Challenge',
+    errors,
+    runs,
+    challenge
+  });
+}
+
 module.exports = {
   addChallengePage: (req, res) => {
     let { challengeID } = req.params;
     const { player } = req.session;
+    let errors = [];
 
     // if user not logged in, redirect them to login
     if (!player) {
@@ -15,26 +25,24 @@ module.exports = {
         return req.app.locals.error(req, res, err);
       }
       
-      for(cc in completedChallenges){
-        if(challengeID == completedChallenges[cc].challenge_id){
-          // ERROR HANDLING: redirect back to /info/challenges with the error message 'You have already completed this challenge!'
-        }
-      }
       db.getChallengeByID(challengeID, (err, challenge) => {
         if (err) {
           return req.app.locals.error(req, res, err);
         }
   
+        for(cc in completedChallenges){
+          if(challengeID == completedChallenges[cc].challenge_id){
+            // ERROR HANDLING: redirect back to /info/challenges with the error message 'You have already completed this challenge!'
+            errors.push('You have already completed the selected challenge: ' + challenge[0].name);
+          }
+        }
+
         db.getRuns(player.username, (err, runs) => {
           if (err) {
             return req.app.locals.error(req, res, err);
           }
   
-          req.app.locals.render(req, res, 'add-challenge.ejs', {
-            title: 'Nuzlocke Ratings | Register Completed Challenge',
-            runs,
-            challenge: challenge[0]
-          });
+          _addChallengePage(req, res, errors, runs, challenge[0]);
         });
       });
     });
