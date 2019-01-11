@@ -4,29 +4,14 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const session = require('express-session');
 
-const { homePage } = require('./routes/index');
-const {
-  registerPage,
-  register,
-  loginPage,
-  login,
-  // deletePlayer,
-  editPlayer,
-  editPlayerPage,
-  playerProfile
-} = require('./routes/player');
-const { addRunPage, addRun, displayRuns } = require('./routes/run');
-const {
-  overallInfo,
-  basegameInfo,
-  ruleInfo,
-  titleInfo,
-  viabilityInfo,
-  challengeInfo,
-  walkthroughInfo
-} = require('./routes/info');
-const { addChallenge, addChallengePage, displayChallenges } = require('./routes/challenge');
-const { addTitle, addTitlePage } = require('./routes/title');
+const route = {
+  index: require('./routes/index'),
+  player: require('./routes/player'),
+  run: require('./routes/run'),
+  info: require('./routes/info'),
+  challenge: require('./routes/challenge'),
+  title: require('./routes/title')
+};
 const db = require('./db');
 const logger = require('./logger');
 
@@ -90,17 +75,17 @@ app.locals.forbidden = (req, res) => {
   );
 };
 
-app.get('/', homePage);
+app.get('/', route.index.homePage);
 
 app
   .route('/register')
-  .get(registerPage)
-  .post(register);
+  .get(route.player.registerPage)
+  .post(route.player.register);
 
 app
   .route('/login')
-  .get(loginPage)
-  .post(login);
+  .get(route.player.loginPage)
+  .post(route.player.login);
 
 app.get('/logout', (req, res) => {
   delete req.session.player;
@@ -109,35 +94,35 @@ app.get('/logout', (req, res) => {
 
 app
   .route('/add-run')
-  .get(addRunPage)
-  .post(addRun);
+  .get(route.run.addRunPage)
+  .post(route.run.addRun);
 
 app
   .route('/edit/:username')
-  .get(editPlayerPage)
-  .post(editPlayer);
+  .get(route.player.editPlayerPage)
+  .post(route.player.editPlayer);
 
 app
   .route('/add-challenge/:challengeID')
-  .get(addChallengePage)
-  .post(addChallenge);
+  .get(route.challenge.addChallengePage)
+  .post(route.challenge.addChallenge);
 
 app
   .route('/add-title/:titleID')
-  .get(addTitlePage)
-  .post(addTitle);
+  .get(route.title.addTitlePage)
+  .post(route.title.addTitle);
 
 // app.get('/delete/:username', deletePlayer);
-app.get('/profile/:username', playerProfile);
-app.get('/:username/display-runs', displayRuns);
-app.get('/:username/display-challenges', displayChallenges);
-app.get('/info', overallInfo);
-app.get('/info/basegames', basegameInfo);
-app.get('/info/rules', ruleInfo);
-app.get('/info/titles', titleInfo);
-app.get('/info/viability', viabilityInfo);
-app.get('/info/challenges', challengeInfo);
-app.get('/getting-started', walkthroughInfo);
+app.get('/profile/:username', route.player.playerProfile);
+app.get('/:username/display-runs', route.run.displayRuns);
+app.get('/:username/display-challenges', route.challenge.displayChallenges);
+app.get('/info', route.info.overallInfo);
+app.get('/info/basegames', route.info.basegameInfo);
+app.get('/info/rules', route.info.ruleInfo);
+app.get('/info/titles', route.info.titleInfo);
+app.get('/info/viability', route.info.viabilityInfo);
+app.get('/info/challenges', route.info.challengeInfo);
+app.get('/getting-started', route.info.walkthroughInfo);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
