@@ -114,8 +114,11 @@ app
 
 // app.get('/delete/:username', deletePlayer);
 app.get('/profile/:username', route.player.playerProfile);
+
 app.get('/:username/display-runs', route.run.displayRuns);
+
 app.get('/:username/display-challenges', route.challenge.displayChallenges);
+
 app.get('/info', route.info.overallInfo);
 app.get('/info/basegames', route.info.basegameInfo);
 app.get('/info/rules', route.info.ruleInfo);
@@ -123,6 +126,7 @@ app.get('/info/titles', route.info.titleInfo);
 app.get('/info/viability', route.info.viabilityInfo);
 app.get('/info/challenges', route.info.challengeInfo);
 app.get('/getting-started', route.info.walkthroughInfo);
+app.get('/credits', route.info.creditsPage);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
