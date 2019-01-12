@@ -4,7 +4,7 @@
   "description": "Elo rating system for Nuzlockers",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -30,8 +30,5 @@
     "popper.js": "^1.14.6",
     "req-flash": "0.0.3",
     "request": "^2.88.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.9"
   }
 }
