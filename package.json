@@ -4,7 +4,6 @@
   "description": "Elo rating system for Nuzlockers",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
@@ -29,9 +28,7 @@
     "handlebars": "^4.0.12",
     "mysql": "^2.16.0",
     "popper.js": "^1.14.6",
-    "req-flash": "0.0.3"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.9"
+    "req-flash": "0.0.3",
+    "request": "^2.88.0"
   }
 }

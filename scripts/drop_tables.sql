@@ -1,3 +1,6 @@
+DROP TRIGGER IF EXISTS update_runs_completed;
+DROP TRIGGER IF EXISTS update_challenges_completed;
+
 DROP TABLE IF EXISTS Pokemon_Rank;
 DROP TABLE IF EXISTS Player_Challenge;
 DROP TABLE IF EXISTS Ruleset;

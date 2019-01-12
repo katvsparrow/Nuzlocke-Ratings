@@ -1,5 +1,5 @@
 const db = require('../db');
-const hash = require('../hash');
+const auth = require('../auth');
 
 const _registerPage = (req, res, errors) => {
   req.app.locals.render(req, res, 'register.ejs', {
@@ -20,7 +20,7 @@ module.exports = {
     _registerPage(req, res);
   },
 
-  register: (req, res) => {
+  register: (req, res, next) => {
     /*if (!req.files) {
       return res.status(400).send('No files were uploaded.');
     }*/
@@ -43,43 +43,26 @@ module.exports = {
     let fileExtension = uploadedFile.mimetype.split('/')[1];
     const avatar = username + '.' + fileExtension;*/
 
-    const player = {
-      username,
-      password: hash(password),
-      email,
-      link,
-      discord
-    };
-
-    db.getPlayerByUsername(username, (err, result) => {
+    auth.register(username, password, (err, status) => {
       if (err) {
-        return req.app.locals.error(req, res, err);
+        return next(err);
       }
-
-      // if username exists, re-render with message
-      if (result.length > 0) {
-        return _registerPage(req, res, ['Username already exists.']);
-      }
-
-      // check the filetype before uploading it
-      /*if (
-        uploadedFile.mimetype !== 'image/png' &&
-        uploadedFile.mimetype !== 'image/jpeg' &&
-        uploadedFile.mimetype !== 'image/gif'
-      ) {
-        return _registerPage(
-          req,
-          res,
-          "Invalid file format. Only 'gif', 'jpeg' and 'png' images are allowed."
-        );
-      }
-
-      // upload the file to the /public/assets/img directory
-      uploadedFile.mv(`public/assets/img/${avatar}`, err => {
-        if (err) {
-          console.error(err);
+      if (status != 200) {
+        if (status == 409) {
+          return _registerPage(req, res, ['Username already exists.']);
         }
-      });*/
+
+        return _registerPage(req, res, [
+          'There was an error with registration, please contact server administrator.'
+        ]);
+      }
+
+      const player = {
+        username,
+        email,
+        link,
+        discord
+      };
 
       // send the player's details to the database
       db.addPlayer(player, (err, result) => {
@@ -101,7 +84,7 @@ module.exports = {
     _loginPage(req, res);
   },
 
-  login: (req, res) => {
+  login: (req, res, next) => {
     const { username, password } = req.body;
 
     let errors = [];
@@ -116,21 +99,34 @@ module.exports = {
       return _loginPage(req, res, errors);
     }
 
-    db.loginPlayer(username, hash(password), (err, result) => {
+    auth.login(username, password, (err, status) => {
       if (err) {
-        return req.app.locals.error(req, res, err);
+        return next(err);
+      }
+      if (status != 200) {
+        if (status == 404) {
+          return _loginPage(req, res, ['Username does not exist.']);
+        }
+        if (status == 403) {
+          return _loginPage(req, res, ['Incorrect password.']);
+        }
+
+        return _loginPage(req, res, [
+          'There was an error logging in, please try again.'
+        ]);
       }
 
-      // if username/password don't match, re-render with message
-      if (result.length == 0) {
-        return _loginPage(req, res, ['Invalid username/password combination.']);
-      }
+      db.getPlayerByUsername(username, (err, results) => {
+        if (err) {
+          return next(err);
+        }
 
-      req.session.player = {
-        username: result[0].username,
-        id: result[0].player_id
-      };
-      res.redirect('/');
+        req.session.player = {
+          username,
+          id: results[0].player_id
+        };
+        res.redirect('/');
+      });
     });
   },
 
@@ -183,7 +179,7 @@ module.exports = {
 
   playerProfile: (req, res) => {
     const { username } = req.params;
-    
+
     db.getPlayerByUsername(username, (err, playerInfo) => {
       if (err) {
         return req.app.locals.error(req, res, err);
@@ -209,7 +205,7 @@ module.exports = {
       });
     });
   }
-  
+
   // deletePlayer: (req, res) => {
   //   const { username } = req.params;
   //   const { player } = req.session;

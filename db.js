@@ -23,10 +23,10 @@ module.exports = {
   sessionStore: new MySQLStore({}, db),
 
   // retrieve leaderboard
-  // result: [player_id, username, rating, runs_completed, challenges_completed, title_name, abbreviation, color]
+  // result: [player_id, username, rating, runs_completed, challenges_completed, title_name, abbreviation]
   getLeaderboard: callback => {
     const query =
-      'SELECT player_id, username, rating, runs_completed, challenges_completed, Title.name as title_name, abbreviation, color ' +
+      'SELECT player_id, username, rating, runs_completed, challenges_completed, Title.name as title_name, abbreviation ' +
       'FROM Player LEFT JOIN Title ON Player.title_id = Title.title_id ORDER BY rating DESC';
 
     db.query(query, callback);
@@ -51,9 +51,10 @@ module.exports = {
   },
 
   // retrieve title information
-  // result: [title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges, color]
+  // result: [title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges]
   getTitles: callback => {
-    const query = 'SELECT title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges, color FROM Title';
+    const query =
+      'SELECT title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges FROM Title';
 
     db.query(query, callback);
   },
@@ -61,7 +62,8 @@ module.exports = {
   // retrieve challenge information
   // result: [challenge_id, name, tier, classification, description]
   getChallenges: callback => {
-    const query = 'SELECT challenge_id, name, tier, classification, description FROM Challenge';
+    const query =
+      'SELECT challenge_id, name, tier, classification, description FROM Challenge';
 
     db.query(query, callback);
   },
@@ -69,7 +71,8 @@ module.exports = {
   // retrieve a single challenge given its ID
   // result: [name, tier, classification, description]
   getChallengeByID: (id, callback) => {
-    const query = 'SELECT name, tier, classification, description FROM Challenge WHERE challenge_id = ?';
+    const query =
+      'SELECT name, tier, classification, description FROM Challenge WHERE challenge_id = ?';
     const values = [id];
 
     db.query(query, values, callback);
@@ -87,7 +90,8 @@ module.exports = {
   // retrieve a specific player's information given their username
   // result: [Player *, Title *]
   getPlayerByUsername: (username, callback) => {
-    const query = 'SELECT * FROM Player LEFT JOIN Title ON Player.title_id = Title.title_id WHERE username = ?';
+    const query =
+      'SELECT * FROM Player LEFT JOIN Title ON Player.title_id = Title.title_id WHERE username = ?';
     const values = [username];
 
     db.query(query, values, callback);
@@ -224,17 +228,19 @@ module.exports = {
 
   // get a player's completed challenges
   getChallengesByID: (playerId, callback) => {
-    const query = 'SELECT * FROM Challenge INNER JOIN Player_Challenge ON Challenge.challenge_id = Player_Challenge.challenge_id WHERE player_id = ?';
+    const query =
+      'SELECT * FROM Challenge INNER JOIN Player_Challenge ON Challenge.challenge_id = Player_Challenge.challenge_id WHERE player_id = ?';
 
     db.query(query, [playerId], callback);
   },
 
   // register challenge completion
   challengeCompletion: (playerId, challengeId, runName, callback) => {
-    const query = 'INSERT INTO Player_Challenge (player_id, challenge_id, run_id) SELECT ?, ?, run_id FROM run WHERE run.name = ?';
+    const query =
+      'INSERT INTO Player_Challenge (player_id, challenge_id, run_id) SELECT ?, ?, run_id FROM run WHERE run.name = ?';
 
     db.query(query, [playerId, challengeId, runName], callback);
-  }, 
+  },
 
   // update player's rating
   updateRating: (playerId, newRating, callback) => {
