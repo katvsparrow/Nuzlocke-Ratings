@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS Title (
 CREATE TABLE IF NOT EXISTS Player (
     player_id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
     -- tournament_round int DEFAULT 1,
     -- avatar varchar(255) DEFAULT NULL,
     email VARCHAR(255),
