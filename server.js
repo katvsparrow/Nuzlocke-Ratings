@@ -109,5 +109,5 @@ app.use((err, req, res, next) => {
 // start server
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Nuzlocke Ratings server running on port ${port}`);
+  logger.log(`Nuzlocke Ratings server running on port ${port}`);
 });
