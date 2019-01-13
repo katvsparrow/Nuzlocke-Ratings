@@ -127,13 +127,6 @@ module.exports = {
     db.query(query, player, callback);
   },
 
-  loginPlayer: (username, password, callback) => {
-    const query = 'SELECT * FROM Player WHERE username = ? AND password = ?';
-    const values = [username, password];
-
-    db.query(query, values, callback);
-  },
-
   // edit a player's info
   editPlayer: (playerId, newInfo, callback) => {
     const query = 'UPDATE Player SET ? WHERE player.player_id = ?';
@@ -147,20 +140,6 @@ module.exports = {
     //const getImageQuery = 'SELECT avatar from Player WHERE player_id = ?';
     const deleteUserQuery = 'DELETE FROM Player WHERE player_id = ?';
     db.query(deleteUserQuery, playerId, callback);
-
-    /*db.query(getImageQuery, playerId, (err, result) => {
-      if (err) return callback(err);
-
-      const image = result[0].avatar;
-
-      fs.unlink(public/assets/img/${image}, err => {
-        if (err) {
-          console.error(err);
-        }
-      });
-
-      db.query(deleteUserQuery, playerId, callback);
-    });*/
   },
 
   // get Pokemon ranking info by basegame
