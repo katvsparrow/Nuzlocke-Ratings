@@ -120,7 +120,7 @@ module.exports = {
     });
   },
 
-  editPlayerPage: (req, res) => {
+  editPlayerPage: (req, res, next) => {
     const { username } = req.params;
     const { player } = req.session;
 
@@ -141,7 +141,7 @@ module.exports = {
     });
   },
 
-  editPlayer: (req, res) => {
+  editPlayer: (req, res, next) => {
     const { username } = req.params;
     const { player } = req.session;
 
@@ -166,7 +166,7 @@ module.exports = {
     });
   },
 
-  playerProfile: (req, res) => {
+  playerProfile: (req, res, next) => {
     const { username } = req.params;
 
     db.getPlayerByUsername(username, (err, playerInfo) => {

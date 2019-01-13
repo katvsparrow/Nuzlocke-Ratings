@@ -46,7 +46,7 @@ module.exports = {
     });
   },
 
-  addTitle: (req, res) => {
+  addTitle: (req, res, next) => {
     const { player } = req.session;
 
     // if user isn't logged in, redirect them to login
