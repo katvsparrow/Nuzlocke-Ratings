@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const path = require('path');
 const session = require('express-session');
 
@@ -31,12 +30,6 @@ app.use(
   })
 );
 
-// keep track of logged in player
-app.use((req, res, next) => {
-  res.locals.player = req.session.player;
-  next();
-});
-
 app.get('/', route.index.homePage);
 
 app
@@ -50,7 +43,7 @@ app
   .post(route.player.login);
 
 app.get('/logout', (req, res) => {
-  delete req.session.player;
+  req.session.player = null;
   res.redirect('/');
 });
 

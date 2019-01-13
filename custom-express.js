@@ -6,7 +6,7 @@ const { response } = app;
 response.renderPage = function(page, title, data) {
   this.render('template-page.ejs', {
     page,
-    player: this.locals.player,
+    player: this.req.session.player,
     title,
     ...data
   });
