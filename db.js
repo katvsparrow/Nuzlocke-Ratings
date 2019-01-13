@@ -129,7 +129,7 @@ module.exports = {
 
   // edit a player's info
   editPlayer: (playerId, newInfo, callback) => {
-    const query = 'UPDATE Player SET ? WHERE player.player_id = ?';
+    const query = 'UPDATE Player SET ? WHERE player_id = ?';
     const values = [newInfo, playerId];
 
     db.query(query, values, callback);
