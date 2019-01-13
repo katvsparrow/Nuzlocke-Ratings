@@ -1,60 +1,60 @@
 const db = require('../db');
 const viability = require('../consts/viability');
 const functions_module = require('../public/assets/js/functions_module');
-// const titles = require('../consts/titles');
 
 module.exports = {
   overallInfo: (req, res) => {
-    req.app.locals.render(req, res, 'info.ejs', {
-      title: 'Nuzlocke Ratings | Info'
-    });
+    res.renderPage('info.ejs', 'Info');
   },
 
-  basegameInfo: (req, res) => {
+  basegameInfo: (req, res, next) => {
     db.getBasegames((err, result) => {
-      if (err) return req.app.locals.error(req, res, err);
+      if (err) {
+        return next(err);
+      }
 
-      req.app.locals.render(req, res, 'basegame-info.ejs', {
-        title: 'Nuzlocke Ratings | Game Info',
+      res.renderPage('basegame-info.ejs', 'Game Info', {
         basegames: result
       });
     });
   },
 
-  ruleInfo: (req, res) => {
+  ruleInfo: (req, res, next) => {
     db.getRules((err, result) => {
-      if (err) return req.app.locals.error(req, res, err);
+      if (err) {
+        return next(err);
+      }
 
-      req.app.locals.render(req, res, 'rule-info.ejs', {
-        title: 'Nuzlocke Ratings | Rule Info',
+      res.renderPage('rule-info.ejs', 'Rule Info', {
         rules: result
       });
     });
   },
 
-  titleInfo: (req, res) => {
+  titleInfo: (req, res, next) => {
     const { player } = req.session;
 
     db.getTitles((err, titles) => {
-      if (err) return req.app.locals.error(req, res, err);
+      if (err) {
+        return next(err);
+      }
 
       if (player) {
         db.getChallengesByUsername(player.username, (err, challenges) => {
-          if (err) return req.app.locals.error(req, res, err);
-          
+          if (err) {
+            return next(err);
+          }
+
           challengeCounts = functions_module.countChallenges(challenges);
 
-          req.app.locals.render(req, res, 'title-info.ejs', {
-            title: 'Nuzlocke Ratings | Titles',
+          res.renderPage('title-info.ejs', 'Titles', {
             challengeCounts,
             titles,
             playerRating: challenges[0].player_rating
-          });        
+          });
         });
-      }
-      else {
-        req.app.locals.render(req, res, 'title-info.ejs', {
-          title: 'Nuzlocke Ratings | Titles',
+      } else {
+        res.renderPage('title-info.ejs', 'Titles', {
           titles
         });
       }
@@ -62,40 +62,37 @@ module.exports = {
   },
 
   viabilityInfo: (req, res) => {
-    req.app.locals.render(req, res, 'viability-info.ejs', {
-      title: 'Nuzlocke Ratings | Viability Info',
+    res.renderPage('viability-info.ejs', 'Viability Info', {
       viability: viability
     });
   },
 
-  challengeInfo: (req, res) => {
+  challengeInfo: (req, res, next) => {
     db.getChallenges((err, result) => {
-      if (err) return req.app.locals.error(req, res, err);
+      if (err) {
+        next(err);
+      }
 
       multiRun = [];
       singleRun = [];
       singleBattle = [];
       leader = [];
 
-      for(let challenge in result){
-        if(result[challenge].tier != 'Leader'){
-          if(result[challenge].classification == 'Multiple Runs'){
+      for (let challenge in result) {
+        if (result[challenge].tier != 'Leader') {
+          if (result[challenge].classification == 'Multiple Runs') {
             multiRun.push(result[challenge]);
-          }
-          else if(result[challenge].classification == 'Single Run'){
+          } else if (result[challenge].classification == 'Single Run') {
             singleRun.push(result[challenge]);
-          }
-          else if(result[challenge].classification == 'Single Battle'){
+          } else if (result[challenge].classification == 'Single Battle') {
             singleBattle.push(result[challenge]);
           }
-        }
-        else{
+        } else {
           leader.push(result[challenge]);
         }
       }
 
-      req.app.locals.render(req, res, 'challenge-info.ejs', {
-        title: 'Nuzlocke Ratings | Challenges',
+      res.renderPage('challenge-info.ejs', 'Challenges', {
         multiRun,
         singleRun,
         singleBattle,
@@ -105,14 +102,10 @@ module.exports = {
   },
 
   walkthroughInfo: (req, res) => {
-    req.app.locals.render(req, res, 'walkthrough.ejs', {
-      title: 'Nuzlocke Ratings | Getting Started',
-    });
+    res.renderPage('walkthrough.ejs', 'Getting Started');
   },
 
   creditsPage: (req, res) => {
-    req.app.locals.render(req, res, 'credits.ejs', {
-      title: 'Nuzlocke Ratings | Credits'
-    });
+    res.renderPage('credits.ejs', 'Credits');
   }
 };

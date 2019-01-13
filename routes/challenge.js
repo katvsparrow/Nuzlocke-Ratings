@@ -1,16 +1,15 @@
 const db = require('../db');
 
 const _addChallengePage = (req, res, errors, runs, challenge) => {
-  req.app.locals.render(req, res, 'add-challenge.ejs', {
-    title: 'Nuzlocke Ratings | Register Completed Challenge',
+  res.renderPage('add-challenge.ejs', 'Register Completed Challenge', {
     errors,
     runs,
     challenge
   });
-}
+};
 
 module.exports = {
-  addChallengePage: (req, res) => {
+  addChallengePage: (req, res, next) => {
     let { challengeID } = req.params;
     const { player } = req.session;
     let errors = [];
@@ -22,33 +21,37 @@ module.exports = {
 
     db.getChallengesByID(player.id, (err, completedChallenges) => {
       if (err) {
-        return req.app.locals.error(req, res, err);
+        return next(err);
       }
-      
+
       db.getChallengeByID(challengeID, (err, challenge) => {
         if (err) {
-          return req.app.locals.error(req, res, err);
+          return next(err);
         }
-  
-        for(cc in completedChallenges){
-          if(challengeID == completedChallenges[cc].challenge_id){
-            // ERROR HANDLING: redirect back to /info/challenges with the error message 'You have already completed this challenge!'
-            errors.push('You have already completed the selected challenge: ' + challenge[0].name);
+
+        for (cc in completedChallenges) {
+          if (challengeID == completedChallenges[cc].challenge_id) {
+            // ERROR HANDLING: redirect back to /info/challenges with the error
+            // message 'You have already completed this challenge!'
+            errors.push(
+              'You have already completed the selected challenge: ' +
+                challenge[0].name
+            );
           }
         }
 
         db.getRuns(player.username, (err, runs) => {
           if (err) {
-            return req.app.locals.error(req, res, err);
+            return next(err);
           }
-  
+
           _addChallengePage(req, res, errors, runs, challenge[0]);
         });
       });
     });
   },
 
-  addChallenge: (req, res) => {
+  addChallenge: (req, res, next) => {
     const { player } = req.session;
     if (!player) {
       return res.redirect('/login');
@@ -64,32 +67,31 @@ module.exports = {
 
     db.challengeCompletion(playerID, challengeID, runName, err => {
       if (err) {
-        return req.app.locals.error(req, res, err);
+        return next(err);
       }
 
       res.redirect('/');
     });
   },
 
-  displayChallenges: (req, res) => {
+  displayChallenges: (req, res, next) => {
     const { username } = req.params;
 
     db.getChallengesByUsername(username, (err, challenges) => {
       if (err) {
-        return req.app.locals.error(req, res, err);
+        return next(err);
       }
 
       db.getRuns(username, (err, runs) => {
         if (err) {
-          return req.app.locals.error(req, res, err);
+          return next(err);
         }
-        console.log(challenges);
-        req.app.locals.render(req, res, 'display-challenges.ejs', {
-          title: 'Nuzlocke Ratings | Display Challenges',
+
+        res.renderPage('display-challenges.ejs', 'Display Challenges', {
           challenges,
           runs
         });
       });
     });
   }
-}
+};

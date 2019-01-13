@@ -1,12 +1,13 @@
 const db = require('../db');
 
 module.exports = {
-  homePage: (req, res) => {
+  homePage: (req, res, next) => {
     db.getLeaderboard((err, result) => {
-      if (err) return req.app.locals.error(req, res, err);
+      if (err) {
+        return next(err);
+      }
 
-      req.app.locals.render(req, res, 'index.ejs', {
-        title: 'Nuzlocke Ratings | Leaderboard',
+      res.renderPage('index.ejs', 'Leaderboard', {
         players: result
       });
     });

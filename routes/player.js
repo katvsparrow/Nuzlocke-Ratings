@@ -2,15 +2,13 @@ const db = require('../db');
 const auth = require('../auth');
 
 const _registerPage = (req, res, errors) => {
-  req.app.locals.render(req, res, 'register.ejs', {
-    title: 'Nuzlocke Ratings | Register',
+  res.renderPage('register.ejs', 'Register', {
     errors
   });
 };
 
 const _loginPage = (req, res, errors) => {
-  req.app.locals.render(req, res, 'login.ejs', {
-    title: 'Nuzlocke Ratings | Login',
+  res.renderPage('login.ejs', 'Login', {
     errors
   });
 };
@@ -21,10 +19,6 @@ module.exports = {
   },
 
   register: (req, res, next) => {
-    /*if (!req.files) {
-      return res.status(400).send('No files were uploaded.');
-    }*/
-
     const { username, password, email, link, discord } = req.body;
 
     let errors = [];
@@ -38,10 +32,6 @@ module.exports = {
     if (errors.length > 0) {
       return _registerPage(req, res, errors);
     }
-
-    /*const uploadedFile = req.files.avatar;
-    let fileExtension = uploadedFile.mimetype.split('/')[1];
-    const avatar = username + '.' + fileExtension;*/
 
     auth.register(username, password, (err, status) => {
       if (err) {
@@ -67,7 +57,7 @@ module.exports = {
       // send the player's details to the database
       db.addPlayer(player, (err, result) => {
         if (err) {
-          req.app.locals.error(req, res, err);
+          return next(err);
         }
 
         player.id = result.insertId;
@@ -136,17 +126,16 @@ module.exports = {
 
     // verify correct user is logged in
     if (!player || player.username != username) {
-      return req.app.locals.forbidden(req, res);
+      return res.renderAccessDenied();
     }
 
     db.getPlayerByUsername(username, (err, result) => {
       // if DB error or username not found, show error
       if (err || result.length == 0) {
-        return req.app.locals.error(req, res, err);
+        return next(err);
       }
 
-      req.app.locals.render(req, res, 'edit-player.ejs', {
-        title: 'Nuzlocke Ratings | Edit Player',
+      res.renderPage('edit-player.ejs', 'Edit Player', {
         player: result[0]
       });
     });
@@ -158,7 +147,7 @@ module.exports = {
 
     // verify correct user is logged in
     if (!player || player.username != username) {
-      return req.app.locals.forbidden(req, res);
+      return res.renderAccessDenied();
     }
 
     const { link, email, discord } = req.body;
@@ -170,7 +159,7 @@ module.exports = {
 
     db.editPlayer(player.id, newInfo, err => {
       if (err) {
-        return req.app.locals.error(req, res, err);
+        return next(err);
       }
 
       res.redirect('/');
@@ -182,21 +171,20 @@ module.exports = {
 
     db.getPlayerByUsername(username, (err, playerInfo) => {
       if (err) {
-        return req.app.locals.error(req, res, err);
+        return next(err);
       }
 
       db.getChallengesByUsername(username, (err, challenges) => {
         if (err) {
-          return req.app.locals.error(req, res, err);
+          return next(err);
         }
 
         db.getRuns(username, (err, runs) => {
           if (err) {
-            return req.app.locals.error(req, res, err);
+            return next(err);
           }
 
-          req.app.locals.render(req, res, 'player-profile.ejs', {
-            title: 'Nuzlocke Ratings | ' + username,
+          res.renderPage('player-profile.ejs', username, {
             playerInfo: playerInfo[0],
             challenges,
             runs

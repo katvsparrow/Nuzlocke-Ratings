@@ -38,8 +38,7 @@ const _addRunPage = (req, res, errors, basegames, pokemon, rules) => {
   _pokemon = pokemon;
   _rules = rules;
 
-  req.app.locals.render(req, res, 'add-run.ejs', {
-    title: 'Nuzlocke Ratings | Add a new run',
+  res.renderPage('add-run.ejs', 'Add a new run', {
     errors,
     basegames,
     pokemon,
@@ -48,7 +47,7 @@ const _addRunPage = (req, res, errors, basegames, pokemon, rules) => {
 };
 
 module.exports = {
-  addRunPage: (req, res) => {
+  addRunPage: (req, res, next) => {
     const { player } = req.session;
 
     // if user not logged in, redirect them to login
@@ -58,12 +57,12 @@ module.exports = {
 
     db.getRules((err, rules) => {
       if (err) {
-        return req.app.locals.error(req, res, err);
+        return next(err);
       }
 
       db.getBasegamePokemon((err, pokemon) => {
         if (err) {
-          return req.app.locals.error(req, res, err);
+          return next(err);
         }
 
         const basegames = getUniqueBasegames(pokemon);
@@ -72,7 +71,7 @@ module.exports = {
     });
   },
 
-  addRun: (req, res) => {
+  addRun: (req, res, next) => {
     const { player } = req.session;
     if (!player) {
       return res.redirect('/login');
@@ -133,18 +132,18 @@ module.exports = {
 
     db.addRun(runInfo, err => {
       if (err) {
-        return req.app.locals.error(req, res, err);
+        return next(err);
       }
 
       db.getPlayerById(playerId, (err, result) => {
         if (err) {
-          return req.app.locals.error(req, res, err);
+          return next(err);
         }
 
         const newRating = adjustRating(result[0], rating);
         db.updateRating(playerId, newRating, err => {
           if (err) {
-            return req.app.locals.error(req, res, err);
+            return next(err);
           }
 
           res.redirect('/');
@@ -153,17 +152,15 @@ module.exports = {
     });
   },
 
-  displayRuns: (req, res) => {
+  displayRuns: (req, res, next) => {
     const { username } = req.params;
 
     db.getRuns(username, (err, runs) => {
       if (err) {
-        return req.app.locals.error(req, res, err);
+        return next(err);
       }
 
-      //runs = mergeRunData(runs);
-      req.app.locals.render(req, res, 'display-runs.ejs', {
-        title: 'Nuzlocke Ratings | Display Runs',
+      res.renderPage('display-runs.ejs', 'Display Runs', {
         runs
       });
     });

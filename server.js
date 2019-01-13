@@ -1,7 +1,7 @@
 const express = require('express');
-const fileUpload = require('express-fileupload');
 const bodyParser = require('body-parser');
 const path = require('path');
+const fileUpload = require('express-fileupload');
 const session = require('express-session');
 
 const route = {
@@ -15,10 +15,7 @@ const route = {
 const db = require('./db');
 const logger = require('./logger');
 
-const port = process.env.PORT || 3000;
-
-const app = express();
-app.set('port', port);
+const app = require('./custom-express');
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
@@ -36,44 +33,11 @@ app.use(
   })
 );
 
-// keep this middleware at the end, add any other middleware above this
+// keep track of logged in player
 app.use((req, res, next) => {
-  try {
-    next();
-  } catch (error) {
-    req.app.locals.error(req, res, error);
-  }
+  res.locals.player = req.session.player;
+  next();
 });
-
-// helper function to render a page, useful for standardizing all pages
-app.locals.render = (req, res, page, data) => {
-  res.render('template-page.ejs', {
-    player: req.session.player,
-    page,
-    ...data
-  });
-};
-
-// helper function to show an error page if an error occurs
-app.locals.error = (req, res, err) => {
-  app.locals.render(req, res.status(500), 'error.ejs', {
-    title: 'Nuzlocke Ratings | Error'
-  });
-  logger.error(err);
-};
-
-// helper function to show access denied page
-app.locals.forbidden = (req, res) => {
-  app.locals.render(req, res.status(403), 'forbidden.ejs', {
-    title: 'Nuzlocke Ratings | Access Denied'
-  });
-  logger.log(
-    'Access denied for ' +
-      req.session.player.username +
-      ' accessing ' +
-      req.path
-  );
-};
 
 app.get('/', route.index.homePage);
 
@@ -128,6 +92,24 @@ app.get('/info/challenges', route.info.challengeInfo);
 app.get('/getting-started', route.info.walkthroughInfo);
 app.get('/credits', route.info.creditsPage);
 
+// all unlisted routes go here to display not found
+app.use((req, res) => {
+  res.renderNotFound();
+});
+
+// error handling middleware should always be last
+app.use((err, req, res, next) => {
+  // if a response was already sent, go to built-in Express error handler
+  if (res.headersSent) {
+    return next(err);
+  }
+
+  res.renderError();
+  logger.error(err);
+});
+
+// start server
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+  console.log(`Nuzlocke Ratings server running on port ${port}`);
 });
