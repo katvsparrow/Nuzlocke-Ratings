@@ -6,9 +6,17 @@
     <% } %>
   </ul>
   <% } %>
-  <h3>Adding a run for <a href="/profile/<%= player.username %>" target="_blank"><%= player.username %></a>.</h3>
-  <h4>Please only enter runs that were completed on or after <b>January 1st, 2019</b>.</h4>
-  <form action="" method="post" enctype="multipart/form-data">
+  <h3>
+    Adding a run for
+    <a href="/profile/<%= player.username %>" target="_blank"
+      ><%= player.username %></a
+    >.
+  </h3>
+  <h4>
+    Please only enter runs that were completed on or after
+    <b>January 1st, 2019</b>.
+  </h4>
+  <form action="" method="post">
     <br />
     <div class="form-row">
       <div class="form-group col-md-6">
@@ -38,7 +46,14 @@
 
     <div class="form-row">
       <div class="form-group col-md-4">
-        <label for="basegame-input" class="control-label" data-toggle="tooltip" data-placement="top" title="Some games are missing because they do not yet have Nuzlocke viability rankings. These are being worked on and will be added in the near future, so check back soon!">Game played</label>
+        <label
+          for="basegame-input"
+          class="control-label"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="Some games are missing because they do not yet have Nuzlocke viability rankings. These are being worked on and will be added in the near future, so check back soon!"
+          >Game played</label
+        >
         <select
           id="basegame-input"
           name="basegame"
@@ -111,11 +126,14 @@
     <button type="submit" class="btn btn-primary float-right">Add Run</button>
   </form>
 </div>
-<br><br>
+<br /><br />
 <div style="margin: 50px 50px">
-  <h3>Some games are missing from the "Game played" dropdown because they do not yet have Nuzlocke viability rankings. These are being worked on and will be added in the near future, so check back soon!</h3>
+  <h3>
+    Some games are missing from the "Game played" dropdown because they do not
+    yet have Nuzlocke viability rankings. These are being worked on and will be
+    added in the near future, so check back soon!
+  </h3>
 </div>
-
 
 <script>
   var pokemon = <%-JSON.stringify(pokemon)%>;
