@@ -104,6 +104,21 @@
         "Name": "Soul link",
         "Difficulty": 2,
         "Description": "A soul link involves two players playing games from the same region simultaneously. Pokemon caught in the same area are linked - if one player has the Pokemon on their team, the other player must as well. In addition, if a Pokemon dies, the other player’s linked Pokemon dies as well."
+      },
+      {
+        "Name": "Team Rainbow",
+        "Difficulty": 1,
+        "Description": "The player is not allowed to have any overlapping types on their team."
+      },
+      {
+        "Name": "No grinding",
+        "Difficulty": 2,
+        "Description": "The player is not allowed to grind against wild Pokemon and must avoid them or flee from them if whenever possible."
+      },
+      {
+        "Name": "Required battles only",
+        "Difficulty": 3,
+        "Description": "The player may only take part in unavoidable battles. Wild Pokemon and avoidable trainers must be avoided whenever possible."
       }
     ]
   }
