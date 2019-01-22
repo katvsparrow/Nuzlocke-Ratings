@@ -518,5 +518,7 @@ INSERT INTO Pokemon(pokemon_id, name) VALUES (515, "Naganadel");
 INSERT INTO Pokemon(pokemon_id, name) VALUES (516, "Stakataka");
 INSERT INTO Pokemon(pokemon_id, name) VALUES (517, "Blacephalon");
 INSERT INTO Pokemon(pokemon_id, name) VALUES (518, "Zeraora");
+INSERT INTO Pokemon(pokemon_id, name) VALUES (519, "Meltan");
+INSERT INTO Pokemon(pokemon_id, name) VALUES (520, "Melmetal");
 
 ALTER TABLE Pokemon AUTO_INCREMENT = 0

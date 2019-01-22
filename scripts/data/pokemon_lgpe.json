@@ -1,0 +1,613 @@
+{
+  "Pokemon": [
+    {
+      "Name": "Venusaur",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Charizard",
+      "Ranks": {
+        "Let's Go Pikachu": "A-",
+        "Let's Go Eevee": "A-"
+      }
+    },
+    {
+      "Name": "Blastoise",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Butterfree",
+      "Ranks": {
+        "Let's Go Pikachu": "B-",
+        "Let's Go Eevee": "B-"
+      }
+    },
+    {
+      "Name": "Beedrill",
+      "Ranks": {
+        "Let's Go Pikachu": "C+",
+        "Let's Go Eevee": "C+"
+      }
+    },
+    {
+      "Name": "Pidgeot",
+      "Ranks": {
+        "Let's Go Pikachu": "C",
+        "Let's Go Eevee": "C"
+      }
+    },
+    {
+      "Name": "Raticate",
+      "Ranks": {
+        "Let's Go Pikachu": "C+",
+        "Let's Go Eevee": "C+"
+      }
+    },
+    {
+      "Name": "Alolan Raticate",
+      "Ranks": {
+        "Let's Go Pikachu": "B",
+        "Let's Go Eevee": "B"
+      }
+    },
+    {
+      "Name": "Fearow",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Arbok",
+      "Ranks": {
+        "Let's Go Pikachu": "C+",
+        "Let's Go Eevee": "C+"
+      }
+    },
+    {
+      "Name": "Pikachu",
+      "Ranks": {
+        "Let's Go Pikachu": "A",
+        "Let's Go Eevee": "A"
+      }
+    },
+    {
+      "Name": "Raichu",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Alolan Raichu",
+      "Ranks": {
+        "Let's Go Pikachu": "A",
+        "Let's Go Eevee": "A"
+      }
+    },
+    {
+      "Name": "Sandslash",
+      "Ranks": {
+        "Let's Go Pikachu": "B",
+        "Let's Go Eevee": "B"
+      }
+    },
+    {
+      "Name": "Alolan Sandslash",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Nidoqueen",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    },
+    {
+      "Name": "Nidoking",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    },
+    {
+      "Name": "Clefable",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    },
+    {
+      "Name": "Ninetales",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Alolan Ninetales",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Wigglytuff",
+      "Ranks": {
+        "Let's Go Pikachu": "D",
+        "Let's Go Eevee": "D"
+      }
+    },
+    {
+      "Name": "Vileplume",
+      "Ranks": {
+        "Let's Go Pikachu": "A-",
+        "Let's Go Eevee": "A-"
+      }
+    },
+    {
+      "Name": "Parasect",
+      "Ranks": {
+        "Let's Go Pikachu": "D",
+        "Let's Go Eevee": "D"
+      }
+    },
+    {
+      "Name": "Venomoth",
+      "Ranks": {
+        "Let's Go Pikachu": "B",
+        "Let's Go Eevee": "B"
+      }
+    },
+    {
+      "Name": "Dugtrio",
+      "Ranks": {
+        "Let's Go Pikachu": "B-",
+        "Let's Go Eevee": "B-"
+      }
+    },
+    {
+      "Name": "Alolan Dugtrio",
+      "Ranks": {
+        "Let's Go Pikachu": "B",
+        "Let's Go Eevee": "B"
+      }
+    },
+    {
+      "Name": "Persian",
+      "Ranks": {
+        "Let's Go Pikachu": "C-",
+        "Let's Go Eevee": "C-"
+      }
+    },
+    {
+      "Name": "Alolan Persian",
+      "Ranks": {
+        "Let's Go Pikachu": "C",
+        "Let's Go Eevee": "C"
+      }
+    },
+    {
+      "Name": "Golduck",
+      "Ranks": {
+        "Let's Go Pikachu": "A-",
+        "Let's Go Eevee": "A-"
+      }
+    },
+    {
+      "Name": "Primeape",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Arcanine",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Poliwrath",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Kadabra",
+      "Ranks": {
+        "Let's Go Pikachu": "B",
+        "Let's Go Eevee": "B"
+      }
+    },
+    {
+      "Name": "Alakazam",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Machoke",
+      "Ranks": {
+        "Let's Go Pikachu": "B-",
+        "Let's Go Eevee": "B-"
+      }
+    },
+    {
+      "Name": "Machamp",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Victreebel",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Tentacruel",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Graveler",
+      "Ranks": {
+        "Let's Go Pikachu": "C+",
+        "Let's Go Eevee": "C+"
+      }
+    },
+    {
+      "Name": "Golem",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Alolan Golem",
+      "Ranks": {
+        "Let's Go Pikachu": "A",
+        "Let's Go Eevee": "A"
+      }
+    },
+    {
+      "Name": "Rapidash",
+      "Ranks": {
+        "Let's Go Pikachu": "B-",
+        "Let's Go Eevee": "B-"
+      }
+    },
+    {
+      "Name": "Slowbro",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    },
+    {
+      "Name": "Farfetch'd",
+      "Ranks": {
+        "Let's Go Pikachu": "E",
+        "Let's Go Eevee": "E"
+      }
+    },
+    {
+      "Name": "Dodrio",
+      "Ranks": {
+        "Let's Go Pikachu": "A-",
+        "Let's Go Eevee": "A-"
+      }
+    },
+    {
+      "Name": "Dewgong",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Muk",
+      "Ranks": {
+        "Let's Go Pikachu": "A",
+        "Let's Go Eevee": "A"
+      }
+    },
+    {
+      "Name": "Alolan Muk",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Cloyster",
+      "Ranks": {
+        "Let's Go Pikachu": "A",
+        "Let's Go Eevee": "A"
+      }
+    },
+    {
+      "Name": "Haunter",
+      "Ranks": {
+        "Let's Go Pikachu": "C+",
+        "Let's Go Eevee": "C+"
+      }
+    },
+    {
+      "Name": "Gengar",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Hypno",
+      "Ranks": {
+        "Let's Go Pikachu": "A-",
+        "Let's Go Eevee": "A-"
+      }
+    },
+    {
+      "Name": "Kingler",
+      "Ranks": {
+        "Let's Go Pikachu": "B",
+        "Let's Go Eevee": "B"
+      }
+    },
+    {
+      "Name": "Electrode",
+      "Ranks": {
+        "Let's Go Pikachu": "C",
+        "Let's Go Eevee": "C"
+      }
+    },
+    {
+      "Name": "Exeggutor",
+      "Ranks": {
+        "Let's Go Pikachu": "C+",
+        "Let's Go Eevee": "C+"
+      }
+    },
+    {
+      "Name": "Alolan Exeggutor",
+      "Ranks": {
+        "Let's Go Pikachu": "D",
+        "Let's Go Eevee": "D"
+      }
+    },
+    {
+      "Name": "Marowak",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Alolan Marowak",
+      "Ranks": {
+        "Let's Go Pikachu": "B",
+        "Let's Go Eevee": "B"
+      }
+    },
+    {
+      "Name": "Hitmonlee",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Hitmonchan",
+      "Ranks": {
+        "Let's Go Pikachu": "A-",
+        "Let's Go Eevee": "A-"
+      }
+    },
+    {
+      "Name": "Weezing",
+      "Ranks": {
+        "Let's Go Pikachu": "A-",
+        "Let's Go Eevee": "A-"
+      }
+    },
+    {
+      "Name": "Kangaskhan",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    },
+    {
+      "Name": "Seaking",
+      "Ranks": {
+        "Let's Go Pikachu": "C-",
+        "Let's Go Eevee": "C-"
+      }
+    },
+    {
+      "Name": "Starmie",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    },
+    {
+      "Name": "Mr. Mime",
+      "Ranks": {
+        "Let's Go Pikachu": "A",
+        "Let's Go Eevee": "A"
+      }
+    },
+    {
+      "Name": "Jynx",
+      "Ranks": {
+        "Let's Go Pikachu": "A",
+        "Let's Go Eevee": "A"
+      }
+    },
+    {
+      "Name": "Pinsir",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Tauros",
+      "Ranks": {
+        "Let's Go Pikachu": "A",
+        "Let's Go Eevee": "A"
+      }
+    },
+    {
+      "Name": "Gyarados",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    },
+    {
+      "Name": "Lapras",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    },
+    {
+      "Name": "Ditto",
+      "Ranks": {
+        "Let's Go Pikachu": "E",
+        "Let's Go Eevee": "E"
+      }
+    },
+    {
+      "Name": "Eevee",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Vaporeon",
+      "Ranks": {
+        "Let's Go Pikachu": "A",
+        "Let's Go Eevee": "A"
+      }
+    },
+    {
+      "Name": "Jolteon",
+      "Ranks": {
+        "Let's Go Pikachu": "A",
+        "Let's Go Eevee": "A"
+      }
+    },
+    {
+      "Name": "Flareon",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Omastar",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Kabutops",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Aerodactyl",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Snorlax",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    },
+    {
+      "Name": "Articuno",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Zapdos",
+      "Ranks": {
+        "Let's Go Pikachu": "A+",
+        "Let's Go Eevee": "A+"
+      }
+    },
+    {
+      "Name": "Moltres",
+      "Ranks": {
+        "Let's Go Pikachu": "B+",
+        "Let's Go Eevee": "B+"
+      }
+    },
+    {
+      "Name": "Dragonite",
+      "Ranks": {
+        "Let's Go Pikachu": "C+",
+        "Let's Go Eevee": "C+"
+      }
+    },
+    {
+      "Name": "Mewtwo",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    },
+    {
+      "Name": "Mew",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    },
+    {
+      "Name": "Meltan",
+      "Ranks": {
+        "Let's Go Pikachu": "E",
+        "Let's Go Eevee": "E"
+      }
+    },
+    {
+      "Name": "Melmetal",
+      "Ranks": {
+        "Let's Go Pikachu": "S",
+        "Let's Go Eevee": "S"
+      }
+    }
+  ]
+}
