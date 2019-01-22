@@ -26,7 +26,7 @@ module.exports = {
   // result: [player_id, username, rating, runs_completed, challenges_completed, title_name, abbreviation]
   getLeaderboard: callback => {
     const query =
-      'SELECT player_id, username, rating, runs_completed, challenges_completed, Title.name as title_name, abbreviation ' +
+      'SELECT player_id, username, rating, runs_completed, challenges_completed, Title.name as title_name, abbreviation, color ' +
       'FROM Player LEFT JOIN Title ON Player.title_id = Title.title_id ORDER BY rating DESC';
 
     db.query(query, callback);
