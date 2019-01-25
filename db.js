@@ -237,7 +237,7 @@ module.exports = {
   // register challenge completion
   challengeCompletion: (playerId, challengeId, runName, callback) => {
     const query =
-      'INSERT INTO Player_Challenge (player_id, challenge_id, run_id) SELECT ?, ?, run_id FROM run WHERE run.name = ?';
+      'INSERT INTO Player_Challenge (player_id, challenge_id, run_id) SELECT ?, ?, run_id FROM Run WHERE Run.name = ?';
 
     db.query(query, [playerId, challengeId, runName], callback);
   },
