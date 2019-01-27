@@ -56,7 +56,7 @@
       <% for(let title in titles){ %>
       <tr>
         <td><%= titles[title].name %></td>
-        <td><span class="badge %>"><%= titles[title].abbreviation %></span></td>
+        <td><span class="badge badge-<%= titles[title].color %>"><%= titles[title].abbreviation %></span></td>
         <td <% if(player){ %>
           <% if(playerRating >= titles[title].rating_floor){ %>
           class="text-success" <% } else { %> class="text-danger" <% } %> <% }

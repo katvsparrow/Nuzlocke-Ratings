@@ -54,7 +54,7 @@ module.exports = {
   // result: [title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges]
   getTitles: callback => {
     const query =
-      'SELECT title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges FROM Title';
+      'SELECT title_id, name, abbreviation, rating_floor, min_bronze_challenges, min_silver_challenges, min_gold_challenges, color FROM Title';
 
     db.query(query, callback);
   },
