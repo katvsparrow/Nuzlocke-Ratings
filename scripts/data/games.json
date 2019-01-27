@@ -19,19 +19,19 @@
       "Difficulty": 2
     },
     {
-      "Name": "Gold",
+      "Name": "Gold (Champion)",
       "Generation": 2,
       "Region": "Johto",
       "Difficulty": 1
     },
     {
-      "Name": "Silver",
+      "Name": "Silver (Champion)",
       "Generation": 2,
       "Region": "Johto",
       "Difficulty": 1
     },
     {
-      "Name": "Crystal",
+      "Name": "Crystal (Champion)",
       "Generation": 2,
       "Region": "Johto",
       "Difficulty": 1
@@ -85,13 +85,13 @@
       "Difficulty": 4
     },
     {
-      "Name": "HeartGold",
+      "Name": "HeartGold (Champion)",
       "Generation": 4,
       "Region": "Johto",
       "Difficulty": 3
     },
     {
-      "Name": "SoulSilver",
+      "Name": "SoulSilver (Champion)",
       "Generation": 4,
       "Region": "Johto",
       "Difficulty": 3
@@ -179,6 +179,36 @@
       "Generation": 7,
       "Region": "Kanto",
       "Difficulty": 2
+    },
+    {
+      "Name": "Gold (Red)",
+      "Generation": 2,
+      "Region": "Johto",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Silver (Red)",
+      "Generation": 2,
+      "Region": "Johto",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Crystal (Red)",
+      "Generation": 2,
+      "Region": "Johto",
+      "Difficulty": 2
+    },
+    {
+      "Name": "HeartGold (Red)",
+      "Generation": 4,
+      "Region": "Johto",
+      "Difficulty": 4
+    },
+    {
+      "Name": "SoulSilver (Red)",
+      "Generation": 4,
+      "Region": "Johto",
+      "Difficulty": 4
     }
   ]
 }
