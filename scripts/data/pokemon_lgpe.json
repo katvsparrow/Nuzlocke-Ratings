@@ -608,6 +608,13 @@
         "Let's Go Pikachu": "S",
         "Let's Go Eevee": "S"
       }
+    },
+    {
+      "Name": "Rhydon",
+      "Ranks": {
+        "Let's Go Pikachu": "A",
+        "Let's Go Eevee": "A"
+      }
     }
   ]
 }

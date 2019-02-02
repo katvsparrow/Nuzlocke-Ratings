@@ -868,3 +868,12 @@ SELECT Pokemon.pokemon_id, Basegame.basegame_id, "S"
 FROM Basegame, Pokemon
 WHERE Pokemon.name="Melmetal" AND Basegame.name="Let's Go Pikachu";
 
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Rhydon" AND Basegame.name = "Let's Go Pikachu";
+
+INSERT INTO Pokemon_Rank
+SELECT Pokemon.pokemon_id, Basegame.basegame_id, "A"
+FROM Basegame, Pokemon
+WHERE Pokemon.name="Rhydon" AND Basegame.name = "Let's Go Eevee";
