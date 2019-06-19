@@ -1,0 +1,1971 @@
+{
+  "Pokemon": [
+    {
+      "Name": "Groudon",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Gyarados",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Ho-Oh",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Kyogre",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Kyurem",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Latias",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Latios",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Lugia",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Mega Blaziken",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Mega Gyarados",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Mega Latias",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Mega Latios",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Mega Sceptile",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Mega Swampert",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Primal Groudon",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Primal Kyogre",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Reshiram",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Swampert",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Zekrom",
+      "Ranks": {
+        "Omega Ruby": "S",
+        "Alpha Sapphire": "S"
+      }
+    },
+    {
+      "Name": "Alakazam",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Azumarill (Huge Power)",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Blaziken",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Cobalion",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Crobat",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Gallade",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Gardevoir",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Magneton",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Magnezone",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Mega Absol",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Mega Aggron",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Mega Alakazam",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Mega Altaria",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Mega Gardevoir",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Mega Manectric",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Mega Mawile",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Mega Slowbro",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Milotic",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Regice",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Roserade",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Sceptile",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Skarmory",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Starmie",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Tentacruel",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Terrakion",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Thundurus (Incarnate)",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Thundurus (Therian)",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Virizion",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Zangoose",
+      "Ranks": {
+        "Omega Ruby": "A+",
+        "Alpha Sapphire": "A+"
+      }
+    },
+    {
+      "Name": "Aggron",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Camerupt",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Clefable",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Crawdaunt",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Cresselia",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Darmanitan",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Donphan",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Entei",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Excadrill",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Flygon",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Hariyama",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Heatran",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Heracross",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Machamp",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Manectric",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Mega Aerodactyl",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Mega Heracross",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Mega Medicham",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Mega Steelix",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Raikou",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Regirock",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Registeel",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Salamence",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Slowbro",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Slowking",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Suicune",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Tornadus (Incarnate)",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Tornadus (Therian)",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Walrein",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Whiscash",
+      "Ranks": {
+        "Omega Ruby": "A",
+        "Alpha Sapphire": "A"
+      }
+    },
+    {
+      "Name": "Arcanine",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Azelf",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Claydol",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Eelektross",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Electabuzz",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Electivire",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Exploud",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Forretress",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Garchomp",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Golem",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Kecleon (Protean)",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Kingdra",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Ludicolo",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Magmar",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Magmortar",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Mega Lopunny",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Mega Pinsir",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Mesprit",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Ninetales (Drought)",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Porygon-Z",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Porygon2",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Rhyperior",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Sandslash",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Seviper",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Slaking",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Spiritomb",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Steelix",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Swellow",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Uxie",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Vileplume",
+      "Ranks": {
+        "Omega Ruby": "A-",
+        "Alpha Sapphire": "A-"
+      }
+    },
+    {
+      "Name": "Bellossom",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Breloom",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Cacturne",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Cofagrigus",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Cradily",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Dusknoir",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Girafarig",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Golduck",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Gorebyss",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Grumpig",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Huntail",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Klinklang",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Linoone",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Medicham",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Mega Glalie",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Pinsir",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Probopass",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Rhydon",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Shiftry",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Torkoal",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Vigoroth",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Weezing",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Xatu",
+      "Ranks": {
+        "Omega Ruby": "B+",
+        "Alpha Sapphire": "B+"
+      }
+    },
+    {
+      "Name": "Absol",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Altaria",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Armaldo",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Braviary",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Bronzong",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Dusclops",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Froslass",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Hydreigon",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Jellicent",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Lanturn",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Lunatone",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Masquerain",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Mega Beedrill",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Mega Sableye",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Muk",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Ninetales (Flash Fire)",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Ninjask",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Pelipper",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Raichu",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Sharpedo",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Solrock",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Swalot",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Tropius",
+      "Ranks": {
+        "Omega Ruby": "B",
+        "Alpha Sapphire": "B"
+      }
+    },
+    {
+      "Name": "Ambipom",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Beautifly",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Blissey",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Carracosta",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Cinccino",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Crustle",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Dodrio",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Drapion",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Druddigon",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Gastrodon",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Gigalith",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Graveler",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Kabutops",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Kadabra",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Krookodile",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Lilligant",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Mawile",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Mightyena",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Omastar",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Scrafty",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Seismitoad",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Tangela",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Tangrowth",
+      "Ranks": {
+        "Omega Ruby": "B-",
+        "Alpha Sapphire": "B-"
+      }
+    },
+    {
+      "Name": "Alomomola",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Chansey",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Conkeldurr",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Dustox",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Espeon",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Glalie",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Haxorus",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Honchkrow",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Jolteon",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Kecleon (Color Change)",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Leafeon",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Luxray",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Machoke",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Mandibuzz",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Mega Banette",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Mega Pidgeot",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Rapidash",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Relicanth",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Sableye",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Sawk",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Stantler",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Sylveon",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Throh",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Umbreon",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Vaporeon",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Venomoth",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Wailord",
+      "Ranks": {
+        "Omega Ruby": "C+",
+        "Alpha Sapphire": "C+"
+      }
+    },
+    {
+      "Name": "Aerodactyl",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Azumarill (Thick Fat)",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Banette",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Barbaracle",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Bastiodon",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Boldore",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Castform",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Chimecho",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Clawitzer",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Dragalge",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Drifblim",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Electrode",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Flareon",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Glaceon",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Gurdurr",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Hitmonchan",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Hitmonlee",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Hitmontop",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Hypno",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Leavanny",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Maractus",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Mismagius",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Rampardos",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Sawsbuck",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Volcarona",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Whimsicott",
+      "Ranks": {
+        "Omega Ruby": "C",
+        "Alpha Sapphire": "C"
+      }
+    },
+    {
+      "Name": "Archeops",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Beartic",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Beheeyem",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Dewgong",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Garbodor",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Illumise",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Kingler",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Klefki",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Minun",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Musharna",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Plusle",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Stoutland",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Volbeat",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Zebstrika",
+      "Ranks": {
+        "Omega Ruby": "C-",
+        "Alpha Sapphire": "C-"
+      }
+    },
+    {
+      "Name": "Audino",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Bouffalant",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Cherrim",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Clamperl (DeepSeaTooth)",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Cosplay Pikachu",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Galvantula",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Gothitelle",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Lumineon",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Magcargo",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Primeape",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Seadra",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Seaking",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Shedinja",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Spinda",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Trevenant",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Wigglytuff",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Zoroark",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Zweilous",
+      "Ranks": {
+        "Omega Ruby": "D",
+        "Alpha Sapphire": "D"
+      }
+    },
+    {
+      "Name": "Beedrill",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Chatot",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Corsola",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Delcatty",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Delibird",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Ditto",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Dugtrio",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Kricketune",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Lopunny",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Luvdisc",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Parasect",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Persian",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Pidgeot",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Purugly",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Raticate",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Sunflora",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Unfezant",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Unown",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    },
+    {
+      "Name": "Wobbuffet",
+      "Ranks": {
+        "Omega Ruby": "E",
+        "Alpha Sapphire": "E"
+      }
+    }
+  ]
+}
