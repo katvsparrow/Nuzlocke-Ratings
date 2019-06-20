@@ -204,6 +204,7 @@
           }
           for(i = 0; i < ruleset.length; i++){
               rating += ruleset[i] * 50;
+              rating += ruleset.length * 50;
           }
           for(i = 0; i < translatedRanks.length; i++){
               rating += translatedRanks[i];
@@ -218,7 +219,8 @@
       else if(deaths == 4) return(25);
       else if(deaths == 6) return(-25);
       else if(deaths < 4) return(2 * translateDeathCount(deaths + 1));
-      else if(deaths > 6) return(2 * translateDeathCount(deaths - 1));
+      else if(deaths > 6 && deaths <= 9) return(2 * translateDeathCount(deaths - 1));
+      else if(deaths > 9) return(2 * translateDeathCount(8));
   }
 
   function translateRanks(ranks){
