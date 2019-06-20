@@ -309,14 +309,14 @@
       }
     },
     {
-      "Name": "Thundurus (Incarnate)",
+      "Name": "Thundurus",
       "Ranks": {
         "Omega Ruby": "A+",
         "Alpha Sapphire": "A+"
       }
     },
     {
-      "Name": "Thundurus (Therian)",
+      "Name": "Thundurus-Therian",
       "Ranks": {
         "Omega Ruby": "A+",
         "Alpha Sapphire": "A+"
@@ -519,14 +519,14 @@
       }
     },
     {
-      "Name": "Tornadus (Incarnate)",
+      "Name": "Tornadus",
       "Ranks": {
         "Omega Ruby": "A",
         "Alpha Sapphire": "A"
       }
     },
     {
-      "Name": "Tornadus (Therian)",
+      "Name": "Tornadus-Therian",
       "Ranks": {
         "Omega Ruby": "A",
         "Alpha Sapphire": "A"
@@ -1730,14 +1730,14 @@
       }
     },
     {
-      "Name": "Clamperl (DeepSeaTooth)",
+      "Name": "Clamperl",
       "Ranks": {
         "Omega Ruby": "D",
         "Alpha Sapphire": "D"
       }
     },
     {
-      "Name": "Cosplay Pikachu",
+      "Name": "Pikachu (Cosplay)",
       "Ranks": {
         "Omega Ruby": "D",
         "Alpha Sapphire": "D"
