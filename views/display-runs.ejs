@@ -34,6 +34,13 @@
         >
           Rating
         </th>
+        <th
+          scope="col"
+          onclick="sortTable(4, 'display-runs-table')"
+          class="sortable"
+        >
+          Deaths
+        </th>
         <th scope="col">Link</th>
         <th scope="col">Team</th>
         <th scope="col">Ruleset</th>
@@ -46,6 +53,7 @@
         <td><%= runs[i].run_name %></td>
         <td>Pokemon <%= runs[i].basegame_name %></td>
         <td><%= runs[i].rating %></td>
+        <td><%== runs[i].deaths %></td>
         <td><a href="<%= runs[i].link %>" target="_blank">Link to run</a></td>
         <td>
           <ul class="list-unstyled split">
