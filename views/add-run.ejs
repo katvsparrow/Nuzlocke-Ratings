@@ -204,13 +204,13 @@
           }
           for(i = 0; i < ruleset.length; i++){
               rating += ruleset[i] * 50;
-              rating += ruleset.length * 50;
           }
           for(i = 0; i < translatedRanks.length; i++){
               rating += translatedRanks[i];
           }
           if(rating < 100) rating = 100;
           gameRating.value = rating;
+          rating += ruleset.length * 50;
       }
   }
 
