@@ -27,7 +27,7 @@
     "express-session": "^1.15.6",
     "handlebars": "^4.3.0",
     "mysql": "^2.16.0",
-    "npm": "^6.13.4",
+    "npm": "^6.14.6",
     "popper.js": "^1.14.6",
     "req-flash": "0.0.3",
     "request": "^2.88.0"
