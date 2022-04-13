@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/hydra314/Nuzlocke-Ratings#readme",
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^3.2.2",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
