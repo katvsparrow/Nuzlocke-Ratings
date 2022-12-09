@@ -20,7 +20,7 @@
     "async": "^2.6.1",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-fileupload": "^1.1.9",
     "express-handlebars": "^3.0.0",
     "express-mysql-session": "^2.1.0",
